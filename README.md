@@ -49,18 +49,70 @@ What is the impact of a product on the sales of complementary items?
   </tr>
   <tr>
     <td>Calculate what percentage of sales could be absorbed by substitute products if product A is delisted</td>
-    <td>Another cell</td>
-    <td>Another cell</td>
+    <td>
+        <ul>
+            <li>From objective 1, select the top N substitutes for the target product A</li>
+            <li>Calculate total baskets containing product A, total baskets containing each substitute, and total baskets containing the substitute but not A (compute these counts within categories, departments, or basket sizes to reduce noise and increase accuracy)</li>
+            <li>Compute raw DTR (Demand Transfer Ratio)</li>
+            <li>Adjust DTR with logistic regression and AME</li>
+            <li>Convert adjusted DTRs to Pairwise Transfer Percent (PTP)</li>
+            <li>Rank substitutes by PTP to identify top replacement products</li>
+            <li>Sum PTPs across all substitutes to evaluate total sales absorption</li>
+        </ul>
+        Validation
+        <ul>
+            <li>Verify that the rank order of substitutes remains consistent between training and test data using Spearman’s rank correlation</li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>Gayle & Lin (2022): Provides DTR formula for estimating sales transfer between products</li>
+            <li>Mani, Thomas & Bansal (2016): Shows regression-based adjustment corrects raw DTR for confounding factors, providing a more accurate estimate of substitution probability</li>
+        </ul>
+    </td>
   </tr>
   <tr>
     <td>Identify complementary products</td>
-    <td>Another cell</td>
-    <td>Another cell</td>
+    <td>
+        <ul>
+            <li>Using the already calculated metrics co-occurrence probability, conditional probability and lift, construct a complementary network, where products are nodes and edges are weighted by lift</li>
+            <li>Use Louvain algorithm to find clusters of complementary products</li>
+            <li>Rank complements by edge weight and centrality within network cluster</li>
+        </ul>
+        Validation
+        <ul>
+            <li>Holdout-test split: Split the orders into training and test sets; use the training set to compute lift and identify top complements</li>
+            <li>Simulate complement observation: For each basket in the test set containing the target product, record which predicted complements are actually present</li>
+            <li>Compare observed and predicted lift</li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>Tian, Zhang & Zhang (2021): Uses network-based methods to identify complementary products</li>
+            <li>Blondel et al. (2008): Introduces Louvain algorithm, a method for detecting community structure in large networks</li>
+            <li>
+        </ul>
+    </td>
   </tr>
   <tr>
     <td>Quantify how delisting a product may affect sales of its complements</td>
-    <td>Another cell</td>
-    <td>Another cell</td>
+    <td>
+        <ul>
+            <li>Take complement pairs from objective 3, create dependent variable Y (if complement product was purchased 1 else 0) and independent variable X (if target product is present 1 else 0)</li>
+            <li>Run a logistic regression for each complement pair (A,B)</li>
+            <li>Compute the average marginal effect (AME) of Presence(A) on Purchase(B)</li>
+        </ul>
+        Validation
+        <ul>
+            <li>Verify that the logistic regression models reasonably fit the data and explain variation in Y using R2 and p-values</li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>McFadden, D. (1974): Justifies using logistic regression to model the probability of a complement being purchased conditional on the presence of another product</li>
+            <li>Williams, R. (2010): Provides the methodology for calculating Average Marginal Effects (AMEs) from logistic regression</li>
+        </ul>
+    </td>
   </tr>
 </table>
 
