@@ -37,6 +37,11 @@ What is the impact of a product on the sales of complementary items?
 
 <img src="graphs/methodology-table.png">
 
+#### Units Tests
+
+To run the units tests, in the command line run:
+`python -m unittest discover -s tests -p "*.py"`
+
 
 .
 
