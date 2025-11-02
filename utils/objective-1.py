@@ -110,6 +110,7 @@ def compute_hybrid_substitution_score(product_df, pairwise_df, sampled_products,
 
     print(f"Completed substitute calculations. Saved to {file_path}")
 
+
 def find_best_threshold(df, score_col='score', label_col='valid_substitution', num_thresholds=100):
     """
     Determine the best threshold for a continuous score to predict binary labels.
@@ -148,8 +149,6 @@ def find_best_threshold(df, score_col='score', label_col='valid_substitution', n
 
     return adjusted_threshold
 
-import pandas as pd
-import numpy as np
 
 def summarize_substitution_validation(top_substitutes_df, product_df, pairwise_df):
     """
@@ -224,76 +223,6 @@ def summarize_substitution_validation(top_substitutes_df, product_df, pairwise_d
     return summary_df
 
 
-
-def summarize_substitution_validation_old(top_substitutes_df, product_df, pairwise_df):
-    """
-    Summarize substitution validation metrics for easy comparison across weightings.
-    
-    Returns a single DataFrame with summary metrics per product and overall.
-    """
-
-    subs_df = top_substitutes_df.copy()
-
-    # --- Department / Aisle alignment ---
-    valid_frac = subs_df[subs_df['identified_substitute']]['valid_substitute'].mean()
-    possible_frac = subs_df[subs_df['identified_substitute']]['possible_substitute'].mean()
-
-    fn_frac = subs_df[(subs_df['valid_substitute'] | subs_df['possible_substitute']) &
-                  (~subs_df['identified_substitute'])].shape[0] / \
-          subs_df[(subs_df['valid_substitute'] | subs_df['possible_substitute'])].shape[0]
-
-
-
-
-    # --- Co-occurrence metrics ---
-    pairwise_df = pairwise_df.copy()
-    pairwise_df['joint_freq'] = pairwise_df['P_ij']
-    pairwise_df['lift'] = pairwise_df['P_ij'] / (pairwise_df['P_i'] * pairwise_df['P_j'])
-
-    subs_df = subs_df[subs_df['identified_substitute']].merge(
-        pairwise_df[['product_i','product_j','joint_freq','lift']],
-        left_on=['product_id','substitute_id'],
-        right_on=['product_i','product_j'],
-        how='left'
-    )
-    coocc_corr = subs_df[['score','joint_freq','lift']].corr()
-
-    score_joint_corr = coocc_corr.loc['score','joint_freq']
-    score_lift_corr = coocc_corr.loc['score','lift']
-
-    # --- Feature correlations ---
-    feature_cols = ['substitution_index','jaccard','conditional']
-    feature_corr = subs_df[feature_cols].corr()
-
-    # --- Aggregate summary ---
-    summary = {
-        'avg_dept_frac': alignment_summary['dept_frac'].mean(),
-        'avg_aisle_frac': alignment_summary['aisle_frac'].mean(),
-        'avg_score': alignment_summary['avg_score'].mean(),
-        'avg_num_substitutes': alignment_summary['num_substitutes'].mean(),
-        'score_joint_freq_corr': score_joint_corr,
-        'score_lift_corr': score_lift_corr,
-        'feature_corr': feature_corr
-    }
-
-    print("***Substitution Validation Summary***\n")
-    print(f"Average fraction of substitutes in same department: {summary['avg_dept_frac']:.3f}")
-    print(f"Average fraction of substitutes in same aisle: {summary['avg_aisle_frac']:.3f}")
-    print(f"Average substitution score: {summary['avg_score']:.3f}")
-    print(f"Average number of substitutes per product: {summary['avg_num_substitutes']:.1f}\n")
-    
-    print("Co-occurrence correlations:")
-    print(f" - Score vs joint frequency (P_ij): {summary['score_joint_freq_corr']:.3f}")
-    print(f" - Score vs lift: {summary['score_lift_corr']:.3f}\n")
-    
-    print("Feature correlations:")
-    print(summary['feature_corr'])
-
-    # Return as a DataFrame for easier comparison across weightings
-    summary_df = pd.DataFrame([summary])
-    return summary_df
-
-
 def get_substitutes_and_evaluate(product_df, pairwise_df, substitutes_df, file_path):
     
     # Find the best substitution score threshold which will identify a product as a true substitute
@@ -303,7 +232,7 @@ def get_substitutes_and_evaluate(product_df, pairwise_df, substitutes_df, file_p
     substitutes_df['identified_substitute'] = substitutes_df['score'] >= best_threshold
 
     # Save results to CSV
-    substitutes_df.to_csv("../data/results/obj1/substitutes-4-full.csv", index=False)
+    #substitutes_df.to_csv(file_path, index=False)
 
     evaluation_df = summarize_substitution_validation(substitutes_df, product_df, pairwise_df)
-    #evaluation_df.to_csv(file_path, index=False)
+    evaluation_df.to_csv(file_path, index=False)
