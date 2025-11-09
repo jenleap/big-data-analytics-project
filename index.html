@@ -5,54 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Substitutes & Complements — Interactive Paper</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://unpkg.com/htmx.org/dist/htmx.min.js"></script>
+  <script>
+    // Listen for htmx swaps targeting #main
+    htmx.on("#main", "htmx:afterSwap", function(evt) {
+      window.scrollTo({ top: document.getElementById('main').offsetTop, behavior: 'smooth' });
+    });
+  </script>
 </head>
 
 <body>
-  <!-- HERO SECTION -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>Discovering Product Relationships Through Data</h1>
-      <p>
-        Which products are <span class="highlight substitute">substitutes</span>?  
-        Which are <span class="highlight complement">complements</span>?  
-        This interactive research paper explores consumer behavior using real-world data and data science methods.
-      </p>
+<section id="hero" class="hero">
+  <div class="hero-content">
+    <h1>Discovering Product Relationships Through Data</h1>
+    <p>
+      Which products are <span class="highlight substitute">substitutes</span>?  
+      Which are <span class="highlight complement">complements</span>?  
+      This interactive research paper reveals consumer product relationships using data science methods.
+    </p>
 
-      <div class="hero-buttons">
-        <a href="pages/data-analysis.html" class="cta-btn">Explore the Data →</a>
-        <a href="methodology.html" class="secondary-btn">Learn the Method →</a>
-      </div>
-
-      <div class="scroll-hint">↓ Scroll to Learn More ↓</div>
+    <div class="hero-buttons">
+      <a href="pages/context.html" class="cta-btn">Start the Journey →</a>
+      <a href="pages/substitutes.html" class="secondary-btn">Skip to Substitute Results →</a>
     </div>
-  </section>
 
-  <!-- CONTEXT SECTION -->
-  <section id="context" class="context">
-    <div class="context-inner">
-      <h2>Why This Matters</h2>
-      <p>
-        Every shopping cart tells a story — of choices, trade-offs, and relationships between products.
-        Understanding which products act as <strong>substitutes</strong> and which are <strong>complements</strong> helps
-        businesses anticipate demand shifts, manage stockouts, and optimize marketing strategies.
-      </p>
+    <div class="scroll-hint">↓ Scroll to Learn More ↓</div>
+  </div>
+</section>
 
-      <div class="example-pairs">
-        <div class="pair">
-          <span>🥛 Milk</span> <span class="arrow">➕</span> <span>🍪 Cookies</span>
-          <p class="label">Complements</p>
-        </div>
-        <div class="pair">
-          <span>🧈 Butter</span> <span class="arrow">↔</span> <span>🥐 Margarine</span>
-          <p class="label">Substitutes</p>
-        </div>
-      </div>
-
-      <div class="context-buttons">
-        <a href="pages/substitutes.html" class="cta-btn">View Findings →</a>
-        <a href="conclusion.html" class="secondary-btn">Jump to Conclusion →</a>
-      </div>
-    </div>
-  </section>
+<!-- NEW: OVERVIEW SECTION -->
+<section id="overview" class="overview">
+  <div class="overview-inner">
+    <h2>The Research Path</h2>
+    <p>This interactive paper walks through the process of uncovering product relationships step by step.</p>
+    <ol class="steps">
+      <li><strong>Context:</strong> Understand the data and problem scope</li>
+      <li><strong>Methodology:</strong> Explore how substitutes were identified</li>
+      <li><strong>Results:</strong> Interact with visualizations to explore relationships</li>
+      <!-- <li><strong>Conclusion:</strong> Reflect on findings and implications</li> -->
+    </ol>
+    <a href="pages/context.html" class="cta-btn">Begin →</a>
+  </div>
+</section>
 </body>
 </html>
