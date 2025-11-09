@@ -3,71 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Table of Contents</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 2rem auto;
-      max-width: 800px;
-      line-height: 1.6;
-      color: #333;
-      background: #fafafa;
-    }
-
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      background: white;
-      margin: 0.5rem 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      transition: transform 0.1s ease-in-out;
-    }
-
-    li:hover {
-      transform: scale(1.02);
-    }
-
-    a {
-      display: block;
-      padding: 1rem;
-      text-decoration: none;
-      color: #007acc;
-      font-weight: bold;
-    }
-
-    a:hover {
-      background: #007acc;
-      color: white;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 2rem;
-      color: #777;
-      font-size: 0.9em;
-    }
-  </style>
+  <title>Substitutes & Complements — Interactive Paper</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
-    <h1>Predicting Product Substitutes and Complements Using Order-Level Data</h1>
-    <h2>Contents</h2>
-    <ul>
-        <li><a href="pages/research-questions.html">Research Questions</a></li>
-        <li><a href="pages/data-description.html">Data Description</a></li>
-        <li><a href="pages/methodology.html">Methodology</a></li>
-    </ul>
 
-    <footer>
-        © 2025 Jennifer Leap — Predicting Product Substitutes and Complements
-    </footer>
+<body>
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Discovering Product Relationships Through Data</h1>
+      <p>
+        Which products are <span class="highlight substitute">substitutes</span>?  
+        Which are <span class="highlight complement">complements</span>?  
+        This interactive research paper explores consumer behavior using real-world data and data science methods.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="pages/data-analysis.html" class="cta-btn">Explore the Data →</a>
+        <a href="methodology.html" class="secondary-btn">Learn the Method →</a>
+      </div>
+
+      <div class="scroll-hint">↓ Scroll to Learn More ↓</div>
+    </div>
+  </section>
+
+  <!-- CONTEXT SECTION -->
+  <section id="context" class="context">
+    <div class="context-inner">
+      <h2>Why This Matters</h2>
+      <p>
+        Every shopping cart tells a story — of choices, trade-offs, and relationships between products.
+        Understanding which products act as <strong>substitutes</strong> and which are <strong>complements</strong> helps
+        businesses anticipate demand shifts, manage stockouts, and optimize marketing strategies.
+      </p>
+
+      <div class="example-pairs">
+        <div class="pair">
+          <span>🥛 Milk</span> <span class="arrow">➕</span> <span>🍪 Cookies</span>
+          <p class="label">Complements</p>
+        </div>
+        <div class="pair">
+          <span>🧈 Butter</span> <span class="arrow">↔</span> <span>🥐 Margarine</span>
+          <p class="label">Substitutes</p>
+        </div>
+      </div>
+
+      <div class="context-buttons">
+        <a href="pages/substitutes.html" class="cta-btn">View Findings →</a>
+        <a href="conclusion.html" class="secondary-btn">Jump to Conclusion →</a>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
