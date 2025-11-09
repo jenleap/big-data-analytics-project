@@ -9,7 +9,7 @@
 <body>
   <main class="methodology-page" style="padding:4rem 2rem; max-width:900px; margin:0 auto;">
     <header style="text-align:center; margin-bottom:2rem;">
-      <h1>The Methodology — Building the Substitution Detective 🧮</h1>
+      <h1>The Methodology — Building the Substitution Detective</h1>
       <p style="color:#475569; font-size:1.05rem; max-width:760px; margin:0.5rem auto 0;">
         This stage focuses on <strong>Objective 1</strong>: finding substitute products for a chosen item.  
         Instead of a black-box predictive model, we built a transparent, behavior-driven system that combines co-occurrence, context, and exclusivity into one interpretable hybrid score.
@@ -25,7 +25,7 @@
 
     <!-- STEP 1 -->
     <section class="method-step" style="margin-bottom:2rem;">
-      <h2>🧱 Step 1 – Data Representation</h2>
+      <h2>Step 1 – Data Representation</h2>
       <p style="color:#334155;">
         Every investigation needs a map — ours is a <strong>product–order matrix</strong>.  
         Each row represents a customer order; each column, a product.  
@@ -33,27 +33,27 @@
         This sparse setup lets us track which products travel together through thousands of baskets while keeping the math efficient.
       </p>
       <div style="background:#f8fafc; padding:1rem; border-radius:8px; font-size:0.95rem; color:#475569;">
-        <strong>Think of it as:</strong> rows = shopping trips 🛍️, columns = products 🧂,  
+        <strong>Think of it as:</strong> rows = shopping trips, columns = products,  
         and the 1s light up every time an item hops into a cart.
       </div>
     </section>
 
     <!-- STEP 2 -->
     <section class="method-step" style="margin-bottom:2rem;">
-      <h2>⚙️ Step 2 – Feature Construction</h2>
+      <h2>Step 2 – Feature Construction</h2>
       <p style="color:#334155;">
         From the matrix, we extracted three key behavioral clues about how two products relate:
       </p>
 
       <div style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
         <div style="background:#f1f5f9; border-radius:8px; padding:1rem;">
-          <strong>🧩 Jaccard Similarity:</strong> measures shared shopping context — how often two products appear in similar baskets.
+          <strong>Jaccard Similarity:</strong> measures shared shopping context — how often two products appear in similar baskets.
         </div>
         <div style="background:#ecfdf5; border-radius:8px; padding:1rem;">
-          <strong>🔄 Conditional Probability:</strong> measures directional influence — if you buy one, how likely are you to buy the other?
+          <strong>Conditional Probability:</strong> measures directional influence — if you buy one, how likely are you to buy the other?
         </div>
         <div style="background:#fef2f2; border-radius:8px; padding:1rem;">
-          <strong>🚫 Substitution Index:</strong> captures exclusivity — products that <em>don’t</em> appear together often but serve the same role.
+          <strong>Substitution Index:</strong> captures exclusivity — products that <em>don’t</em> appear together often but serve the same role.
         </div>
       </div>
 
@@ -64,13 +64,13 @@
 
     <!-- STEP 3 -->
     <section class="method-step" style="margin-bottom:2rem;">
-      <h2>🧠 Step 3 – Hybrid Substitution Scoring</h2>
+      <h2>Step 3 – Hybrid Substitution Scoring</h2>
       <p style="color:#334155;">
         Once we computed all three features, they were normalized and combined into a single <strong>hybrid score</strong> — a 0–1 scale that ranks how likely two products are to substitute each other.
       </p>
 
       <div style="background:#ffffff; border-radius:12px; padding:1rem; box-shadow:0 4px 10px rgba(16,24,40,0.05); margin-top:1rem;">
-        <strong>Weighting by Product Hierarchy 🗂️</strong>
+        <strong>Weighting by Product Hierarchy</strong>
         <ul style="margin-top:0.5rem; color:#334155;">
           <li>Same department + aisle → weight = 1.0</li>
           <li>Same department, different aisle → weight = 0.7</li>
@@ -86,7 +86,7 @@
 
     <!-- STEP 4 -->
     <section class="method-step" style="margin-bottom:2rem;">
-      <h2>📊 Step 4 – Threshold Selection & Optimization</h2>
+      <h2>Step 4 – Threshold Selection & Optimization</h2>
       <p style="color:#334155;">
         Once every pair had a score, we needed a rule for what counts as a “true” substitute.  
         We swept through possible cutoffs and picked the one maximizing the <strong>F1 score</strong> — balancing precision (accuracy) and recall (coverage).
@@ -102,7 +102,7 @@
 
     <!-- STEP 5 -->
     <section class="method-step" style="margin-bottom:2rem;">
-      <h2>🔁 Step 5 – Iterative Model Refinement</h2>
+      <h2>Step 5 – Iterative Model Refinement</h2>
       <p style="color:#334155;">
         The hybrid model evolved through several refinement rounds — adjusting feature weights and thresholds until results felt behaviorally and categorically right.
       </p>
@@ -125,13 +125,13 @@
 
     <!-- STEP 6 -->
     <section class="method-step" style="margin-bottom:2rem;">
-      <h2>🧩 Step 6 – Model Validation</h2>
+      <h2>Step 6 – Model Validation</h2>
       <p style="color:#334155;">
         Without labeled “true” substitutes, validation focused on internal coherence and logical consistency.
       </p>
 
       <ul style="color:#334155;">
-        <li><strong>Categorical Alignment:</strong> Are substitutes from the same department/aisle? ✅ 100% consistency achieved.</li>
+        <li><strong>Categorical Alignment:</strong> Are substitutes from the same department/aisle? 100% consistency achieved.</li>
         <li><strong>Behavioral Validation:</strong> Hybrid score shows low correlation with joint frequency → it distinguishes substitutes from complements.</li>
         <li><strong>Internal Consistency:</strong> Moderate negative correlations between metrics confirm that each contributes unique information.</li>
       </ul>
