@@ -4,7 +4,58 @@ from sklearn.metrics import f1_score
 
 def compute_hybrid_substitution_score(product_df, pairwise_df, sampled_products, file_path, weight_si=0.5, weight_jc=0.3,
                                       weight_cond=0.2, weight_sim_partial=0.7, weight_sim_none=0.4):
-    
+    """
+    Compute a hybrid substitution score for product pairs and save the top substitutes to a CSV file.
+
+    This function calculates a weighted combination of substitution metrics (substitution index, 
+    Jaccard similarity, conditional probability) and applies a similarity weight based on department 
+    and aisle alignment to identify likely substitute products. For each product in the sampled list, 
+    it ranks potential substitutes and keeps the top 20.
+
+    Parameters:
+    -----------
+    product_df : pd.DataFrame
+        DataFrame containing product metadata, must include 'product_id', 'department_id', 'aisle_id'.
+    pairwise_df : pd.DataFrame
+        DataFrame of pairwise product metrics, must include 'product_i', 'product_j', 'P_i', 'P_j', 'P_ij'.
+    sampled_products : list or pd.Series
+        List of product IDs for which to compute substitutes.
+    file_path : str
+        Path to the CSV file where the top substitutes for all sampled products will be appended.
+    weight_si : float, default=0.5
+        Weight applied to the substitution index in the hybrid score calculation.
+    weight_jc : float, default=0.3
+        Weight applied to the Jaccard similarity in the hybrid score calculation (negative weight).
+    weight_cond : float, default=0.2
+        Weight applied to the conditional probability in the hybrid score calculation (negative weight).
+    weight_sim_partial : float, default=0.7
+        Similarity weight for product pairs in the same department but different aisle.
+    weight_sim_none : float, default=0.4
+        Similarity weight for product pairs in different departments.
+
+    Returns:
+    --------
+    None
+        Results are saved directly to the specified CSV file. The CSV includes the following columns:
+        - product_id: ID of the reference product
+        - substitute_id: ID of the candidate substitute product
+        - score: weighted hybrid substitution score
+        - rank: rank of substitute for this product (top 20 only)
+        - jaccard: normalized Jaccard similarity between products
+        - conditional: normalized conditional probability between products
+        - substitution_index: normalized substitution index between products
+        - same_department: boolean flag if both products are in the same department
+        - same_aisle: boolean flag if both products are in the same aisle
+        - valid_substitution: boolean flag for substitutes in the same aisle
+        - possible_substitution: boolean flag for substitutes in the same department
+
+    Notes:
+    ------
+    - Pairwise metrics are normalized within each product’s candidate substitutes before weighting.
+    - Similarity weight is applied multiplicatively to prioritize same-department and same-aisle pairs.
+    - Only the top 20 substitutes per product (by hybrid score) are retained in the output CSV.
+    """
+        
     with open(file_path, "w") as f:
         f.write("product_id,substitute_id,score,rank,jaccard,conditional,substitution_index,same_department,same_aisle,valid_substitution,possible_substitution\n")
 
@@ -15,7 +66,7 @@ def compute_hybrid_substitution_score(product_df, pairwise_df, sampled_products,
         product_probs = pairwise_df_i.get_group(product_id) if product_id in pairwise_df_i.groups else pd.DataFrame()
         product_j_probs = pairwise_df_j.get_group(product_id) if product_id in pairwise_df_j.groups else pd.DataFrame()
 
-        # Reverse relationships
+        # Reverse relationships, so we have both directions
         products_rev = product_j_probs.rename(columns={
             'product_i': 'product_j',
             'product_j': 'product_i',
@@ -43,7 +94,7 @@ def compute_hybrid_substitution_score(product_df, pairwise_df, sampled_products,
         product_probs_df['conditional'] = product_probs_df.apply(lambda x: ((x.P_ij / x.P_i) + (x.P_ij / x.P_j)) / 2, axis=1)
         product_probs_df['substitution_index'] = product_probs_df.apply(lambda x: ((x.P_i * x.P_j) - x.P_ij) / (x.P_i * x.P_j), axis=1)
 
-         # Compute similarity weight
+        # Determine similarity weight
         def get_similarity_weight(x):
             if x.product_dept == x.substitute_dept:
                 if x.product_aisle == x.substitute_aisle:
@@ -62,7 +113,7 @@ def compute_hybrid_substitution_score(product_df, pairwise_df, sampled_products,
             else:
                 product_probs_df[col] = 0.0
 
-        # Weighted hybrid score
+        # Calculate weighted hybrid score
         product_probs_df['score'] = (
             (weight_si * product_probs_df['substitution_index'] -
              weight_jc * product_probs_df['jaccard'] -
@@ -70,7 +121,7 @@ def compute_hybrid_substitution_score(product_df, pairwise_df, sampled_products,
             * product_probs_df['similarity_weight']
         )
 
-        # Rank
+        # Rank substitutes
         product_probs_df = product_probs_df.dropna(subset=['score'])
         product_probs_df['rank'] = product_probs_df['score'].rank(method='dense', ascending=False).astype(int)
         
