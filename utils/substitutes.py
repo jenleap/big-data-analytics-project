@@ -235,7 +235,7 @@ def find_best_threshold(df, score_col='score', label_col='valid_substitution', n
     return adjusted_threshold
 
 
-def compute_transferability(orders_df, subs_df, top_n=None):
+def compute_transferability(orders_df, subs_df, alpha=0.7, beta=0.3,top_n=None):
     """
     Compute transferability % (DTR) for identified substitutes.
     
@@ -254,7 +254,7 @@ def compute_transferability(orders_df, subs_df, top_n=None):
         DataFrame with columns ['product_id', 'substitute_id', 'transferability_pct']
     """
     
-    # Step 1: Get orders per product
+    # Get orders per product
     product_orders = orders_df.groupby('product_id')['order_id'].apply(set)
     
     # Initialize list for results
@@ -276,28 +276,31 @@ def compute_transferability(orders_df, subs_df, top_n=None):
         transfer_orders = orders_sub - orders_prod
         # Normalize by the demand of the focus product
         raw_dtr = len(transfer_orders) / len(orders_prod) if len(orders_prod) > 0 else 0
+
+        hybrid_dtr = alpha * raw_dtr + beta * row['score']
         
         results.append({
             'product_id': prod,
             'substitute_id': sub,
-            'raw_dtr': raw_dtr
+            'raw_dtr': raw_dtr,
+            'hybrid_dtr': hybrid_dtr
         })
     
     dtr_df = pd.DataFrame(results)
     
-    # Step 2: Normalize DTR per product to sum to ≤ 1 (transferability %)
+    # Normalize DTR per product to sum to ≤ 1 (transferability %)
     dtr_df['transferability_pct'] = 0.0
     for prod, group in dtr_df.groupby('product_id'):
-        total = group['raw_dtr'].sum()
+        total = group['hybrid_dtr'].sum()
         if total > 0:
-            dtr_df.loc[group.index, 'transferability_pct'] = group['raw_dtr'] / total
+            dtr_df.loc[group.index, 'transferability_pct'] = group['hybrid_dtr'] / total
     
-    # Step 3: Optionally keep top N substitutes
+    # Optionally keep top N substitutes
     if top_n is not None:
         dtr_df = dtr_df.sort_values(['product_id','transferability_pct'], ascending=[True, False])
         dtr_df = dtr_df.groupby('product_id').head(top_n).reset_index(drop=True)
     
-    return dtr_df[['product_id', 'substitute_id', 'transferability_pct']]
+    return dtr_df[['product_id', 'substitute_id', 'transferability_pct', 'raw_dtr', 'hybrid_dtr']]
 
 
 
