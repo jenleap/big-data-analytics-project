@@ -7,8 +7,8 @@ import psutil, os
 from sklearn.metrics import f1_score
 
 
-def compute_sub_score_by_dept(product_df, pairwise_df, sampled_products, file_path, weight_si=0.5, weight_jc=0.25,
-                                      weight_cond=0.15, weight_aisle=0.2, weight_pen=0.2):
+def compute_sub_score_by_dept(product_df, pairwise_df, sampled_products, similarity_df, file_path, weight_si=0.35, weight_jc=0.15,
+                                      weight_cond=0.10, weight_aisle=0.2, weight_pen=0.2, weight_name=0.4):
     """
     Compute a hybrid substitution score for product pairs and save the top substitutes to a CSV file.
 
@@ -83,6 +83,18 @@ def compute_sub_score_by_dept(product_df, pairwise_df, sampled_products, file_pa
         if product_probs_df.empty:
             continue
 
+        # Merge product similarity 
+        product_probs_df = product_probs_df.merge(
+            similarity_df,
+            on=['product_i', 'product_j'],
+            how='left'
+        ).rename(columns={'combined': 'name_similarity'})
+
+    
+
+        # Fill missing similarities with 0
+        product_probs_df['name_similarity'] = product_probs_df['name_similarity'].fillna(0)
+
          # Merge department and aisle info
         product_probs_df = product_probs_df.merge(
             product_df[['product_id', 'department_id', 'aisle_id']],
@@ -147,6 +159,7 @@ def compute_sub_score_by_dept(product_df, pairwise_df, sampled_products, file_pa
             (weight_si * product_probs_df['substitution_index']) 
             - (weight_jc * product_probs_df['jaccard']) 
             - (weight_cond * product_probs_df['conditional'])
+            + (weight_name * product_probs_df['name_similarity'])
         )
 
         product_probs_df['score'] = linear_score * (
@@ -259,8 +272,12 @@ def compute_transferability(orders_df, subs_df, alpha=0.7, beta=0.3,top_n=None):
     
     # Initialize list for results
     results = []
+
+    filtered_df = subs_df[subs_df["identified_substitute"] == True]
+    # Drop duplicates for the same product-substitute pair
+    filtered_df = filtered_df.drop_duplicates(subset=['product_id', 'substitute_id'])
     
-    for _, row in subs_df.iterrows():
+    for _, row in filtered_df.iterrows():
         prod = row['product_id']
         sub = row['substitute_id']
         
@@ -283,7 +300,8 @@ def compute_transferability(orders_df, subs_df, alpha=0.7, beta=0.3,top_n=None):
             'product_id': prod,
             'substitute_id': sub,
             'raw_dtr': raw_dtr,
-            'hybrid_dtr': hybrid_dtr
+            'hybrid_dtr': hybrid_dtr,
+            'score': row['score']
         })
     
     dtr_df = pd.DataFrame(results)
@@ -300,7 +318,7 @@ def compute_transferability(orders_df, subs_df, alpha=0.7, beta=0.3,top_n=None):
         dtr_df = dtr_df.sort_values(['product_id','transferability_pct'], ascending=[True, False])
         dtr_df = dtr_df.groupby('product_id').head(top_n).reset_index(drop=True)
     
-    return dtr_df[['product_id', 'substitute_id', 'transferability_pct', 'raw_dtr', 'hybrid_dtr']]
+    return dtr_df[['product_id', 'substitute_id', 'transferability_pct', 'raw_dtr', 'hybrid_dtr', 'score']]
 
 
 

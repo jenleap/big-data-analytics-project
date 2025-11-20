@@ -61,6 +61,8 @@ def compute_pairwise_probabilities_sample(
         co_df['P_j'] = co_df['product_j_idx'].map(p_i_dict)
 
         co_df = co_df[['product_i', 'product_j', 'P_i', 'P_j', 'P_ij']]
+        co_df["P_ij"] = co_df["P_ij"].clip(lower=0)
+
 
         if output_csv:
             co_df.to_csv(output_csv, mode="a", index=False, header=False)

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complements Visualization</title>
+
+  <!-- vis-network for Graph -->
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background: #fafafa;
+    }
+    h2 { margin-bottom: 0.5rem; }
+    select, button {
+      margin: 0.5rem 0;
+      padding: 0.4rem 0.6rem;
+      font-size: 1rem;
+    }
+    #chart {
+      width: 100%;
+      height: 600px;
+      margin-top: 2rem;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    #controls {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <h2>Product Complement Explorer</h2>
+
+  <div id="controls">
+    <div>
+      <label for="dept">Department:</label><br />
+      <select id="dept">
+        <option value="">Select Department</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="product">Product:</label><br />
+      <select id="product" disabled>
+        <option value="">Select Product</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="chart"></div>
+
+  <script>
+    let departments, aisles, products, substitutes;
+
+    async function loadJSON(file) {
+      const response = await fetch(file);
+      return await response.json();
+    }
+
+    async function init() {
+      [departments, products, substitutes] = await Promise.all([
+        loadJSON('../json/sample-departments.json'),
+        loadJSON('../json/product-lookup.json'),
+        loadJSON('../json/complements.json')
+      ]);
+      populateDepartments();
+    }
+
+    function populateDepartments() {
+      const deptSelect = document.getElementById('dept');
+      for (const dept of departments) {
+        const opt = document.createElement('option');
+        opt.value = dept.department_id;
+        opt.textContent = dept.department;
+        deptSelect.appendChild(opt);
+      }
+      deptSelect.addEventListener('change', onDeptChange);
+    }
+
+    function onDeptChange() {
+      const deptId = parseInt(this.value);
+      const productSelect = document.getElementById('product');
+      productSelect.innerHTML = '<option value="">Select Product</option>';
+
+      if (!deptId) {
+        productSelect.disabled = true;
+        return;
+      }
+      const dept = departments.find(d => d.department_id === deptId);
+      for (const prod of dept.products) {
+        const opt = document.createElement('option');
+        opt.value = prod.product_id;
+        opt.textContent = prod.product_name;
+        productSelect.appendChild(opt);
+      }
+      productSelect.disabled = false;
+      productSelect.addEventListener('change', onProductChange);
+    }
+
+    function onProductChange() {
+      const productId = this.value;
+      if (!productId) return;
+      const subs = substitutes[productId];
+      if (!subs) {
+        alert('No complements found for this product.');
+        return;
+      }
+      renderChart(productId, subs);
+    }
+
+    function renderChart(productId, subs) {
+      const productName = products[productId];
+      const substituteNames = subs.map(s => products[s.product_id]);
+
+      const chartDiv = document.getElementById('chart');
+      chartDiv.innerHTML = '';
+
+        renderNetwork(chartDiv, productName, substituteNames, subs);
+    }
+
+     function renderNetwork(container, productId,substituteNames, subs) {
+        const centerX = 0; // main node X
+        const centerY = 0; // main node Y
+        const radius = 200; // distance from the center
+        const n = subs.length;
+        // Build unique nodes
+        const nodesMap = {};
+        nodesMap[productId] = { 
+            id: String(productId), 
+            label: String(products[productId] || productId), 
+            color: '#1f77b4' 
+        };
+
+        subs.forEach((s, index) => {
+            const angle = (2 * Math.PI / n) * index; // evenly spaced around circle
+            const nodeId = String(s.product_id);
+
+            if (!nodesMap[nodeId]) {
+                const offset = (index%2 == 0) ? 10 : 0;
+                nodesMap[nodeId] = {
+                    id: nodeId,
+                    label: String(products[s.product_id] || s.product_id),
+                    color: '#2ca02c',
+                    x: centerX + radius * Math.cos(angle),
+                    y: centerY + radius * Math.sin(angle),
+                    fixed: true
+                };
+            }
+        });
+
+        const nodes = Object.values(nodesMap);
+        console.log(subs)
+        // Create edges
+        const edges = subs.map(s => ({
+            from: String(productId),
+            to: String(s.product_id),
+            value: s.CII
+        }));
+
+        const data = { nodes, edges };
+
+        const options = {
+            nodes: { 
+                shape: 'dot', 
+                size: 12, 
+                font: { size: 14, color: '#000000', face: 'Arial' } 
+            },
+            edges: { arrows: 'to', smooth: true },
+            physics: {
+                enabled: false
+            },
+            layout: {
+                hierarchical: false
+            }
+        };
+
+        new vis.Network(container, data, options);
+    } 
+
+    init();
+  </script>
+</body>
+</html>

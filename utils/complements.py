@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 import networkx as nx
+from tqdm import tqdm
 
 # optional: Louvain community detection
 try:
@@ -14,20 +15,44 @@ except Exception:
 # pairwise_df must contain: ['product_i','product_j','P_ij','P_i','P_j']
 # sampled_products: list-like of product ids to compute lift for (speeds up work)
 # -------------------------
-def compute_lift(sampled_products, pairwise_df):
+def compute_lift(sampled_products, pairwise_df, total_orders, 
+                 min_pij=1e-6, min_pi=1e-4, min_pj=1e-4, min_co_count=5, eps=1e-12):
     """
-    Returns DataFrame with columns: ['product_i','product_j','P_ij','lift']
+    Compute lift and b_complementarity for sampled products with robust filtering.
+    
+    Parameters:
+    -----------
+    sampled_products : list
+        List of product_ids to compute complements for.
+    pairwise_df : pd.DataFrame
+        DataFrame with columns ['product_i','product_j','P_i','P_j','P_ij']
+    total_orders : int
+        Total number of orders in the dataset (for co-occurrence count)
+    min_pij : float
+        Minimum P_ij to include in calculations
+    min_pi : float
+        Minimum P_i to include in calculations
+    min_pj : float
+        Minimum P_j to include in calculations
+    min_co_count : int
+        Minimum number of co-occurrences to include
+    eps : float
+        Small value to avoid division by zero in b_complementarity
+    
+    Returns:
+    --------
+    pd.DataFrame
+        Columns: ['product_i','product_j','P_ij','co_count','lift','b_complementarity']
     """
     rows = []
-    # group for faster lookup
     g_i = pairwise_df.groupby("product_i")
     g_j = pairwise_df.groupby("product_j")
 
-    for pid in sampled_products:
+    for pid in tqdm(sampled_products, desc="Computing lift"):
         df_i = g_i.get_group(pid) if pid in g_i.groups else pd.DataFrame()
         df_j = g_j.get_group(pid) if pid in g_j.groups else pd.DataFrame()
 
-        # reverse df_j so joins align as (product_i, product_j)
+        # Reverse df_j so joins align as (product_i, product_j)
         df_j_rev = df_j.rename(columns={
             'product_i': 'product_j',
             'product_j': 'product_i',
@@ -39,25 +64,79 @@ def compute_lift(sampled_products, pairwise_df):
         if combined.empty:
             continue
 
-        # safe compute lift
+        # Filter by min P_ij
+        combined = combined[combined['P_ij'] >= min_pij]
+
+        # Compute co-occurrence count
+        combined['co_count'] = (combined['P_ij'] * total_orders).astype(int)
+
+        # Filter by minimum co-occurrence
+        combined = combined[combined['co_count'] >= min_co_count]
+
+        # Filter by minimum product probabilities
+        combined = combined[(combined['P_i'] >= min_pi) & (combined['P_j'] >= min_pj)]
+        if combined.empty:
+            continue
+
+        # Compute lift safely
         combined['lift'] = combined.apply(
-            lambda r: (r['P_ij'] / (r['P_i'] * r['P_j'])) if (r.get('P_i',0) * r.get('P_j',0)) > 0 else 0,
+            lambda r: (r['P_ij'] / (r['P_i'] * r['P_j'])) if (r['P_i'] * r['P_j']) > 0 else 0,
             axis=1
         )
 
-        rows.append(combined[['product_i','product_j','P_ij','lift']])
+        # Compute b_complementarity with small epsilon to avoid -1 or division by zero
+        combined['b_complementarity'] = combined.apply(
+            lambda r: ((r['P_ij']/r['P_j'] - r['P_i']) / (r['P_ij']/r['P_j'] + r['P_i'] + eps))
+            if r['P_j'] > 0 else 0,
+            axis=1
+        )
+
+        rows.append(combined[['product_i','product_j','P_ij','co_count','lift','b_complementarity']])
 
     if not rows:
-        return pd.DataFrame(columns=['product_i','product_j','P_ij','lift'])
+        return pd.DataFrame(columns=['product_i','product_j','P_ij','co_count','lift','b_complementarity'])
     return pd.concat(rows, ignore_index=True)
 
+def compute_hybrid_score(pairwise_df, focus_products=None, top_n=None):
+    """
+    Compute hybrid score = normalized(lift) * normalized(b_complementarity)
+    Optionally return top_n complements per product.
+    """
+    from sklearn.preprocessing import MinMaxScaler
+
+    df = pairwise_df.copy()
+    
+    # filter focus products
+    if focus_products is not None:
+        df = df[df['product_i'].isin(focus_products)]
+
+    # normalize lift and b_complementarity
+    scaler = MinMaxScaler()
+    df[['lift_norm','bcomp_norm']] = scaler.fit_transform(df[['lift','b_complementarity']])
+    
+    # compute hybrid
+    df['hybrid_score'] = df['lift_norm'] * df['bcomp_norm']
+    
+    # get top_n per product
+    if top_n is not None:
+        df['rank'] = df.groupby('product_i')['hybrid_score'].rank(method='first', ascending=False)
+        df = df[df['rank'] <= top_n].copy()
+        df = df.sort_values(['product_i','rank']).reset_index(drop=True)
+    
+    # rename columns for consistency
+    df = df.rename(columns={
+        'product_i': 'product_id',
+        'product_j': 'complement_id'
+    })
+
+    return df[['product_id','complement_id','lift','b_complementarity','hybrid_score']]
 
 # -------------------------
 # 2) Build network + compute CII + produce complements_df (keeps P_ij)
 # pairwise_lift_df: output of compute_lift (contains product_i/product_j/P_ij/lift)
 # -------------------------
 def compute_complements_and_cii(pairwise_lift_df, lift_threshold=3, support_threshold=5e-7,
-                                cumulative_cutoff=0.8, alpha=None):
+                                cumulative_cutoff=0.8, alpha=None, top_n=None):
     """
     Returns complements_df with columns:
     ['product_id','complement_id','lift','P_ij','cluster','weighted_degree','betweenness',
@@ -147,7 +226,13 @@ def compute_complements_and_cii(pairwise_lift_df, lift_threshold=3, support_thre
         nbrs = [(nbr, G[node][nbr]['weight'], G[node][nbr].get('P_ij', np.nan)) for nbr in G[node]]
         if not nbrs:
             continue
+        # sort by lift descending
         nbrs.sort(key=lambda x: x[1], reverse=True)
+
+        # limit to top_n if specified
+        if top_n is not None:
+            nbrs = nbrs[:top_n]
+
         total = sum(w for _, w, _ in nbrs)
         cum = 0.0
         for nbr, w, pij in nbrs:
