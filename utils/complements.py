@@ -131,132 +131,106 @@ def compute_hybrid_score(pairwise_df, focus_products=None, top_n=None):
 
     return df[['product_id','complement_id','lift','b_complementarity','hybrid_score']]
 
-# -------------------------
-# 2) Build network + compute CII + produce complements_df (keeps P_ij)
-# pairwise_lift_df: output of compute_lift (contains product_i/product_j/P_ij/lift)
-# -------------------------
-def compute_complements_and_cii(pairwise_lift_df, lift_threshold=3, support_threshold=5e-7,
-                                cumulative_cutoff=0.8, alpha=None, top_n=None):
+def compute_complement_impact_index(complements_df, pairwise_df, r=0.3):
     """
-    Returns complements_df with columns:
-    ['product_id','complement_id','lift','P_ij','cluster','weighted_degree','betweenness',
-     'cohesion','cross_cluster_ratio','CII']
+    Computes impact percentage and impact index for complement pairs.
+
+    Inputs:
+        complements_df columns:
+            product_id (i), complement_id (j)
+        pairwise_df columns:
+            product_i, product_j, P_i, P_j, P_ij
+
+    Returns:
+        DataFrame with:
+            product_i, product_j, P_i, P_j, P_ij,
+            impact_pct_j,
+            impact_index_j
     """
-    alpha = alpha or {'lift':0.4, 'centrality':0.3, 'cohesion':0.2, 'cross_cluster':0.1}
 
-    # ensure expected columns exist
-    for c in ['product_i','product_j','P_ij','lift']:
-        if c not in pairwise_lift_df.columns:
-            raise ValueError(f"pairwise_lift_df missing required column: {c}")
-
-    # filter
-    edges = pairwise_lift_df[
-        (pairwise_lift_df['lift'] > lift_threshold) &
-        (pairwise_lift_df['P_ij'] > support_threshold)
-    ].dropna(subset=['lift']).copy()
-
-    # build graph (undirected), store weight and P_ij as edge attrs
-    G = nx.Graph()
-    for _, r in edges.iterrows():
-        u, v = int(r['product_i']), int(r['product_j'])
-        # if same edge seen multiple times, keep max lift (or sum - we choose max)
-        if G.has_edge(u, v):
-            # keep larger lift and P_ij of that largest lift row
-            if r['lift'] > G[u][v]['weight']:
-                G[u][v]['weight'] = float(r['lift'])
-                G[u][v]['P_ij'] = float(r['P_ij'])
-        else:
-            G.add_edge(u, v, weight=float(r['lift']), P_ij=float(r['P_ij']))
-
-    # detect communities
-    if community_louvain:
-        partition = community_louvain.best_partition(G, weight='weight')
-    else:
-        partition = {n: None for n in G.nodes()}
-
-    # compute metrics once
-    weighted_degree = dict(G.degree(weight='weight'))
-    betweenness = nx.betweenness_centrality(G, weight='weight', normalized=True)
-
-    cohesion_scores = {}
-    cross_cluster_ratios = {}
-
-    for node in G.nodes():
-        neighbors = list(G.neighbors(node))
-        if len(neighbors) < 2:
-            cohesion_scores[node] = 0.0
-            cross_cluster_ratios[node] = 0.0
-            continue
-        sub = G.subgraph(neighbors)
-        possible = len(neighbors) * (len(neighbors) - 1) / 2
-        cohesion_scores[node] = (sub.number_of_edges() / possible) if possible > 0 else 0.0
-        node_cluster = partition.get(node)
-        cross_cluster_links = sum(1 for n in neighbors if partition.get(n) != node_cluster)
-        cross_cluster_ratios[node] = cross_cluster_links / len(neighbors)
-
-    # metrics dataframe
-    metrics_df = pd.DataFrame({
-        'product_id': list(G.nodes()),
-        'weighted_degree': pd.Series(weighted_degree),
-        'betweenness': pd.Series(betweenness),
-        'cohesion': pd.Series(cohesion_scores),
-        'cross_cluster_ratio': pd.Series(cross_cluster_ratios),
-        'cluster': [partition.get(n) for n in G.nodes()]
-    }).fillna(0)
-
-    # normalize
-    for col in ['weighted_degree','betweenness','cohesion','cross_cluster_ratio']:
-        rng = metrics_df[col].max() - metrics_df[col].min()
-        if rng <= 0:
-            metrics_df[col] = 0.0
-        else:
-            metrics_df[col] = (metrics_df[col] - metrics_df[col].min()) / (rng + 1e-9)
-
-    # compute CII
-    metrics_df['CII'] = (
-        alpha.get('lift',0.4) * metrics_df['weighted_degree'] +
-        alpha.get('centrality',0.3) * metrics_df['betweenness'] +
-        alpha.get('cohesion',0.2) * (1 - metrics_df['cohesion']) +
-        alpha.get('cross_cluster',0.1) * metrics_df['cross_cluster_ratio']
+    # Merge pairwise probabilities only for known complements
+    df = complements_df.merge(
+        pairwise_df,
+        left_on=['product_id', 'complement_id'],
+        right_on=['product_i', 'product_j'],
+        how='left'
     )
 
-    # Build complements list (retain P_ij by looking up edge attr)
-    complements = []
-    for node in G.nodes():
-        nbrs = [(nbr, G[node][nbr]['weight'], G[node][nbr].get('P_ij', np.nan)) for nbr in G[node]]
-        if not nbrs:
-            continue
-        # sort by lift descending
-        nbrs.sort(key=lambda x: x[1], reverse=True)
+    # Probability that j depends on i
+    df['P_i_given_j'] = df['P_ij'] / df['P_j']
 
-        # limit to top_n if specified
-        if top_n is not None:
-            nbrs = nbrs[:top_n]
+    # Impact percentage (0–100% of j's demand at risk)
+    df['impact_pct_j'] = 100 * df['P_i_given_j']
 
-        total = sum(w for _, w, _ in nbrs)
-        cum = 0.0
-        for nbr, w, pij in nbrs:
-            cum += w
-            complements.append({
-                'product_id': int(node),
-                'complement_id': int(nbr),
-                'lift': float(w),
-                'P_ij': float(pij) if not np.isnan(pij) else np.nan,
-                'cluster': partition.get(node)
-            })
-            if total > 0 and (cum / total) >= cumulative_cutoff:
-                break
+    # Impact index (0–1 scaled)
+    df['impact_index_j'] = r * df['P_i_given_j']
 
-    complements_df = pd.DataFrame(complements)
-    if complements_df.empty:
-        return complements_df  # no complements found
+    return df.sort_values(
+        ['product_i', 'impact_index_j'],
+        ascending=[True, False]
+    )
 
-    # join metrics and CII
-    complements_df = complements_df.merge(metrics_df, left_on='product_id', right_on='product_id', how='left')
+def build_complement_network(complements_df, weight_col="lift"):
+    """
+    Build weighted directed graph where i -> j means j is a complement of i.
+    """
+    G = nx.DiGraph()
 
-    # sort
-    complements_df = complements_df.sort_values(['product_id','lift'], ascending=[True,False]).reset_index(drop=True)
-    return complements_df
+    for _, r in complements_df.iterrows():
+        i = r['product_id']
+        j = r['complement_id']
+        w = r.get(weight_col, 1.0)
+        G.add_edge(i, j, weight=w)
+
+    return G
+
+def compute_network_enhanced_impact(
+    complements_df,
+    pairwise_df,
+    weight_col="lift",
+    r=0.3, 
+    lambda_pr=0.5,
+    lambda_deg=0.3,
+    lambda_bc=0.2
+):
+    # Step 1: Merge pairwise probabilities
+    """  df = complements_df.merge(
+        pairwise_df,
+        left_on=['product_id', 'complement_id'],
+        right_on=['product_i', 'product_j'],
+        how='left'
+    ) """
+
+    df = complements_df.copy()
+
+    df['P_i_given_j'] = df['P_ij'] / df['P_j']
+    df['impact_pct_j'] = 100 * df['P_i_given_j']
+
+    # Step 2: Build network
+    G = build_complement_network(complements_df, weight_col)
+
+    # Step 3: Network scores
+    pr = nx.pagerank(G, weight='weight')
+    deg = dict(G.in_degree(weight='weight'))
+    bc = nx.betweenness_centrality(G, weight='weight', normalized=True)
+
+    df['pagerank_j'] = df['product_j'].map(pr)
+    df['indegree_j'] = df['product_j'].map(deg)
+    df['betweenness_j'] = df['product_j'].map(bc)
+
+    # Step 4: Enhanced impact
+    df['impact_index_j'] = (
+        r * df['P_i_given_j'] *
+        (1 +
+         lambda_pr * df['pagerank_j'] +
+         lambda_deg * df['indegree_j'] +
+         lambda_bc * df['betweenness_j'])
+    )
+
+    return df.sort_values(
+        ['product_i', 'impact_index_j'],
+        ascending=[True, False]
+    )
 
 
 # -------------------------
