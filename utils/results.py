@@ -22,12 +22,48 @@ def show_all_complements_tables(df):
 
         # Build display table
         table = (
-            group[["comp_name", "hybrid_score", "aisle"]]
-            .sort_values("hybrid_score", ascending=False)
+            group[["comp_name", "impact_index_j", "aisle"]]
+            .sort_values("impact_index_j", ascending=False)
             .reset_index(drop=True)
         )
 
         display(table)
+
+def show_comp_results(results):
+    product_info = pd.read_csv('../dataset/products.csv')
+    aisle_info = pd.read_csv('../dataset/aisles.csv')
+
+    # Select only product_id + product_name from info DF
+    df_info_min = product_info[["product_id", "product_name"]].copy()
+
+    # 1. Merge to add product_name
+    df_merged = results.merge(
+        df_info_min,
+        on="product_id",
+        how="left"
+    )
+
+    df_info = product_info[["product_id", "product_name", "aisle_id"]].copy()
+    aisle_info = aisle_info[["aisle_id", "aisle"]].copy()
+
+    df_info = df_info.merge(aisle_info, on="aisle_id", how="left")
+
+    # 2. Prepare a renamed version for substitute names
+    df_info_comp = df_info.rename(
+        columns={
+            "product_id": "complement_id",
+            "product_name": "comp_name"
+        }
+    )
+
+    # 3. Merge to add sub_name
+    df_merged = df_merged.merge(
+        df_info_comp,
+        on="complement_id",
+        how="left"
+    )
+
+    show_all_complements_tables(df_merged)
 
 
 def show_all_substitute_tables(df):
@@ -50,12 +86,121 @@ def show_all_substitute_tables(df):
 
         # Build display table
         table = (
-            group[["sub_name", "transferability_pct", "aisle"]]
+            group[["sub_name", "transferability_pct", "score", "aisle"]]
             .sort_values("transferability_pct", ascending=False)
             .reset_index(drop=True)
         )
 
         display(table)
+
+def show_sub_results(results):
+    product_info = pd.read_csv('../dataset/products.csv')
+    aisle_info = pd.read_csv('../dataset/aisles.csv')
+
+    # Select only product_id + product_name from info DF
+    df_info_min = product_info[["product_id", "product_name"]].copy()
+
+    # 1. Merge to add product_name
+    df_merged = results.merge(
+        df_info_min,
+        on="product_id",
+        how="left"
+    )
+
+    df_info = product_info[["product_id", "product_name", "aisle_id"]].copy()
+    aisle_info = aisle_info[["aisle_id", "aisle"]].copy()
+
+    df_info = df_info.merge(aisle_info, on="aisle_id", how="left")
+
+    # 2. Prepare a renamed version for substitute names
+    df_info_sub = df_info.rename(
+        columns={
+            "product_id": "substitute_id",
+            "product_name": "sub_name"
+        }
+    )
+
+    # 3. Merge to add sub_name
+    df_merged = df_merged.merge(
+        df_info_sub,
+        on="substitute_id",
+        how="left"
+    )
+
+    show_all_substitute_tables(df_merged)
+
+
+def compute_delist_risk(
+    df,
+    complement_impact_col="total_impact_norm",
+    transferability_col="transferability_pct",
+    penetration_col="order_penetration_pct",
+    weights=None,
+    bins=[0, 0.33, 0.66, 1.0],
+    labels=["LOW", "MEDIUM", "HIGH"]
+):
+    """
+    Compute delist risk (LOW / MEDIUM / HIGH) based on three metrics:
+    - complement impact
+    - transferability %
+    - order penetration %
+
+    Parameters:
+    ----------
+    df : pd.DataFrame
+        Must contain the three metrics columns.
+    complement_impact_col : str
+        Column name for total complement impact index (normalized 0-1)
+    transferability_col : str
+        Column name for transferability percentage (0-1)
+    penetration_col : str
+        Column name for order penetration percentage (0-1)
+    weights : list or tuple of 3 floats
+        Weights for [complement impact, order penetration, 1-transferability]
+        If None, defaults to equal weights [1/3, 1/3, 1/3]
+    bins : list
+        Cut points for LOW / MEDIUM / HIGH
+    labels : list
+        Labels for each bin
+
+    Returns:
+    -------
+    pd.DataFrame
+        Original dataframe + 
+        'delist_score' (0-1 numeric) and 
+        'delist_risk' (categorical LOW/MEDIUM/HIGH)
+    """
+    
+    df = df.copy()
+    
+    # Step 1: normalize each metric to 0-1 if not already
+    def minmax_norm(x):
+        if x.max() == x.min():
+            return np.zeros_like(x)
+        return (x - x.min()) / (x.max() - x.min())
+    
+    comp_norm = minmax_norm(df[complement_impact_col])
+    pen_norm = minmax_norm(df[penetration_col])
+    
+    # Invert transferability so higher = higher risk
+    trans_norm = 1 - minmax_norm(df[transferability_col])
+    
+    # Step 2: apply weights
+    if weights is None:
+        weights = [1/3, 1/3, 1/3]
+    w_comp, w_pen, w_trans = weights
+    
+    df['delist_score'] = (
+        w_comp * comp_norm +
+        w_pen * pen_norm +
+        w_trans * trans_norm
+    )
+    
+    # Step 3: assign LOW / MEDIUM / HIGH
+    df['delist_risk'] = pd.cut(df['delist_score'], bins=bins, labels=labels, include_lowest=True)
+    
+    return df
+
 
 def simulate_delisting_extended(
     complements_df,

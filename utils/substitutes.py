@@ -7,8 +7,8 @@ import psutil, os
 from sklearn.metrics import f1_score
 
 
-def compute_sub_score_by_dept(product_df, pairwise_df, sampled_products, similarity_df, file_path, weight_si=0.35, weight_jc=0.15,
-                                      weight_cond=0.10, weight_aisle=0.2, weight_pen=0.2, weight_name=0.4):
+def compute_sub_score(product_df, pairwise_df, sampled_products, similarity_df, file_path, weight_si=0.4,
+                                      weight_pen=0.1, weight_name=0.6):
     """
     Compute a hybrid substitution score for product pairs and save the top substitutes to a CSV file.
 
@@ -62,7 +62,7 @@ def compute_sub_score_by_dept(product_df, pairwise_df, sampled_products, similar
     """
         
     with open(file_path, "w") as f:
-        f.write("product_id,substitute_id,score,rank,jaccard,conditional,penetration_similarity,substitution_index,same_department,same_aisle,valid_substitution,possible_substitution\n")
+        f.write("product_id,substitute_id,score,rank,substitution_index\n")
 
     pairwise_df_i = pairwise_df.groupby("product_i")
     pairwise_df_j = pairwise_df.groupby("product_j")
@@ -90,8 +90,6 @@ def compute_sub_score_by_dept(product_df, pairwise_df, sampled_products, similar
             how='left'
         ).rename(columns={'combined': 'name_similarity'})
 
-    
-
         # Fill missing similarities with 0
         product_probs_df['name_similarity'] = product_probs_df['name_similarity'].fillna(0)
 
@@ -106,29 +104,13 @@ def compute_sub_score_by_dept(product_df, pairwise_df, sampled_products, similar
             left_on='product_j', right_on='product_id', how='left'
         ).rename(columns={'department_id': 'substitute_dept', 'aisle_id': 'substitute_aisle'}).drop(columns=['product_id'])
 
-        # Restrict to same department only
-        product_probs_df = product_probs_df[product_probs_df["product_dept"] == product_probs_df["substitute_dept"]]
+        # Restrict to same aisle only
+        product_probs_df = product_probs_df[product_probs_df["product_aisle"] == product_probs_df["substitute_aisle"]]
         if product_probs_df.empty:
             continue
 
         # Compute metrics
-        product_probs_df['jaccard'] = product_probs_df.apply(lambda x: x.P_ij / (x.P_i + x.P_j - x.P_ij), axis=1)
-        product_probs_df['conditional'] = product_probs_df.apply(lambda x: ((x.P_ij / x.P_i) + (x.P_ij / x.P_j)) / 2, axis=1)
         product_probs_df['substitution_index'] = product_probs_df.apply(lambda x: ((x.P_i * x.P_j) - x.P_ij) / (x.P_i * x.P_j), axis=1)
-
-        # Aisle similarity
-        product_probs_df['aisle_similarity'] = product_probs_df.apply(lambda x: 1 if x['product_aisle'] == x['substitute_aisle']else 0, axis=1)
-
-        # cosine similarity helper
-        def cosine_similarity(op_i, up_i, op_j, up_j):
-            v_i = np.array([op_i, up_i])
-            v_j = np.array([op_j, up_j])
-            n_i = np.linalg.norm(v_i)
-            n_j = np.linalg.norm(v_j)
-            if n_i == 0 or n_j == 0:
-                return 0.0
-            sim = np.dot(v_i, v_j) / (n_i * n_j)
-            return max(0.0, min(1.0, sim))  # clamp 0–1
         
         # Penetration-based similarity weight (cosine)
         op_map = product_df.set_index("product_id")["order_penetration_pct"].to_dict()
@@ -139,13 +121,11 @@ def compute_sub_score_by_dept(product_df, pairwise_df, sampled_products, similar
         product_probs_df["op_j"] = product_probs_df["product_j"].map(op_map)
         product_probs_df["up_j"] = product_probs_df["product_j"].map(up_map)
 
-        product_probs_df["penetration_similarity"] = product_probs_df.apply(
-            lambda x: cosine_similarity(x.op_i, x.up_i, x.op_j, x.up_j),
-            axis=1
-        )
+        # Boost using a combination of order penetration and user penetration of the substitute product
+        product_probs_df["penetration_boost"] = 0.5 * product_probs_df["op_j"] + 0.5 * product_probs_df["up_j"]
 
         # Normalize
-        for col in ['jaccard', 'conditional', 'substitution_index', 'penetration_similarity']:
+        for col in ['substitution_index', 'penetration_boost']:
             min_val = product_probs_df[col].min()
             max_val = product_probs_df[col].max()
             if max_val - min_val != 0:
@@ -157,16 +137,10 @@ def compute_sub_score_by_dept(product_df, pairwise_df, sampled_products, similar
         # Calculate weighted hybrid score
         linear_score = (
             (weight_si * product_probs_df['substitution_index']) 
-            - (weight_jc * product_probs_df['jaccard']) 
-            - (weight_cond * product_probs_df['conditional'])
             + (weight_name * product_probs_df['name_similarity'])
         )
 
-        product_probs_df['score'] = linear_score * (
-            1 + weight_aisle * product_probs_df['aisle_similarity'] 
-            + weight_pen * product_probs_df['penetration_similarity']
-        )
-
+        product_probs_df['score'] = linear_score * (1 + weight_pen * product_probs_df['penetration_boost'])
 
         # Rank substitutes
         product_probs_df = product_probs_df.dropna(subset=['score'])
@@ -181,27 +155,8 @@ def compute_sub_score_by_dept(product_df, pairwise_df, sampled_products, similar
             'product_j': 'substitute_id'
         })
 
-        dept_map = product_df.set_index('product_id')['department_id'].to_dict()
-        aisle_map = product_df.set_index('product_id')['aisle_id'].to_dict()
-
-        # Add department and aisle info to subs_df
-        top_substitutes_df['product_dept'] = top_substitutes_df['product_id'].map(dept_map)
-        top_substitutes_df['substitute_dept'] = top_substitutes_df['substitute_id'].map(dept_map)
-        top_substitutes_df['product_aisle'] = top_substitutes_df['product_id'].map(aisle_map)
-        top_substitutes_df['substitute_aisle'] = top_substitutes_df['substitute_id'].map(aisle_map)
-
-        # Check matches
-        top_substitutes_df['same_department'] = top_substitutes_df['product_dept'] == top_substitutes_df['substitute_dept']
-        top_substitutes_df['same_aisle'] = top_substitutes_df['product_aisle'] == top_substitutes_df['substitute_aisle']
-        top_substitutes_df['valid_substitution'] = top_substitutes_df['same_aisle']
-        top_substitutes_df['possible_substitution'] = top_substitutes_df['same_department']
-
         # Save results as CSV
-        columns_to_save = [
-            'product_id', 'substitute_id', 'score', 'rank',
-            'jaccard', 'conditional', 'penetration_similarity', 'substitution_index',
-            'same_department', 'same_aisle', 'valid_substitution', 'possible_substitution'
-        ]
+        columns_to_save = ['product_id', 'substitute_id', 'score', 'rank','substitution_index']
         top_substitutes_df = top_substitutes_df[columns_to_save]
         top_substitutes_df.to_csv(file_path, mode='a', index=False, header=False)
 
@@ -240,86 +195,55 @@ def find_best_threshold(df, score_col='score', label_col='valid_substitution', n
         if f1 > best_f1:
             best_f1 = f1
             best_threshold = t
-
-    adjusted_threshold = best_threshold + df[score_col].std() * 0.15
     
-    print(f" Best threshold determined as: {best_threshold:.3f} and adjusted to: {adjusted_threshold}\n")
+    print(f" Best threshold determined as: {best_threshold:.3f}\n")
 
-    return adjusted_threshold
+    return best_threshold
 
 
-def compute_transferability(orders_df, subs_df, alpha=0.7, beta=0.3,top_n=None):
+def compute_transferability(subs_df, top_n):
     """
-    Compute transferability % (DTR) for identified substitutes.
+    Compute transferability % (DTR) for identified substitutes using top-N max-score scaling.
     
     Parameters:
     -----------
-    orders_df : pd.DataFrame
-        order-level data with columns ['order_id', 'product_id'].
     subs_df : pd.DataFrame
-        Substitute pairs with columns ['product_id', 'substitute_id'].
+        Substitute pairs with columns ['product_id', 'substitute_id', 'score', 'identified_substitute'].
     top_n : int, optional
-        If specified, keeps only the top N substitutes per product by DTR.
+        If specified, keeps only the top N substitutes per product by score.
         
     Returns:
     --------
     dtr_df : pd.DataFrame
-        DataFrame with columns ['product_id', 'substitute_id', 'transferability_pct']
+        DataFrame with columns ['product_id', 'substitute_id', 'score', 'transferability_pct']
     """
     
-    # Get orders per product
-    product_orders = orders_df.groupby('product_id')['order_id'].apply(set)
+    # Filter identified substitutes and remove duplicates
+    filtered_df = subs_df[subs_df["identified_substitute"] == True].drop_duplicates(subset=['product_id', 'substitute_id'])
     
-    # Initialize list for results
     results = []
-
-    filtered_df = subs_df[subs_df["identified_substitute"] == True]
-    # Drop duplicates for the same product-substitute pair
-    filtered_df = filtered_df.drop_duplicates(subset=['product_id', 'substitute_id'])
     
-    for _, row in filtered_df.iterrows():
-        prod = row['product_id']
-        sub = row['substitute_id']
+    for prod, group in filtered_df.groupby('product_id'):
+        g = group.copy()
         
-        # Skip if product or substitute not in orders
-        if prod not in product_orders or sub not in product_orders:
-            continue
+        # Keep only top N
+        g = g.sort_values('score', ascending=False).head(top_n)
         
-        orders_prod = product_orders[prod]
-        orders_sub = product_orders[sub]
+        # Max score in top-N
+        max_score = g['score'].max()
+        total_score = g['score'].sum()
         
-        # Compute raw transferability: how often substitute appears in orders with product removed
-        # Orders that contain substitute but not the target product
-        transfer_orders = orders_sub - orders_prod
-        # Normalize by the demand of the focus product
-        raw_dtr = len(transfer_orders) / len(orders_prod) if len(orders_prod) > 0 else 0
-
-        hybrid_dtr = alpha * raw_dtr + beta * row['score']
+        # Avoid division by zero
+        if total_score > 0:
+            g['transferability_pct'] = g['score'] / total_score * max_score
+        else:
+            g['transferability_pct'] = 0.0
         
-        results.append({
-            'product_id': prod,
-            'substitute_id': sub,
-            'raw_dtr': raw_dtr,
-            'hybrid_dtr': hybrid_dtr,
-            'score': row['score']
-        })
+        results.append(g[['product_id', 'substitute_id', 'score', 'transferability_pct']])
     
-    dtr_df = pd.DataFrame(results)
+    dtr_df = pd.concat(results, ignore_index=True)
     
-    # Normalize DTR per product to sum to ≤ 1 (transferability %)
-    dtr_df['transferability_pct'] = 0.0
-    for prod, group in dtr_df.groupby('product_id'):
-        total = group['hybrid_dtr'].sum()
-        if total > 0:
-            dtr_df.loc[group.index, 'transferability_pct'] = group['hybrid_dtr'] / total
-    
-    # Optionally keep top N substitutes
-    if top_n is not None:
-        dtr_df = dtr_df.sort_values(['product_id','transferability_pct'], ascending=[True, False])
-        dtr_df = dtr_df.groupby('product_id').head(top_n).reset_index(drop=True)
-    
-    return dtr_df[['product_id', 'substitute_id', 'transferability_pct', 'raw_dtr', 'hybrid_dtr', 'score']]
-
+    return dtr_df
 
 
 def build_product_orders(orders_df):
@@ -374,7 +298,7 @@ def run_stability_test_on_sample(orders_df, sample_products, subs_df):
         subset_orders = orders_df[orders_df["order_id"].isin(ids)]
         po = build_product_orders(subset_orders)
         # compute transferability but only for sample products
-        dtr = compute_transferability(sample_products, subs_df, po)
+        dtr = compute_transferability(subs_df, 5)
         dtr["split"] = i
         if i == 0:
             df_all = dtr
@@ -452,7 +376,7 @@ def measure_efficiency_sample(orders_df, subs_df, sample_products, product_order
     proc = psutil.Process(os.getpid())
     mem_before = proc.memory_info().rss / (1024**2)
     t0 = time.time()
-    dtr = compute_transferability(sample_products, subs_df, product_orders)
+    dtr = compute_transferability(subs_df, 5)
     t1 = time.time()
     mem_after = proc.memory_info().rss / (1024**2)
     return {"runtime_s": t1 - t0, "mem_before_mb": mem_before, "mem_after_mb": mem_after, "mem_growth_mb": mem_after - mem_before, "n_rows": dtr.shape[0]}
@@ -470,7 +394,7 @@ def run_multiple_subsets_validation(orders_df, subs_df, transfer_df, n_subsets=5
         ss = seed + s
         sample = sample_products_for_validation(transfer_df, product_orders, n_products=sample_size, method=method, seed=ss)
         # compute transferability for only these products (fast)
-        transfer_sample = compute_transferability(sample, subs_df, product_orders)
+        transfer_sample = compute_transferability(subs_df, 5)
 
         # stability
         stab_mean, stab_std = run_stability_test_on_sample(orders_df, sample, subs_df)
