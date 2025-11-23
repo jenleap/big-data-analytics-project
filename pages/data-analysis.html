@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Analysis — Interactive Paper</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Data Exploration & Analysis</h1>
+    <nav>
+      <a href="../index.html" class="secondary-btn">← Back to Home</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="overview">
+      <h2>Dataset Overview</h2>
+      <p>
+        This project uses the Instacart Online Grocery Shopping Dataset. It contains over 3 million orders
+        from 206,000 users, covering 49,000 unique products across 21 departments and 134 aisles.
+      </p>
+    </section>
+
+    <section id="orders">
+      <h2>Orders Analysis</h2>
+      <p>Orders vary widely in size. Most customers make small, frequent purchases, while a few place large stock-up orders.</p>
+      <div id="orders-histogram" style="width:100%;max-width:800px;height:400px;"></div>
+    </section>
+
+    <section id="users">
+      <h2>User Behavior</h2>
+      <p>Users exhibit varied engagement and product diversity. Some are highly loyal and exploratory.</p>
+      <div id="users-histogram" style="width:100%;max-width:800px;height:400px;"></div>
+    </section>
+
+    <section id="products">
+      <h2>Product Popularity</h2>
+      <p>Few staples dominate, while most products are niche — a classic long-tail distribution.</p>
+      <div id="products-bar" style="width:100%;max-width:800px;height:400px;"></div>
+    </section>
+  </main>
+
+  <script>
+    // Example Plotly charts — replace with your actual data
+
+    // Orders histogram
+    Plotly.newPlot('orders-histogram', [{
+      x: [1,2,3,4,5,6,7,8,9,10],
+      y: [5,10,8,12,7,4,6,9,3,1],
+      type: 'bar'
+    }], { title: 'Order Sizes Distribution' });
+
+    // Users histogram
+    Plotly.newPlot('users-histogram', [{
+      x: [1,2,3,4,5,6,7,8,9,10],
+      y: [2,4,6,8,10,12,14,16,18,20],
+      type: 'bar'
+    }], { title: 'User Engagement Distribution' });
+
+    // Products bar chart
+    Plotly.newPlot('products-bar', [{
+      x: ['Bananas', 'Milk', 'Eggs', 'Bread', 'Apples'],
+      y: [1000, 950, 900, 800, 750],
+      type: 'bar'
+    }], { title: 'Top Product Popularity' });
+  </script>
+</body>
+</html>
