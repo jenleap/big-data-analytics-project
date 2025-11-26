@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Explorer</title>
+
+    <!-- Plotly for Sankey -->
+  <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+
+  <!-- vis-network for Graph -->
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background: #fafafa;
+    }
+    h2 { margin-bottom: 0.5rem; }
+    select, button {
+      margin: 0.5rem 0;
+      padding: 0.4rem 0.6rem;
+      font-size: 1rem;
+    }
+    #chart {
+      width: 100%;
+      height: 100%;
+      margin-top: 2rem;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    #controls {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <h2>Product Complement Explorer</h2>
+
+  <div id="controls">
+    <div>
+      <label for="product">Product:</label><br />
+      <select id="product">
+        <option value="">Select Product</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="chart">
+    <p>Select a product to view Substitutes and Complements.
+    </p>
+  </div>
+
+  <script>
+    let departments, aisles, products, substitutes;
+
+    async function loadJSON(file) {
+      const response = await fetch(file);
+      return await response.json();
+    }
+
+    async function init() {
+      [products] = await Promise.all([
+        loadJSON('../json/focus-products.json')
+      ]);
+      populateProducts();
+    }
+
+    function populateProducts() {
+      const productSelect = document.getElementById('product');
+      productSelect.innerHTML = '<option value="">Select Product</option>';
+
+      for (const prod of Object.keys(products)) {
+        const opt = document.createElement('option');
+        opt.value = prod
+        opt.textContent = products[prod].name;
+        productSelect.appendChild(opt);
+      }
+      productSelect.addEventListener('change', onProductChange);
+    }
+
+    function onProductChange() {
+      const productId = this.value;
+      renderChart(productId);
+    }
+
+    function renderChart(productId) {
+        const productName = products[productId].name;
+
+        const chartDiv = document.getElementById('chart');
+        chartDiv.innerHTML = '';
+
+        const header = document.createElement('h1');
+        header.textContent = productName;
+        chartDiv.append(header)
+
+        renderSankey(chartDiv, productId);
+        renderNetwork(chartDiv, productId);
+    }
+
+     function renderSankey(container, productId) {
+        const subDiv = document.createElement('div');
+        subDiv.style.width = '60%';
+        container.append(subDiv);
+
+        const productName = products[productId].name;
+        const subs = products[productId].subs
+        const substituteNames = subs.map(s => s.name)
+        const labels = [productName, ...substituteNames];
+        const sources = subs.map(() => 0);
+        const targets = subs.map((_, i) => i + 1);
+        const values = subs.map(s => Math.round(s.values[1] * 1000)/10);
+
+        const data = [{
+            type: 'sankey',
+            orientation: 'h',
+            node: {
+            pad: 15,
+            thickness: 20,
+            line: { color: 'black', width: 0.5 },
+            label: labels,
+            hovertemplate: "%{label}<br>Total score: %{customdata}<extra></extra>",
+            customdata: values
+            },
+            link: {
+            source: sources,
+            target: targets,
+            value: values,
+            hovertemplate: "%{source.label} → %{target.label}<br>Score: %{value}<extra></extra>"
+            }
+        }];
+
+        Plotly.newPlot(subDiv, data, { title: productName });
+    }
+
+     function renderNetwork(container, productId) {
+        const compDiv = document.createElement('div');
+        compDiv.style.height = '700px';
+        container.append(compDiv);
+
+        const comps = products[productId].comps
+
+        const centerX = 0; // main node X
+        const centerY = 0; // main node Y
+        const radius = 200; // distance from the center
+        const n = comps.length;
+        // Build unique nodes
+        const nodesMap = {};
+        nodesMap[productId] = { 
+            id: String(productId), 
+            label: String(products[productId].name || productId), 
+            color: '#1f77b4' 
+        };
+
+        comps.forEach((c, index) => {
+            const angle = (2 * Math.PI / n) * index; // evenly spaced around circle
+            const nodeId = String(c.id);
+
+            console.log(c)
+            if (!nodesMap[nodeId]) {
+                const offset = (index%2 == 0) ? 10 : 0;
+                nodesMap[nodeId] = {
+                    id: nodeId,
+                    label: c.name,
+                    color: '#2ca02c',
+                    x: centerX + radius * Math.cos(angle),
+                    y: centerY + radius * Math.sin(angle),
+                    fixed: true
+                };
+            }
+        });
+
+        const nodes = Object.values(nodesMap);
+
+        // Create edges
+        const edges = comps.map(c => ({
+            from: String(productId),
+            to: String(c.id),
+            value: c.values[1]
+        }));
+
+        const data = { nodes, edges };
+
+        const options = {
+            nodes: { 
+                shape: 'dot', 
+                size: 12, 
+                font: { size: 14, color: '#000000', face: 'Arial' } 
+            },
+            edges: { arrows: 'to', smooth: true },
+            physics: {
+                enabled: true
+            },
+            layout: {
+                hierarchical: false
+            }
+        };
+
+        new vis.Network(compDiv, data, options);
+    } 
+
+    init();
+  </script>
+</body>
+</html>
