@@ -1,0 +1,3901 @@
+{
+  "16696": {
+    "name": "Coke Classic",
+    "values": [],
+    "subs": [
+      {
+        "id": "34024.0",
+        "name": "Classic Soda",
+        "values": [
+          0.7011740025877025,
+          0.1498257099330005
+        ],
+        "comps": [
+          {
+            "id": "3260.0",
+            "name": "Chips Ahoy!/Nutter Butter/Oreo Cookies",
+            "values": [
+              4.557640750673802,
+              0.1289352693185498
+            ]
+          },
+          {
+            "id": "8695.0",
+            "name": "Hot! Jalapeno Potato Chips",
+            "values": [
+              5.731225296443133,
+              0.0798062277839338
+            ]
+          },
+          {
+            "id": "41406.0",
+            "name": "Orange Soda",
+            "values": [
+              6.085611139763182,
+              0.0493451959297541
+            ]
+          },
+          {
+            "id": "36802.0",
+            "name": "Peach Nectar",
+            "values": [
+              6.306306306309095,
+              0.0368231376120731
+            ]
+          },
+          {
+            "id": "16486.0",
+            "name": "Diet Pepsi Slim Cans",
+            "values": [
+              5.148205928237158,
+              0.0367353136481746
+            ]
+          },
+          {
+            "id": "13998.0",
+            "name": "Sonoma Pinot Noir Wine",
+            "values": [
+              5.371900826448872,
+              0.0271172860623372
+            ]
+          },
+          {
+            "id": "39250.0",
+            "name": "Essential Orange-Orange Vitamin Water Drink",
+            "values": [
+              5.3221288515407466,
+              0.0266417673552379
+            ]
+          },
+          {
+            "id": "38818.0",
+            "name": "Slim Can Cola",
+            "values": [
+              5.2039381153318045,
+              0.0255293868746701
+            ]
+          },
+          {
+            "id": "48278.0",
+            "name": "Tonic Water Contains Quinine",
+            "values": [
+              4.891304347827763,
+              0.0227009940982121
+            ]
+          },
+          {
+            "id": "21694.0",
+            "name": "Mini Classic Ice Cream",
+            "values": [
+              4.745166959580362,
+              0.0214356536410345
+            ]
+          }
+        ]
+      },
+      {
+        "id": "47877.0",
+        "name": "Coke Zero",
+        "values": [
+          0.674490446548776,
+          0.1441240114782448
+        ],
+        "comps": [
+          {
+            "id": "3260.0",
+            "name": "Chips Ahoy!/Nutter Butter/Oreo Cookies",
+            "values": [
+              9.115281501347605,
+              0.2578705386370996
+            ]
+          },
+          {
+            "id": "22249.0",
+            "name": "Pepsi",
+            "values": [
+              7.317073170733695,
+              0.2103359466894465
+            ]
+          },
+          {
+            "id": "8367.0",
+            "name": "Creamy Peanut Butter High Protein Bars",
+            "values": [
+              8.638743455500528,
+              0.1989680202468343
+            ]
+          },
+          {
+            "id": "37543.0",
+            "name": "Spiced Rum",
+            "values": [
+              14.867617107948613,
+              0.1926573887551245
+            ]
+          },
+          {
+            "id": "34586.0",
+            "name": "Vanilla Coke Zero",
+            "values": [
+              7.883817427386173,
+              0.099131868566162
+            ]
+          },
+          {
+            "id": "22481.0",
+            "name": "Chocolate Chip Peanut Crunch Bars",
+            "values": [
+              7.734806629834538,
+              0.0776503835099985
+            ]
+          },
+          {
+            "id": "32235.0",
+            "name": "No Caffeine Lemon Lime Soda",
+            "values": [
+              8.156028368797221,
+              0.0598181264970254
+            ]
+          },
+          {
+            "id": "25408.0",
+            "name": "Peppered Beef Jerky",
+            "values": [
+              8.120300751880013,
+              0.0593129874055504
+            ]
+          },
+          {
+            "id": "26139.0",
+            "name": "Slow Churned Light Classic Vanilla Ice Cream",
+            "values": [
+              6.588235294119589,
+              0.0396644210334532
+            ]
+          },
+          {
+            "id": "40154.0",
+            "name": "Puerto Rican Rum",
+            "values": [
+              6.03248259860972,
+              0.0335092361105144
+            ]
+          }
+        ]
+      },
+      {
+        "id": "29503.0",
+        "name": "Coke",
+        "values": [
+          0.6638522023665415,
+          0.1418508489234986
+        ],
+        "comps": [
+          {
+            "id": "22249.0",
+            "name": "Pepsi",
+            "values": [
+              11.280487804881114,
+              0.3242679178128966
+            ]
+          },
+          {
+            "id": "3260.0",
+            "name": "Chips Ahoy!/Nutter Butter/Oreo Cookies",
+            "values": [
+              8.310991957111053,
+              0.2351172558161791
+            ]
+          },
+          {
+            "id": "3499.0",
+            "name": "Peach Citrus Soda",
+            "values": [
+              6.15114235501158,
+              0.1852394989375317
+            ]
+          },
+          {
+            "id": "14564.0",
+            "name": "Funsize Mix 65 Pieces Candies",
+            "values": [
+              7.317073170732391,
+              0.1086186939512006
+            ]
+          },
+          {
+            "id": "33059.0",
+            "name": "Ice Peppermint Gum",
+            "values": [
+              6.481481481487476,
+              0.085597228491089
+            ]
+          },
+          {
+            "id": "15258.0",
+            "name": "Protein Chewy Bar Peanut Butter Dark Chocolate Bars",
+            "values": [
+              6.361829025847428,
+              0.0825247451284569
+            ]
+          },
+          {
+            "id": "21754.0",
+            "name": "Juice Drink Variety Pack",
+            "values": [
+              5.347593582891115,
+              0.0777783479151013
+            ]
+          },
+          {
+            "id": "17923.0",
+            "name": "Crinkle Cut Fries",
+            "values": [
+              6.051873198848188,
+              0.0748266271369372
+            ]
+          },
+          {
+            "id": "35173.0",
+            "name": "Organic Wild Blend Rice",
+            "values": [
+              5.026455026455402,
+              0.0651024972081205
+            ]
+          },
+          {
+            "id": "12626.0",
+            "name": "Complete ActionPacs Lemon Burst Dishwasher Detergent",
+            "values": [
+              5.322128851543143,
+              0.0581899808606154
+            ]
+          }
+        ]
+      },
+      {
+        "id": "33863.0",
+        "name": "Cherry Coke",
+        "values": [
+          0.6300754901781602,
+          0.1346334965057671
+        ],
+        "comps": [
+          {
+            "id": "33273.0",
+            "name": "Salmon Feast in Seared Salmon Flavor Gravy Cat Food",
+            "values": [
+              7.6696165191775005,
+              0.6222231421036878
+            ]
+          },
+          {
+            "id": "27289.0",
+            "name": "Elbow Macaroni & Cheese Side Dished",
+            "values": [
+              7.076923076928457,
+              0.5300439330365596
+            ]
+          },
+          {
+            "id": "3584.0",
+            "name": "Grilled Ocean Whitefish & Tuna Feast in Gravy Cat Food",
+            "values": [
+              5.434782608699097,
+              0.3132291841119792
+            ]
+          },
+          {
+            "id": "37040.0",
+            "name": "Fanta Orange Soda",
+            "values": [
+              5.263157894737555,
+              0.3078859173517727
+            ]
+          },
+          {
+            "id": "5110.0",
+            "name": "7 Up Lemon Lime Soda",
+            "values": [
+              3.170028818444289,
+              0.1290074822743702
+            ]
+          },
+          {
+            "id": "9593.0",
+            "name": "Grilled Salmon Feast in Gravy Cat Food",
+            "values": [
+              3.3802816901434616,
+              0.1218111639938584
+            ]
+          },
+          {
+            "id": "27037.0",
+            "name": "Kellogg's Pop-Tarts Frosted S'mores Pastries",
+            "values": [
+              2.631578947369506,
+              0.1200461690972425
+            ]
+          },
+          {
+            "id": "28582.0",
+            "name": "Good & Plenty Licorice Candy",
+            "values": [
+              3.351955307263664,
+              0.1197922314101567
+            ]
+          },
+          {
+            "id": "16436.0",
+            "name": "Grilled Tuna Feast in Gravy Cat Food",
+            "values": [
+              2.6785714285726248,
+              0.0767649856037953
+            ]
+          },
+          {
+            "id": "48555.0",
+            "name": "Premium White Bread",
+            "values": [
+              2.0997375328094554,
+              0.0473990898208712
+            ]
+          }
+        ]
+      },
+      {
+        "id": "34586.0",
+        "name": "Vanilla Coke Zero",
+        "values": [
+          0.6118538940139915,
+          0.1307399357471912
+        ],
+        "comps": [
+          {
+            "id": "25204.0",
+            "name": "Ten Soda",
+            "values": [
+              7.272727272732987,
+              0.531993491641556
+            ]
+          },
+          {
+            "id": "28914.0",
+            "name": "Carmelized Onion Hummus",
+            "values": [
+              2.65306122449109,
+              0.0853074764123788
+            ]
+          },
+          {
+            "id": "15792.0",
+            "name": "Frosted Cherry Toaster Pastries",
+            "values": [
+              2.887139107613001,
+              0.0847095092423614
+            ]
+          },
+          {
+            "id": "3499.0",
+            "name": "Peach Citrus Soda",
+            "values": [
+              1.7574692442890232,
+              0.052925571125009
+            ]
+          },
+          {
+            "id": "19933.0",
+            "name": "Crescent Butter Flake Dinner Rolls",
+            "values": [
+              2.242152466369248,
+              0.0513393494151062
+            ]
+          },
+          {
+            "id": "17631.0",
+            "name": "Caffeine Free Coke Zero",
+            "values": [
+              1.9634394041977332,
+              0.0394910702858717
+            ]
+          },
+          {
+            "id": "42049.0",
+            "name": "Pane Turano Italian Bread",
+            "values": [
+              1.926782273604268,
+              0.0380482326731483
+            ]
+          },
+          {
+            "id": "1228.0",
+            "name": "Turkey With Beans 98% Fat Free Chili",
+            "values": [
+              1.891252955083773,
+              0.0366754059684343
+            ]
+          },
+          {
+            "id": "31136.0",
+            "name": "Original Flavor Sugar Free Gum 3 Pk",
+            "values": [
+              1.6990291262142805,
+              0.0296853447069654
+            ]
+          },
+          {
+            "id": "10616.0",
+            "name": "Frappuccino Vanilla Chilled Coffee Drink Coffee Substitutes",
+            "values": [
+              1.677852348993634,
+              0.028960411507466
+            ]
+          }
+        ]
+      }
+    ],
+    "comps": [
+      {
+        "id": "11571.0",
+        "name": "Lemon Lime Soda Caffeine Free",
+        "values": [
+          20.498084291194075,
+          1.0
+        ]
+      },
+      {
+        "id": "43094.0",
+        "name": "Classic Caffeine Free Soda",
+        "values": [
+          17.270194986075513,
+          0.7167421758023026
+        ]
+      },
+      {
+        "id": "17981.0",
+        "name": "Vanilla Coke",
+        "values": [
+          13.87434554974327,
+          0.4694986764186875
+        ]
+      },
+      {
+        "id": "22166.0",
+        "name": "Miniatures Assortment Party Bag",
+        "values": [
+          8.24858757062161,
+          0.4002848532582496
+        ]
+      },
+      {
+        "id": "21650.0",
+        "name": "Ginger Soda",
+        "values": [
+          12.412177985949056,
+          0.3790694653533519
+        ]
+      },
+      {
+        "id": "18790.0",
+        "name": "Chocolate Favorites Fun Size Variety Pack",
+        "values": [
+          11.081794195259342,
+          0.3051733977783128
+        ]
+      },
+      {
+        "id": "47787.0",
+        "name": "Seasoned Black Cherry Barbecue Pork jerky",
+        "values": [
+          10.574018126896286,
+          0.2790750649007586
+        ]
+      },
+      {
+        "id": "32315.0",
+        "name": "Multi-Grain English Muffins",
+        "values": [
+          9.51374207188502,
+          0.2283311038965401
+        ]
+      },
+      {
+        "id": "11331.0",
+        "name": "Deluxe Mixed Nuts",
+        "values": [
+          8.858267716537085,
+          0.1994982270734961
+        ]
+      },
+      {
+        "id": "32636.0",
+        "name": "Roasted Garlic Hummus with Pretzels",
+        "values": [
+          8.536585365855977,
+          0.1860573860334325
+        ]
+      }
+    ]
+  },
+  "20738": {
+    "name": "Plain Bagels",
+    "values": [],
+    "subs": [
+      {
+        "id": "42460.0",
+        "name": "Plain Mini Bagels",
+        "values": [
+          0.7378978429552714,
+          0.1548507866922219
+        ],
+        "comps": [
+          {
+            "id": "41373.0",
+            "name": "Original Smooth Style Strawberry Flavored Low Fat Yogurt",
+            "values": [
+              11.403508771940372,
+              0.0863763595667222
+            ]
+          },
+          {
+            "id": "46946.0",
+            "name": "Disney Frozen Kids Yogurt",
+            "values": [
+              10.835913312694531,
+              0.078261411783199
+            ]
+          },
+          {
+            "id": "45313.0",
+            "name": "Buttermilk Mini Pancakes",
+            "values": [
+              9.03790087464252,
+              0.0551938886035841
+            ]
+          },
+          {
+            "id": "16305.0",
+            "name": "Ritz Crackers",
+            "values": [
+              8.676789587855477,
+              0.0510447370311008
+            ]
+          },
+          {
+            "id": "21601.0",
+            "name": "Brown Sugar Cinnamon Pre-Sliced Mini Bagels",
+            "values": [
+              8.008213552362635,
+              0.0437899233760613
+            ]
+          },
+          {
+            "id": "28823.0",
+            "name": "Original Chicken Breast Nuggets",
+            "values": [
+              7.75347912525155,
+              0.041171679567093
+            ]
+          },
+          {
+            "id": "37927.0",
+            "name": "Chicken Corn Dog",
+            "values": [
+              7.262569832404606,
+              0.0363530438247804
+            ]
+          },
+          {
+            "id": "48041.0",
+            "name": "DanActive Vanilla Probiotic Dairy Drink",
+            "values": [
+              6.880733944957111,
+              0.0328117867664644
+            ]
+          },
+          {
+            "id": "25494.0",
+            "name": "Medium House Blend Ground Coffee",
+            "values": [
+              6.81481481481625,
+              0.0322187448567324
+            ]
+          },
+          {
+            "id": "29299.0",
+            "name": "Dutch Country Smooth Texture 100% Whole Wheat Bread",
+            "values": [
+              6.618962432917604,
+              0.0304885641930227
+            ]
+          }
+        ]
+      },
+      {
+        "id": "46842.0",
+        "name": "Plain Pre-Sliced Bagels",
+        "values": [
+          0.7366550194399741,
+          0.154589975252128
+        ],
+        "comps": [
+          {
+            "id": "28175.0",
+            "name": "Philadelphia Honey Nut Cream Cheese",
+            "values": [
+              18.1262729124305,
+              0.5286368696912526
+            ]
+          },
+          {
+            "id": "19209.0",
+            "name": "Onion Bagels, 6 Pre-Sliced,",
+            "values": [
+              16.234887737479905,
+              0.1507066448370903
+            ]
+          },
+          {
+            "id": "38416.0",
+            "name": "Garden Vegetable Cream Cheese Spread",
+            "values": [
+              14.330218068541903,
+              0.1182597043943401
+            ]
+          },
+          {
+            "id": "36943.0",
+            "name": "Cinnamon Swirl Bagels",
+            "values": [
+              11.345218800653868,
+              0.0753050254315421
+            ]
+          },
+          {
+            "id": "2374.0",
+            "name": "100% Whole Wheat Pre-Sliced Bagel Thins",
+            "values": [
+              10.77235772358016,
+              0.0681640858210743
+            ]
+          },
+          {
+            "id": "22242.0",
+            "name": "Swirl Bread Cinnamon",
+            "values": [
+              9.310344827586215,
+              0.0515489850728712
+            ]
+          },
+          {
+            "id": "41671.0",
+            "name": "Original Patties (100965) 12 Oz Breakfast",
+            "values": [
+              9.09090909091012,
+              0.0492548103522202
+            ]
+          },
+          {
+            "id": "31210.0",
+            "name": "Philadelphia Reduced Fat Cream Cheese Spread",
+            "values": [
+              8.880308880309746,
+              0.0471020056106482
+            ]
+          },
+          {
+            "id": "39988.0",
+            "name": "Sliced Smoked Atlantic Nova Salmon",
+            "values": [
+              8.354430379748898,
+              0.0419358788231363
+            ]
+          },
+          {
+            "id": "6416.0",
+            "name": "Little Bites Fudge Brownies",
+            "values": [
+              7.768595041326061,
+              0.0365330879699751
+            ]
+          }
+        ]
+      },
+      {
+        "id": "39964.0",
+        "name": "Assorted Bagels",
+        "values": [
+          0.6939436584132854,
+          0.1456268268721439
+        ],
+        "comps": [
+          {
+            "id": "5063.0",
+            "name": "Maple & Pecan Granola Gluten Free",
+            "values": [
+              2.2624434389144743,
+              0.0231162764151786
+            ]
+          },
+          {
+            "id": "8379.0",
+            "name": "Wild Smoked Sockeye Salmon",
+            "values": [
+              2.152317880794784,
+              0.0209730244794491
+            ]
+          },
+          {
+            "id": "9172.0",
+            "name": "Crepes",
+            "values": [
+              2.058319039451695,
+              0.019226041749117
+            ]
+          },
+          {
+            "id": "48038.0",
+            "name": "Cauliflower Green",
+            "values": [
+              1.8404907975471096,
+              0.0154694168939036
+            ]
+          },
+          {
+            "id": "16893.0",
+            "name": "Soft Cream Cheese",
+            "values": [
+              1.813471502591848,
+              0.015031862160082
+            ]
+          },
+          {
+            "id": "19705.0",
+            "name": "Muhammara Walnut Pomegranate & Roasted Red Pepper Meze",
+            "values": [
+              1.714285714286775,
+              0.0134793972765098
+            ]
+          },
+          {
+            "id": "48647.0",
+            "name": "Mini Chocolate Croissant",
+            "values": [
+              1.700000000000115,
+              0.0132627585000227
+            ]
+          },
+          {
+            "id": "14221.0",
+            "name": "Three Cheese Ravioli In Egg Pasta",
+            "values": [
+              1.6973125884018525,
+              0.0132222005881923
+            ]
+          },
+          {
+            "id": "30726.0",
+            "name": "Organic Assam Black Tea",
+            "values": [
+              1.6474464579906212,
+              0.01248088631519
+            ]
+          },
+          {
+            "id": "19562.0",
+            "name": "Double Cream Chive Vegan Cashew Cheese",
+            "values": [
+              1.5915119363398635,
+              0.0116747770335155
+            ]
+          }
+        ]
+      },
+      {
+        "id": "21157.0",
+        "name": "Bagels Plain Presliced",
+        "values": [
+          0.6860622306795469,
+          0.1439728780274916
+        ],
+        "comps": [
+          {
+            "id": "41837.0",
+            "name": "Strawberry Banana Fruit Smoothie",
+            "values": [
+              3.669724770643792,
+              0.1403829261792444
+            ]
+          },
+          {
+            "id": "9120.0",
+            "name": "Lunchables Pizza with Pepperoni",
+            "values": [
+              2.43478260869677,
+              0.06220663031885
+            ]
+          },
+          {
+            "id": "27395.0",
+            "name": "Original Low Fat Orange Cream Yogurt",
+            "values": [
+              2.380952380953065,
+              0.0595127179296397
+            ]
+          },
+          {
+            "id": "47800.0",
+            "name": "Natural Medium Cheddar Cheese Block",
+            "values": [
+              2.3668639053268827,
+              0.058817510131391
+            ]
+          },
+          {
+            "id": "28175.0",
+            "name": "Philadelphia Honey Nut Cream Cheese",
+            "values": [
+              1.8329938900210625,
+              0.0534576609800143
+            ]
+          },
+          {
+            "id": "28379.0",
+            "name": "Protein Chewy Bars Salted Caramel Nut",
+            "values": [
+              1.9480519480520555,
+              0.040016148852032
+            ]
+          },
+          {
+            "id": "28174.0",
+            "name": "Light Original Soymilk",
+            "values": [
+              1.943462897526828,
+              0.0398301264411692
+            ]
+          },
+          {
+            "id": "47337.0",
+            "name": "Original Thin Sausage & Pepperoni Pizza",
+            "values": [
+              1.89473684210552,
+              0.0378816868211684
+            ]
+          },
+          {
+            "id": "22782.0",
+            "name": "Original Key Lime Pie Yogurt",
+            "values": [
+              1.851851851852268,
+              0.0362072367881328
+            ]
+          },
+          {
+            "id": "7912.0",
+            "name": "Little Big Sprouted Grain Bread",
+            "values": [
+              1.822323462414708,
+              0.0350762954870648
+            ]
+          }
+        ]
+      },
+      {
+        "id": "39107.0",
+        "name": "Onion Bagels",
+        "values": [
+          0.6616857459988177,
+          0.1388573761112858
+        ],
+        "comps": [
+          {
+            "id": "22524.0",
+            "name": "Cream Cheese Bar",
+            "values": [
+              5.581395348838201,
+              0.1544497558382999
+            ]
+          },
+          {
+            "id": "12697.0",
+            "name": "Sliced Pepper Jack Cheese",
+            "values": [
+              4.833836858007385,
+              0.1161708690122636
+            ]
+          },
+          {
+            "id": "3676.0",
+            "name": "Regular Cream Cheese Spread",
+            "values": [
+              4.320000000001404,
+              0.0930151945711014
+            ]
+          },
+          {
+            "id": "36601.0",
+            "name": "Moscato",
+            "values": [
+              4.255319148936641,
+              0.0902825703275508
+            ]
+          },
+          {
+            "id": "8367.0",
+            "name": "Creamy Peanut Butter High Protein Bars",
+            "values": [
+              3.141361256545646,
+              0.0723520073624852
+            ]
+          },
+          {
+            "id": "31355.0",
+            "name": "Sliced Provolone Cheese",
+            "values": [
+              3.3613445378152083,
+              0.0566863704399501
+            ]
+          },
+          {
+            "id": "21206.0",
+            "name": "English Breakfast Black Tea",
+            "values": [
+              3.350515463918774,
+              0.056327107463316
+            ]
+          },
+          {
+            "id": "42888.0",
+            "name": "Cheese Sticks, Variety Pack, Colby Jack & Cheddar",
+            "values": [
+              3.290246768508402,
+              0.0543485073289987
+            ]
+          },
+          {
+            "id": "14087.0",
+            "name": "Original/Ranch/BBQ/Chile Picante con Limon Variety Pack",
+            "values": [
+              3.0952380952385896,
+              0.0481887953036269
+            ]
+          },
+          {
+            "id": "40794.0",
+            "name": "Temptations Cat Treats - Creamy Dairy",
+            "values": [
+              3.092783505155792,
+              0.0481136221678857
+            ]
+          }
+        ]
+      }
+    ],
+    "comps": [
+      {
+        "id": "12697.0",
+        "name": "Sliced Pepper Jack Cheese",
+        "values": [
+          13.444108761333036,
+          0.4616619534042557
+        ]
+      },
+      {
+        "id": "25309.0",
+        "name": "Hearty & Delicious 100% Whole Wheat Bread",
+        "values": [
+          12.098765432105155,
+          0.3769558560583335
+        ]
+      },
+      {
+        "id": "16893.0",
+        "name": "Soft Cream Cheese",
+        "values": [
+          10.362694300524842,
+          0.2803044845885487
+        ]
+      },
+      {
+        "id": "1157.0",
+        "name": "Wheat Sandwich Bread",
+        "values": [
+          9.117361784675452,
+          0.2197575270710643
+        ]
+      },
+      {
+        "id": "46065.0",
+        "name": "Double Chocolate Muffins",
+        "values": [
+          8.359133126935783,
+          0.1864871266629107
+        ]
+      },
+      {
+        "id": "16948.0",
+        "name": "Clean Burst Liquid Laundry Detergent",
+        "values": [
+          8.244680851066757,
+          0.1817013578541823
+        ]
+      },
+      {
+        "id": "2632.0",
+        "name": "Extra Sharp White Cheddar Sticks",
+        "values": [
+          8.000000000006082,
+          0.1716780303074057
+        ]
+      },
+      {
+        "id": "19619.0",
+        "name": "Deluxe Bagels Onion",
+        "values": [
+          6.62557781202079,
+          0.1206396146189985
+        ]
+      },
+      {
+        "id": "3676.0",
+        "name": "Regular Cream Cheese Spread",
+        "values": [
+          6.400000000002079,
+          0.1131167761435592
+        ]
+      },
+      {
+        "id": "47612.0",
+        "name": "Halloumi Cheese",
+        "values": [
+          6.376811594205827,
+          0.1123571084906768
+        ]
+      }
+    ]
+  },
+  "24852": {
+    "name": "Banana",
+    "values": [],
+    "subs": [
+      {
+        "id": "39276.0",
+        "name": "Bananas",
+        "values": [
+          0.7241596373237406,
+          0.17719008114456
+        ],
+        "comps": [
+          {
+            "id": "557.0",
+            "name": "Red Seedless Grapes Imported",
+            "values": [
+              32.40740740743738,
+              1.0
+            ]
+          },
+          {
+            "id": "28916.0",
+            "name": "Hot House Seedless Cucumbers",
+            "values": [
+              19.08893709328205,
+              0.3508780372934362
+            ]
+          },
+          {
+            "id": "27960.0",
+            "name": "Organic Eggs",
+            "values": [
+              16.73469387755918,
+              0.2706989885175132
+            ]
+          },
+          {
+            "id": "28570.0",
+            "name": "Sundried Tomato Organic",
+            "values": [
+              15.129151291517935,
+              0.2219740344477042
+            ]
+          },
+          {
+            "id": "14727.0",
+            "name": "Yellow Onion",
+            "values": [
+              13.854351687395209,
+              0.2141430220018143
+            ]
+          },
+          {
+            "id": "2108.0",
+            "name": "Pastured Eggs",
+            "values": [
+              12.602459016394029,
+              0.1550744351245229
+            ]
+          },
+          {
+            "id": "38548.0",
+            "name": "Gala Apple",
+            "values": [
+              9.468438538207996,
+              0.1078667192996794
+            ]
+          },
+          {
+            "id": "28725.0",
+            "name": "Organic Diced Mangoes",
+            "values": [
+              10.23255813953925,
+              0.1031965457912306
+            ]
+          },
+          {
+            "id": "48455.0",
+            "name": "Lemon",
+            "values": [
+              9.074074074077066,
+              0.0816659482521147
+            ]
+          },
+          {
+            "id": "42992.0",
+            "name": "Pasture Raised Eggs",
+            "values": [
+              8.628318584073662,
+              0.0740513766880629
+            ]
+          }
+        ]
+      },
+      {
+        "id": "37067.0",
+        "name": "Organic Banana",
+        "values": [
+          0.696808119831449,
+          0.1704976098245665
+        ],
+        "comps": [
+          {
+            "id": "45254.0",
+            "name": "Organic Gala Apple",
+            "values": [
+              24.54780361758357,
+              0.1684056932567122
+            ]
+          },
+          {
+            "id": "14727.0",
+            "name": "Yellow Onion",
+            "values": [
+              7.63765541741018,
+              0.1180532044368976
+            ]
+          },
+          {
+            "id": "38548.0",
+            "name": "Gala Apple",
+            "values": [
+              7.80730897010133,
+              0.0889427334576304
+            ]
+          },
+          {
+            "id": "21043.0",
+            "name": "Sumo Mandarin",
+            "values": [
+              10.401891252960754,
+              0.0332346487244177
+            ]
+          },
+          {
+            "id": "37400.0",
+            "name": "Organic Tangerine",
+            "values": [
+              8.080808080808998,
+              0.0242218293919785
+            ]
+          },
+          {
+            "id": "42208.0",
+            "name": "Organic Lemons, Bag",
+            "values": [
+              7.90123456790541,
+              0.0201254632412881
+            ]
+          },
+          {
+            "id": "33080.0",
+            "name": "Fresh Organic Carrots",
+            "values": [
+              7.836456558777097,
+              0.0198289364874935
+            ]
+          },
+          {
+            "id": "48825.0",
+            "name": "Bag of Organic Lemons",
+            "values": [
+              7.750952986023179,
+              0.019440866114762
+            ]
+          },
+          {
+            "id": "7474.0",
+            "name": "Organic Shallot",
+            "values": [
+              7.142857142860624,
+              0.0167902183188369
+            ]
+          },
+          {
+            "id": "26429.0",
+            "name": "Green Grapes",
+            "values": [
+              7.113543091656112,
+              0.0166672817628659
+            ]
+          }
+        ]
+      },
+      {
+        "id": "29259.0",
+        "name": "Baby Bananas",
+        "values": [
+          0.664258143438383,
+          0.1625331601907043
+        ],
+        "comps": [
+          {
+            "id": "9948.0",
+            "name": "Driscoll Sunshine Raspberries",
+            "values": [
+              1.4749262536879808,
+              0.0248455251701977
+            ]
+          },
+          {
+            "id": "2110.0",
+            "name": "Green Bananas",
+            "values": [
+              1.2987012987023192,
+              0.0187760654840799
+            ]
+          },
+          {
+            "id": "3513.0",
+            "name": "Organic Blueberry",
+            "values": [
+              1.277372262773905,
+              0.0181748848757814
+            ]
+          },
+          {
+            "id": "29500.0",
+            "name": "Hard-Boiled Eggs",
+            "values": [
+              1.066666666666739,
+              0.0127613847403648
+            ]
+          },
+          {
+            "id": "33816.0",
+            "name": "Yellow Nectarines",
+            "values": [
+              0.9541984732825448,
+              0.0102624579863387
+            ]
+          },
+          {
+            "id": "45757.0",
+            "name": "Picnic Potato Salad",
+            "values": [
+              0.779510022271971,
+              0.0069201835397597
+            ]
+          },
+          {
+            "id": "33719.0",
+            "name": "French Vanilla Yogurt Vanilla",
+            "values": [
+              0.7677543186181208,
+              0.0067188203232685
+            ]
+          },
+          {
+            "id": "3996.0",
+            "name": "Diced Pears In Light Syrup Fruit Cups",
+            "values": [
+              0.7462686567165114,
+              0.0063584687834151
+            ]
+          },
+          {
+            "id": "43255.0",
+            "name": "Banana Chia Pod",
+            "values": [
+              0.4911591355599621,
+              0.0028382026312154
+            ]
+          },
+          {
+            "id": "42347.0",
+            "name": "Caffeine Free Diet Cola All Natural Soda",
+            "values": [
+              0.3984063745020204,
+              0.0019050710135814
+            ]
+          }
+        ]
+      },
+      {
+        "id": "13176.0",
+        "name": "Bag of Organic Bananas",
+        "values": [
+          0.44,
+          0.1076608411810063
+        ],
+        "comps": [
+          {
+            "id": "47551.0",
+            "name": "Mini-Snacks Organic Raisins",
+            "values": [
+              32.361516035010304,
+              0.2365831300791465
+            ]
+          },
+          {
+            "id": "37400.0",
+            "name": "Organic Tangerine",
+            "values": [
+              31.81818181818541,
+              0.0953734532309154
+            ]
+          },
+          {
+            "id": "16847.0",
+            "name": "Organic Mash ups Tropical Squeezable Fruit",
+            "values": [
+              32.09876543212846,
+              0.0442614782282121
+            ]
+          },
+          {
+            "id": "3737.0",
+            "name": "Kids Mixed Berry Twisted Fruit",
+            "values": [
+              34.39306358382554,
+              0.0322043344843212
+            ]
+          },
+          {
+            "id": "15241.0",
+            "name": "Original Gourmet Granola",
+            "values": [
+              33.90804597701154,
+              0.0315414718809075
+            ]
+          },
+          {
+            "id": "48356.0",
+            "name": "Muffins, Flax, Cranberry Orange",
+            "values": [
+              33.24099722994271,
+              0.0306395840194462
+            ]
+          },
+          {
+            "id": "31694.0",
+            "name": "Sourdough Bachelor Loaf",
+            "values": [
+              32.378223495726985,
+              0.0294898151453433
+            ]
+          },
+          {
+            "id": "46949.0",
+            "name": "Eat Your Colors Reds Puree Baby Food",
+            "values": [
+              32.132132132146346,
+              0.0291653264149603
+            ]
+          },
+          {
+            "id": "20153.0",
+            "name": "Eat Your Colors Purples Puree Baby Food",
+            "values": [
+              31.233595800540648,
+              0.0279935954437099
+            ]
+          },
+          {
+            "id": "33587.0",
+            "name": "Still Artesian Distilled Water",
+            "values": [
+              30.940594059426356,
+              0.0276159388659295
+            ]
+          }
+        ]
+      },
+      {
+        "id": "21137.0",
+        "name": "Organic Strawberries",
+        "values": [
+          0.434348229862496,
+          0.1062779449829032
+        ],
+        "comps": [
+          {
+            "id": "9948.0",
+            "name": "Driscoll Sunshine Raspberries",
+            "values": [
+              27.13864306785884,
+              0.4571576631316389
+            ]
+          },
+          {
+            "id": "33497.0",
+            "name": "Bread, Raisin",
+            "values": [
+              26.253687315646054,
+              0.1921284204211171
+            ]
+          },
+          {
+            "id": "16847.0",
+            "name": "Organic Mash ups Tropical Squeezable Fruit",
+            "values": [
+              25.925925925949905,
+              0.0357496554920174
+            ]
+          },
+          {
+            "id": "2353.0",
+            "name": "Multivitamin, Kids Complete, Gummies",
+            "values": [
+              28.36538461540355,
+              0.0288175643104094
+            ]
+          },
+          {
+            "id": "10885.0",
+            "name": "Live Butter Lettuce",
+            "values": [
+              27.906976744200268,
+              0.0281191099420953
+            ]
+          },
+          {
+            "id": "17159.0",
+            "name": "Rhubarb",
+            "values": [
+              27.002967359071132,
+              0.0267641208255538
+            ]
+          },
+          {
+            "id": "26344.0",
+            "name": "Organic Mixed Berry Sipper Juice",
+            "values": [
+              26.69683257919727,
+              0.0263120056568455
+            ]
+          },
+          {
+            "id": "5164.0",
+            "name": "Hint Of Sea Salt Almonds Mini Nut-Thins",
+            "values": [
+              26.558265582668827,
+              0.0261084840495601
+            ]
+          },
+          {
+            "id": "42813.0",
+            "name": "Smoked Maple Ham",
+            "values": [
+              26.23376623378685,
+              0.0256346062785762
+            ]
+          },
+          {
+            "id": "16507.0",
+            "name": "Organic Superfoods Carrot Rice Cakes",
+            "values": [
+              25.364431486899967,
+              0.0243839677238489
+            ]
+          }
+        ]
+      }
+    ],
+    "comps": [
+      {
+        "id": "46946.0",
+        "name": "Disney Frozen Kids Yogurt",
+        "values": [
+          39.31888544892018,
+          0.1791743192840966
+        ]
+      },
+      {
+        "id": "17261.0",
+        "name": "2nd Foods Organic  Pear and Spinach Baby Food",
+        "values": [
+          37.26708074535129,
+          0.1658891975776955
+        ]
+      },
+      {
+        "id": "47310.0",
+        "name": "Shells & White Cheddar Mac & Cheese Family Size Macaroni and Cheese Organic",
+        "values": [
+          36.47058823530486,
+          0.1608487828757094
+        ]
+      },
+      {
+        "id": "25055.0",
+        "name": "Veg and Fruit Puree, 100%, Organic, Sweet Potato, Corn and Apple",
+        "values": [
+          36.14457831327479,
+          0.1588045389994653
+        ]
+      },
+      {
+        "id": "5038.0",
+        "name": "Eggs",
+        "values": [
+          35.98820058998673,
+          0.1578278552600375
+        ]
+      },
+      {
+        "id": "11230.0",
+        "name": "Cashew & Ginger Spice Fruit & Nut Bar",
+        "values": [
+          35.07692307694975,
+          0.152186386524407
+        ]
+      },
+      {
+        "id": "43413.0",
+        "name": "Humm! Cocktail Hummus Roasted Pine Nuts",
+        "values": [
+          34.71810089023432,
+          0.1499884709097308
+        ]
+      },
+      {
+        "id": "26343.0",
+        "name": "Reduced Fat Shredded Mozzarella Cheese",
+        "values": [
+          34.67048710604394,
+          0.1496978151873412
+        ]
+      },
+      {
+        "id": "46510.0",
+        "name": "Trop50 Some Pulp Orange Juice",
+        "values": [
+          34.21828908556115,
+          0.1469490287482424
+        ]
+      },
+      {
+        "id": "4290.0",
+        "name": "Slim Cut Reduced Fat 2% Milk Sharp Cheddar Cheese",
+        "values": [
+          34.02985074627292,
+          0.1458097770051024
+        ]
+      }
+    ]
+  },
+  "27845": {
+    "name": "Organic Whole Milk",
+    "values": [],
+    "subs": [
+      {
+        "id": "31720.0",
+        "name": "Organic  Whole Milk",
+        "values": [
+          0.7734650880453497,
+          0.1635321551312305
+        ],
+        "comps": [
+          {
+            "id": "13721.0",
+            "name": "Organic Alphonso Mango Lassi",
+            "values": [
+              8.62944162436877,
+              0.0407446099824286
+            ]
+          },
+          {
+            "id": "15050.0",
+            "name": "Fresh Alfredo",
+            "values": [
+              7.908163265311276,
+              0.0345485338304626
+            ]
+          },
+          {
+            "id": "19702.0",
+            "name": "Original Black Tea Brew Kombucha",
+            "values": [
+              7.801418439720564,
+              0.033674792851701
+            ]
+          },
+          {
+            "id": "15712.0",
+            "name": "Organic Traditional Plain Kefir",
+            "values": [
+              6.7612687813035866,
+              0.0257444413873953
+            ]
+          },
+          {
+            "id": "36519.0",
+            "name": "Pure Butter Shortbread Rounds",
+            "values": [
+              6.631299734749432,
+              0.0248279261982269
+            ]
+          },
+          {
+            "id": "47249.0",
+            "name": "Seriousmilk Classic 39% Milk Chocolate Bar",
+            "values": [
+              6.075949367090107,
+              0.0210979019777519
+            ]
+          },
+          {
+            "id": "44090.0",
+            "name": "Roasted Pumpkin White Cheddar Tamales",
+            "values": [
+              5.651491365778981,
+              0.0184504797935836
+            ]
+          },
+          {
+            "id": "25122.0",
+            "name": "Organic European Style Lightly Salted Butter",
+            "values": [
+              5.637707948245299,
+              0.0183674652106332
+            ]
+          },
+          {
+            "id": "22640.0",
+            "name": "Organic Half And Half",
+            "values": [
+              5.571847507332155,
+              0.0179733679691902
+            ]
+          },
+          {
+            "id": "30745.0",
+            "name": "Organic Bulgarian Yogurt",
+            "values": [
+              5.436337625180105,
+              0.0171758504378764
+            ]
+          }
+        ]
+      },
+      {
+        "id": "36011.0",
+        "name": "Organic Fat Free Milk",
+        "values": [
+          0.7335268948620269,
+          0.1550881039332361
+        ],
+        "comps": [
+          {
+            "id": "19176.0",
+            "name": "Chocolate Chip Mini Cookies",
+            "values": [
+              14.285714285727504,
+              0.1130997516031497
+            ]
+          },
+          {
+            "id": "24419.0",
+            "name": "Yogurt, Lowfat, Plain",
+            "values": [
+              11.697247706427088,
+              0.0306230157735402
+            ]
+          },
+          {
+            "id": "44932.0",
+            "name": "Forest Berry Natural Lowfat Yogurt",
+            "values": [
+              11.302982731557965,
+              0.0287839061882636
+            ]
+          },
+          {
+            "id": "39706.0",
+            "name": "Unsweetened Organic Ginger Oasis Tea",
+            "values": [
+              10.444444444446646,
+              0.0249738827937643
+            ]
+          },
+          {
+            "id": "45446.0",
+            "name": "Yogurt, Organic, Lowfat, Strawberry",
+            "values": [
+              9.630459126542306,
+              0.0216080937535204
+            ]
+          },
+          {
+            "id": "24476.0",
+            "name": "Salt & Pepper Potato Chips",
+            "values": [
+              9.562841530055088,
+              0.0213392925470606
+            ]
+          },
+          {
+            "id": "11519.0",
+            "name": "Bite Size Cheddar Crackers",
+            "values": [
+              8.997429305914721,
+              0.0191564120019202
+            ]
+          },
+          {
+            "id": "27671.0",
+            "name": "Granola, Original, Almond Pecan",
+            "values": [
+              8.959537572257073,
+              0.0190142632302596
+            ]
+          },
+          {
+            "id": "32771.0",
+            "name": "Organic Mango Acai Fruit Leather, 12 Ct",
+            "values": [
+              8.659793814436217,
+              0.0179081163997582
+            ]
+          },
+          {
+            "id": "46787.0",
+            "name": "Fat Free Cottage Cheese",
+            "values": [
+              8.529945553542763,
+              0.0174390369829621
+            ]
+          }
+        ]
+      },
+      {
+        "id": "38689.0",
+        "name": "Organic Reduced Fat Milk",
+        "values": [
+          0.727236229731066,
+          0.1537580813608215
+        ],
+        "comps": [
+          {
+            "id": "33497.0",
+            "name": "Bread, Raisin",
+            "values": [
+              15.0442477876174,
+              0.1100960611401907
+            ]
+          },
+          {
+            "id": "38652.0",
+            "name": "Yerba Mate Orange Exuberance Tea",
+            "values": [
+              15.151515151518623,
+              0.0385688982202751
+            ]
+          },
+          {
+            "id": "29671.0",
+            "name": "Organic Bluephoria Yerba Mate",
+            "values": [
+              14.285714285721356,
+              0.0346950368983697
+            ]
+          },
+          {
+            "id": "32420.0",
+            "name": "Organic 1% Milkfat Lowfat Chocolate Milk",
+            "values": [
+              12.111292962362686,
+              0.0258585383765841
+            ]
+          },
+          {
+            "id": "46636.0",
+            "name": "Brown Omega 3 Large Grade A Eggs",
+            "values": [
+              12.00000000000912,
+              0.0254406069096198
+            ]
+          },
+          {
+            "id": "6583.0",
+            "name": "Oraganic Lemon Elation Yerba Mate Drink",
+            "values": [
+              11.183355006502168,
+              0.022476223872639
+            ]
+          },
+          {
+            "id": "15467.0",
+            "name": "Core Gluten Free Mint Chocolate Bar",
+            "values": [
+              10.447761194031155,
+              0.019960213428231
+            ]
+          },
+          {
+            "id": "23794.0",
+            "name": "1% Chocolate Milk",
+            "values": [
+              10.355987055020377,
+              0.019656562686947
+            ]
+          },
+          {
+            "id": "9886.0",
+            "name": "Organic Lightly Sweetened Iced Green Tea with Coconut Water",
+            "values": [
+              10.13513513513717,
+              0.0189351574732571
+            ]
+          },
+          {
+            "id": "7688.0",
+            "name": "All Natural Whole Grain Ancient 12 Grains Bread",
+            "values": [
+              9.661835748793706,
+              0.017433498760308
+            ]
+          }
+        ]
+      },
+      {
+        "id": "39863.0",
+        "name": "Organic 2% Milk",
+        "values": [
+          0.71284325447346,
+          0.1507150037882126
+        ],
+        "comps": [
+          {
+            "id": "11859.0",
+            "name": "Red Pepper",
+            "values": [
+              5.167173252280207,
+              0.0888614100025756
+            ]
+          },
+          {
+            "id": "24532.0",
+            "name": "Cranberry Almond Chicken Salad",
+            "values": [
+              3.4712950600805863,
+              0.0406737511553067
+            ]
+          },
+          {
+            "id": "7252.0",
+            "name": "Deep Green Blends Kale",
+            "values": [
+              2.6655202063632326,
+              0.0242918361866071
+            ]
+          },
+          {
+            "id": "37980.0",
+            "name": "Madeleines",
+            "values": [
+              2.6033690658499817,
+              0.0232025761964443
+            ]
+          },
+          {
+            "id": "30633.0",
+            "name": "Veggie Cheese & Pretzel Snack Pac Prepacked",
+            "values": [
+              2.468007312614488,
+              0.0209166228287526
+            ]
+          },
+          {
+            "id": "21313.0",
+            "name": "Brie Cheese",
+            "values": [
+              2.380952380954584,
+              0.0195090308875907
+            ]
+          },
+          {
+            "id": "30553.0",
+            "name": "Original Snack Mix 40 Ounce",
+            "values": [
+              2.3722627737229667,
+              0.0193712170539737
+            ]
+          },
+          {
+            "id": "26759.0",
+            "name": "Solid Light Tuna In Olive Oil",
+            "values": [
+              2.364864864864912,
+              0.0192542736469466
+            ]
+          },
+          {
+            "id": "17313.0",
+            "name": "Hass Avocado Variety",
+            "values": [
+              2.2292993630573976,
+              0.0171739325564659
+            ]
+          },
+          {
+            "id": "28252.0",
+            "name": "Extra Virgin Olive Oil, Robust",
+            "values": [
+              2.000000000001238,
+              0.0139255370066289
+            ]
+          }
+        ]
+      },
+      {
+        "id": "35321.0",
+        "name": "Organic Lowfat Milk",
+        "values": [
+          0.7112197230514092,
+          0.1503717438318489
+        ],
+        "comps": [
+          {
+            "id": "33497.0",
+            "name": "Bread, Raisin",
+            "values": [
+              3.5398230088511533,
+              0.0259049555623978
+            ]
+          },
+          {
+            "id": "23563.0",
+            "name": "Chocolate Mint Miracle Tart",
+            "values": [
+              4.044117647060971,
+              0.0219323847649716
+            ]
+          },
+          {
+            "id": "7018.0",
+            "name": "Pasta Sauce, Vodka Sauce",
+            "values": [
+              2.401372212693644,
+              0.0125810342589935
+            ]
+          },
+          {
+            "id": "13479.0",
+            "name": "Coffee All Natural Lowfat Yogurt",
+            "values": [
+              2.8915662650603027,
+              0.0116245048197209
+            ]
+          },
+          {
+            "id": "12240.0",
+            "name": "Vanilla Protein Almond Milk",
+            "values": [
+              2.7322404371585973,
+              0.0104540294185402
+            ]
+          },
+          {
+            "id": "2305.0",
+            "name": "Baby Persian Cucumbers",
+            "values": [
+              2.5933609958507158,
+              0.0094841808311518
+            ]
+          },
+          {
+            "id": "46270.0",
+            "name": "Unsalted 100% Pure Butter",
+            "values": [
+              2.386634844869417,
+              0.0081275120148357
+            ]
+          },
+          {
+            "id": "36624.0",
+            "name": "2% Milkfat Greek Yogurt Key Lime Blended",
+            "values": [
+              2.2304832713761957,
+              0.0071717296343175
+            ]
+          },
+          {
+            "id": "39142.0",
+            "name": "Old Fashioned Oats",
+            "values": [
+              2.1825396825403094,
+              0.0068901860209688
+            ]
+          },
+          {
+            "id": "37042.0",
+            "name": "Lowfat Peach Smoothie",
+            "values": [
+              2.049180327868948,
+              0.0061364827562296
+            ]
+          }
+        ]
+      }
+    ],
+    "comps": [
+      {
+        "id": "16507.0",
+        "name": "Organic Superfoods Carrot Rice Cakes",
+        "values": [
+          25.364431486899967,
+          0.1776800465472195
+        ]
+      },
+      {
+        "id": "7084.0",
+        "name": "Toddler Cheddar & Leeks Multigrain Wheels Organic Snack",
+        "values": [
+          25.192802056561227,
+          0.1757154988237333
+        ]
+      },
+      {
+        "id": "19659.0",
+        "name": "Crunchin' 123 Sesame Street Veggie Crackers",
+        "values": [
+          25.103734439834923,
+          0.1747000842955516
+        ]
+      },
+      {
+        "id": "33593.0",
+        "name": "Crunchin' Grahams, Honey Sticks, 123 Sesame Street",
+        "values": [
+          22.153846153863,
+          0.1426503206706917
+        ]
+      },
+      {
+        "id": "21806.0",
+        "name": "Organic Pineapple Orange Banana Fruit Yogurt Smoothie",
+        "values": [
+          20.99125364433101,
+          0.1308619481803225
+        ]
+      },
+      {
+        "id": "24739.0",
+        "name": "Organic Pears, Apples, Peaches, Pumpkin + Cinnamon Fiber & Protein Snack",
+        "values": [
+          20.60085836910829,
+          0.1270103299831003
+        ]
+      },
+      {
+        "id": "16466.0",
+        "name": "Organic Amaze Mint Baby Food",
+        "values": [
+          20.40133779264273,
+          0.1250626209839577
+        ]
+      },
+      {
+        "id": "9497.0",
+        "name": "Smoothie Fruits Squished The Purple One Over 6 Months",
+        "values": [
+          19.961240310083543,
+          0.120816039349874
+        ]
+      },
+      {
+        "id": "8833.0",
+        "name": "Smoothie Fruits, Squished, The Green One, Over 6 Months",
+        "values": [
+          19.86417657046413,
+          0.1198886452759004
+        ]
+      },
+      {
+        "id": "28311.0",
+        "name": "Fruit Snack, 100% Pure, Organic, Peach and Apple",
+        "values": [
+          19.505494505501066,
+          0.1164904413091441
+        ]
+      }
+    ]
+  },
+  "30696": {
+    "name": "Eggo Homestyle Waffles",
+    "values": [],
+    "subs": [
+      {
+        "id": "31692.0",
+        "name": "Homestyle Waffles",
+        "values": [
+          0.6990065481629519,
+          0.145661389423358
+        ],
+        "comps": [
+          {
+            "id": "9838.0",
+            "name": "Salted Whipped Butter",
+            "values": [
+              6.682577565634368,
+              0.6900404372067346
+            ]
+          },
+          {
+            "id": "40596.0",
+            "name": "Chunky Soup, Sirloin Burger with Country Vegetables",
+            "values": [
+              6.116207951072988,
+              0.6065759571691618
+            ]
+          },
+          {
+            "id": "26006.0",
+            "name": "Deli Select Ultra Thin Smoked Ham Lunch Meat",
+            "values": [
+              4.721030042920651,
+              0.3510337830408223
+            ]
+          },
+          {
+            "id": "41582.0",
+            "name": "Gravy Lovers Chicken Feast Can Cat Food",
+            "values": [
+              4.227941176472833,
+              0.2431982205627206
+            ]
+          },
+          {
+            "id": "31676.0",
+            "name": "Grilled Chicken Feast in Gravy Cat Food",
+            "values": [
+              3.859649122808411,
+              0.2028421297491819
+            ]
+          },
+          {
+            "id": "30989.0",
+            "name": "Spam Original Luncheon Meat",
+            "values": [
+              3.7383177570118686,
+              0.1903482955460298
+            ]
+          },
+          {
+            "id": "10084.0",
+            "name": "Classic Tender Beef Feast Cat Food",
+            "values": [
+              2.777777777778969,
+              0.105454089905322
+            ]
+          },
+          {
+            "id": "32472.0",
+            "name": "Chunky Chicken Feast Cat Food",
+            "values": [
+              2.564102564103975,
+              0.0899529701044781
+            ]
+          },
+          {
+            "id": "15976.0",
+            "name": "Diced Peaches in 100% Fruit Juice",
+            "values": [
+              2.2907488986784785,
+              0.0719179875065246
+            ]
+          },
+          {
+            "id": "17040.0",
+            "name": "Classic Roast Instant Coffee Crystals",
+            "values": [
+              2.072538860104969,
+              0.0589678609636321
+            ]
+          }
+        ]
+      },
+      {
+        "id": "47403.0",
+        "name": "Homestyle Belgian Waffles",
+        "values": [
+          0.6809059179794715,
+          0.1418895178308912
+        ],
+        "comps": [
+          {
+            "id": "16994.0",
+            "name": "Chocolate Brownie Kid Z Bar",
+            "values": [
+              3.69198312236378,
+              0.0517163245301692
+            ]
+          },
+          {
+            "id": "39299.0",
+            "name": "Organic Chocolate Chip ZBar Kids Energy Snack",
+            "values": [
+              3.082191780822507,
+              0.0362980307835989
+            ]
+          },
+          {
+            "id": "27592.0",
+            "name": "Smart Puffs Baked Cheese Puffs Real Cheddar",
+            "values": [
+              2.9027576197389537,
+              0.0322792432171832
+            ]
+          },
+          {
+            "id": "34975.0",
+            "name": "Organic Reduced Fat Unsweetened Shredded Coconut",
+            "values": [
+              2.7700831024952257,
+              0.0294592340487592
+            ]
+          },
+          {
+            "id": "24397.0",
+            "name": "Organic Concord Grape Fruit Spread",
+            "values": [
+              2.678571428572625,
+              0.0275892054834804
+            ]
+          },
+          {
+            "id": "18451.0",
+            "name": "Sea Salt Popped Corn Chips",
+            "values": [
+              2.1341463414639947,
+              0.0177306667883924
+            ]
+          },
+          {
+            "id": "42309.0",
+            "name": "Nonfat Vanilla Bio Kefir",
+            "values": [
+              1.848739495798864,
+              0.0134289974986677
+            ]
+          },
+          {
+            "id": "33592.0",
+            "name": "Spots Stew Wild Salmon Canned Cat Food",
+            "values": [
+              1.813471502591848,
+              0.0129388144066357
+            ]
+          },
+          {
+            "id": "47551.0",
+            "name": "Mini-Snacks Organic Raisins",
+            "values": [
+              1.749271137027584,
+              0.0127882773015754
+            ]
+          },
+          {
+            "id": "22228.0",
+            "name": "Buttermilk Pancakes 8 Count",
+            "values": [
+              1.6658253407371455,
+              0.010985517497535
+            ]
+          }
+        ]
+      },
+      {
+        "id": "36393.0",
+        "name": "Eggo Buttermilk Waffles",
+        "values": [
+          0.6646516396047776,
+          0.1385023953806735
+        ],
+        "comps": [
+          {
+            "id": "9533.0",
+            "name": "Natural Butter Flavor Lite Maple Syrup",
+            "values": [
+              4.125736738704985,
+              0.0752571627750878
+            ]
+          },
+          {
+            "id": "9055.0",
+            "name": "Farmstyle Greek Strained Yogurt Oregon Strawberry, 2% Milkfat",
+            "values": [
+              4.761904761909167,
+              0.0469984293487741
+            ]
+          },
+          {
+            "id": "5275.0",
+            "name": "Mexican Style Rice & Pasta",
+            "values": [
+              4.531722054384122,
+              0.0426740949156828
+            ]
+          },
+          {
+            "id": "30551.0",
+            "name": "Farmstyle Greek Old Fashioned Vanilla Strained Lowfat Yogurt",
+            "values": [
+              4.222222222223112,
+              0.0371883273851082
+            ]
+          },
+          {
+            "id": "16309.0",
+            "name": "Cheese & Peanut Butter Sandwich Crackers",
+            "values": [
+              3.641456582634782,
+              0.0361390973103744
+            ]
+          },
+          {
+            "id": "49226.0",
+            "name": "Dairy Lemonade",
+            "values": [
+              3.9274924471329062,
+              0.0323147620945809
+            ]
+          },
+          {
+            "id": "18949.0",
+            "name": "Healthy Request Condensed Homestyle Chicken Noodle Soup",
+            "values": [
+              3.906250000000343,
+              0.0319767101448562
+            ]
+          },
+          {
+            "id": "41453.0",
+            "name": "Eggo Buttermilk Pancakes",
+            "values": [
+              3.612385321101151,
+              0.0274823550314247
+            ]
+          },
+          {
+            "id": "7166.0",
+            "name": "Homemade Style Pizza Sauce",
+            "values": [
+              3.5294117647069223,
+              0.0262748844761019
+            ]
+          },
+          {
+            "id": "44213.0",
+            "name": "Shrimp, Asparagus & Penne Pasta",
+            "values": [
+              3.466666666668387,
+              0.0253797785603602
+            ]
+          }
+        ]
+      },
+      {
+        "id": "33772.0",
+        "name": "Eggo Thick & Fluffy Original Waffles",
+        "values": [
+          0.663259714105002,
+          0.1382123411561401
+        ],
+        "comps": [
+          {
+            "id": "9208.0",
+            "name": "Eggo Bites Chocolatey Chip Pancakes",
+            "values": [
+              4.507042253524616,
+              0.1017502862447433
+            ]
+          },
+          {
+            "id": "7561.0",
+            "name": "Cinnamon Chex Cereal",
+            "values": [
+              3.030303030303373,
+              0.0464928022650594
+            ]
+          },
+          {
+            "id": "8928.0",
+            "name": "Buttery Homestyle Mashed Potatoes",
+            "values": [
+              3.001876172609148,
+              0.0456386854365324
+            ]
+          },
+          {
+            "id": "19620.0",
+            "name": "Butter Rich Maple Syrup",
+            "values": [
+              2.842377260983361,
+              0.0409931772175051
+            ]
+          },
+          {
+            "id": "7738.0",
+            "name": "Philippine Mango",
+            "values": [
+              2.7190332326304736,
+              0.0375715832292982
+            ]
+          },
+          {
+            "id": "33045.0",
+            "name": "Lemon Herb Chicken Breast",
+            "values": [
+              2.7173913043495483,
+              0.0375270409095661
+            ]
+          },
+          {
+            "id": "9533.0",
+            "name": "Natural Butter Flavor Lite Maple Syrup",
+            "values": [
+              1.964636542240469,
+              0.0358367441786132
+            ]
+          },
+          {
+            "id": "11943.0",
+            "name": "Mixed Apple Slices",
+            "values": [
+              2.290076335878108,
+              0.0268326379214749
+            ]
+          },
+          {
+            "id": "25438.0",
+            "name": "Guava Nectar",
+            "values": [
+              1.9138755980864224,
+              0.0188980838317675
+            ]
+          },
+          {
+            "id": "22414.0",
+            "name": "Chocolate Mint Creme Sandwich Cookies",
+            "values": [
+              1.886792452830408,
+              0.0183803637393578
+            ]
+          }
+        ]
+      },
+      {
+        "id": "32520.0",
+        "name": "Buttermilk Waffles",
+        "values": [
+          0.6466008242417954,
+          0.1347409043718889
+        ],
+        "comps": []
+      }
+    ],
+    "comps": [
+      {
+        "id": "40177.0",
+        "name": "Original Thin Sausage Pizza",
+        "values": [
+          13.8964577656784,
+          0.5637788029778082
+        ]
+      },
+      {
+        "id": "9533.0",
+        "name": "Natural Butter Flavor Lite Maple Syrup",
+        "values": [
+          11.591355599218767,
+          0.3971266363625016
+        ]
+      },
+      {
+        "id": "19620.0",
+        "name": "Butter Rich Maple Syrup",
+        "values": [
+          11.111111111116776,
+          0.3660676830814249
+        ]
+      },
+      {
+        "id": "41671.0",
+        "name": "Original Patties (100965) 12 Oz Breakfast",
+        "values": [
+          9.848484848485962,
+          0.2904329146443979
+        ]
+      },
+      {
+        "id": "26250.0",
+        "name": "Mini Pancakes",
+        "values": [
+          9.825997952920254,
+          0.2891649863885312
+        ]
+      },
+      {
+        "id": "36689.0",
+        "name": "Original Lite Syrup",
+        "values": [
+          9.20398009950364,
+          0.2551896811478796
+        ]
+      },
+      {
+        "id": "43799.0",
+        "name": "Natural Low Moisture Part Skim Mozzarella Cheese Slices",
+        "values": [
+          9.1584158415902,
+          0.2527841687224725
+        ]
+      },
+      {
+        "id": "28823.0",
+        "name": "Original Chicken Breast Nuggets",
+        "values": [
+          8.946322067597944,
+          0.2417365007386137
+        ]
+      },
+      {
+        "id": "18285.0",
+        "name": "Cinnamon French Toaster Sticks",
+        "values": [
+          8.86287625418086,
+          0.2374574270513806
+        ]
+      },
+      {
+        "id": "38470.0",
+        "name": "Mild Taco Seasoning Mix",
+        "values": [
+          8.65139949109861,
+          0.2267836818463957
+        ]
+      }
+    ]
+  },
+  "32734": {
+    "name": "Spaghetti",
+    "values": [],
+    "subs": [
+      {
+        "id": "46522.0",
+        "name": "Spaghetti Pasta",
+        "values": [
+          0.7899772091855939,
+          0.1938241625165551
+        ],
+        "comps": [
+          {
+            "id": "14505.0",
+            "name": "Old World Style Organic Traditional Pasta Sauce",
+            "values": [
+              12.90780141844283,
+              0.2057688541868565
+            ]
+          },
+          {
+            "id": "2232.0",
+            "name": "Old World Style Meat Flavored Pasta Sauce",
+            "values": [
+              9.948542024016524,
+              0.1669331905631247
+            ]
+          },
+          {
+            "id": "34887.0",
+            "name": "Chunky Tomato Garlic & Onion Pasta Sauce",
+            "values": [
+              9.95934959349864,
+              0.1618581355778497
+            ]
+          },
+          {
+            "id": "42215.0",
+            "name": "Roasted Garlic Herb Italian Sauce",
+            "values": [
+              9.074074074077066,
+              0.1171603514752915
+            ]
+          },
+          {
+            "id": "29327.0",
+            "name": "Tomato Basil Garlic Italian Sauce",
+            "values": [
+              10.2428722280918,
+              0.0685106726835286
+            ]
+          },
+          {
+            "id": "8260.0",
+            "name": "Flavored with Meat Italian Sauce",
+            "values": [
+              10.13289036545066,
+              0.0671017062995096
+            ]
+          },
+          {
+            "id": "41912.0",
+            "name": "Old World Style Traditional Pasta Sauce",
+            "values": [
+              10.097719869709133,
+              0.0666542251613104
+            ]
+          },
+          {
+            "id": "24571.0",
+            "name": "Tomato and Basil Pasta Sauce",
+            "values": [
+              10.017421602790176,
+              0.0656381766043942
+            ]
+          },
+          {
+            "id": "9486.0",
+            "name": "Olive Oil & Garlic Pasta Sauce",
+            "values": [
+              9.773371104817484,
+              0.0625979273761217
+            ]
+          },
+          {
+            "id": "12339.0",
+            "name": "Traditional Pasta Sauce",
+            "values": [
+              8.728448275862078,
+              0.0503946250266597
+            ]
+          }
+        ]
+      },
+      {
+        "id": "45290.0",
+        "name": "Thin Spaghetti Pasta",
+        "values": [
+          0.703645937196212,
+          0.1726424292997432
+        ],
+        "comps": [
+          {
+            "id": "2232.0",
+            "name": "Old World Style Meat Flavored Pasta Sauce",
+            "values": [
+              6.861063464838983,
+              0.1151263383193963
+            ]
+          },
+          {
+            "id": "34887.0",
+            "name": "Chunky Tomato Garlic & Onion Pasta Sauce",
+            "values": [
+              6.504065040652174,
+              0.1057032722141059
+            ]
+          },
+          {
+            "id": "14096.0",
+            "name": "Roasted Garlic",
+            "values": [
+              4.577464788733173,
+              0.0945571344537482
+            ]
+          },
+          {
+            "id": "14505.0",
+            "name": "Old World Style Organic Traditional Pasta Sauce",
+            "values": [
+              5.106382978724636,
+              0.0814030631948003
+            ]
+          },
+          {
+            "id": "47854.0",
+            "name": "Three Cheese Italian Sauce",
+            "values": [
+              6.72514619883663,
+              0.0710534735476191
+            ]
+          },
+          {
+            "id": "42215.0",
+            "name": "Roasted Garlic Herb Italian Sauce",
+            "values": [
+              4.629629629631156,
+              0.0597756895282099
+            ]
+          },
+          {
+            "id": "6281.0",
+            "name": "Chunky Garden Combination Pasta Sauce",
+            "values": [
+              5.729166666667171,
+              0.0519903023014733
+            ]
+          },
+          {
+            "id": "16561.0",
+            "name": "Spicy Red Pepper",
+            "values": [
+              4.488778054863996,
+              0.0324008749405726
+            ]
+          },
+          {
+            "id": "26910.0",
+            "name": "100% Juice No Sugar Added Apple",
+            "values": [
+              4.10367170626397,
+              0.0272558097019569
+            ]
+          },
+          {
+            "id": "18049.0",
+            "name": "Thirst Quencher Caffeine Free Naturally Flavored Citrus Soda",
+            "values": [
+              3.950617283952704,
+              0.0253342640766907
+            ]
+          }
+        ]
+      },
+      {
+        "id": "38113.0",
+        "name": "Whole Grain Spaghetti",
+        "values": [
+          0.6575716603938446,
+          0.1613379156872793
+        ],
+        "comps": [
+          {
+            "id": "20929.0",
+            "name": "Salad, 50/50 Mix",
+            "values": [
+              5.251641137856128,
+              0.1865472442333401
+            ]
+          },
+          {
+            "id": "48634.0",
+            "name": "Whole Grain Penne Pasta",
+            "values": [
+              4.166666666666799,
+              0.117859561890879
+            ]
+          },
+          {
+            "id": "28609.0",
+            "name": "Whole Grain Rotini",
+            "values": [
+              3.896103896104789,
+              0.1031765565694823
+            ]
+          },
+          {
+            "id": "11798.0",
+            "name": "Premium Selects Brussels Sprouts",
+            "values": [
+              3.611111111111226,
+              0.0887663142832913
+            ]
+          },
+          {
+            "id": "14096.0",
+            "name": "Roasted Garlic",
+            "values": [
+              1.995305164319589,
+              0.0412172124541979
+            ]
+          },
+          {
+            "id": "29681.0",
+            "name": "Steamfresh Premium Selects Frozen Gold & White Corn",
+            "values": [
+              2.203856749312358,
+              0.0334916395117984
+            ]
+          },
+          {
+            "id": "2712.0",
+            "name": "Frozen Organic Peach Slices",
+            "values": [
+              2.088772845953474,
+              0.0301396702373428
+            ]
+          },
+          {
+            "id": "22476.0",
+            "name": "Fresh Chicken Breast",
+            "values": [
+              2.0242914979758244,
+              0.0283387813057095
+            ]
+          },
+          {
+            "id": "40621.0",
+            "name": "Broccoli & Cauliflower",
+            "values": [
+              1.773049645390195,
+              0.0218508724957953
+            ]
+          },
+          {
+            "id": "35440.0",
+            "name": "FreshCare Flushable Cleansing Cloths Refill",
+            "values": [
+              1.694915254237625,
+              0.0200048040173167
+            ]
+          }
+        ]
+      },
+      {
+        "id": "46416.0",
+        "name": "Whole Wheat Spaghetti",
+        "values": [
+          0.6350617542912634,
+          0.1558150174973973
+        ],
+        "comps": []
+      },
+      {
+        "id": "12872.0",
+        "name": "Penne Rigate",
+        "values": [
+          0.4334864417145701,
+          0.1063576841846189
+        ],
+        "comps": [
+          {
+            "id": "18072.0",
+            "name": "Organic Gluten Free Elbow Pasta",
+            "values": [
+              10.089399744575278,
+              0.0589227991571932
+            ]
+          },
+          {
+            "id": "9321.0",
+            "name": "Clean Day Baby Blossom Laundry Detergent",
+            "values": [
+              7.098765432105332,
+              0.0302206401856303
+            ]
+          },
+          {
+            "id": "40173.0",
+            "name": "Organic Gluten Free Rigatoni",
+            "values": [
+              6.593406593408811,
+              0.0263056417361472
+            ]
+          },
+          {
+            "id": "7018.0",
+            "name": "Pasta Sauce, Vodka Sauce",
+            "values": [
+              3.4305317324194915,
+              0.0179729060842765
+            ]
+          },
+          {
+            "id": "32760.0",
+            "name": "Shells & White Cheddar",
+            "values": [
+              5.069124423966572,
+              0.0161345542341615
+            ]
+          },
+          {
+            "id": "32043.0",
+            "name": "Organic Low Fat Vanila Milk",
+            "values": [
+              4.014598540146559,
+              0.010537363867975
+            ]
+          },
+          {
+            "id": "47509.0",
+            "name": "100% Guava Juice",
+            "values": [
+              3.9501039501045234,
+              0.0102332398248826
+            ]
+          },
+          {
+            "id": "26322.0",
+            "name": "Organic Soups Low Fat Cream Of Tomato",
+            "values": [
+              3.494623655914191,
+              0.0082107791285917
+            ]
+          },
+          {
+            "id": "17672.0",
+            "name": "Organic  Monterey Jack Cheese",
+            "values": [
+              3.3464566929150696,
+              0.0076002157757987
+            ]
+          },
+          {
+            "id": "16341.0",
+            "name": "Grovestand Lots Of Pulp Pure 100% Florida Orange Juice",
+            "values": [
+              3.342618384401712,
+              0.0075847077619445
+            ]
+          }
+        ]
+      }
+    ],
+    "comps": [
+      {
+        "id": "32760.0",
+        "name": "Shells & White Cheddar",
+        "values": [
+          6.682027649774117,
+          0.0855655745382064
+        ]
+      },
+      {
+        "id": "6555.0",
+        "name": "Parmesan Beef Meatballs",
+        "values": [
+          6.000000000003713,
+          0.070541353298238
+        ]
+      },
+      {
+        "id": "35803.0",
+        "name": "Homestyle Tart Cherry Lemonade Drink",
+        "values": [
+          5.307262569834135,
+          0.0567451990919713
+        ]
+      },
+      {
+        "id": "36178.0",
+        "name": "Rao's Homemade Roasted Garlic Sauce",
+        "values": [
+          4.78905359179082,
+          0.0473895040955707
+        ]
+      },
+      {
+        "id": "25194.0",
+        "name": "Ground Sausage Style Veggie Protein",
+        "values": [
+          4.732254047323444,
+          0.0464142571121438
+        ]
+      },
+      {
+        "id": "47193.0",
+        "name": "Roasted Garlic Alfredo Pasta Sauce",
+        "values": [
+          4.715447154472209,
+          0.0461275848253191
+        ]
+      },
+      {
+        "id": "14505.0",
+        "name": "Old World Style Organic Traditional Pasta Sauce",
+        "values": [
+          4.680851063830916,
+          0.0455402189796531
+        ]
+      },
+      {
+        "id": "5803.0",
+        "name": "Fresh Tilapia Fillets",
+        "values": [
+          4.670329670331241,
+          0.0453623184871916
+        ]
+      },
+      {
+        "id": "9648.0",
+        "name": "Tomato and Basil Bombolina Pasta Sauce",
+        "values": [
+          4.49604743083039,
+          0.0424649866864207
+        ]
+      },
+      {
+        "id": "34887.0",
+        "name": "Chunky Tomato Garlic & Onion Pasta Sauce",
+        "values": [
+          4.471544715448369,
+          0.0420651321018342
+        ]
+      }
+    ]
+  },
+  "40709": {
+    "name": "Sea Salt & Vinegar Potato Chips",
+    "values": [],
+    "subs": [
+      {
+        "id": "46554.0",
+        "name": "Vinegar & Sea Salt Potato Chips",
+        "values": [
+          0.7536179997723234,
+          0.162930715660059
+        ],
+        "comps": []
+      },
+      {
+        "id": "47368.0",
+        "name": "Kettle Cooked Potato Chips Sea Salt and Vinegar",
+        "values": [
+          0.6934733942141217,
+          0.1499275713221447
+        ],
+        "comps": [
+          {
+            "id": "27037.0",
+            "name": "Kellogg's Pop-Tarts Frosted S'mores Pastries",
+            "values": [
+              1.435406698565185,
+              0.0654797285984959
+            ]
+          },
+          {
+            "id": "47817.0",
+            "name": "Chunky Chocolate Chunk Cookies",
+            "values": [
+              1.6806722689076046,
+              0.0351842476653683
+            ]
+          },
+          {
+            "id": "26254.0",
+            "name": "Corn Snack, Hot Chili Pepper & Lime, Takis",
+            "values": [
+              1.5243902439028532,
+              0.0290159237714086
+            ]
+          },
+          {
+            "id": "7443.0",
+            "name": "Classic Recipe Milk Chocolate Bar",
+            "values": [
+              1.385681293302622,
+              0.0240387018249824
+            ]
+          },
+          {
+            "id": "46388.0",
+            "name": "Sweet & Salty Nut Cashews Granola",
+            "values": [
+              1.0600706713782695,
+              0.0175004559537702
+            ]
+          },
+          {
+            "id": "20699.0",
+            "name": "Natural Care Baby Wipes",
+            "values": [
+              1.084598698481935,
+              0.0148450827475439
+            ]
+          },
+          {
+            "id": "1835.0",
+            "name": "Caffeine Free Diet",
+            "values": [
+              0.9983361064894852,
+              0.0126172991834393
+            ]
+          },
+          {
+            "id": "4663.0",
+            "name": "Oatmeal Dark Chocolate Cookies",
+            "values": [
+              0.9345794392524656,
+              0.0110870390846984
+            ]
+          },
+          {
+            "id": "43638.0",
+            "name": "Butter Flavor Movie Theater Microwave Popcorn",
+            "values": [
+              0.910470409711712,
+              0.0105341409264933
+            ]
+          },
+          {
+            "id": "16703.0",
+            "name": "4% Milkfat Large Curd Cottage Cheese",
+            "values": [
+              0.9049773755657898,
+              0.0104101449187558
+            ]
+          }
+        ]
+      },
+      {
+        "id": "41860.0",
+        "name": "Sea Salt Baked Potato Chips",
+        "values": [
+          0.6891011075818871,
+          0.1489822916310066
+        ],
+        "comps": [
+          {
+            "id": "6482.0",
+            "name": "Olive Oil Baked Potato Chips",
+            "values": [
+              8.24949698189453,
+              0.1268470198790114
+            ]
+          },
+          {
+            "id": "28914.0",
+            "name": "Carmelized Onion Hummus",
+            "values": [
+              2.8571428571442503,
+              0.0918695899825618
+            ]
+          },
+          {
+            "id": "33593.0",
+            "name": "Crunchin' Grahams, Honey Sticks, 123 Sesame Street",
+            "values": [
+              5.84615384615829,
+              0.0645552682115461
+            ]
+          },
+          {
+            "id": "21622.0",
+            "name": "Organic Broccolette",
+            "values": [
+              5.5944055944086735,
+              0.0592356198299051
+            ]
+          },
+          {
+            "id": "34685.0",
+            "name": "Crunchy Double Chocolate",
+            "values": [
+              4.842615012107875,
+              0.0447101772957964
+            ]
+          },
+          {
+            "id": "19176.0",
+            "name": "Chocolate Chip Mini Cookies",
+            "values": [
+              2.6785714285739064,
+              0.0212062034255905
+            ]
+          },
+          {
+            "id": "20589.0",
+            "name": "Veggie Bologna Deli Slices",
+            "values": [
+              3.073770491803422,
+              0.0185743871527346
+            ]
+          },
+          {
+            "id": "21909.0",
+            "name": "Raw Cheddar Chips",
+            "values": [
+              2.315789473684524,
+              0.010828605055299
+            ]
+          },
+          {
+            "id": "11301.0",
+            "name": "Free Range Organic Chicken Broth",
+            "values": [
+              2.314814814815808,
+              0.0108199790032218
+            ]
+          },
+          {
+            "id": "42900.0",
+            "name": "Grapefruit Citrus Soda",
+            "values": [
+              2.3115577889447456,
+              0.0107911781058421
+            ]
+          }
+        ]
+      },
+      {
+        "id": "46049.0",
+        "name": "Salt & Pepper Krinkle Chips",
+        "values": [
+          0.6760443090487932,
+          0.1461594377051863
+        ],
+        "comps": [
+          {
+            "id": "8695.0",
+            "name": "Hot! Jalapeno Potato Chips",
+            "values": [
+              11.462450592886269,
+              0.1596124555678676
+            ]
+          },
+          {
+            "id": "29944.0",
+            "name": "Sriracha Potato Chips",
+            "values": [
+              6.371681415930869,
+              0.0335480469909984
+            ]
+          },
+          {
+            "id": "25843.0",
+            "name": "Maple Bacon Potato Chips",
+            "values": [
+              5.231388329981899,
+              0.0230828244770232
+            ]
+          },
+          {
+            "id": "10991.0",
+            "name": "Exotic Harvest Sea Salt Vegetable Chips",
+            "values": [
+              4.360056258791512,
+              0.0163969240175165
+            ]
+          },
+          {
+            "id": "35495.0",
+            "name": "Salsa Fresca",
+            "values": [
+              4.255319148936225,
+              0.0156697126566224
+            ]
+          },
+          {
+            "id": "33705.0",
+            "name": "New York Cheddar Potato Chips",
+            "values": [
+              3.6500268384331775,
+              0.0117884661204403
+            ]
+          },
+          {
+            "id": "10605.0",
+            "name": "Gluten Free White Bread",
+            "values": [
+              3.6106750392476816,
+              0.0115551073813046
+            ]
+          },
+          {
+            "id": "47612.0",
+            "name": "Halloumi Cheese",
+            "values": [
+              3.4782608695668147,
+              0.0107868928059205
+            ]
+          },
+          {
+            "id": "5517.0",
+            "name": "Krinkle Cut Dill Pickle Potato Chips",
+            "values": [
+              3.466666666668387,
+              0.0107208765486923
+            ]
+          },
+          {
+            "id": "9217.0",
+            "name": "Cold Brew Coffee With Coconut Milk",
+            "values": [
+              3.273809523812553,
+              0.0096522559024386
+            ]
+          }
+        ]
+      },
+      {
+        "id": "43158.0",
+        "name": "Potato Chips, Lightly Salted",
+        "values": [
+          0.6735398723122978,
+          0.1456179834539266
+        ],
+        "comps": []
+      }
+    ],
+    "comps": [
+      {
+        "id": "19176.0",
+        "name": "Chocolate Chip Mini Cookies",
+        "values": [
+          15.773809523824116,
+          0.4486007862582998
+        ]
+      },
+      {
+        "id": "29944.0",
+        "name": "Sriracha Potato Chips",
+        "values": [
+          13.097345132746783,
+          0.3149112988447774
+        ]
+      },
+      {
+        "id": "25843.0",
+        "name": "Maple Bacon Potato Chips",
+        "values": [
+          8.651911468816216,
+          0.144858444053844
+        ]
+      },
+      {
+        "id": "34866.0",
+        "name": "Chocolate Milk 1% Milkfat",
+        "values": [
+          7.727797001156252,
+          0.1176574158916847
+        ]
+      },
+      {
+        "id": "26885.0",
+        "name": "Luau BBQ Potato Chips",
+        "values": [
+          7.462686567165114,
+          0.1103717646538818
+        ]
+      },
+      {
+        "id": "8594.0",
+        "name": "Organic Country Style Barbeque Potato Chips",
+        "values": [
+          6.563039723662091,
+          0.0873690265856302
+        ]
+      },
+      {
+        "id": "26038.0",
+        "name": "Wholesome Nut NUT-rition Mix",
+        "values": [
+          6.266318537860421,
+          0.0803652865570739
+        ]
+      },
+      {
+        "id": "3634.0",
+        "name": "Krinkle Cut Classic Barbecue Potato Chips",
+        "values": [
+          6.117021276595825,
+          0.0769506706863726
+        ]
+      },
+      {
+        "id": "8695.0",
+        "name": "Hot! Jalapeno Potato Chips",
+        "values": [
+          5.928853754941174,
+          0.0727513322821142
+        ]
+      },
+      {
+        "id": "49534.0",
+        "name": "Jalape\u00f1o Seasoned Potato Chips",
+        "values": [
+          5.792682926830842,
+          0.0697849402657844
+        ]
+      }
+    ]
+  },
+  "43631": {
+    "name": "Diet Coke",
+    "values": [],
+    "subs": [
+      {
+        "id": "47931.0",
+        "name": "Diet Cola",
+        "values": [
+          0.6805630128396897,
+          0.184405375974724
+        ],
+        "comps": [
+          {
+            "id": "40596.0",
+            "name": "Chunky Soup, Sirloin Burger with Country Vegetables",
+            "values": [
+              8.868501529055832,
+              0.8795351378952846
+            ]
+          },
+          {
+            "id": "9838.0",
+            "name": "Salted Whipped Butter",
+            "values": [
+              6.921241050121309,
+              0.7146847385355465
+            ]
+          },
+          {
+            "id": "26006.0",
+            "name": "Deli Select Ultra Thin Smoked Ham Lunch Meat",
+            "values": [
+              5.5793991416334965,
+              0.4148581072300628
+            ]
+          },
+          {
+            "id": "31692.0",
+            "name": "Homestyle Waffles",
+            "values": [
+              6.442577030815383,
+              0.0789782113814109
+            ]
+          },
+          {
+            "id": "27979.0",
+            "name": "Diet Mountain Dew Soda",
+            "values": [
+              6.2937062937074,
+              0.0754430936437166
+            ]
+          },
+          {
+            "id": "24604.0",
+            "name": "Triscuit Roasted Garlic Baked Whole Grain Crackers",
+            "values": [
+              6.157112526542872,
+              0.0722707116389696
+            ]
+          },
+          {
+            "id": "11091.0",
+            "name": "BBQ Recipe Chicken Pretzel Bread Frozen Sandwiches",
+            "values": [
+              5.513784461155762,
+              0.0582452347444072
+            ]
+          },
+          {
+            "id": "48907.0",
+            "name": "Garden Salad Mix",
+            "values": [
+              5.4518297236752815,
+              0.0569742849602175
+            ]
+          },
+          {
+            "id": "45765.0",
+            "name": "Bun Size Franks made with Pork & Chicken",
+            "values": [
+              5.039787798409569,
+              0.0488780589259096
+            ]
+          },
+          {
+            "id": "5938.0",
+            "name": "Savory Salmon",
+            "values": [
+              4.887983706722832,
+              0.0460514802200577
+            ]
+          }
+        ]
+      },
+      {
+        "id": "43845.0",
+        "name": "Diet Pepsi Soda",
+        "values": [
+          0.5622030413767303,
+          0.1523345542782679
+        ],
+        "comps": []
+      },
+      {
+        "id": "196.0",
+        "name": "Soda",
+        "values": [
+          0.4390189712497556,
+          0.1189565946517544
+        ],
+        "comps": [
+          {
+            "id": "5110.0",
+            "name": "7 Up Lemon Lime Soda",
+            "values": [
+              23.919308357352364,
+              0.9734200935247936
+            ]
+          },
+          {
+            "id": "21754.0",
+            "name": "Juice Drink Variety Pack",
+            "values": [
+              26.47058823531102,
+              0.3850028221797514
+            ]
+          },
+          {
+            "id": "35173.0",
+            "name": "Organic Wild Blend Rice",
+            "values": [
+              19.312169312170752,
+              0.250130647168042
+            ]
+          },
+          {
+            "id": "14771.0",
+            "name": "Non-Dairy French Vanilla Singles Creamer",
+            "values": [
+              32.62195121952106,
+              0.1594710746057156
+            ]
+          },
+          {
+            "id": "32714.0",
+            "name": "Spearmint Gum",
+            "values": [
+              27.36842105264918,
+              0.1144468461164268
+            ]
+          },
+          {
+            "id": "34148.0",
+            "name": "Variety of Anitoxidant Infusions Cans",
+            "values": [
+              26.247288503262823,
+              0.1057998764505923
+            ]
+          },
+          {
+            "id": "17469.0",
+            "name": "Lo-Carb Energy Drink",
+            "values": [
+              25.481798715212378,
+              0.1000901602418369
+            ]
+          },
+          {
+            "id": "44031.0",
+            "name": "Pop-Tarts Frosted Strawberry/Frosted Brown Sugar Cinnamon Variety Pack Toaster Pastries",
+            "values": [
+              23.684210526325558,
+              0.0873019385053491
+            ]
+          },
+          {
+            "id": "23016.0",
+            "name": "Red Licorice",
+            "values": [
+              22.94736842105573,
+              0.0823111981021484
+            ]
+          },
+          {
+            "id": "11451.0",
+            "name": "Peppermint Patties",
+            "values": [
+              22.040072859746022,
+              0.0763666293617085
+            ]
+          }
+        ]
+      },
+      {
+        "id": "10957.0",
+        "name": "Fridge Pack Cola",
+        "values": [
+          0.4152145458664877,
+          0.1125065467798496
+        ],
+        "comps": [
+          {
+            "id": "34586.0",
+            "name": "Vanilla Coke Zero",
+            "values": [
+              20.746887966805723,
+              0.2608733383320054
+            ]
+          },
+          {
+            "id": "46388.0",
+            "name": "Sweet & Salty Nut Cashews Granola",
+            "values": [
+              11.837455830390676,
+              0.1954217581504341
+            ]
+          },
+          {
+            "id": "22481.0",
+            "name": "Chocolate Chip Peanut Crunch Bars",
+            "values": [
+              11.602209944751808,
+              0.1164755752649978
+            ]
+          },
+          {
+            "id": "40236.0",
+            "name": "Diet Cherry Coke",
+            "values": [
+              13.656387665199585,
+              0.0559789620916419
+            ]
+          },
+          {
+            "id": "4687.0",
+            "name": "Arnold Palmer Lite Half & Half Iced Tea Lemonade",
+            "values": [
+              12.880886426597066,
+              0.0501674087643447
+            ]
+          },
+          {
+            "id": "26689.0",
+            "name": "Lime Diet Coke",
+            "values": [
+              12.790697674418846,
+              0.0495121176330456
+            ]
+          },
+          {
+            "id": "18790.0",
+            "name": "Chocolate Favorites Fun Size Variety Pack",
+            "values": [
+              11.873350923492152,
+              0.043090476601749
+            ]
+          },
+          {
+            "id": "47950.0",
+            "name": "Coffee With Milk Sweetened Iced Coffee Medium Roast Latin American Blend",
+            "values": [
+              11.782477341398716,
+              0.0424784874516391
+            ]
+          },
+          {
+            "id": "32315.0",
+            "name": "Multi-Grain English Muffins",
+            "values": [
+              11.627906976748358,
+              0.0414475304698345
+            ]
+          },
+          {
+            "id": "15328.0",
+            "name": "Peanut Butter Filled Pretzels",
+            "values": [
+              11.620795107038676,
+              0.0414003986098687
+            ]
+          }
+        ]
+      },
+      {
+        "id": "12916.0",
+        "name": "Ginger Ale",
+        "values": [
+          0.414673485904673,
+          0.1123599411550934
+        ],
+        "comps": [
+          {
+            "id": "37040.0",
+            "name": "Fanta Orange Soda",
+            "values": [
+              6.947368421053572,
+              0.4064094109043399
+            ]
+          },
+          {
+            "id": "5110.0",
+            "name": "7 Up Lemon Lime Soda",
+            "values": [
+              9.510086455332868,
+              0.3870224468231106
+            ]
+          },
+          {
+            "id": "16309.0",
+            "name": "Cheese & Peanut Butter Sandwich Crackers",
+            "values": [
+              5.882352941179263,
+              0.0583785418090663
+            ]
+          },
+          {
+            "id": "41406.0",
+            "name": "Orange Soda",
+            "values": [
+              6.39504899432741,
+              0.0518542736888941
+            ]
+          },
+          {
+            "id": "16486.0",
+            "name": "Diet Pepsi Slim Cans",
+            "values": [
+              5.928237129485211,
+              0.0423012702615344
+            ]
+          },
+          {
+            "id": "40722.0",
+            "name": "Sparkling Citrus Beverage, with Natural Pulp",
+            "values": [
+              9.72644376899804,
+              0.0411982197165346
+            ]
+          },
+          {
+            "id": "29529.0",
+            "name": "Lemon-Lime Soda",
+            "values": [
+              6.608187134504067,
+              0.0200757366540559
+            ]
+          },
+          {
+            "id": "21883.0",
+            "name": "Irish Whiskey",
+            "values": [
+              6.469920544837072,
+              0.0193120871053954
+            ]
+          },
+          {
+            "id": "2493.0",
+            "name": "Wild Cherry Drink",
+            "values": [
+              6.194690265489519,
+              0.0178356957049942
+            ]
+          },
+          {
+            "id": "26872.0",
+            "name": "Original Wheat Crackers",
+            "values": [
+              5.835543766579501,
+              0.0159966687581074
+            ]
+          }
+        ]
+      }
+    ],
+    "comps": [
+      {
+        "id": "22249.0",
+        "name": "Pepsi",
+        "values": [
+          15.548780487809102,
+          0.913831996705426
+        ]
+      },
+      {
+        "id": "45192.0",
+        "name": "Soft And Strong Double Roll Bath Tissue",
+        "values": [
+          11.11111111111655,
+          0.474681201947556
+        ]
+      },
+      {
+        "id": "22166.0",
+        "name": "Miniatures Assortment Party Bag",
+        "values": [
+          7.570621468926681,
+          0.3673847283329139
+        ]
+      },
+      {
+        "id": "3499.0",
+        "name": "Peach Citrus Soda",
+        "values": [
+          9.490333919160724,
+          0.3498052598362911
+        ]
+      },
+      {
+        "id": "28748.0",
+        "name": "Nuggets Assortment",
+        "values": [
+          8.866279069768739,
+          0.3067906531957865
+        ]
+      },
+      {
+        "id": "7663.0",
+        "name": "Paper Towels White w/ Thirst Pockets",
+        "values": [
+          8.169014084513366,
+          0.262062138832224
+        ]
+      },
+      {
+        "id": "27238.0",
+        "name": "Light Boston Cream Pie Yogurt",
+        "values": [
+          8.057851239673305,
+          0.2552562482220356
+        ]
+      },
+      {
+        "id": "15258.0",
+        "name": "Protein Chewy Bar Peanut Butter Dark Chocolate Bars",
+        "values": [
+          7.75347912525155,
+          0.2370786712312305
+        ]
+      },
+      {
+        "id": "21754.0",
+        "name": "Juice Drink Variety Pack",
+        "values": [
+          7.486631016047561,
+          0.221693407770583
+        ]
+      },
+      {
+        "id": "29735.0",
+        "name": "Caffeine Free Diet Coke",
+        "values": [
+          7.330827067673,
+          0.2129486282355607
+        ]
+      }
+    ]
+  }
+}
