@@ -3,11 +3,6 @@ import pandas as pd
 import numpy as np
 
 def show_all_complements_tables(df):
-    """
-    Loop through each product_id and print:
-      Product Name
-      Table of: sub_name, transferability_pct
-    """
 
     # Ensure sorted by product for consistent output
     grouped = df.groupby("product_id")
@@ -22,8 +17,8 @@ def show_all_complements_tables(df):
 
         # Build display table
         table = (
-            group[["comp_name", "impact_index_j", "aisle"]]
-            .sort_values("impact_index_j", ascending=False)
+            group[["comp_name", "impact_index","hybrid_score","aisle"]]
+            .sort_values("impact_index", ascending=False)
             .reset_index(drop=True)
         )
 
@@ -92,6 +87,7 @@ def show_all_substitute_tables(df):
         )
 
         display(table)
+
 
 def show_sub_results(results):
     product_info = pd.read_csv('../dataset/products.csv')

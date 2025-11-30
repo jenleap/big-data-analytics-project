@@ -3,12 +3,8 @@ import pandas as pd
 import numpy as np
 import networkx as nx
 from tqdm import tqdm
+from pairwise import compute_pairwise_probabilities_sample
 
-
-try:
-    import community as community_louvain
-except Exception:
-    community_louvain = None
 
 def get_min_pij(min_co_occurrences=5):
     orders_full_df = pd.read_csv('../dataset/order_products__prior.csv')
@@ -49,7 +45,8 @@ def compute_lift(sampled_products, pairwise_df, total_orders,
     g_i = pairwise_df.groupby("product_i")
     g_j = pairwise_df.groupby("product_j")
 
-    for pid in tqdm(sampled_products, desc="Computing lift"):
+    #for pid in tqdm(sampled_products, desc="Computing lift"):
+    for pid in sampled_products:
         df_i = g_i.get_group(pid) if pid in g_i.groups else pd.DataFrame()
         df_j = g_j.get_group(pid) if pid in g_j.groups else pd.DataFrame()
 
@@ -87,10 +84,12 @@ def compute_lift(sampled_products, pairwise_df, total_orders,
 
         # Compute b_complementarity with small epsilon to avoid -1 or division by zero
         combined['b_complementarity'] = combined.apply(
-            lambda r: ((r['P_ij']/r['P_j'] - r['P_i']) / (r['P_ij']/r['P_j'] + r['P_i'] + eps))
-            if r['P_j'] > 0 else 0,
+            lambda r: ((r['P_ij'] / r['P_i'] - r['P_j']) /
+                    (r['P_ij'] / r['P_i'] + r['P_j'] + eps))
+            if r['P_i'] > 0 else 0,
             axis=1
         )
+
 
         rows.append(combined[['product_i','product_j','P_ij','co_count','lift','b_complementarity']])
 
@@ -99,7 +98,7 @@ def compute_lift(sampled_products, pairwise_df, total_orders,
     return pd.concat(rows, ignore_index=True)
 
 
-def compute_hybrid_score(pairwise_df, focus_products=None, top_n=None):
+def compute_hybrid_score(pairwise_df, focus_products, top_n=None):
     """
     Compute hybrid score = normalized(lift) * normalized(b_complementarity)
     Optionally return top_n complements per product.
@@ -111,8 +110,7 @@ def compute_hybrid_score(pairwise_df, focus_products=None, top_n=None):
     df = df.drop_duplicates(subset=['product_i', 'product_j'])
 
     # filter focus products
-    if focus_products is not None:
-        df = df[df['product_i'].isin(focus_products)]
+    df = df[df['product_i'].isin(focus_products)]
 
     # normalize lift and b_complementarity
     scaler = MinMaxScaler()
@@ -135,48 +133,8 @@ def compute_hybrid_score(pairwise_df, focus_products=None, top_n=None):
 
     return df[['product_id','complement_id','lift','b_complementarity','hybrid_score']]
 
-def compute_complement_impact_index(complements_df, pairwise_df, r=0.3):
-    """
-    Computes impact percentage and impact index for complement pairs.
 
-    Inputs:
-        complements_df columns:
-            product_id (i), complement_id (j)
-        pairwise_df columns:
-            product_i, product_j, P_i, P_j, P_ij
-
-    Returns:
-        DataFrame with:
-            product_i, product_j, P_i, P_j, P_ij,
-            impact_pct_j,
-            impact_index_j
-    """
-    complements_df = complements_df.drop_duplicates(subset=['product_id', 'complement_id'])
-    pairwise_df = pairwise_df.drop_duplicates(subset=['product_i', 'product_j'])
-
-    # Merge pairwise probabilities only for known complements
-    df = complements_df.merge(
-        pairwise_df,
-        left_on=['product_id', 'complement_id'],
-        right_on=['product_i', 'product_j'],
-        how='left'
-    )
-
-    # Probability that j depends on i
-    df['P_i_given_j'] = df['P_ij'] / df['P_j']
-
-    # Impact percentage (0–100% of j's demand at risk)
-    df['impact_pct_j'] = 100 * df['P_i_given_j']
-
-    # Impact index (0–1 scaled)
-    df['impact_index_j'] = r * df['P_i_given_j']
-
-    return df.sort_values(
-        ['product_i', 'impact_index_j'],
-        ascending=[True, False]
-    )
-
-def build_complement_network(complements_df, weight_col="lift"):
+def build_complement_network(complements_df, weight_col="hybrid_score"):
     """
     Build weighted directed graph where i -> j means j is a complement of i.
     """
@@ -193,24 +151,25 @@ def build_complement_network(complements_df, weight_col="lift"):
 def compute_network_enhanced_impact(
     complements_df,
     pairwise_df,
-    weight_col="lift",
+    weight_col="hybrid_score",
     r=0.3, 
     lambda_pr=0.5,
     lambda_deg=0.3,
     lambda_bc=0.2
 ):
+    
+    complements_df = complements_df.drop_duplicates(subset=['product_id', 'complement_id'])
+    pairwise_df = pairwise_df.drop_duplicates(subset=['product_i', 'product_j'])
     # Step 1: Merge pairwise probabilities
-    """  df = complements_df.merge(
+    df = complements_df.merge(
         pairwise_df,
         left_on=['product_id', 'complement_id'],
         right_on=['product_i', 'product_j'],
         how='left'
-    ) """
+    ) 
 
-    df = complements_df.copy()
-
-    df['P_i_given_j'] = df['P_ij'] / df['P_j']
-    df['impact_pct_j'] = 100 * df['P_i_given_j']
+    df['P_j_given_i'] = df['P_ij'] / df['P_i']
+    df['impact_pct'] = 100 * df['P_j_given_i']
 
     # Step 2: Build network
     G = build_complement_network(complements_df, weight_col)
@@ -225,8 +184,8 @@ def compute_network_enhanced_impact(
     df['betweenness_j'] = df['product_j'].map(bc)
 
     # Step 4: Enhanced impact
-    df['impact_index_j'] = (
-        r * df['P_i_given_j'] *
+    df['impact_index'] = (
+        r * df['P_j_given_i'] *
         (1 +
          lambda_pr * df['pagerank_j'] +
          lambda_deg * df['indegree_j'] +
@@ -234,10 +193,10 @@ def compute_network_enhanced_impact(
     )
 
     # Normalize
-    df['impact_index_j'] = df['impact_index_j'] / df['impact_index_j'].max()
+    df['impact_index'] = df['impact_index'] / df['impact_index'].max()
 
     return df.sort_values(
-        ['product_i', 'impact_index_j'],
+        ['product_i', 'impact_index'],
         ascending=[True, False]
     )
 
@@ -247,34 +206,27 @@ def compute_total_impact(
     penetration_df,
     product_i_col="product_id",
     product_j_col="complement_id",
-    impact_col="impact_index_j",
+    impact_col="impact_index",
     penetration_col="order_penetration_pct",   # if percent (0-100). function will detect and convert
-    method="topk_weighted",              # options: "weighted_sum", "topk_weighted", "normalized"
     top_k=5,
-    normalize=False,
     min_penetration=1e-6,
     min_impact=0.0,
-    return_details=False
 ):
     """
     Compute total impact per product i using penetration of complements (j).
 
     Inputs:
-    - pairwise_impact_df: DataFrame with columns [product_i, product_j, impact_index_j, ...]
+    - pairwise_impact_df: DataFrame with columns [product_i, product_j, impact_index, ...]
       (impact_col should already be computed, either pairwise or network-enhanced)
     - penetration_df: DataFrame or Series with product j penetration info.
       If DataFrame, must have columns [product_id, penetration_col].
       If Series, index=product_id, values=penetration (pct or fraction).
-    - method: "weighted_sum" (all j), "topk_weighted" (only top_k by impact), "normalized" (divides by sum of weights)
     - top_k: how many top complements to include (only used for topk_weighted)
-    - normalize: if True, returns total impact normalized across all i to 0-1 by dividing by max
     - min_penetration: floor to avoid dividing by zero / tiny weights
     - min_impact: filter small pairwise impacts
-    - return_details: if True returns merged long-form df with pair-level contributions
 
     Returns:
     - totals_df: DataFrame with columns ['product_i', 'total_impact', 'total_weight', ...]
-    - (optionally) details_df: merged pair-level contributions per (i,j)
     """
 
     # normalize penetration input to series indexed by product id
@@ -311,19 +263,10 @@ def compute_total_impact(
     # Compute contribution per pair (i->j)
     merged['contribution'] = merged[impact_col] * merged['penetration']
 
-    # For topk method, keep top_k j per product_i by impact_col
-    if method == "topk_weighted":
-        merged = merged.sort_values([product_i_col, impact_col], ascending=[True, False])
-        # rank within product_i
-        merged['rank_within_i'] = merged.groupby(product_i_col)[impact_col].rank(method="first", ascending=False)
-        merged = merged[merged['rank_within_i'] <= top_k].copy()
-    elif method == "weighted_sum":
-        pass
-    elif method == "normalized":
-        # we'll compute weighted sum then divide by sum of penetrations per i
-        pass
-    else:
-        raise ValueError(f"Unknown method: {method}")
+    merged = merged.sort_values([product_i_col, impact_col], ascending=[True, False])
+    # rank within product_i
+    merged['rank_within_i'] = merged.groupby(product_i_col)[impact_col].rank(method="first", ascending=False)
+    merged = merged[merged['rank_within_i'] <= top_k].copy()
 
     # Aggregate per product_i
     agg = merged.groupby(product_i_col).agg(
@@ -333,25 +276,9 @@ def compute_total_impact(
         mean_pair_impact = (impact_col, 'mean'),
     ).reset_index()
 
-    # if normalized method, divide by total_weight (avoid divide by zero)
-    if method == "normalized":
-        agg['total_impact'] = agg['total_impact'] / agg['total_weight'].replace({0: np.nan})
-        agg['total_impact'] = agg['total_impact'].fillna(0.0)
+    return agg
 
-    # optional normalization across all products (0-1)
-    if normalize:
-        maxv = agg['total_impact'].max()
-        if maxv > 0:
-            agg['total_impact_norm'] = agg['total_impact'] / maxv
-        else:
-            agg['total_impact_norm'] = 0.0
-
-    if return_details:
-        return agg, merged
-    else:
-        return agg
-
-def simulate_removal_exact(pids, pairwise_df, focus_products, top_n=10, limit=5):
+def simulate_removal_exact(pids, orders_df, focus_products, top_n=10, limit=5):
     """
     Exact recompute of network-enhanced impact after removing a product.
 
@@ -371,14 +298,16 @@ def simulate_removal_exact(pids, pairwise_df, focus_products, top_n=10, limit=5)
         if idx >= limit:
             break
 
-        # Remove pid from pairwise_df
-        remaining_pairs = pairwise_df[
-            (pairwise_df['product_i'] != pid) & (pairwise_df['product_j'] != pid)
-        ].copy()
+        filtered_orders = orders_df[orders_df['product_id'] != pid]
+
+        pairwise_df = compute_pairwise_probabilities_sample(filtered_orders, focus_products, batch_size=1000)
+
+        num_orders = filtered_orders['order_id'].nunique()
+        min_pij = 5 / num_orders
 
         try:
             # Re-run the complements pipeline on remaining products
-            lift_remaining = compute_lift(focus_products, remaining_pairs, total_orders=remaining_pairs['P_ij'].sum())
+            lift_remaining = compute_lift(focus_products, pairwise_df, min_pij=min_pij, total_orders=num_orders)
 
             if lift_remaining.empty:
                 rows.append({
@@ -391,16 +320,12 @@ def simulate_removal_exact(pids, pairwise_df, focus_products, top_n=10, limit=5)
                 continue
 
             complements_remaining = compute_hybrid_score(lift_remaining, focus_products, top_n=top_n)
-            cii_remaining = compute_complement_impact_index(complements_remaining, remaining_pairs)
-            network_remaining = compute_network_enhanced_impact(cii_remaining, remaining_pairs)
+            network_remaining = compute_network_enhanced_impact(complements_remaining, pairwise_df)
 
-            # ---------------- PATCH 1 ----------------
-            if 'impact_index_j' not in network_remaining.columns:
-                network_remaining['impact_index_j'] = network_remaining['total_lift'] \
+            if 'impact_index' not in network_remaining.columns:
+                network_remaining['impact_index'] = network_remaining['total_lift'] \
                     if 'total_lift' in network_remaining.columns else 0.0
-            # ----------------------------------------
 
-            # ---------------- PATCH 4 ----------------
             if 'P_ij' not in network_remaining.columns and 'P_ij' in lift_remaining.columns:
                 network_remaining = network_remaining.merge(
                     lift_remaining[['product_i','product_j','P_ij']],
@@ -408,7 +333,6 @@ def simulate_removal_exact(pids, pairwise_df, focus_products, top_n=10, limit=5)
                     right_on=['product_i','product_j'],
                     how='left'
                 ).drop(columns=['product_i','product_j'], errors='ignore')
-            # ----------------------------------------
 
             # Handle empty network_remaining
             if network_remaining.empty:
@@ -416,9 +340,9 @@ def simulate_removal_exact(pids, pairwise_df, focus_products, top_n=10, limit=5)
                 num_products = 0
                 cii_map = {}
             else:
-                avg_impact = float(network_remaining['impact_index_j'].mean())
+                avg_impact = float(network_remaining['impact_index'].mean())
                 num_products = network_remaining['product_id'].nunique()
-                cii_map = network_remaining.groupby('product_id')['impact_index_j'].first().to_dict()
+                cii_map = network_remaining.groupby('product_id')['impact_index'].first().to_dict()
 
             # Compute neighbors only connected to removed product
             mask = (network_remaining['product_id'] == pid) | (network_remaining['complement_id'] == pid)
@@ -450,7 +374,7 @@ def simulate_removal_exact(pids, pairwise_df, focus_products, top_n=10, limit=5)
 def simulate_removal_fast(pids, complements_df):
     rows = []
     # precompute neighbor CII lookup (CII per product_id)
-    cii_map = complements_df.groupby('product_id')['impact_index_j'].first().to_dict()
+    cii_map = complements_df.groupby('product_id')['impact_index'].first().to_dict()
     # Use complement edges to find affected edges quickly
     for pid in pids:
         mask = (complements_df['product_id'] == pid) | (complements_df['complement_id'] == pid)
@@ -471,7 +395,7 @@ def simulate_removal_fast(pids, complements_df):
     return pd.DataFrame(rows)
 
 # Validation (temporal, correlations, delisting fast, optional exact)
-def validate_complements_pipeline(complements_df, lift_df, orders_test_df, pairwise_df, focus_products,
+def validate_complements_pipeline(complements_df, lift_df, orders_df, orders_test_df, pairwise_df, focus_products,
                                   top_n=5, max_exact_delist=5):
     """
     complements_df: output from compute_complements_and_cii (must contain P_ij and CII)
@@ -529,22 +453,22 @@ def validate_complements_pipeline(complements_df, lift_df, orders_test_df, pairw
     }
 
     # CII correlations (construct validity)
-    metrics = complements_df[['product_id','impact_index_j']].drop_duplicates(subset=['product_id']).set_index('product_id')
+    metrics = complements_df[['product_id','impact_index']].drop_duplicates(subset=['product_id']).set_index('product_id')
     metrics = metrics.join(complements_df.groupby('product_id')['pagerank_j'].first().rename('pagerank'))
 
     results['correlations'] = {
-        'CII_vs_total_lift': float(metrics['impact_index_j'].corr(metrics['total_lift'])) 
+        'CII_vs_total_lift': float(metrics['impact_index'].corr(metrics['total_lift'])) 
                             if 'total_lift' in metrics.columns and not metrics['total_lift'].isna().all() else np.nan,
-        'CII_vs_pagerank': float(metrics['impact_index_j'].corr(metrics['pagerank'])) 
+        'CII_vs_pagerank': float(metrics['impact_index'].corr(metrics['pagerank'])) 
                         if 'pagerank' in metrics.columns and not metrics['pagerank'].isna().all() else np.nan
     }
 
     # --- Delisting simulations ---
-    top_products = complements_df[['product_id','impact_index_j']].drop_duplicates().nlargest(top_n,'impact_index_j')['product_id'].tolist()
-    bottom_products = complements_df[['product_id','impact_index_j']].drop_duplicates().nsmallest(top_n,'impact_index_j')['product_id'].tolist()
+    top_products = complements_df[['product_id','impact_index']].drop_duplicates().nlargest(top_n,'impact_index')['product_id'].tolist()
+    bottom_products = complements_df[['product_id','impact_index']].drop_duplicates().nsmallest(top_n,'impact_index')['product_id'].tolist()
 
-    delist_bottom = simulate_removal_exact(bottom_products, pairwise_df, focus_products, limit=max_exact_delist)
-    delist_top = simulate_removal_exact(top_products, pairwise_df, focus_products, limit=max_exact_delist)
+    delist_bottom = simulate_removal_exact(bottom_products,orders_df, focus_products, limit=max_exact_delist)
+    delist_top = simulate_removal_exact(top_products, orders_df, focus_products, limit=max_exact_delist)
 
     # Assign risk categories
     def assign_risk(avg_impact, avg_neighbor_cii):
@@ -589,7 +513,7 @@ def validate_complements_pipeline(complements_df, lift_df, orders_test_df, pairw
     return results
 
 
-def run_samples_example(pairwise_train_df, pairwise_test_df, focus_products, orders_test_df, num_orders,min_pij,
+def run_samples_validation(pairwise_train_df, pairwise_test_df, orders_df, focus_products, orders_test_df, num_orders,min_pij,
                         num_samples=3, sample_fraction=0.02, top_n=5):
     """
     Example pipeline: sample products, compute lift, compute complements+CII, validate.
@@ -602,13 +526,12 @@ def run_samples_example(pairwise_train_df, pairwise_test_df, focus_products, ord
     results_summary = []
     for i in range(int(num_samples)):
         print(f"\n--- Sample {i+1}/{num_samples} (size={sample_size}) ---")
-        sampled = np.random.choice(all_products, size=sample_size, replace=False)
+        sampled = np.random.choice(focus_products, size=sample_size, replace=False)
 
         t_comp = time.time()
         lift_df = compute_lift(sampled, pairwise_train_df, min_pij=min_pij, total_orders=num_orders)   
         complements_df = compute_hybrid_score(lift_df, focus_products, top_n=10)
-        cii_df = compute_complement_impact_index(complements_df, pairwise_train_df)
-        network_df = compute_network_enhanced_impact(cii_df, pairwise_train_df)
+        network_df = compute_network_enhanced_impact(complements_df, pairwise_train_df)
         complement_runtime = time.time() - t_comp
         print(f"Complement pipeline time: {complement_runtime:.1f}s, rows={len(network_df)}")
 
@@ -625,9 +548,10 @@ def run_samples_example(pairwise_train_df, pairwise_test_df, focus_products, ord
         val = validate_complements_pipeline(
             complements_df=network_df,
             lift_df=lift_df,
+            orders_df=orders_df,
             orders_test_df=orders_test_df,
             pairwise_df=pairwise_train_df,
-            focus_products=focus_products,
+            focus_products=sampled,
             top_n=top_n
         )
 
