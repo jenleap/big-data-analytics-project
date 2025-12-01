@@ -5,7 +5,7 @@
     "aisle": "soft drinks",
     "values": [
       0.701,
-      100
+      6.4
     ],
     "subs": [
       {
@@ -17,63 +17,13 @@
         ],
         "comps": [
           {
-            "id": "3260.0",
-            "name": "Chips Ahoy!/Nutter Butter/Oreo Cookies",
-            "dept": "snacks",
-            "aisle": "cookies cakes",
-            "values": [
-              4.558,
-              0.129
-            ]
-          },
-          {
-            "id": "8695.0",
-            "name": "Hot! Jalapeno Potato Chips",
-            "dept": "snacks",
-            "aisle": "chips pretzels",
-            "values": [
-              5.731,
-              0.08
-            ]
-          },
-          {
             "id": "41406.0",
             "name": "Orange Soda",
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              6.086,
-              0.049
-            ]
-          },
-          {
-            "id": "36802.0",
-            "name": "Peach Nectar",
-            "dept": "beverages",
-            "aisle": "juice nectars",
-            "values": [
-              6.306,
-              0.037
-            ]
-          },
-          {
-            "id": "16486.0",
-            "name": "Diet Pepsi Slim Cans",
-            "dept": "beverages",
-            "aisle": "soft drinks",
-            "values": [
-              5.148,
-              0.037
-            ]
-          },
-          {
-            "id": "13998.0",
-            "name": "Sonoma Pinot Noir Wine",
-            "dept": "alcohol",
-            "aisle": "red wines",
-            "values": [
-              5.372,
-              0.027
+              0.056,
+              20
             ]
           },
           {
@@ -82,8 +32,8 @@
             "dept": "beverages",
             "aisle": "energy sports drinks",
             "values": [
-              5.322,
-              0.027
+              0.048,
+              6
             ]
           },
           {
@@ -92,8 +42,28 @@
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              5.204,
-              0.026
+              0.047,
+              6
+            ]
+          },
+          {
+            "id": "16486.0",
+            "name": "Diet Pepsi Slim Cans",
+            "dept": "beverages",
+            "aisle": "soft drinks",
+            "values": [
+              0.047,
+              6
+            ]
+          },
+          {
+            "id": "8695.0",
+            "name": "Hot! Jalapeno Potato Chips",
+            "dept": "snacks",
+            "aisle": "chips pretzels",
+            "values": [
+              0.052,
+              5
             ]
           },
           {
@@ -102,8 +72,8 @@
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              4.891,
-              0.023
+              0.044,
+              5
             ]
           },
           {
@@ -112,8 +82,38 @@
             "dept": "frozen",
             "aisle": "ice cream ice",
             "values": [
-              4.745,
-              0.021
+              0.043,
+              5
+            ]
+          },
+          {
+            "id": "13998.0",
+            "name": "Sonoma Pinot Noir Wine",
+            "dept": "alcohol",
+            "aisle": "red wines",
+            "values": [
+              0.049,
+              4
+            ]
+          },
+          {
+            "id": "36802.0",
+            "name": "Peach Nectar",
+            "dept": "beverages",
+            "aisle": "juice nectars",
+            "values": [
+              0.058,
+              4
+            ]
+          },
+          {
+            "id": "3260.0",
+            "name": "Chips Ahoy!/Nutter Butter/Oreo Cookies",
+            "dept": "snacks",
+            "aisle": "cookies cakes",
+            "values": [
+              0.041,
+              3
             ]
           }
         ]
@@ -127,73 +127,13 @@
         ],
         "comps": [
           {
-            "id": "3260.0",
-            "name": "Chips Ahoy!/Nutter Butter/Oreo Cookies",
-            "dept": "snacks",
-            "aisle": "cookies cakes",
-            "values": [
-              9.115,
-              0.258
-            ]
-          },
-          {
-            "id": "22249.0",
-            "name": "Pepsi",
-            "dept": "beverages",
-            "aisle": "soft drinks",
-            "values": [
-              7.317,
-              0.21
-            ]
-          },
-          {
-            "id": "8367.0",
-            "name": "Creamy Peanut Butter High Protein Bars",
-            "dept": "snacks",
-            "aisle": "energy granola bars",
-            "values": [
-              8.639,
-              0.199
-            ]
-          },
-          {
             "id": "37543.0",
             "name": "Spiced Rum",
             "dept": "alcohol",
             "aisle": "spirits",
             "values": [
-              14.868,
-              0.193
-            ]
-          },
-          {
-            "id": "34586.0",
-            "name": "Vanilla Coke Zero",
-            "dept": "beverages",
-            "aisle": "soft drinks",
-            "values": [
-              7.884,
-              0.099
-            ]
-          },
-          {
-            "id": "22481.0",
-            "name": "Chocolate Chip Peanut Crunch Bars",
-            "dept": "snacks",
-            "aisle": "energy granola bars",
-            "values": [
-              7.735,
-              0.078
-            ]
-          },
-          {
-            "id": "32235.0",
-            "name": "No Caffeine Lemon Lime Soda",
-            "dept": "beverages",
-            "aisle": "soft drinks",
-            "values": [
-              8.156,
-              0.06
+              0.137,
+              13
             ]
           },
           {
@@ -202,8 +142,58 @@
             "dept": "snacks",
             "aisle": "popcorn jerky",
             "values": [
-              8.12,
-              0.059
+              0.074,
+              9
+            ]
+          },
+          {
+            "id": "32235.0",
+            "name": "No Caffeine Lemon Lime Soda",
+            "dept": "beverages",
+            "aisle": "soft drinks",
+            "values": [
+              0.074,
+              8
+            ]
+          },
+          {
+            "id": "22481.0",
+            "name": "Chocolate Chip Peanut Crunch Bars",
+            "dept": "snacks",
+            "aisle": "energy granola bars",
+            "values": [
+              0.07,
+              7
+            ]
+          },
+          {
+            "id": "34586.0",
+            "name": "Vanilla Coke Zero",
+            "dept": "beverages",
+            "aisle": "soft drinks",
+            "values": [
+              0.072,
+              7
+            ]
+          },
+          {
+            "id": "3260.0",
+            "name": "Chips Ahoy!/Nutter Butter/Oreo Cookies",
+            "dept": "snacks",
+            "aisle": "cookies cakes",
+            "values": [
+              0.083,
+              6
+            ]
+          },
+          {
+            "id": "8367.0",
+            "name": "Creamy Peanut Butter High Protein Bars",
+            "dept": "snacks",
+            "aisle": "energy granola bars",
+            "values": [
+              0.079,
+              6
             ]
           },
           {
@@ -212,8 +202,18 @@
             "dept": "frozen",
             "aisle": "ice cream ice",
             "values": [
-              6.588,
-              0.04
+              0.06,
+              5
+            ]
+          },
+          {
+            "id": "22249.0",
+            "name": "Pepsi",
+            "dept": "beverages",
+            "aisle": "soft drinks",
+            "values": [
+              0.067,
+              4
             ]
           },
           {
@@ -222,8 +222,8 @@
             "dept": "alcohol",
             "aisle": "spirits",
             "values": [
-              6.032,
-              0.034
+              0.055,
+              4
             ]
           }
         ]
@@ -242,18 +242,8 @@
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              11.28,
-              0.324
-            ]
-          },
-          {
-            "id": "3260.0",
-            "name": "Chips Ahoy!/Nutter Butter/Oreo Cookies",
-            "dept": "snacks",
-            "aisle": "cookies cakes",
-            "values": [
-              8.311,
-              0.235
+              0.244,
+              16
             ]
           },
           {
@@ -262,8 +252,8 @@
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              6.151,
-              0.185
+              0.132,
+              15
             ]
           },
           {
@@ -272,18 +262,8 @@
             "dept": "snacks",
             "aisle": "candy chocolate",
             "values": [
-              7.317,
-              0.109
-            ]
-          },
-          {
-            "id": "33059.0",
-            "name": "Ice Peppermint Gum",
-            "dept": "snacks",
-            "aisle": "mint gum",
-            "values": [
-              6.481,
-              0.086
+              0.158,
+              13
             ]
           },
           {
@@ -292,18 +272,18 @@
             "dept": "snacks",
             "aisle": "fruit vegetable snacks",
             "values": [
-              6.362,
-              0.083
+              0.137,
+              13
             ]
           },
           {
-            "id": "21754.0",
-            "name": "Juice Drink Variety Pack",
-            "dept": "beverages",
-            "aisle": "juice nectars",
+            "id": "3260.0",
+            "name": "Chips Ahoy!/Nutter Butter/Oreo Cookies",
+            "dept": "snacks",
+            "aisle": "cookies cakes",
             "values": [
-              5.348,
-              0.078
+              0.179,
+              13
             ]
           },
           {
@@ -312,8 +292,28 @@
             "dept": "frozen",
             "aisle": "frozen appetizers sides",
             "values": [
-              6.052,
-              0.075
+              0.13,
+              9
+            ]
+          },
+          {
+            "id": "33059.0",
+            "name": "Ice Peppermint Gum",
+            "dept": "snacks",
+            "aisle": "mint gum",
+            "values": [
+              0.14,
+              8
+            ]
+          },
+          {
+            "id": "21754.0",
+            "name": "Juice Drink Variety Pack",
+            "dept": "beverages",
+            "aisle": "juice nectars",
+            "values": [
+              0.115,
+              8
             ]
           },
           {
@@ -322,8 +322,8 @@
             "dept": "snacks",
             "aisle": "energy granola bars",
             "values": [
-              5.026,
-              0.065
+              0.108,
+              8
             ]
           },
           {
@@ -332,8 +332,8 @@
             "dept": "household",
             "aisle": "dish detergents",
             "values": [
-              5.322,
-              0.058
+              0.114,
+              8
             ]
           }
         ]
@@ -352,28 +352,8 @@
             "dept": "pets",
             "aisle": "cat food care",
             "values": [
-              7.67,
-              0.622
-            ]
-          },
-          {
-            "id": "27289.0",
-            "name": "Elbow Macaroni & Cheese Side Dished",
-            "dept": "deli",
-            "aisle": "prepared meals",
-            "values": [
-              7.077,
-              0.53
-            ]
-          },
-          {
-            "id": "3584.0",
-            "name": "Grilled Ocean Whitefish & Tuna Feast in Gravy Cat Food",
-            "dept": "pets",
-            "aisle": "cat food care",
-            "values": [
-              5.435,
-              0.313
+              0.894,
+              68
             ]
           },
           {
@@ -382,48 +362,28 @@
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              5.263,
-              0.308
+              0.613,
+              62
             ]
           },
           {
-            "id": "5110.0",
-            "name": "7 Up Lemon Lime Soda",
-            "dept": "beverages",
-            "aisle": "soft drinks",
+            "id": "27289.0",
+            "name": "Elbow Macaroni & Cheese Side Dished",
+            "dept": "deli",
+            "aisle": "prepared meals",
             "values": [
-              3.17,
-              0.129
+              0.825,
+              60
             ]
           },
           {
-            "id": "9593.0",
-            "name": "Grilled Salmon Feast in Gravy Cat Food",
+            "id": "3584.0",
+            "name": "Grilled Ocean Whitefish & Tuna Feast in Gravy Cat Food",
             "dept": "pets",
             "aisle": "cat food care",
             "values": [
-              3.38,
-              0.122
-            ]
-          },
-          {
-            "id": "27037.0",
-            "name": "Kellogg's Pop-Tarts Frosted S'mores Pastries",
-            "dept": "breakfast",
-            "aisle": "breakfast bars pastries",
-            "values": [
-              2.632,
-              0.12
-            ]
-          },
-          {
-            "id": "28582.0",
-            "name": "Good & Plenty Licorice Candy",
-            "dept": "snacks",
-            "aisle": "candy chocolate",
-            "values": [
-              3.352,
-              0.12
+              0.633,
+              49
             ]
           },
           {
@@ -432,8 +392,48 @@
             "dept": "pets",
             "aisle": "cat food care",
             "values": [
-              2.679,
-              0.077
+              0.311,
+              41
+            ]
+          },
+          {
+            "id": "9593.0",
+            "name": "Grilled Salmon Feast in Gravy Cat Food",
+            "dept": "pets",
+            "aisle": "cat food care",
+            "values": [
+              0.393,
+              28
+            ]
+          },
+          {
+            "id": "28582.0",
+            "name": "Good & Plenty Licorice Candy",
+            "dept": "snacks",
+            "aisle": "candy chocolate",
+            "values": [
+              0.39,
+              28
+            ]
+          },
+          {
+            "id": "27037.0",
+            "name": "Kellogg's Pop-Tarts Frosted S'mores Pastries",
+            "dept": "breakfast",
+            "aisle": "breakfast bars pastries",
+            "values": [
+              0.306,
+              26
+            ]
+          },
+          {
+            "id": "5110.0",
+            "name": "7 Up Lemon Lime Soda",
+            "dept": "beverages",
+            "aisle": "soft drinks",
+            "values": [
+              0.369,
+              26
             ]
           },
           {
@@ -442,8 +442,8 @@
             "dept": "bakery",
             "aisle": "bread",
             "values": [
-              2.1,
-              0.047
+              0.244,
+              18
             ]
           }
         ]
@@ -462,48 +462,8 @@
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              7.273,
-              0.532
-            ]
-          },
-          {
-            "id": "28914.0",
-            "name": "Carmelized Onion Hummus",
-            "dept": "deli",
-            "aisle": "fresh dips tapenades",
-            "values": [
-              2.653,
-              0.085
-            ]
-          },
-          {
-            "id": "15792.0",
-            "name": "Frosted Cherry Toaster Pastries",
-            "dept": "breakfast",
-            "aisle": "breakfast bars pastries",
-            "values": [
-              2.887,
-              0.085
-            ]
-          },
-          {
-            "id": "3499.0",
-            "name": "Peach Citrus Soda",
-            "dept": "beverages",
-            "aisle": "soft drinks",
-            "values": [
-              1.757,
-              0.053
-            ]
-          },
-          {
-            "id": "19933.0",
-            "name": "Crescent Butter Flake Dinner Rolls",
-            "dept": "pantry",
-            "aisle": "doughs gelatins bake mixes",
-            "values": [
-              2.242,
-              0.051
+              0.806,
+              69
             ]
           },
           {
@@ -512,8 +472,48 @@
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              1.963,
-              0.039
+              0.216,
+              61
+            ]
+          },
+          {
+            "id": "28914.0",
+            "name": "Carmelized Onion Hummus",
+            "dept": "deli",
+            "aisle": "fresh dips tapenades",
+            "values": [
+              0.293,
+              28
+            ]
+          },
+          {
+            "id": "15792.0",
+            "name": "Frosted Cherry Toaster Pastries",
+            "dept": "breakfast",
+            "aisle": "breakfast bars pastries",
+            "values": [
+              0.319,
+              27
+            ]
+          },
+          {
+            "id": "3499.0",
+            "name": "Peach Citrus Soda",
+            "dept": "beverages",
+            "aisle": "soft drinks",
+            "values": [
+              0.193,
+              22
+            ]
+          },
+          {
+            "id": "19933.0",
+            "name": "Crescent Butter Flake Dinner Rolls",
+            "dept": "pantry",
+            "aisle": "doughs gelatins bake mixes",
+            "values": [
+              0.247,
+              21
             ]
           },
           {
@@ -522,28 +522,8 @@
             "dept": "bakery",
             "aisle": "bread",
             "values": [
-              1.927,
-              0.038
-            ]
-          },
-          {
-            "id": "1228.0",
-            "name": "Turkey With Beans 98% Fat Free Chili",
-            "dept": "canned goods",
-            "aisle": "canned meals beans",
-            "values": [
-              1.891,
-              0.037
-            ]
-          },
-          {
-            "id": "31136.0",
-            "name": "Original Flavor Sugar Free Gum 3 Pk",
-            "dept": "snacks",
-            "aisle": "mint gum",
-            "values": [
-              1.699,
-              0.03
+              0.212,
+              21
             ]
           },
           {
@@ -552,8 +532,28 @@
             "dept": "beverages",
             "aisle": "coffee",
             "values": [
-              1.678,
-              0.029
+              0.185,
+              21
+            ]
+          },
+          {
+            "id": "1228.0",
+            "name": "Turkey With Beans 98% Fat Free Chili",
+            "dept": "canned goods",
+            "aisle": "canned meals beans",
+            "values": [
+              0.208,
+              17
+            ]
+          },
+          {
+            "id": "31136.0",
+            "name": "Original Flavor Sugar Free Gum 3 Pk",
+            "dept": "snacks",
+            "aisle": "mint gum",
+            "values": [
+              0.187,
+              15
             ]
           }
         ]
@@ -566,78 +566,8 @@
         "dept": "beverages",
         "aisle": "soft drinks",
         "values": [
-          20.5,
-          64
-        ]
-      },
-      {
-        "id": "43094.0",
-        "name": "Classic Caffeine Free Soda",
-        "dept": "beverages",
-        "aisle": "soft drinks",
-        "values": [
-          17.3,
-          53
-        ]
-      },
-      {
-        "id": "17981.0",
-        "name": "Vanilla Coke",
-        "dept": "beverages",
-        "aisle": "soft drinks",
-        "values": [
-          13.9,
-          41
-        ]
-      },
-      {
-        "id": "21650.0",
-        "name": "Ginger Soda",
-        "dept": "beverages",
-        "aisle": "soft drinks",
-        "values": [
-          12.4,
-          36
-        ]
-      },
-      {
-        "id": "18790.0",
-        "name": "Chocolate Favorites Fun Size Variety Pack",
-        "dept": "snacks",
-        "aisle": "candy chocolate",
-        "values": [
-          11.1,
-          32
-        ]
-      },
-      {
-        "id": "47787.0",
-        "name": "Seasoned Black Cherry Barbecue Pork jerky",
-        "dept": "snacks",
-        "aisle": "popcorn jerky",
-        "values": [
-          10.6,
-          30
-        ]
-      },
-      {
-        "id": "32315.0",
-        "name": "Multi-Grain English Muffins",
-        "dept": "bakery",
-        "aisle": "breakfast bakery",
-        "values": [
-          9.5,
-          27
-        ]
-      },
-      {
-        "id": "22166.0",
-        "name": "Miniatures Assortment Party Bag",
-        "dept": "snacks",
-        "aisle": "candy chocolate",
-        "values": [
-          8.2,
-          26
+          0.1,
+          9.7
         ]
       },
       {
@@ -646,8 +576,78 @@
         "dept": "snacks",
         "aisle": "nuts seeds dried fruit",
         "values": [
-          8.9,
-          25
+          0.042,
+          8.0
+        ]
+      },
+      {
+        "id": "22166.0",
+        "name": "Miniatures Assortment Party Bag",
+        "dept": "snacks",
+        "aisle": "candy chocolate",
+        "values": [
+          0.039,
+          6.6
+        ]
+      },
+      {
+        "id": "43094.0",
+        "name": "Classic Caffeine Free Soda",
+        "dept": "beverages",
+        "aisle": "soft drinks",
+        "values": [
+          0.084,
+          5.6
+        ]
+      },
+      {
+        "id": "17981.0",
+        "name": "Vanilla Coke",
+        "dept": "beverages",
+        "aisle": "soft drinks",
+        "values": [
+          0.067,
+          4.8
+        ]
+      },
+      {
+        "id": "21650.0",
+        "name": "Ginger Soda",
+        "dept": "beverages",
+        "aisle": "soft drinks",
+        "values": [
+          0.06,
+          4.8
+        ]
+      },
+      {
+        "id": "32315.0",
+        "name": "Multi-Grain English Muffins",
+        "dept": "bakery",
+        "aisle": "breakfast bakery",
+        "values": [
+          0.046,
+          4.1
+        ]
+      },
+      {
+        "id": "18790.0",
+        "name": "Chocolate Favorites Fun Size Variety Pack",
+        "dept": "snacks",
+        "aisle": "candy chocolate",
+        "values": [
+          0.053,
+          3.8
+        ]
+      },
+      {
+        "id": "47787.0",
+        "name": "Seasoned Black Cherry Barbecue Pork jerky",
+        "dept": "snacks",
+        "aisle": "popcorn jerky",
+        "values": [
+          0.051,
+          3.1
         ]
       },
       {
@@ -656,8 +656,8 @@
         "dept": "deli",
         "aisle": "fresh dips tapenades",
         "values": [
-          8.5,
-          24
+          0.041,
+          2.5
         ]
       }
     ]
@@ -668,7 +668,7 @@
     "aisle": "breakfast bakery",
     "values": [
       0.738,
-      58
+      6.1
     ],
     "subs": [
       {
@@ -680,33 +680,13 @@
         ],
         "comps": [
           {
-            "id": "41373.0",
-            "name": "Original Smooth Style Strawberry Flavored Low Fat Yogurt",
-            "dept": "dairy eggs",
-            "aisle": "yogurt",
+            "id": "25494.0",
+            "name": "Medium House Blend Ground Coffee",
+            "dept": "beverages",
+            "aisle": "coffee",
             "values": [
-              11.404,
-              0.086
-            ]
-          },
-          {
-            "id": "46946.0",
-            "name": "Disney Frozen Kids Yogurt",
-            "dept": "dairy eggs",
-            "aisle": "yogurt",
-            "values": [
-              10.836,
-              0.078
-            ]
-          },
-          {
-            "id": "45313.0",
-            "name": "Buttermilk Mini Pancakes",
-            "dept": "frozen",
-            "aisle": "frozen breakfast",
-            "values": [
-              9.038,
-              0.055
+              0.045,
+              6
             ]
           },
           {
@@ -715,18 +695,8 @@
             "dept": "snacks",
             "aisle": "crackers",
             "values": [
-              8.677,
-              0.051
-            ]
-          },
-          {
-            "id": "21601.0",
-            "name": "Brown Sugar Cinnamon Pre-Sliced Mini Bagels",
-            "dept": "bakery",
-            "aisle": "breakfast bakery",
-            "values": [
-              8.008,
-              0.044
+              0.058,
+              5
             ]
           },
           {
@@ -735,38 +705,28 @@
             "dept": "meat seafood",
             "aisle": "packaged poultry",
             "values": [
-              7.753,
-              0.041
+              0.052,
+              5
             ]
           },
           {
-            "id": "37927.0",
-            "name": "Chicken Corn Dog",
-            "dept": "deli",
-            "aisle": "prepared meals",
-            "values": [
-              7.263,
-              0.036
-            ]
-          },
-          {
-            "id": "48041.0",
-            "name": "DanActive Vanilla Probiotic Dairy Drink",
+            "id": "41373.0",
+            "name": "Original Smooth Style Strawberry Flavored Low Fat Yogurt",
             "dept": "dairy eggs",
             "aisle": "yogurt",
             "values": [
-              6.881,
-              0.033
+              0.077,
+              5
             ]
           },
           {
-            "id": "25494.0",
-            "name": "Medium House Blend Ground Coffee",
-            "dept": "beverages",
-            "aisle": "coffee",
+            "id": "21601.0",
+            "name": "Brown Sugar Cinnamon Pre-Sliced Mini Bagels",
+            "dept": "bakery",
+            "aisle": "breakfast bakery",
             "values": [
-              6.815,
-              0.032
+              0.054,
+              5
             ]
           },
           {
@@ -775,8 +735,48 @@
             "dept": "bakery",
             "aisle": "bread",
             "values": [
-              6.619,
-              0.03
+              0.044,
+              5
+            ]
+          },
+          {
+            "id": "46946.0",
+            "name": "Disney Frozen Kids Yogurt",
+            "dept": "dairy eggs",
+            "aisle": "yogurt",
+            "values": [
+              0.073,
+              4
+            ]
+          },
+          {
+            "id": "45313.0",
+            "name": "Buttermilk Mini Pancakes",
+            "dept": "frozen",
+            "aisle": "frozen breakfast",
+            "values": [
+              0.061,
+              4
+            ]
+          },
+          {
+            "id": "48041.0",
+            "name": "DanActive Vanilla Probiotic Dairy Drink",
+            "dept": "dairy eggs",
+            "aisle": "yogurt",
+            "values": [
+              0.046,
+              4
+            ]
+          },
+          {
+            "id": "37927.0",
+            "name": "Chicken Corn Dog",
+            "dept": "deli",
+            "aisle": "prepared meals",
+            "values": [
+              0.048,
+              3
             ]
           }
         ]
@@ -790,13 +790,23 @@
         ],
         "comps": [
           {
+            "id": "2374.0",
+            "name": "100% Whole Wheat Pre-Sliced Bagel Thins",
+            "dept": "bakery",
+            "aisle": "breakfast bakery",
+            "values": [
+              0.063,
+              12
+            ]
+          },
+          {
             "id": "28175.0",
             "name": "Philadelphia Honey Nut Cream Cheese",
             "dept": "dairy eggs",
             "aisle": "other creams cheeses",
             "values": [
-              18.126,
-              0.529
+              0.107,
+              10
             ]
           },
           {
@@ -805,8 +815,8 @@
             "dept": "bakery",
             "aisle": "breakfast bakery",
             "values": [
-              16.235,
-              0.151
+              0.096,
+              10
             ]
           },
           {
@@ -815,8 +825,8 @@
             "dept": "dairy eggs",
             "aisle": "other creams cheeses",
             "values": [
-              14.33,
-              0.118
+              0.085,
+              10
             ]
           },
           {
@@ -825,18 +835,8 @@
             "dept": "bakery",
             "aisle": "breakfast bakery",
             "values": [
-              11.345,
-              0.075
-            ]
-          },
-          {
-            "id": "2374.0",
-            "name": "100% Whole Wheat Pre-Sliced Bagel Thins",
-            "dept": "bakery",
-            "aisle": "breakfast bakery",
-            "values": [
-              10.772,
-              0.068
+              0.067,
+              8
             ]
           },
           {
@@ -845,38 +845,8 @@
             "dept": "bakery",
             "aisle": "bread",
             "values": [
-              9.31,
-              0.052
-            ]
-          },
-          {
-            "id": "41671.0",
-            "name": "Original Patties (100965) 12 Oz Breakfast",
-            "dept": "meat seafood",
-            "aisle": "hot dogs bacon sausage",
-            "values": [
-              9.091,
-              0.049
-            ]
-          },
-          {
-            "id": "31210.0",
-            "name": "Philadelphia Reduced Fat Cream Cheese Spread",
-            "dept": "dairy eggs",
-            "aisle": "other creams cheeses",
-            "values": [
-              8.88,
-              0.047
-            ]
-          },
-          {
-            "id": "39988.0",
-            "name": "Sliced Smoked Atlantic Nova Salmon",
-            "dept": "meat seafood",
-            "aisle": "packaged seafood",
-            "values": [
-              8.354,
-              0.042
+              0.054,
+              6
             ]
           },
           {
@@ -885,8 +855,38 @@
             "dept": "snacks",
             "aisle": "cookies cakes",
             "values": [
-              7.769,
-              0.037
+              0.045,
+              5
+            ]
+          },
+          {
+            "id": "31210.0",
+            "name": "Philadelphia Reduced Fat Cream Cheese Spread",
+            "dept": "dairy eggs",
+            "aisle": "other creams cheeses",
+            "values": [
+              0.052,
+              5
+            ]
+          },
+          {
+            "id": "41671.0",
+            "name": "Original Patties (100965) 12 Oz Breakfast",
+            "dept": "meat seafood",
+            "aisle": "hot dogs bacon sausage",
+            "values": [
+              0.053,
+              4
+            ]
+          },
+          {
+            "id": "39988.0",
+            "name": "Sliced Smoked Atlantic Nova Salmon",
+            "dept": "meat seafood",
+            "aisle": "packaged seafood",
+            "values": [
+              0.049,
+              4
             ]
           }
         ]
@@ -900,13 +900,23 @@
         ],
         "comps": [
           {
+            "id": "48647.0",
+            "name": "Mini Chocolate Croissant",
+            "dept": "bakery",
+            "aisle": "breakfast bakery",
+            "values": [
+              0.08,
+              15
+            ]
+          },
+          {
             "id": "5063.0",
             "name": "Maple & Pecan Granola Gluten Free",
             "dept": "breakfast",
             "aisle": "granola",
             "values": [
-              2.262,
-              0.023
+              0.106,
+              13
             ]
           },
           {
@@ -915,8 +925,8 @@
             "dept": "meat seafood",
             "aisle": "packaged seafood",
             "values": [
-              2.152,
-              0.021
+              0.101,
+              11
             ]
           },
           {
@@ -925,48 +935,8 @@
             "dept": "bakery",
             "aisle": "tortillas flat bread",
             "values": [
-              2.058,
-              0.019
-            ]
-          },
-          {
-            "id": "48038.0",
-            "name": "Cauliflower Green",
-            "dept": "produce",
-            "aisle": "fresh vegetables",
-            "values": [
-              1.84,
-              0.015
-            ]
-          },
-          {
-            "id": "16893.0",
-            "name": "Soft Cream Cheese",
-            "dept": "dairy eggs",
-            "aisle": "other creams cheeses",
-            "values": [
-              1.813,
-              0.015
-            ]
-          },
-          {
-            "id": "19705.0",
-            "name": "Muhammara Walnut Pomegranate & Roasted Red Pepper Meze",
-            "dept": "deli",
-            "aisle": "fresh dips tapenades",
-            "values": [
-              1.714,
-              0.013
-            ]
-          },
-          {
-            "id": "48647.0",
-            "name": "Mini Chocolate Croissant",
-            "dept": "bakery",
-            "aisle": "breakfast bakery",
-            "values": [
-              1.7,
-              0.013
+              0.097,
+              10
             ]
           },
           {
@@ -975,8 +945,8 @@
             "dept": "dry goods pasta",
             "aisle": "fresh pasta",
             "values": [
-              1.697,
-              0.013
+              0.079,
+              10
             ]
           },
           {
@@ -985,8 +955,38 @@
             "dept": "beverages",
             "aisle": "tea",
             "values": [
-              1.647,
-              0.012
+              0.077,
+              9
+            ]
+          },
+          {
+            "id": "16893.0",
+            "name": "Soft Cream Cheese",
+            "dept": "dairy eggs",
+            "aisle": "other creams cheeses",
+            "values": [
+              0.085,
+              6
+            ]
+          },
+          {
+            "id": "48038.0",
+            "name": "Cauliflower Green",
+            "dept": "produce",
+            "aisle": "fresh vegetables",
+            "values": [
+              0.086,
+              5
+            ]
+          },
+          {
+            "id": "19705.0",
+            "name": "Muhammara Walnut Pomegranate & Roasted Red Pepper Meze",
+            "dept": "deli",
+            "aisle": "fresh dips tapenades",
+            "values": [
+              0.08,
+              5
             ]
           },
           {
@@ -995,8 +995,8 @@
             "dept": "dairy eggs",
             "aisle": "soy lactosefree",
             "values": [
-              1.592,
-              0.012
+              0.074,
+              5
             ]
           }
         ]
@@ -1010,83 +1010,13 @@
         ],
         "comps": [
           {
-            "id": "41837.0",
-            "name": "Strawberry Banana Fruit Smoothie",
-            "dept": "beverages",
-            "aisle": "refrigerated",
-            "values": [
-              3.67,
-              0.14
-            ]
-          },
-          {
-            "id": "9120.0",
-            "name": "Lunchables Pizza with Pepperoni",
-            "dept": "deli",
-            "aisle": "prepared meals",
-            "values": [
-              2.435,
-              0.062
-            ]
-          },
-          {
             "id": "27395.0",
             "name": "Original Low Fat Orange Cream Yogurt",
             "dept": "dairy eggs",
             "aisle": "yogurt",
             "values": [
-              2.381,
-              0.06
-            ]
-          },
-          {
-            "id": "47800.0",
-            "name": "Natural Medium Cheddar Cheese Block",
-            "dept": "dairy eggs",
-            "aisle": "packaged cheese",
-            "values": [
-              2.367,
-              0.059
-            ]
-          },
-          {
-            "id": "28175.0",
-            "name": "Philadelphia Honey Nut Cream Cheese",
-            "dept": "dairy eggs",
-            "aisle": "other creams cheeses",
-            "values": [
-              1.833,
-              0.053
-            ]
-          },
-          {
-            "id": "28379.0",
-            "name": "Protein Chewy Bars Salted Caramel Nut",
-            "dept": "breakfast",
-            "aisle": "breakfast bars pastries",
-            "values": [
-              1.948,
-              0.04
-            ]
-          },
-          {
-            "id": "28174.0",
-            "name": "Light Original Soymilk",
-            "dept": "dairy eggs",
-            "aisle": "soy lactosefree",
-            "values": [
-              1.943,
-              0.04
-            ]
-          },
-          {
-            "id": "47337.0",
-            "name": "Original Thin Sausage & Pepperoni Pizza",
-            "dept": "frozen",
-            "aisle": "frozen pizza",
-            "values": [
-              1.895,
-              0.038
+              0.271,
+              53
             ]
           },
           {
@@ -1095,8 +1025,78 @@
             "dept": "dairy eggs",
             "aisle": "yogurt",
             "values": [
-              1.852,
-              0.036
+              0.21,
+              37
+            ]
+          },
+          {
+            "id": "9120.0",
+            "name": "Lunchables Pizza with Pepperoni",
+            "dept": "deli",
+            "aisle": "prepared meals",
+            "values": [
+              0.277,
+              32
+            ]
+          },
+          {
+            "id": "41837.0",
+            "name": "Strawberry Banana Fruit Smoothie",
+            "dept": "beverages",
+            "aisle": "refrigerated",
+            "values": [
+              0.418,
+              27
+            ]
+          },
+          {
+            "id": "47800.0",
+            "name": "Natural Medium Cheddar Cheese Block",
+            "dept": "dairy eggs",
+            "aisle": "packaged cheese",
+            "values": [
+              0.269,
+              26
+            ]
+          },
+          {
+            "id": "28379.0",
+            "name": "Protein Chewy Bars Salted Caramel Nut",
+            "dept": "breakfast",
+            "aisle": "breakfast bars pastries",
+            "values": [
+              0.221,
+              26
+            ]
+          },
+          {
+            "id": "28174.0",
+            "name": "Light Original Soymilk",
+            "dept": "dairy eggs",
+            "aisle": "soy lactosefree",
+            "values": [
+              0.221,
+              24
+            ]
+          },
+          {
+            "id": "28175.0",
+            "name": "Philadelphia Honey Nut Cream Cheese",
+            "dept": "dairy eggs",
+            "aisle": "other creams cheeses",
+            "values": [
+              0.208,
+              20
+            ]
+          },
+          {
+            "id": "47337.0",
+            "name": "Original Thin Sausage & Pepperoni Pizza",
+            "dept": "frozen",
+            "aisle": "frozen pizza",
+            "values": [
+              0.215,
+              19
             ]
           },
           {
@@ -1105,8 +1105,8 @@
             "dept": "bakery",
             "aisle": "bread",
             "values": [
-              1.822,
-              0.035
+              0.207,
+              17
             ]
           }
         ]
@@ -1120,13 +1120,23 @@
         ],
         "comps": [
           {
+            "id": "31355.0",
+            "name": "Sliced Provolone Cheese",
+            "dept": "dairy eggs",
+            "aisle": "packaged cheese",
+            "values": [
+              0.18,
+              41
+            ]
+          },
+          {
             "id": "22524.0",
             "name": "Cream Cheese Bar",
             "dept": "dairy eggs",
             "aisle": "other creams cheeses",
             "values": [
-              5.581,
-              0.154
+              0.3,
+              38
             ]
           },
           {
@@ -1135,58 +1145,8 @@
             "dept": "dairy eggs",
             "aisle": "packaged cheese",
             "values": [
-              4.834,
-              0.116
-            ]
-          },
-          {
-            "id": "3676.0",
-            "name": "Regular Cream Cheese Spread",
-            "dept": "dairy eggs",
-            "aisle": "other creams cheeses",
-            "values": [
-              4.32,
-              0.093
-            ]
-          },
-          {
-            "id": "36601.0",
-            "name": "Moscato",
-            "dept": "alcohol",
-            "aisle": "white wines",
-            "values": [
-              4.255,
-              0.09
-            ]
-          },
-          {
-            "id": "8367.0",
-            "name": "Creamy Peanut Butter High Protein Bars",
-            "dept": "snacks",
-            "aisle": "energy granola bars",
-            "values": [
-              3.141,
-              0.072
-            ]
-          },
-          {
-            "id": "31355.0",
-            "name": "Sliced Provolone Cheese",
-            "dept": "dairy eggs",
-            "aisle": "packaged cheese",
-            "values": [
-              3.361,
-              0.057
-            ]
-          },
-          {
-            "id": "21206.0",
-            "name": "English Breakfast Black Tea",
-            "dept": "beverages",
-            "aisle": "tea",
-            "values": [
-              3.351,
-              0.056
+              0.26,
+              34
             ]
           },
           {
@@ -1195,8 +1155,38 @@
             "dept": "dairy eggs",
             "aisle": "packaged cheese",
             "values": [
-              3.29,
-              0.054
+              0.176,
+              28
+            ]
+          },
+          {
+            "id": "3676.0",
+            "name": "Regular Cream Cheese Spread",
+            "dept": "dairy eggs",
+            "aisle": "other creams cheeses",
+            "values": [
+              0.232,
+              28
+            ]
+          },
+          {
+            "id": "36601.0",
+            "name": "Moscato",
+            "dept": "alcohol",
+            "aisle": "white wines",
+            "values": [
+              0.229,
+              14
+            ]
+          },
+          {
+            "id": "21206.0",
+            "name": "English Breakfast Black Tea",
+            "dept": "beverages",
+            "aisle": "tea",
+            "values": [
+              0.18,
+              13
             ]
           },
           {
@@ -1205,8 +1195,18 @@
             "dept": "snacks",
             "aisle": "chips pretzels",
             "values": [
-              3.095,
-              0.048
+              0.166,
+              13
+            ]
+          },
+          {
+            "id": "8367.0",
+            "name": "Creamy Peanut Butter High Protein Bars",
+            "dept": "snacks",
+            "aisle": "energy granola bars",
+            "values": [
+              0.168,
+              12
             ]
           },
           {
@@ -1215,8 +1215,8 @@
             "dept": "pets",
             "aisle": "cat food care",
             "values": [
-              3.093,
-              0.048
+              0.166,
+              12
             ]
           }
         ]
@@ -1229,28 +1229,8 @@
         "dept": "dairy eggs",
         "aisle": "packaged cheese",
         "values": [
-          13.4,
-          40
-        ]
-      },
-      {
-        "id": "25309.0",
-        "name": "Hearty & Delicious 100% Whole Wheat Bread",
-        "dept": "bakery",
-        "aisle": "bread",
-        "values": [
-          12.1,
-          35
-        ]
-      },
-      {
-        "id": "16893.0",
-        "name": "Soft Cream Cheese",
-        "dept": "dairy eggs",
-        "aisle": "other creams cheeses",
-        "values": [
-          10.4,
-          29
+          0.068,
+          9.0
         ]
       },
       {
@@ -1259,38 +1239,18 @@
         "dept": "bakery",
         "aisle": "bread",
         "values": [
-          9.1,
-          26
+          0.046,
+          8.8
         ]
       },
       {
-        "id": "46065.0",
-        "name": "Double Chocolate Muffins",
+        "id": "25309.0",
+        "name": "Hearty & Delicious 100% Whole Wheat Bread",
         "dept": "bakery",
-        "aisle": "breakfast bakery",
+        "aisle": "bread",
         "values": [
-          8.4,
-          23
-        ]
-      },
-      {
-        "id": "16948.0",
-        "name": "Clean Burst Liquid Laundry Detergent",
-        "dept": "household",
-        "aisle": "laundry",
-        "values": [
-          8.2,
-          23
-        ]
-      },
-      {
-        "id": "2632.0",
-        "name": "Extra Sharp White Cheddar Sticks",
-        "dept": "dairy eggs",
-        "aisle": "packaged cheese",
-        "values": [
-          8.0,
-          22
+          0.061,
+          4.6
         ]
       },
       {
@@ -1299,8 +1259,8 @@
         "dept": "bakery",
         "aisle": "breakfast bakery",
         "values": [
-          6.6,
-          18
+          0.033,
+          4.0
         ]
       },
       {
@@ -1309,8 +1269,48 @@
         "dept": "dairy eggs",
         "aisle": "other creams cheeses",
         "values": [
-          6.4,
-          17
+          0.032,
+          4.0
+        ]
+      },
+      {
+        "id": "16893.0",
+        "name": "Soft Cream Cheese",
+        "dept": "dairy eggs",
+        "aisle": "other creams cheeses",
+        "values": [
+          0.052,
+          3.9
+        ]
+      },
+      {
+        "id": "16948.0",
+        "name": "Clean Burst Liquid Laundry Detergent",
+        "dept": "household",
+        "aisle": "laundry",
+        "values": [
+          0.041,
+          2.9
+        ]
+      },
+      {
+        "id": "46065.0",
+        "name": "Double Chocolate Muffins",
+        "dept": "bakery",
+        "aisle": "breakfast bakery",
+        "values": [
+          0.042,
+          2.5
+        ]
+      },
+      {
+        "id": "2632.0",
+        "name": "Extra Sharp White Cheddar Sticks",
+        "dept": "dairy eggs",
+        "aisle": "packaged cheese",
+        "values": [
+          0.04,
+          2.4
         ]
       },
       {
@@ -1319,8 +1319,570 @@
         "dept": "dairy eggs",
         "aisle": "specialty cheeses",
         "values": [
-          6.4,
-          17
+          0.032,
+          2.1
+        ]
+      }
+    ]
+  },
+  "24561": {
+    "name": "Organic Cheese Frozen Pizza",
+    "dept": "frozen",
+    "aisle": "frozen pizza",
+    "values": [
+      0.66,
+      3.2
+    ],
+    "subs": [
+      {
+        "id": "32799.0",
+        "name": "4 Cheese Medley Frozen Pizza",
+        "values": [
+          0.66,
+          0.156
+        ],
+        "comps": [
+          {
+            "id": "15792.0",
+            "name": "Frosted Cherry Toaster Pastries",
+            "dept": "breakfast",
+            "aisle": "breakfast bars pastries",
+            "values": [
+              0.51,
+              43
+            ]
+          },
+          {
+            "id": "23413.0",
+            "name": "Chunky Monkey\u00ae Ice Cream",
+            "dept": "frozen",
+            "aisle": "ice cream ice",
+            "values": [
+              0.261,
+              29
+            ]
+          },
+          {
+            "id": "39127.0",
+            "name": "Classic Crust Pepperoni Pizza",
+            "dept": "frozen",
+            "aisle": "frozen pizza",
+            "values": [
+              0.416,
+              28
+            ]
+          },
+          {
+            "id": "115.0",
+            "name": "Scooby-Doo! Fruit Flavored Snacks",
+            "dept": "snacks",
+            "aisle": "fruit vegetable snacks",
+            "values": [
+              0.357,
+              27
+            ]
+          },
+          {
+            "id": "20344.0",
+            "name": "Chunky Chicken Noodle Soup",
+            "dept": "deli",
+            "aisle": "prepared soups salads",
+            "values": [
+              0.245,
+              27
+            ]
+          },
+          {
+            "id": "37609.0",
+            "name": "Extra Crispy Tator Tots",
+            "dept": "frozen",
+            "aisle": "frozen appetizers sides",
+            "values": [
+              0.188,
+              24
+            ]
+          },
+          {
+            "id": "9120.0",
+            "name": "Lunchables Pizza with Pepperoni",
+            "dept": "deli",
+            "aisle": "prepared meals",
+            "values": [
+              0.192,
+              23
+            ]
+          },
+          {
+            "id": "12621.0",
+            "name": "Buttery Spread Light With Flaxseed Oil",
+            "dept": "dairy eggs",
+            "aisle": "butter",
+            "values": [
+              0.266,
+              19
+            ]
+          },
+          {
+            "id": "3071.0",
+            "name": "Extreme Clean Whitening Action Flouride Toothpaste - Mint Blast",
+            "dept": "personal care",
+            "aisle": "oral hygiene",
+            "values": [
+              0.254,
+              16
+            ]
+          },
+          {
+            "id": "24747.0",
+            "name": "Suddenly Salad Classic Pasta Kit Classic",
+            "dept": "dry goods pasta",
+            "aisle": "instant foods",
+            "values": [
+              0.196,
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "id": "31614.0",
+        "name": "Lactose Free Soy Cheese Frozen Pizza",
+        "values": [
+          0.638,
+          0.151
+        ],
+        "comps": []
+      },
+      {
+        "id": "45217.0",
+        "name": "Pizza for One Original 4 Cheese Frozen Pizza",
+        "values": [
+          0.623,
+          0.148
+        ],
+        "comps": [
+          {
+            "id": "23965.0",
+            "name": "Frozen Microwaveable Chicken Pot Pie",
+            "dept": "frozen",
+            "aisle": "frozen meals",
+            "values": [
+              0.375,
+              51
+            ]
+          },
+          {
+            "id": "36729.0",
+            "name": "Butter Popped Corn Rice Cakes",
+            "dept": "snacks",
+            "aisle": "crackers",
+            "values": [
+              0.504,
+              49
+            ]
+          },
+          {
+            "id": "25124.0",
+            "name": "Whole Kernel Golden Sweet Corn",
+            "dept": "canned goods",
+            "aisle": "canned jarred vegetables",
+            "values": [
+              0.333,
+              41
+            ]
+          },
+          {
+            "id": "45321.0",
+            "name": "Mini Corn Dogs",
+            "dept": "frozen",
+            "aisle": "frozen appetizers sides",
+            "values": [
+              0.253,
+              35
+            ]
+          },
+          {
+            "id": "39397.0",
+            "name": "Chicken in a Biskit Baked Snack Crackers",
+            "dept": "snacks",
+            "aisle": "crackers",
+            "values": [
+              0.264,
+              29
+            ]
+          },
+          {
+            "id": "24339.0",
+            "name": "100% Lactose Free Milk",
+            "dept": "dairy eggs",
+            "aisle": "soy lactosefree",
+            "values": [
+              0.272,
+              26
+            ]
+          },
+          {
+            "id": "27551.0",
+            "name": "100% Juice Smoothie Orange Carrot Flavor",
+            "dept": "beverages",
+            "aisle": "refrigerated",
+            "values": [
+              0.293,
+              20
+            ]
+          },
+          {
+            "id": "37266.0",
+            "name": "Tater Treats Seasoned Shredded Potatoes",
+            "dept": "frozen",
+            "aisle": "frozen appetizers sides",
+            "values": [
+              0.288,
+              20
+            ]
+          },
+          {
+            "id": "17923.0",
+            "name": "Crinkle Cut Fries",
+            "dept": "frozen",
+            "aisle": "frozen appetizers sides",
+            "values": [
+              0.26,
+              18
+            ]
+          },
+          {
+            "id": "9314.0",
+            "name": "Marketplace Ricotta Cheese and Spinach Ravioli",
+            "dept": "frozen",
+            "aisle": "frozen meals",
+            "values": [
+              0.273,
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "id": "20345.0",
+        "name": "Thin Crust Pepperoni Pizza",
+        "values": [
+          0.44,
+          0.104
+        ],
+        "comps": [
+          {
+            "id": "36651.0",
+            "name": "Pizza Poppers Uncured Pepperoni",
+            "dept": "frozen",
+            "aisle": "frozen meals",
+            "values": [
+              0.02,
+              11
+            ]
+          },
+          {
+            "id": "32316.0",
+            "name": "Vanilla Greek Yogurt",
+            "dept": "dairy eggs",
+            "aisle": "yogurt",
+            "values": [
+              0.042,
+              3
+            ]
+          },
+          {
+            "id": "14924.0",
+            "name": "Organic Yerba Mate Traditional",
+            "dept": "beverages",
+            "aisle": "energy sports drinks",
+            "values": [
+              0.021,
+              3
+            ]
+          },
+          {
+            "id": "20011.0",
+            "name": "Pizza, Italiano, Meatless Italian Sausage & Mushroom",
+            "dept": "frozen",
+            "aisle": "frozen pizza",
+            "values": [
+              0.02,
+              2
+            ]
+          },
+          {
+            "id": "18353.0",
+            "name": "Traditional Chicken Burrito",
+            "dept": "frozen",
+            "aisle": "frozen meals",
+            "values": [
+              0.021,
+              2
+            ]
+          },
+          {
+            "id": "28214.0",
+            "name": "Energy Drink, Organic, Pomegranate Acai",
+            "dept": "beverages",
+            "aisle": "energy sports drinks",
+            "values": [
+              0.027,
+              2
+            ]
+          },
+          {
+            "id": "9420.0",
+            "name": "Iced Chai, Original",
+            "dept": "beverages",
+            "aisle": "refrigerated",
+            "values": [
+              0.026,
+              2
+            ]
+          },
+          {
+            "id": "32106.0",
+            "name": "Organic Stage 2 Rice & Lentil Baby Food",
+            "dept": "babies",
+            "aisle": "baby food formula",
+            "values": [
+              0.024,
+              2
+            ]
+          },
+          {
+            "id": "32755.0",
+            "name": "Anasazi Beans Green Chillies & Squash Burrito",
+            "dept": "frozen",
+            "aisle": "frozen meals",
+            "values": [
+              0.021,
+              2
+            ]
+          },
+          {
+            "id": "4660.0",
+            "name": "Sausage Pizza",
+            "dept": "frozen",
+            "aisle": "frozen pizza",
+            "values": [
+              0.025,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "id": "8022.0",
+        "name": "Spinach Pizza",
+        "values": [
+          0.422,
+          0.1
+        ],
+        "comps": [
+          {
+            "id": "5918.0",
+            "name": "Single Serve Cheese Pizza",
+            "dept": "frozen",
+            "aisle": "frozen pizza",
+            "values": [
+              0.039,
+              18
+            ]
+          },
+          {
+            "id": "8214.0",
+            "name": "Easy Mac Original Flavor Macaroni & Cheese Dinner",
+            "dept": "dry goods pasta",
+            "aisle": "instant foods",
+            "values": [
+              0.04,
+              7
+            ]
+          },
+          {
+            "id": "35242.0",
+            "name": "Cornmeal Crust 3 Cheese Pizza",
+            "dept": "frozen",
+            "aisle": "frozen pizza",
+            "values": [
+              0.035,
+              7
+            ]
+          },
+          {
+            "id": "20011.0",
+            "name": "Pizza, Italiano, Meatless Italian Sausage & Mushroom",
+            "dept": "frozen",
+            "aisle": "frozen pizza",
+            "values": [
+              0.055,
+              6
+            ]
+          },
+          {
+            "id": "39696.0",
+            "name": "Vegetable Lasagna Light In Sodium",
+            "dept": "frozen",
+            "aisle": "frozen meals",
+            "values": [
+              0.036,
+              6
+            ]
+          },
+          {
+            "id": "17745.0",
+            "name": "Pizza, Cheese & Pesto",
+            "dept": "frozen",
+            "aisle": "frozen pizza",
+            "values": [
+              0.06,
+              4
+            ]
+          },
+          {
+            "id": "16725.0",
+            "name": "Organic Heritage Crunch Cereal",
+            "dept": "breakfast",
+            "aisle": "cereal",
+            "values": [
+              0.039,
+              3
+            ]
+          },
+          {
+            "id": "5467.0",
+            "name": "Spinach & Cheese Enchilada Verde Meal",
+            "dept": "frozen",
+            "aisle": "frozen meals",
+            "values": [
+              0.036,
+              3
+            ]
+          },
+          {
+            "id": "2712.0",
+            "name": "Frozen Organic Peach Slices",
+            "dept": "frozen",
+            "aisle": "frozen produce",
+            "values": [
+              0.037,
+              3
+            ]
+          },
+          {
+            "id": "33497.0",
+            "name": "Bread, Raisin",
+            "dept": "bakery",
+            "aisle": "bread",
+            "values": [
+              0.042,
+              3
+            ]
+          }
+        ]
+      }
+    ],
+    "comps": [
+      {
+        "id": "35242.0",
+        "name": "Cornmeal Crust 3 Cheese Pizza",
+        "dept": "frozen",
+        "aisle": "frozen pizza",
+        "values": [
+          0.022,
+          4.2
+        ]
+      },
+      {
+        "id": "16070.0",
+        "name": "Organic Elmo Noodlemania Soup",
+        "dept": "canned goods",
+        "aisle": "soup broth bouillon",
+        "values": [
+          0.02,
+          3.6
+        ]
+      },
+      {
+        "id": "47868.0",
+        "name": "100% Spring Water",
+        "dept": "beverages",
+        "aisle": "water seltzer sparkling water",
+        "values": [
+          0.025,
+          2.8
+        ]
+      },
+      {
+        "id": "17745.0",
+        "name": "Pizza, Cheese & Pesto",
+        "dept": "frozen",
+        "aisle": "frozen pizza",
+        "values": [
+          0.038,
+          2.8
+        ]
+      },
+      {
+        "id": "25167.0",
+        "name": "All-Natural Harvest Grape Fruit Strip",
+        "dept": "snacks",
+        "aisle": "fruit vegetable snacks",
+        "values": [
+          0.024,
+          2.5
+        ]
+      },
+      {
+        "id": "46202.0",
+        "name": "Super Duper Chicken Nuggets",
+        "dept": "frozen",
+        "aisle": "frozen meals",
+        "values": [
+          0.022,
+          2.1
+        ]
+      },
+      {
+        "id": "12004.0",
+        "name": "Organic Colorado Cracked Wheat Bread",
+        "dept": "bakery",
+        "aisle": "bread",
+        "values": [
+          0.029,
+          1.9
+        ]
+      },
+      {
+        "id": "37050.0",
+        "name": "Multi-Vitamin & Mineral, Gummy Bears, Fruit Flavors",
+        "dept": "personal care",
+        "aisle": "vitamins supplements",
+        "values": [
+          0.019,
+          1.8
+        ]
+      },
+      {
+        "id": "17723.0",
+        "name": "Apple Peach Sauce",
+        "dept": "canned goods",
+        "aisle": "canned fruit applesauce",
+        "values": [
+          0.018,
+          1.8
+        ]
+      },
+      {
+        "id": "47310.0",
+        "name": "Shells & White Cheddar Mac & Cheese Family Size Macaroni and Cheese Organic",
+        "dept": "dry goods pasta",
+        "aisle": "instant foods",
+        "values": [
+          0.019,
+          1.3
         ]
       }
     ]
@@ -1331,7 +1893,7 @@
     "aisle": "fresh fruits",
     "values": [
       0.724,
-      18
+      0.1
     ],
     "subs": [
       {
@@ -1343,53 +1905,13 @@
         ],
         "comps": [
           {
-            "id": "557.0",
-            "name": "Red Seedless Grapes Imported",
-            "dept": "produce",
-            "aisle": "fresh fruits",
-            "values": [
-              32.407,
-              1.0
-            ]
-          },
-          {
-            "id": "28916.0",
-            "name": "Hot House Seedless Cucumbers",
-            "dept": "produce",
-            "aisle": "fresh vegetables",
-            "values": [
-              19.089,
-              0.351
-            ]
-          },
-          {
-            "id": "27960.0",
-            "name": "Organic Eggs",
-            "dept": "dairy eggs",
-            "aisle": "eggs",
-            "values": [
-              16.735,
-              0.271
-            ]
-          },
-          {
             "id": "28570.0",
             "name": "Sundried Tomato Organic",
             "dept": "snacks",
             "aisle": "fruit vegetable snacks",
             "values": [
-              15.129,
-              0.222
-            ]
-          },
-          {
-            "id": "14727.0",
-            "name": "Yellow Onion",
-            "dept": "produce",
-            "aisle": "packaged vegetables fruits",
-            "values": [
-              13.854,
-              0.214
+              0.156,
+              24
             ]
           },
           {
@@ -1398,38 +1920,48 @@
             "dept": "dairy eggs",
             "aisle": "eggs",
             "values": [
-              12.602,
-              0.155
+              0.13,
+              24
             ]
           },
           {
-            "id": "38548.0",
-            "name": "Gala Apple",
+            "id": "557.0",
+            "name": "Red Seedless Grapes Imported",
             "dept": "produce",
             "aisle": "fresh fruits",
             "values": [
-              9.468,
-              0.108
+              0.336,
+              21
             ]
           },
           {
-            "id": "28725.0",
-            "name": "Organic Diced Mangoes",
-            "dept": "frozen",
-            "aisle": "frozen produce",
+            "id": "28916.0",
+            "name": "Hot House Seedless Cucumbers",
+            "dept": "produce",
+            "aisle": "fresh vegetables",
             "values": [
-              10.233,
-              0.103
+              0.197,
+              17
             ]
           },
           {
-            "id": "48455.0",
-            "name": "Lemon",
+            "id": "27960.0",
+            "name": "Organic Eggs",
+            "dept": "dairy eggs",
+            "aisle": "eggs",
+            "values": [
+              0.173,
+              16
+            ]
+          },
+          {
+            "id": "14727.0",
+            "name": "Yellow Onion",
             "dept": "produce",
             "aisle": "packaged vegetables fruits",
             "values": [
-              9.074,
-              0.082
+              0.143,
+              15
             ]
           },
           {
@@ -1438,8 +1970,38 @@
             "dept": "dairy eggs",
             "aisle": "eggs",
             "values": [
-              8.628,
-              0.074
+              0.088,
+              15
+            ]
+          },
+          {
+            "id": "38548.0",
+            "name": "Gala Apple",
+            "dept": "produce",
+            "aisle": "fresh fruits",
+            "values": [
+              0.097,
+              11
+            ]
+          },
+          {
+            "id": "48455.0",
+            "name": "Lemon",
+            "dept": "produce",
+            "aisle": "packaged vegetables fruits",
+            "values": [
+              0.093,
+              9
+            ]
+          },
+          {
+            "id": "28725.0",
+            "name": "Organic Diced Mangoes",
+            "dept": "frozen",
+            "aisle": "frozen produce",
+            "values": [
+              0.105,
+              8
             ]
           }
         ]
@@ -1453,93 +2015,23 @@
         ],
         "comps": [
           {
-            "id": "45254.0",
-            "name": "Organic Gala Apple",
-            "dept": "produce",
-            "aisle": "fresh fruits",
-            "values": [
-              24.548,
-              0.168
-            ]
-          },
-          {
-            "id": "14727.0",
-            "name": "Yellow Onion",
-            "dept": "produce",
-            "aisle": "packaged vegetables fruits",
-            "values": [
-              7.638,
-              0.118
-            ]
-          },
-          {
-            "id": "38548.0",
-            "name": "Gala Apple",
-            "dept": "produce",
-            "aisle": "fresh fruits",
-            "values": [
-              7.807,
-              0.089
-            ]
-          },
-          {
-            "id": "21043.0",
-            "name": "Sumo Mandarin",
-            "dept": "missing",
-            "aisle": "missing",
-            "values": [
-              10.402,
-              0.033
-            ]
-          },
-          {
-            "id": "37400.0",
-            "name": "Organic Tangerine",
-            "dept": "beverages",
-            "aisle": "juice nectars",
-            "values": [
-              8.081,
-              0.024
-            ]
-          },
-          {
-            "id": "42208.0",
-            "name": "Organic Lemons, Bag",
-            "dept": "produce",
-            "aisle": "fresh fruits",
-            "values": [
-              7.901,
-              0.02
-            ]
-          },
-          {
-            "id": "33080.0",
-            "name": "Fresh Organic Carrots",
-            "dept": "missing",
-            "aisle": "missing",
-            "values": [
-              7.836,
-              0.02
-            ]
-          },
-          {
             "id": "48825.0",
             "name": "Bag of Organic Lemons",
             "dept": "produce",
             "aisle": "fresh fruits",
             "values": [
-              7.751,
-              0.019
+              0.021,
+              6
             ]
           },
           {
-            "id": "7474.0",
-            "name": "Organic Shallot",
+            "id": "45254.0",
+            "name": "Organic Gala Apple",
             "dept": "produce",
-            "aisle": "fresh vegetables",
+            "aisle": "fresh fruits",
             "values": [
-              7.143,
-              0.017
+              0.069,
+              5
             ]
           },
           {
@@ -1548,8 +2040,78 @@
             "dept": "produce",
             "aisle": "fresh fruits",
             "values": [
-              7.114,
-              0.017
+              0.019,
+              3
+            ]
+          },
+          {
+            "id": "38548.0",
+            "name": "Gala Apple",
+            "dept": "produce",
+            "aisle": "fresh fruits",
+            "values": [
+              0.021,
+              2
+            ]
+          },
+          {
+            "id": "33080.0",
+            "name": "Fresh Organic Carrots",
+            "dept": "missing",
+            "aisle": "missing",
+            "values": [
+              0.021,
+              2
+            ]
+          },
+          {
+            "id": "14727.0",
+            "name": "Yellow Onion",
+            "dept": "produce",
+            "aisle": "packaged vegetables fruits",
+            "values": [
+              0.02,
+              2
+            ]
+          },
+          {
+            "id": "21043.0",
+            "name": "Sumo Mandarin",
+            "dept": "missing",
+            "aisle": "missing",
+            "values": [
+              0.028,
+              2
+            ]
+          },
+          {
+            "id": "7474.0",
+            "name": "Organic Shallot",
+            "dept": "produce",
+            "aisle": "fresh vegetables",
+            "values": [
+              0.019,
+              2
+            ]
+          },
+          {
+            "id": "37400.0",
+            "name": "Organic Tangerine",
+            "dept": "beverages",
+            "aisle": "juice nectars",
+            "values": [
+              0.022,
+              2
+            ]
+          },
+          {
+            "id": "42208.0",
+            "name": "Organic Lemons, Bag",
+            "dept": "produce",
+            "aisle": "fresh fruits",
+            "values": [
+              0.021,
+              2
             ]
           }
         ]
@@ -1563,33 +2125,13 @@
         ],
         "comps": [
           {
-            "id": "9948.0",
-            "name": "Driscoll Sunshine Raspberries",
+            "id": "33816.0",
+            "name": "Yellow Nectarines",
             "dept": "produce",
             "aisle": "fresh fruits",
             "values": [
-              1.475,
-              0.025
-            ]
-          },
-          {
-            "id": "2110.0",
-            "name": "Green Bananas",
-            "dept": "produce",
-            "aisle": "fresh fruits",
-            "values": [
-              1.299,
-              0.019
-            ]
-          },
-          {
-            "id": "3513.0",
-            "name": "Organic Blueberry",
-            "dept": "produce",
-            "aisle": "fresh fruits",
-            "values": [
-              1.277,
-              0.018
+              0.112,
+              33
             ]
           },
           {
@@ -1598,28 +2140,8 @@
             "dept": "dairy eggs",
             "aisle": "eggs",
             "values": [
-              1.067,
-              0.013
-            ]
-          },
-          {
-            "id": "33816.0",
-            "name": "Yellow Nectarines",
-            "dept": "produce",
-            "aisle": "fresh fruits",
-            "values": [
-              0.954,
-              0.01
-            ]
-          },
-          {
-            "id": "45757.0",
-            "name": "Picnic Potato Salad",
-            "dept": "deli",
-            "aisle": "prepared soups salads",
-            "values": [
-              0.78,
-              0.007
+              0.126,
+              18
             ]
           },
           {
@@ -1628,28 +2150,28 @@
             "dept": "dairy eggs",
             "aisle": "yogurt",
             "values": [
-              0.768,
-              0.007
+              0.09,
+              17
             ]
           },
           {
-            "id": "3996.0",
-            "name": "Diced Pears In Light Syrup Fruit Cups",
-            "dept": "canned goods",
-            "aisle": "canned fruit applesauce",
+            "id": "3513.0",
+            "name": "Organic Blueberry",
+            "dept": "produce",
+            "aisle": "fresh fruits",
             "values": [
-              0.746,
-              0.006
+              0.151,
+              16
             ]
           },
           {
-            "id": "43255.0",
-            "name": "Banana Chia Pod",
-            "dept": "dairy eggs",
-            "aisle": "yogurt",
+            "id": "45757.0",
+            "name": "Picnic Potato Salad",
+            "dept": "deli",
+            "aisle": "prepared soups salads",
             "values": [
-              0.491,
-              0.003
+              0.091,
+              15
             ]
           },
           {
@@ -1658,8 +2180,48 @@
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              0.398,
-              0.002
+              0.046,
+              13
+            ]
+          },
+          {
+            "id": "9948.0",
+            "name": "Driscoll Sunshine Raspberries",
+            "dept": "produce",
+            "aisle": "fresh fruits",
+            "values": [
+              0.175,
+              11
+            ]
+          },
+          {
+            "id": "2110.0",
+            "name": "Green Bananas",
+            "dept": "produce",
+            "aisle": "fresh fruits",
+            "values": [
+              0.153,
+              11
+            ]
+          },
+          {
+            "id": "3996.0",
+            "name": "Diced Pears In Light Syrup Fruit Cups",
+            "dept": "canned goods",
+            "aisle": "canned fruit applesauce",
+            "values": [
+              0.088,
+              11
+            ]
+          },
+          {
+            "id": "43255.0",
+            "name": "Banana Chia Pod",
+            "dept": "dairy eggs",
+            "aisle": "yogurt",
+            "values": [
+              0.057,
+              11
             ]
           }
         ]
@@ -1673,93 +2235,13 @@
         ],
         "comps": [
           {
-            "id": "47551.0",
-            "name": "Mini-Snacks Organic Raisins",
-            "dept": "snacks",
-            "aisle": "nuts seeds dried fruit",
-            "values": [
-              32.362,
-              0.237
-            ]
-          },
-          {
             "id": "37400.0",
             "name": "Organic Tangerine",
             "dept": "beverages",
             "aisle": "juice nectars",
             "values": [
-              31.818,
-              0.095
-            ]
-          },
-          {
-            "id": "16847.0",
-            "name": "Organic Mash ups Tropical Squeezable Fruit",
-            "dept": "canned goods",
-            "aisle": "canned fruit applesauce",
-            "values": [
-              32.099,
-              0.044
-            ]
-          },
-          {
-            "id": "3737.0",
-            "name": "Kids Mixed Berry Twisted Fruit",
-            "dept": "snacks",
-            "aisle": "fruit vegetable snacks",
-            "values": [
-              34.393,
-              0.032
-            ]
-          },
-          {
-            "id": "15241.0",
-            "name": "Original Gourmet Granola",
-            "dept": "breakfast",
-            "aisle": "granola",
-            "values": [
-              33.908,
-              0.032
-            ]
-          },
-          {
-            "id": "48356.0",
-            "name": "Muffins, Flax, Cranberry Orange",
-            "dept": "bakery",
-            "aisle": "breakfast bakery",
-            "values": [
-              33.241,
-              0.031
-            ]
-          },
-          {
-            "id": "31694.0",
-            "name": "Sourdough Bachelor Loaf",
-            "dept": "bakery",
-            "aisle": "bread",
-            "values": [
-              32.378,
-              0.029
-            ]
-          },
-          {
-            "id": "46949.0",
-            "name": "Eat Your Colors Reds Puree Baby Food",
-            "dept": "missing",
-            "aisle": "missing",
-            "values": [
-              32.132,
-              0.029
-            ]
-          },
-          {
-            "id": "20153.0",
-            "name": "Eat Your Colors Purples Puree Baby Food",
-            "dept": "missing",
-            "aisle": "missing",
-            "values": [
-              31.234,
-              0.028
+              0.003,
+              0
             ]
           },
           {
@@ -1768,8 +2250,88 @@
             "dept": "beverages",
             "aisle": "water seltzer sparkling water",
             "values": [
-              30.941,
-              0.028
+              0.003,
+              0
+            ]
+          },
+          {
+            "id": "48356.0",
+            "name": "Muffins, Flax, Cranberry Orange",
+            "dept": "bakery",
+            "aisle": "breakfast bakery",
+            "values": [
+              0.003,
+              0
+            ]
+          },
+          {
+            "id": "3737.0",
+            "name": "Kids Mixed Berry Twisted Fruit",
+            "dept": "snacks",
+            "aisle": "fruit vegetable snacks",
+            "values": [
+              0.004,
+              0
+            ]
+          },
+          {
+            "id": "20153.0",
+            "name": "Eat Your Colors Purples Puree Baby Food",
+            "dept": "missing",
+            "aisle": "missing",
+            "values": [
+              0.003,
+              0
+            ]
+          },
+          {
+            "id": "15241.0",
+            "name": "Original Gourmet Granola",
+            "dept": "breakfast",
+            "aisle": "granola",
+            "values": [
+              0.004,
+              0
+            ]
+          },
+          {
+            "id": "47551.0",
+            "name": "Mini-Snacks Organic Raisins",
+            "dept": "snacks",
+            "aisle": "nuts seeds dried fruit",
+            "values": [
+              0.003,
+              0
+            ]
+          },
+          {
+            "id": "31694.0",
+            "name": "Sourdough Bachelor Loaf",
+            "dept": "bakery",
+            "aisle": "bread",
+            "values": [
+              0.003,
+              0
+            ]
+          },
+          {
+            "id": "46949.0",
+            "name": "Eat Your Colors Reds Puree Baby Food",
+            "dept": "missing",
+            "aisle": "missing",
+            "values": [
+              0.003,
+              0
+            ]
+          },
+          {
+            "id": "16847.0",
+            "name": "Organic Mash ups Tropical Squeezable Fruit",
+            "dept": "canned goods",
+            "aisle": "canned fruit applesauce",
+            "values": [
+              0.003,
+              0
             ]
           }
         ]
@@ -1783,63 +2345,13 @@
         ],
         "comps": [
           {
-            "id": "9948.0",
-            "name": "Driscoll Sunshine Raspberries",
-            "dept": "produce",
-            "aisle": "fresh fruits",
-            "values": [
-              27.139,
-              0.457
-            ]
-          },
-          {
-            "id": "33497.0",
-            "name": "Bread, Raisin",
-            "dept": "bakery",
-            "aisle": "bread",
-            "values": [
-              26.254,
-              0.192
-            ]
-          },
-          {
-            "id": "16847.0",
-            "name": "Organic Mash ups Tropical Squeezable Fruit",
-            "dept": "canned goods",
-            "aisle": "canned fruit applesauce",
-            "values": [
-              25.926,
-              0.036
-            ]
-          },
-          {
             "id": "2353.0",
             "name": "Multivitamin, Kids Complete, Gummies",
             "dept": "other",
             "aisle": "other",
             "values": [
-              28.365,
-              0.029
-            ]
-          },
-          {
-            "id": "10885.0",
-            "name": "Live Butter Lettuce",
-            "dept": "produce",
-            "aisle": "packaged vegetables fruits",
-            "values": [
-              27.907,
-              0.028
-            ]
-          },
-          {
-            "id": "17159.0",
-            "name": "Rhubarb",
-            "dept": "produce",
-            "aisle": "fresh vegetables",
-            "values": [
-              27.003,
-              0.027
+              0.004,
+              0
             ]
           },
           {
@@ -1848,18 +2360,18 @@
             "dept": "beverages",
             "aisle": "juice nectars",
             "values": [
-              26.697,
-              0.026
+              0.004,
+              0
             ]
           },
           {
-            "id": "5164.0",
-            "name": "Hint Of Sea Salt Almonds Mini Nut-Thins",
-            "dept": "snacks",
-            "aisle": "nuts seeds dried fruit",
+            "id": "10885.0",
+            "name": "Live Butter Lettuce",
+            "dept": "produce",
+            "aisle": "packaged vegetables fruits",
             "values": [
-              26.558,
-              0.026
+              0.004,
+              0
             ]
           },
           {
@@ -1868,8 +2380,48 @@
             "dept": "deli",
             "aisle": "lunch meat",
             "values": [
-              26.234,
-              0.026
+              0.004,
+              0
+            ]
+          },
+          {
+            "id": "5164.0",
+            "name": "Hint Of Sea Salt Almonds Mini Nut-Thins",
+            "dept": "snacks",
+            "aisle": "nuts seeds dried fruit",
+            "values": [
+              0.004,
+              0
+            ]
+          },
+          {
+            "id": "9948.0",
+            "name": "Driscoll Sunshine Raspberries",
+            "dept": "produce",
+            "aisle": "fresh fruits",
+            "values": [
+              0.004,
+              0
+            ]
+          },
+          {
+            "id": "33497.0",
+            "name": "Bread, Raisin",
+            "dept": "bakery",
+            "aisle": "bread",
+            "values": [
+              0.004,
+              0
+            ]
+          },
+          {
+            "id": "17159.0",
+            "name": "Rhubarb",
+            "dept": "produce",
+            "aisle": "fresh vegetables",
+            "values": [
+              0.004,
+              0
             ]
           },
           {
@@ -1878,8 +2430,18 @@
             "dept": "babies",
             "aisle": "baby food formula",
             "values": [
-              25.364,
-              0.024
+              0.004,
+              0
+            ]
+          },
+          {
+            "id": "16847.0",
+            "name": "Organic Mash ups Tropical Squeezable Fruit",
+            "dept": "canned goods",
+            "aisle": "canned fruit applesauce",
+            "values": [
+              0.004,
+              0
             ]
           }
         ]
@@ -1892,18 +2454,8 @@
         "dept": "dairy eggs",
         "aisle": "yogurt",
         "values": [
-          39.3,
-          100
-        ]
-      },
-      {
-        "id": "17261.0",
-        "name": "2nd Foods Organic  Pear and Spinach Baby Food",
-        "dept": "babies",
-        "aisle": "baby food formula",
-        "values": [
-          37.3,
-          95
+          0.003,
+          0.3
         ]
       },
       {
@@ -1912,18 +2464,8 @@
         "dept": "dry goods pasta",
         "aisle": "instant foods",
         "values": [
-          36.5,
-          93
-        ]
-      },
-      {
-        "id": "25055.0",
-        "name": "Veg and Fruit Puree, 100%, Organic, Sweet Potato, Corn and Apple",
-        "dept": "babies",
-        "aisle": "baby food formula",
-        "values": [
-          36.1,
-          92
+          0.003,
+          0.3
         ]
       },
       {
@@ -1932,28 +2474,8 @@
         "dept": "dairy eggs",
         "aisle": "eggs",
         "values": [
-          36.0,
-          91
-        ]
-      },
-      {
-        "id": "11230.0",
-        "name": "Cashew & Ginger Spice Fruit & Nut Bar",
-        "dept": "snacks",
-        "aisle": "energy granola bars",
-        "values": [
-          35.1,
-          89
-        ]
-      },
-      {
-        "id": "43413.0",
-        "name": "Humm! Cocktail Hummus Roasted Pine Nuts",
-        "dept": "deli",
-        "aisle": "fresh dips tapenades",
-        "values": [
-          34.7,
-          88
+          0.003,
+          0.2
         ]
       },
       {
@@ -1962,8 +2484,38 @@
         "dept": "dairy eggs",
         "aisle": "packaged cheese",
         "values": [
-          34.7,
-          88
+          0.003,
+          0.2
+        ]
+      },
+      {
+        "id": "17261.0",
+        "name": "2nd Foods Organic  Pear and Spinach Baby Food",
+        "dept": "babies",
+        "aisle": "baby food formula",
+        "values": [
+          0.003,
+          0.2
+        ]
+      },
+      {
+        "id": "25055.0",
+        "name": "Veg and Fruit Puree, 100%, Organic, Sweet Potato, Corn and Apple",
+        "dept": "babies",
+        "aisle": "baby food formula",
+        "values": [
+          0.003,
+          0.2
+        ]
+      },
+      {
+        "id": "43413.0",
+        "name": "Humm! Cocktail Hummus Roasted Pine Nuts",
+        "dept": "deli",
+        "aisle": "fresh dips tapenades",
+        "values": [
+          0.003,
+          0.2
         ]
       },
       {
@@ -1972,8 +2524,18 @@
         "dept": "beverages",
         "aisle": "refrigerated",
         "values": [
-          34.2,
-          87
+          0.003,
+          0.2
+        ]
+      },
+      {
+        "id": "11230.0",
+        "name": "Cashew & Ginger Spice Fruit & Nut Bar",
+        "dept": "snacks",
+        "aisle": "energy granola bars",
+        "values": [
+          0.003,
+          0.2
         ]
       },
       {
@@ -1982,8 +2544,8 @@
         "dept": "dairy eggs",
         "aisle": "packaged cheese",
         "values": [
-          34.0,
-          86
+          0.003,
+          0.2
         ]
       }
     ]
@@ -1994,7 +2556,7 @@
     "aisle": "milk",
     "values": [
       0.773,
-      21
+      0.6
     ],
     "subs": [
       {
@@ -2006,73 +2568,13 @@
         ],
         "comps": [
           {
-            "id": "13721.0",
-            "name": "Organic Alphonso Mango Lassi",
-            "dept": "dairy eggs",
-            "aisle": "yogurt",
-            "values": [
-              8.629,
-              0.041
-            ]
-          },
-          {
-            "id": "15050.0",
-            "name": "Fresh Alfredo",
-            "dept": "dry goods pasta",
-            "aisle": "pasta sauce",
-            "values": [
-              7.908,
-              0.035
-            ]
-          },
-          {
-            "id": "19702.0",
-            "name": "Original Black Tea Brew Kombucha",
-            "dept": "beverages",
-            "aisle": "refrigerated",
-            "values": [
-              7.801,
-              0.034
-            ]
-          },
-          {
             "id": "15712.0",
             "name": "Organic Traditional Plain Kefir",
             "dept": "dairy eggs",
             "aisle": "yogurt",
             "values": [
-              6.761,
-              0.026
-            ]
-          },
-          {
-            "id": "36519.0",
-            "name": "Pure Butter Shortbread Rounds",
-            "dept": "snacks",
-            "aisle": "cookies cakes",
-            "values": [
-              6.631,
-              0.025
-            ]
-          },
-          {
-            "id": "47249.0",
-            "name": "Seriousmilk Classic 39% Milk Chocolate Bar",
-            "dept": "snacks",
-            "aisle": "candy chocolate",
-            "values": [
-              6.076,
-              0.021
-            ]
-          },
-          {
-            "id": "44090.0",
-            "name": "Roasted Pumpkin White Cheddar Tamales",
-            "dept": "deli",
-            "aisle": "prepared meals",
-            "values": [
-              5.651,
-              0.018
+              0.035,
+              8
             ]
           },
           {
@@ -2081,8 +2583,8 @@
             "dept": "dairy eggs",
             "aisle": "butter",
             "values": [
-              5.638,
-              0.018
+              0.029,
+              6
             ]
           },
           {
@@ -2091,8 +2593,8 @@
             "dept": "dairy eggs",
             "aisle": "cream",
             "values": [
-              5.572,
-              0.018
+              0.029,
+              6
             ]
           },
           {
@@ -2101,8 +2603,68 @@
             "dept": "dairy eggs",
             "aisle": "yogurt",
             "values": [
-              5.436,
-              0.017
+              0.028,
+              4
+            ]
+          },
+          {
+            "id": "44090.0",
+            "name": "Roasted Pumpkin White Cheddar Tamales",
+            "dept": "deli",
+            "aisle": "prepared meals",
+            "values": [
+              0.029,
+              4
+            ]
+          },
+          {
+            "id": "13721.0",
+            "name": "Organic Alphonso Mango Lassi",
+            "dept": "dairy eggs",
+            "aisle": "yogurt",
+            "values": [
+              0.045,
+              3
+            ]
+          },
+          {
+            "id": "19702.0",
+            "name": "Original Black Tea Brew Kombucha",
+            "dept": "beverages",
+            "aisle": "refrigerated",
+            "values": [
+              0.041,
+              3
+            ]
+          },
+          {
+            "id": "15050.0",
+            "name": "Fresh Alfredo",
+            "dept": "dry goods pasta",
+            "aisle": "pasta sauce",
+            "values": [
+              0.041,
+              3
+            ]
+          },
+          {
+            "id": "36519.0",
+            "name": "Pure Butter Shortbread Rounds",
+            "dept": "snacks",
+            "aisle": "cookies cakes",
+            "values": [
+              0.034,
+              2
+            ]
+          },
+          {
+            "id": "47249.0",
+            "name": "Seriousmilk Classic 39% Milk Chocolate Bar",
+            "dept": "snacks",
+            "aisle": "candy chocolate",
+            "values": [
+              0.031,
+              2
             ]
           }
         ]
@@ -2116,23 +2678,13 @@
         ],
         "comps": [
           {
-            "id": "19176.0",
-            "name": "Chocolate Chip Mini Cookies",
-            "dept": "snacks",
-            "aisle": "cookies cakes",
-            "values": [
-              14.286,
-              0.113
-            ]
-          },
-          {
-            "id": "24419.0",
-            "name": "Yogurt, Lowfat, Plain",
+            "id": "45446.0",
+            "name": "Yogurt, Organic, Lowfat, Strawberry",
             "dept": "dairy eggs",
             "aisle": "yogurt",
             "values": [
-              11.697,
-              0.031
+              0.018,
+              3
             ]
           },
           {
@@ -2141,8 +2693,28 @@
             "dept": "dairy eggs",
             "aisle": "yogurt",
             "values": [
-              11.303,
-              0.029
+              0.021,
+              3
+            ]
+          },
+          {
+            "id": "24419.0",
+            "name": "Yogurt, Lowfat, Plain",
+            "dept": "dairy eggs",
+            "aisle": "yogurt",
+            "values": [
+              0.022,
+              2
+            ]
+          },
+          {
+            "id": "19176.0",
+            "name": "Chocolate Chip Mini Cookies",
+            "dept": "snacks",
+            "aisle": "cookies cakes",
+            "values": [
+              0.027,
+              2
             ]
           },
           {
@@ -2151,58 +2723,8 @@
             "dept": "beverages",
             "aisle": "tea",
             "values": [
-              10.444,
-              0.025
-            ]
-          },
-          {
-            "id": "45446.0",
-            "name": "Yogurt, Organic, Lowfat, Strawberry",
-            "dept": "dairy eggs",
-            "aisle": "yogurt",
-            "values": [
-              9.63,
-              0.022
-            ]
-          },
-          {
-            "id": "24476.0",
-            "name": "Salt & Pepper Potato Chips",
-            "dept": "snacks",
-            "aisle": "chips pretzels",
-            "values": [
-              9.563,
-              0.021
-            ]
-          },
-          {
-            "id": "11519.0",
-            "name": "Bite Size Cheddar Crackers",
-            "dept": "snacks",
-            "aisle": "crackers",
-            "values": [
-              8.997,
-              0.019
-            ]
-          },
-          {
-            "id": "27671.0",
-            "name": "Granola, Original, Almond Pecan",
-            "dept": "breakfast",
-            "aisle": "granola",
-            "values": [
-              8.96,
-              0.019
-            ]
-          },
-          {
-            "id": "32771.0",
-            "name": "Organic Mango Acai Fruit Leather, 12 Ct",
-            "dept": "snacks",
-            "aisle": "fruit vegetable snacks",
-            "values": [
-              8.66,
-              0.018
+              0.019,
+              2
             ]
           },
           {
@@ -2211,8 +2733,48 @@
             "dept": "dairy eggs",
             "aisle": "other creams cheeses",
             "values": [
-              8.53,
-              0.017
+              0.016,
+              2
+            ]
+          },
+          {
+            "id": "32771.0",
+            "name": "Organic Mango Acai Fruit Leather, 12 Ct",
+            "dept": "snacks",
+            "aisle": "fruit vegetable snacks",
+            "values": [
+              0.016,
+              2
+            ]
+          },
+          {
+            "id": "24476.0",
+            "name": "Salt & Pepper Potato Chips",
+            "dept": "snacks",
+            "aisle": "chips pretzels",
+            "values": [
+              0.018,
+              1
+            ]
+          },
+          {
+            "id": "11519.0",
+            "name": "Bite Size Cheddar Crackers",
+            "dept": "snacks",
+            "aisle": "crackers",
+            "values": [
+              0.017,
+              1
+            ]
+          },
+          {
+            "id": "27671.0",
+            "name": "Granola, Original, Almond Pecan",
+            "dept": "breakfast",
+            "aisle": "granola",
+            "values": [
+              0.017,
+              1
             ]
           }
         ]
@@ -2226,23 +2788,13 @@
         ],
         "comps": [
           {
-            "id": "33497.0",
-            "name": "Bread, Raisin",
-            "dept": "bakery",
-            "aisle": "bread",
-            "values": [
-              15.044,
-              0.11
-            ]
-          },
-          {
             "id": "38652.0",
             "name": "Yerba Mate Orange Exuberance Tea",
             "dept": "beverages",
             "aisle": "energy sports drinks",
             "values": [
-              15.152,
-              0.039
+              0.021,
+              3
             ]
           },
           {
@@ -2251,28 +2803,8 @@
             "dept": "beverages",
             "aisle": "tea",
             "values": [
-              14.286,
-              0.035
-            ]
-          },
-          {
-            "id": "32420.0",
-            "name": "Organic 1% Milkfat Lowfat Chocolate Milk",
-            "dept": "dairy eggs",
-            "aisle": "milk",
-            "values": [
-              12.111,
-              0.026
-            ]
-          },
-          {
-            "id": "46636.0",
-            "name": "Brown Omega 3 Large Grade A Eggs",
-            "dept": "dairy eggs",
-            "aisle": "eggs",
-            "values": [
-              12.0,
-              0.025
+              0.02,
+              2
             ]
           },
           {
@@ -2281,18 +2813,18 @@
             "dept": "beverages",
             "aisle": "juice nectars",
             "values": [
-              11.183,
-              0.022
+              0.015,
+              2
             ]
           },
           {
-            "id": "15467.0",
-            "name": "Core Gluten Free Mint Chocolate Bar",
-            "dept": "snacks",
-            "aisle": "energy granola bars",
+            "id": "32420.0",
+            "name": "Organic 1% Milkfat Lowfat Chocolate Milk",
+            "dept": "dairy eggs",
+            "aisle": "milk",
             "values": [
-              10.448,
-              0.02
+              0.017,
+              2
             ]
           },
           {
@@ -2301,8 +2833,18 @@
             "dept": "dairy eggs",
             "aisle": "milk",
             "values": [
-              10.356,
-              0.02
+              0.014,
+              2
+            ]
+          },
+          {
+            "id": "33497.0",
+            "name": "Bread, Raisin",
+            "dept": "bakery",
+            "aisle": "bread",
+            "values": [
+              0.021,
+              1
             ]
           },
           {
@@ -2311,8 +2853,8 @@
             "dept": "beverages",
             "aisle": "tea",
             "values": [
-              10.135,
-              0.019
+              0.014,
+              1
             ]
           },
           {
@@ -2321,8 +2863,28 @@
             "dept": "bakery",
             "aisle": "bread",
             "values": [
-              9.662,
-              0.017
+              0.013,
+              1
+            ]
+          },
+          {
+            "id": "46636.0",
+            "name": "Brown Omega 3 Large Grade A Eggs",
+            "dept": "dairy eggs",
+            "aisle": "eggs",
+            "values": [
+              0.016,
+              1
+            ]
+          },
+          {
+            "id": "15467.0",
+            "name": "Core Gluten Free Mint Chocolate Bar",
+            "dept": "snacks",
+            "aisle": "energy granola bars",
+            "values": [
+              0.014,
+              1
             ]
           }
         ]
@@ -2336,43 +2898,13 @@
         ],
         "comps": [
           {
-            "id": "11859.0",
-            "name": "Red Pepper",
+            "id": "17313.0",
+            "name": "Hass Avocado Variety",
             "dept": "produce",
-            "aisle": "fresh vegetables",
+            "aisle": "fresh fruits",
             "values": [
-              5.167,
-              0.089
-            ]
-          },
-          {
-            "id": "24532.0",
-            "name": "Cranberry Almond Chicken Salad",
-            "dept": "bakery",
-            "aisle": "bakery desserts",
-            "values": [
-              3.471,
-              0.041
-            ]
-          },
-          {
-            "id": "7252.0",
-            "name": "Deep Green Blends Kale",
-            "dept": "produce",
-            "aisle": "packaged produce",
-            "values": [
-              2.666,
-              0.024
-            ]
-          },
-          {
-            "id": "37980.0",
-            "name": "Madeleines",
-            "dept": "snacks",
-            "aisle": "cookies cakes",
-            "values": [
-              2.603,
-              0.023
+              0.078,
+              59
             ]
           },
           {
@@ -2381,28 +2913,48 @@
             "dept": "snacks",
             "aisle": "fruit vegetable snacks",
             "values": [
-              2.468,
-              0.021
+              0.087,
+              35
             ]
           },
           {
-            "id": "21313.0",
-            "name": "Brie Cheese",
-            "dept": "dairy eggs",
-            "aisle": "specialty cheeses",
+            "id": "7252.0",
+            "name": "Deep Green Blends Kale",
+            "dept": "produce",
+            "aisle": "packaged produce",
             "values": [
-              2.381,
-              0.02
+              0.094,
+              20
             ]
           },
           {
-            "id": "30553.0",
-            "name": "Original Snack Mix 40 Ounce",
+            "id": "24532.0",
+            "name": "Cranberry Almond Chicken Salad",
+            "dept": "bakery",
+            "aisle": "bakery desserts",
+            "values": [
+              0.123,
+              17
+            ]
+          },
+          {
+            "id": "11859.0",
+            "name": "Red Pepper",
+            "dept": "produce",
+            "aisle": "fresh vegetables",
+            "values": [
+              0.184,
+              11
+            ]
+          },
+          {
+            "id": "37980.0",
+            "name": "Madeleines",
             "dept": "snacks",
-            "aisle": "chips pretzels",
+            "aisle": "cookies cakes",
             "values": [
-              2.372,
-              0.019
+              0.092,
+              11
             ]
           },
           {
@@ -2411,18 +2963,28 @@
             "dept": "canned goods",
             "aisle": "canned meat seafood",
             "values": [
-              2.365,
-              0.019
+              0.083,
+              9
             ]
           },
           {
-            "id": "17313.0",
-            "name": "Hass Avocado Variety",
-            "dept": "produce",
-            "aisle": "fresh fruits",
+            "id": "30553.0",
+            "name": "Original Snack Mix 40 Ounce",
+            "dept": "snacks",
+            "aisle": "chips pretzels",
             "values": [
-              2.229,
-              0.017
+              0.084,
+              9
+            ]
+          },
+          {
+            "id": "21313.0",
+            "name": "Brie Cheese",
+            "dept": "dairy eggs",
+            "aisle": "specialty cheeses",
+            "values": [
+              0.084,
+              5
             ]
           },
           {
@@ -2431,8 +2993,8 @@
             "dept": "pantry",
             "aisle": "oils vinegars",
             "values": [
-              2.0,
-              0.014
+              0.07,
+              5
             ]
           }
         ]
@@ -2446,13 +3008,13 @@
         ],
         "comps": [
           {
-            "id": "33497.0",
-            "name": "Bread, Raisin",
-            "dept": "bakery",
-            "aisle": "bread",
+            "id": "2305.0",
+            "name": "Baby Persian Cucumbers",
+            "dept": "produce",
+            "aisle": "packaged vegetables fruits",
             "values": [
-              3.54,
-              0.026
+              0.033,
+              6
             ]
           },
           {
@@ -2461,58 +3023,8 @@
             "dept": "snacks",
             "aisle": "cookies cakes",
             "values": [
-              4.044,
-              0.022
-            ]
-          },
-          {
-            "id": "7018.0",
-            "name": "Pasta Sauce, Vodka Sauce",
-            "dept": "dry goods pasta",
-            "aisle": "pasta sauce",
-            "values": [
-              2.401,
-              0.013
-            ]
-          },
-          {
-            "id": "13479.0",
-            "name": "Coffee All Natural Lowfat Yogurt",
-            "dept": "dairy eggs",
-            "aisle": "yogurt",
-            "values": [
-              2.892,
-              0.012
-            ]
-          },
-          {
-            "id": "12240.0",
-            "name": "Vanilla Protein Almond Milk",
-            "dept": "dairy eggs",
-            "aisle": "soy lactosefree",
-            "values": [
-              2.732,
-              0.01
-            ]
-          },
-          {
-            "id": "2305.0",
-            "name": "Baby Persian Cucumbers",
-            "dept": "produce",
-            "aisle": "packaged vegetables fruits",
-            "values": [
-              2.593,
-              0.009
-            ]
-          },
-          {
-            "id": "46270.0",
-            "name": "Unsalted 100% Pure Butter",
-            "dept": "dairy eggs",
-            "aisle": "butter",
-            "values": [
-              2.387,
-              0.008
+              0.053,
+              5
             ]
           },
           {
@@ -2521,18 +3033,18 @@
             "dept": "dairy eggs",
             "aisle": "yogurt",
             "values": [
-              2.23,
-              0.007
+              0.029,
+              4
             ]
           },
           {
-            "id": "39142.0",
-            "name": "Old Fashioned Oats",
-            "dept": "breakfast",
-            "aisle": "hot cereal pancake mixes",
+            "id": "12240.0",
+            "name": "Vanilla Protein Almond Milk",
+            "dept": "dairy eggs",
+            "aisle": "soy lactosefree",
             "values": [
-              2.183,
-              0.007
+              0.035,
+              4
             ]
           },
           {
@@ -2541,8 +3053,58 @@
             "dept": "dairy eggs",
             "aisle": "yogurt",
             "values": [
-              2.049,
-              0.006
+              0.026,
+              4
+            ]
+          },
+          {
+            "id": "7018.0",
+            "name": "Pasta Sauce, Vodka Sauce",
+            "dept": "dry goods pasta",
+            "aisle": "pasta sauce",
+            "values": [
+              0.031,
+              3
+            ]
+          },
+          {
+            "id": "33497.0",
+            "name": "Bread, Raisin",
+            "dept": "bakery",
+            "aisle": "bread",
+            "values": [
+              0.046,
+              3
+            ]
+          },
+          {
+            "id": "13479.0",
+            "name": "Coffee All Natural Lowfat Yogurt",
+            "dept": "dairy eggs",
+            "aisle": "yogurt",
+            "values": [
+              0.038,
+              3
+            ]
+          },
+          {
+            "id": "39142.0",
+            "name": "Old Fashioned Oats",
+            "dept": "breakfast",
+            "aisle": "hot cereal pancake mixes",
+            "values": [
+              0.028,
+              3
+            ]
+          },
+          {
+            "id": "46270.0",
+            "name": "Unsalted 100% Pure Butter",
+            "dept": "dairy eggs",
+            "aisle": "butter",
+            "values": [
+              0.031,
+              2
             ]
           }
         ]
@@ -2550,23 +3112,13 @@
     ],
     "comps": [
       {
-        "id": "16507.0",
-        "name": "Organic Superfoods Carrot Rice Cakes",
+        "id": "16466.0",
+        "name": "Organic Amaze Mint Baby Food",
         "dept": "babies",
         "aisle": "baby food formula",
         "values": [
-          25.4,
-          65
-        ]
-      },
-      {
-        "id": "7084.0",
-        "name": "Toddler Cheddar & Leeks Multigrain Wheels Organic Snack",
-        "dept": "babies",
-        "aisle": "baby food formula",
-        "values": [
-          25.2,
-          65
+          0.007,
+          0.8
         ]
       },
       {
@@ -2575,58 +3127,8 @@
         "dept": "babies",
         "aisle": "baby food formula",
         "values": [
-          25.1,
-          65
-        ]
-      },
-      {
-        "id": "33593.0",
-        "name": "Crunchin' Grahams, Honey Sticks, 123 Sesame Street",
-        "dept": "babies",
-        "aisle": "baby food formula",
-        "values": [
-          22.2,
-          57
-        ]
-      },
-      {
-        "id": "21806.0",
-        "name": "Organic Pineapple Orange Banana Fruit Yogurt Smoothie",
-        "dept": "babies",
-        "aisle": "baby food formula",
-        "values": [
-          21.0,
-          54
-        ]
-      },
-      {
-        "id": "24739.0",
-        "name": "Organic Pears, Apples, Peaches, Pumpkin + Cinnamon Fiber & Protein Snack",
-        "dept": "babies",
-        "aisle": "baby food formula",
-        "values": [
-          20.6,
-          53
-        ]
-      },
-      {
-        "id": "16466.0",
-        "name": "Organic Amaze Mint Baby Food",
-        "dept": "babies",
-        "aisle": "baby food formula",
-        "values": [
-          20.4,
-          52
-        ]
-      },
-      {
-        "id": "9497.0",
-        "name": "Smoothie Fruits Squished The Purple One Over 6 Months",
-        "dept": "babies",
-        "aisle": "baby food formula",
-        "values": [
-          20.0,
-          51
+          0.008,
+          0.8
         ]
       },
       {
@@ -2635,8 +3137,68 @@
         "dept": "babies",
         "aisle": "baby food formula",
         "values": [
-          19.9,
-          51
+          0.006,
+          0.8
+        ]
+      },
+      {
+        "id": "9497.0",
+        "name": "Smoothie Fruits Squished The Purple One Over 6 Months",
+        "dept": "babies",
+        "aisle": "baby food formula",
+        "values": [
+          0.006,
+          0.7
+        ]
+      },
+      {
+        "id": "7084.0",
+        "name": "Toddler Cheddar & Leeks Multigrain Wheels Organic Snack",
+        "dept": "babies",
+        "aisle": "baby food formula",
+        "values": [
+          0.008,
+          0.7
+        ]
+      },
+      {
+        "id": "24739.0",
+        "name": "Organic Pears, Apples, Peaches, Pumpkin + Cinnamon Fiber & Protein Snack",
+        "dept": "babies",
+        "aisle": "baby food formula",
+        "values": [
+          0.007,
+          0.7
+        ]
+      },
+      {
+        "id": "16507.0",
+        "name": "Organic Superfoods Carrot Rice Cakes",
+        "dept": "babies",
+        "aisle": "baby food formula",
+        "values": [
+          0.008,
+          0.6
+        ]
+      },
+      {
+        "id": "33593.0",
+        "name": "Crunchin' Grahams, Honey Sticks, 123 Sesame Street",
+        "dept": "babies",
+        "aisle": "baby food formula",
+        "values": [
+          0.007,
+          0.5
+        ]
+      },
+      {
+        "id": "21806.0",
+        "name": "Organic Pineapple Orange Banana Fruit Yogurt Smoothie",
+        "dept": "babies",
+        "aisle": "baby food formula",
+        "values": [
+          0.007,
+          0.5
         ]
       },
       {
@@ -2645,8 +3207,8 @@
         "dept": "babies",
         "aisle": "baby food formula",
         "values": [
-          19.5,
-          50
+          0.006,
+          0.5
         ]
       }
     ]
@@ -2657,7 +3219,7 @@
     "aisle": "frozen breakfast",
     "values": [
       0.699,
-      64
+      7.1
     ],
     "subs": [
       {
@@ -2674,78 +3236,8 @@
             "dept": "dairy eggs",
             "aisle": "butter",
             "values": [
-              6.683,
-              0.69
-            ]
-          },
-          {
-            "id": "40596.0",
-            "name": "Chunky Soup, Sirloin Burger with Country Vegetables",
-            "dept": "canned goods",
-            "aisle": "soup broth bouillon",
-            "values": [
-              6.116,
-              0.607
-            ]
-          },
-          {
-            "id": "26006.0",
-            "name": "Deli Select Ultra Thin Smoked Ham Lunch Meat",
-            "dept": "deli",
-            "aisle": "lunch meat",
-            "values": [
-              4.721,
-              0.351
-            ]
-          },
-          {
-            "id": "41582.0",
-            "name": "Gravy Lovers Chicken Feast Can Cat Food",
-            "dept": "pets",
-            "aisle": "cat food care",
-            "values": [
-              4.228,
-              0.243
-            ]
-          },
-          {
-            "id": "31676.0",
-            "name": "Grilled Chicken Feast in Gravy Cat Food",
-            "dept": "pets",
-            "aisle": "cat food care",
-            "values": [
-              3.86,
-              0.203
-            ]
-          },
-          {
-            "id": "30989.0",
-            "name": "Spam Original Luncheon Meat",
-            "dept": "canned goods",
-            "aisle": "canned meat seafood",
-            "values": [
-              3.738,
-              0.19
-            ]
-          },
-          {
-            "id": "10084.0",
-            "name": "Classic Tender Beef Feast Cat Food",
-            "dept": "pets",
-            "aisle": "cat food care",
-            "values": [
-              2.778,
-              0.105
-            ]
-          },
-          {
-            "id": "32472.0",
-            "name": "Chunky Chicken Feast Cat Food",
-            "dept": "pets",
-            "aisle": "cat food care",
-            "values": [
-              2.564,
-              0.09
+              1.0,
+              100
             ]
           },
           {
@@ -2754,8 +3246,78 @@
             "dept": "canned goods",
             "aisle": "canned fruit applesauce",
             "values": [
-              2.291,
-              0.072
+              0.342,
+              76
+            ]
+          },
+          {
+            "id": "26006.0",
+            "name": "Deli Select Ultra Thin Smoked Ham Lunch Meat",
+            "dept": "deli",
+            "aisle": "lunch meat",
+            "values": [
+              0.706,
+              73
+            ]
+          },
+          {
+            "id": "41582.0",
+            "name": "Gravy Lovers Chicken Feast Can Cat Food",
+            "dept": "pets",
+            "aisle": "cat food care",
+            "values": [
+              0.632,
+              73
+            ]
+          },
+          {
+            "id": "40596.0",
+            "name": "Chunky Soup, Sirloin Burger with Country Vegetables",
+            "dept": "canned goods",
+            "aisle": "soup broth bouillon",
+            "values": [
+              0.915,
+              71
+            ]
+          },
+          {
+            "id": "31676.0",
+            "name": "Grilled Chicken Feast in Gravy Cat Food",
+            "dept": "pets",
+            "aisle": "cat food care",
+            "values": [
+              0.577,
+              69
+            ]
+          },
+          {
+            "id": "10084.0",
+            "name": "Classic Tender Beef Feast Cat Food",
+            "dept": "pets",
+            "aisle": "cat food care",
+            "values": [
+              0.415,
+              54
+            ]
+          },
+          {
+            "id": "30989.0",
+            "name": "Spam Original Luncheon Meat",
+            "dept": "canned goods",
+            "aisle": "canned meat seafood",
+            "values": [
+              0.559,
+              50
+            ]
+          },
+          {
+            "id": "32472.0",
+            "name": "Chunky Chicken Feast Cat Food",
+            "dept": "pets",
+            "aisle": "cat food care",
+            "values": [
+              0.383,
+              33
             ]
           },
           {
@@ -2764,8 +3326,8 @@
             "dept": "beverages",
             "aisle": "coffee",
             "values": [
-              2.073,
-              0.059
+              0.309,
+              23
             ]
           }
         ]
@@ -2779,93 +3341,23 @@
         ],
         "comps": [
           {
-            "id": "16994.0",
-            "name": "Chocolate Brownie Kid Z Bar",
-            "dept": "snacks",
-            "aisle": "energy granola bars",
-            "values": [
-              3.692,
-              0.052
-            ]
-          },
-          {
             "id": "39299.0",
             "name": "Organic Chocolate Chip ZBar Kids Energy Snack",
             "dept": "snacks",
             "aisle": "energy granola bars",
             "values": [
-              3.082,
-              0.036
+              0.124,
+              27
             ]
           },
           {
-            "id": "27592.0",
-            "name": "Smart Puffs Baked Cheese Puffs Real Cheddar",
+            "id": "16994.0",
+            "name": "Chocolate Brownie Kid Z Bar",
             "dept": "snacks",
-            "aisle": "chips pretzels",
+            "aisle": "energy granola bars",
             "values": [
-              2.903,
-              0.032
-            ]
-          },
-          {
-            "id": "34975.0",
-            "name": "Organic Reduced Fat Unsweetened Shredded Coconut",
-            "dept": "pantry",
-            "aisle": "baking ingredients",
-            "values": [
-              2.77,
-              0.029
-            ]
-          },
-          {
-            "id": "24397.0",
-            "name": "Organic Concord Grape Fruit Spread",
-            "dept": "pantry",
-            "aisle": "spreads",
-            "values": [
-              2.679,
-              0.028
-            ]
-          },
-          {
-            "id": "18451.0",
-            "name": "Sea Salt Popped Corn Chips",
-            "dept": "snacks",
-            "aisle": "popcorn jerky",
-            "values": [
-              2.134,
-              0.018
-            ]
-          },
-          {
-            "id": "42309.0",
-            "name": "Nonfat Vanilla Bio Kefir",
-            "dept": "dairy eggs",
-            "aisle": "yogurt",
-            "values": [
-              1.849,
-              0.013
-            ]
-          },
-          {
-            "id": "33592.0",
-            "name": "Spots Stew Wild Salmon Canned Cat Food",
-            "dept": "pets",
-            "aisle": "cat food care",
-            "values": [
-              1.813,
-              0.013
-            ]
-          },
-          {
-            "id": "47551.0",
-            "name": "Mini-Snacks Organic Raisins",
-            "dept": "snacks",
-            "aisle": "nuts seeds dried fruit",
-            "values": [
-              1.749,
-              0.013
+              0.148,
+              26
             ]
           },
           {
@@ -2874,8 +3366,78 @@
             "dept": "frozen",
             "aisle": "frozen breakfast",
             "values": [
-              1.666,
-              0.011
+              0.066,
+              24
+            ]
+          },
+          {
+            "id": "27592.0",
+            "name": "Smart Puffs Baked Cheese Puffs Real Cheddar",
+            "dept": "snacks",
+            "aisle": "chips pretzels",
+            "values": [
+              0.116,
+              15
+            ]
+          },
+          {
+            "id": "24397.0",
+            "name": "Organic Concord Grape Fruit Spread",
+            "dept": "pantry",
+            "aisle": "spreads",
+            "values": [
+              0.107,
+              9
+            ]
+          },
+          {
+            "id": "42309.0",
+            "name": "Nonfat Vanilla Bio Kefir",
+            "dept": "dairy eggs",
+            "aisle": "yogurt",
+            "values": [
+              0.074,
+              8
+            ]
+          },
+          {
+            "id": "34975.0",
+            "name": "Organic Reduced Fat Unsweetened Shredded Coconut",
+            "dept": "pantry",
+            "aisle": "baking ingredients",
+            "values": [
+              0.111,
+              7
+            ]
+          },
+          {
+            "id": "18451.0",
+            "name": "Sea Salt Popped Corn Chips",
+            "dept": "snacks",
+            "aisle": "popcorn jerky",
+            "values": [
+              0.085,
+              5
+            ]
+          },
+          {
+            "id": "33592.0",
+            "name": "Spots Stew Wild Salmon Canned Cat Food",
+            "dept": "pets",
+            "aisle": "cat food care",
+            "values": [
+              0.072,
+              5
+            ]
+          },
+          {
+            "id": "47551.0",
+            "name": "Mini-Snacks Organic Raisins",
+            "dept": "snacks",
+            "aisle": "nuts seeds dried fruit",
+            "values": [
+              0.07,
+              4
             ]
           }
         ]
@@ -2889,33 +3451,23 @@
         ],
         "comps": [
           {
+            "id": "41453.0",
+            "name": "Eggo Buttermilk Pancakes",
+            "dept": "frozen",
+            "aisle": "frozen breakfast",
+            "values": [
+              0.077,
+              25
+            ]
+          },
+          {
             "id": "9533.0",
             "name": "Natural Butter Flavor Lite Maple Syrup",
             "dept": "pantry",
             "aisle": "honeys syrups nectars",
             "values": [
-              4.126,
-              0.075
-            ]
-          },
-          {
-            "id": "9055.0",
-            "name": "Farmstyle Greek Strained Yogurt Oregon Strawberry, 2% Milkfat",
-            "dept": "dairy eggs",
-            "aisle": "yogurt",
-            "values": [
-              4.762,
-              0.047
-            ]
-          },
-          {
-            "id": "5275.0",
-            "name": "Mexican Style Rice & Pasta",
-            "dept": "dry goods pasta",
-            "aisle": "instant foods",
-            "values": [
-              4.532,
-              0.043
+              0.089,
+              9
             ]
           },
           {
@@ -2924,48 +3476,8 @@
             "dept": "dairy eggs",
             "aisle": "yogurt",
             "values": [
-              4.222,
-              0.037
-            ]
-          },
-          {
-            "id": "16309.0",
-            "name": "Cheese & Peanut Butter Sandwich Crackers",
-            "dept": "snacks",
-            "aisle": "crackers",
-            "values": [
-              3.641,
-              0.036
-            ]
-          },
-          {
-            "id": "49226.0",
-            "name": "Dairy Lemonade",
-            "dept": "beverages",
-            "aisle": "juice nectars",
-            "values": [
-              3.927,
-              0.032
-            ]
-          },
-          {
-            "id": "18949.0",
-            "name": "Healthy Request Condensed Homestyle Chicken Noodle Soup",
-            "dept": "canned goods",
-            "aisle": "soup broth bouillon",
-            "values": [
-              3.906,
-              0.032
-            ]
-          },
-          {
-            "id": "41453.0",
-            "name": "Eggo Buttermilk Pancakes",
-            "dept": "frozen",
-            "aisle": "frozen breakfast",
-            "values": [
-              3.612,
-              0.027
+              0.091,
+              8
             ]
           },
           {
@@ -2974,8 +3486,58 @@
             "dept": "dry goods pasta",
             "aisle": "pasta sauce",
             "values": [
-              3.529,
-              0.026
+              0.076,
+              7
+            ]
+          },
+          {
+            "id": "9055.0",
+            "name": "Farmstyle Greek Strained Yogurt Oregon Strawberry, 2% Milkfat",
+            "dept": "dairy eggs",
+            "aisle": "yogurt",
+            "values": [
+              0.102,
+              6
+            ]
+          },
+          {
+            "id": "5275.0",
+            "name": "Mexican Style Rice & Pasta",
+            "dept": "dry goods pasta",
+            "aisle": "instant foods",
+            "values": [
+              0.097,
+              6
+            ]
+          },
+          {
+            "id": "18949.0",
+            "name": "Healthy Request Condensed Homestyle Chicken Noodle Soup",
+            "dept": "canned goods",
+            "aisle": "soup broth bouillon",
+            "values": [
+              0.084,
+              6
+            ]
+          },
+          {
+            "id": "16309.0",
+            "name": "Cheese & Peanut Butter Sandwich Crackers",
+            "dept": "snacks",
+            "aisle": "crackers",
+            "values": [
+              0.078,
+              5
+            ]
+          },
+          {
+            "id": "49226.0",
+            "name": "Dairy Lemonade",
+            "dept": "beverages",
+            "aisle": "juice nectars",
+            "values": [
+              0.084,
+              5
             ]
           },
           {
@@ -2984,8 +3546,8 @@
             "dept": "frozen",
             "aisle": "frozen meals",
             "values": [
-              3.467,
-              0.025
+              0.074,
+              5
             ]
           }
         ]
@@ -3004,18 +3566,8 @@
             "dept": "frozen",
             "aisle": "frozen breakfast",
             "values": [
-              4.507,
-              0.102
-            ]
-          },
-          {
-            "id": "7561.0",
-            "name": "Cinnamon Chex Cereal",
-            "dept": "household",
-            "aisle": "food storage",
-            "values": [
-              3.03,
-              0.046
+              0.244,
+              17
             ]
           },
           {
@@ -3024,48 +3576,18 @@
             "dept": "dry goods pasta",
             "aisle": "instant foods",
             "values": [
-              3.002,
-              0.046
+              0.162,
+              16
             ]
           },
           {
-            "id": "19620.0",
-            "name": "Butter Rich Maple Syrup",
-            "dept": "pantry",
-            "aisle": "honeys syrups nectars",
+            "id": "7561.0",
+            "name": "Cinnamon Chex Cereal",
+            "dept": "household",
+            "aisle": "food storage",
             "values": [
-              2.842,
-              0.041
-            ]
-          },
-          {
-            "id": "7738.0",
-            "name": "Philippine Mango",
-            "dept": "snacks",
-            "aisle": "nuts seeds dried fruit",
-            "values": [
-              2.719,
-              0.038
-            ]
-          },
-          {
-            "id": "33045.0",
-            "name": "Lemon Herb Chicken Breast",
-            "dept": "deli",
-            "aisle": "prepared meals",
-            "values": [
-              2.717,
-              0.038
-            ]
-          },
-          {
-            "id": "9533.0",
-            "name": "Natural Butter Flavor Lite Maple Syrup",
-            "dept": "pantry",
-            "aisle": "honeys syrups nectars",
-            "values": [
-              1.965,
-              0.036
+              0.163,
+              12
             ]
           },
           {
@@ -3074,8 +3596,8 @@
             "dept": "produce",
             "aisle": "packaged vegetables fruits",
             "values": [
-              2.29,
-              0.027
+              0.123,
+              12
             ]
           },
           {
@@ -3084,8 +3606,38 @@
             "dept": "beverages",
             "aisle": "refrigerated",
             "values": [
-              1.914,
-              0.019
+              0.103,
+              12
+            ]
+          },
+          {
+            "id": "19620.0",
+            "name": "Butter Rich Maple Syrup",
+            "dept": "pantry",
+            "aisle": "honeys syrups nectars",
+            "values": [
+              0.153,
+              11
+            ]
+          },
+          {
+            "id": "9533.0",
+            "name": "Natural Butter Flavor Lite Maple Syrup",
+            "dept": "pantry",
+            "aisle": "honeys syrups nectars",
+            "values": [
+              0.105,
+              10
+            ]
+          },
+          {
+            "id": "33045.0",
+            "name": "Lemon Herb Chicken Breast",
+            "dept": "deli",
+            "aisle": "prepared meals",
+            "values": [
+              0.146,
+              10
             ]
           },
           {
@@ -3094,8 +3646,18 @@
             "dept": "snacks",
             "aisle": "cookies cakes",
             "values": [
-              1.887,
-              0.018
+              0.101,
+              10
+            ]
+          },
+          {
+            "id": "7738.0",
+            "name": "Philippine Mango",
+            "dept": "snacks",
+            "aisle": "nuts seeds dried fruit",
+            "values": [
+              0.146,
+              9
             ]
           }
         ]
@@ -3112,53 +3674,13 @@
     ],
     "comps": [
       {
-        "id": "40177.0",
-        "name": "Original Thin Sausage Pizza",
-        "dept": "frozen",
-        "aisle": "frozen pizza",
-        "values": [
-          13.9,
-          42
-        ]
-      },
-      {
-        "id": "9533.0",
-        "name": "Natural Butter Flavor Lite Maple Syrup",
-        "dept": "pantry",
-        "aisle": "honeys syrups nectars",
-        "values": [
-          11.6,
-          34
-        ]
-      },
-      {
-        "id": "19620.0",
-        "name": "Butter Rich Maple Syrup",
-        "dept": "pantry",
-        "aisle": "honeys syrups nectars",
-        "values": [
-          11.1,
-          33
-        ]
-      },
-      {
-        "id": "41671.0",
-        "name": "Original Patties (100965) 12 Oz Breakfast",
-        "dept": "meat seafood",
-        "aisle": "hot dogs bacon sausage",
-        "values": [
-          9.8,
-          28
-        ]
-      },
-      {
         "id": "26250.0",
         "name": "Mini Pancakes",
         "dept": "frozen",
         "aisle": "frozen breakfast",
         "values": [
-          9.8,
-          28
+          0.058,
+          10.5
         ]
       },
       {
@@ -3167,28 +3689,18 @@
         "dept": "pantry",
         "aisle": "honeys syrups nectars",
         "values": [
-          9.2,
-          26
+          0.054,
+          8.0
         ]
       },
       {
-        "id": "43799.0",
-        "name": "Natural Low Moisture Part Skim Mozzarella Cheese Slices",
-        "dept": "dairy eggs",
-        "aisle": "packaged cheese",
+        "id": "9533.0",
+        "name": "Natural Butter Flavor Lite Maple Syrup",
+        "dept": "pantry",
+        "aisle": "honeys syrups nectars",
         "values": [
-          9.2,
-          26
-        ]
-      },
-      {
-        "id": "28823.0",
-        "name": "Original Chicken Breast Nuggets",
-        "dept": "meat seafood",
-        "aisle": "packaged poultry",
-        "values": [
-          8.9,
-          25
+          0.068,
+          6.8
         ]
       },
       {
@@ -3197,8 +3709,58 @@
         "dept": "frozen",
         "aisle": "frozen breakfast",
         "values": [
-          8.9,
-          25
+          0.052,
+          5.8
+        ]
+      },
+      {
+        "id": "40177.0",
+        "name": "Original Thin Sausage Pizza",
+        "dept": "frozen",
+        "aisle": "frozen pizza",
+        "values": [
+          0.082,
+          5.6
+        ]
+      },
+      {
+        "id": "28823.0",
+        "name": "Original Chicken Breast Nuggets",
+        "dept": "meat seafood",
+        "aisle": "packaged poultry",
+        "values": [
+          0.052,
+          5.0
+        ]
+      },
+      {
+        "id": "19620.0",
+        "name": "Butter Rich Maple Syrup",
+        "dept": "pantry",
+        "aisle": "honeys syrups nectars",
+        "values": [
+          0.065,
+          4.9
+        ]
+      },
+      {
+        "id": "41671.0",
+        "name": "Original Patties (100965) 12 Oz Breakfast",
+        "dept": "meat seafood",
+        "aisle": "hot dogs bacon sausage",
+        "values": [
+          0.058,
+          4.3
+        ]
+      },
+      {
+        "id": "43799.0",
+        "name": "Natural Low Moisture Part Skim Mozzarella Cheese Slices",
+        "dept": "dairy eggs",
+        "aisle": "packaged cheese",
+        "values": [
+          0.054,
+          4.0
         ]
       },
       {
@@ -3207,8 +3769,8 @@
         "dept": "pantry",
         "aisle": "marinades meat preparation",
         "values": [
-          8.7,
-          25
+          0.051,
+          3.7
         ]
       }
     ]
@@ -3219,7 +3781,7 @@
     "aisle": "dry pasta",
     "values": [
       0.79,
-      11
+      4.8
     ],
     "subs": [
       {
@@ -3231,43 +3793,13 @@
         ],
         "comps": [
           {
-            "id": "14505.0",
-            "name": "Old World Style Organic Traditional Pasta Sauce",
+            "id": "24571.0",
+            "name": "Tomato and Basil Pasta Sauce",
             "dept": "dry goods pasta",
             "aisle": "pasta sauce",
             "values": [
-              12.908,
-              0.206
-            ]
-          },
-          {
-            "id": "2232.0",
-            "name": "Old World Style Meat Flavored Pasta Sauce",
-            "dept": "dry goods pasta",
-            "aisle": "pasta sauce",
-            "values": [
-              9.949,
-              0.167
-            ]
-          },
-          {
-            "id": "34887.0",
-            "name": "Chunky Tomato Garlic & Onion Pasta Sauce",
-            "dept": "dry goods pasta",
-            "aisle": "pasta sauce",
-            "values": [
-              9.959,
-              0.162
-            ]
-          },
-          {
-            "id": "42215.0",
-            "name": "Roasted Garlic Herb Italian Sauce",
-            "dept": "dry goods pasta",
-            "aisle": "pasta sauce",
-            "values": [
-              9.074,
-              0.117
+              0.066,
+              14
             ]
           },
           {
@@ -3276,48 +3808,18 @@
             "dept": "dry goods pasta",
             "aisle": "pasta sauce",
             "values": [
-              10.243,
-              0.069
+              0.067,
+              12
             ]
           },
           {
-            "id": "8260.0",
-            "name": "Flavored with Meat Italian Sauce",
+            "id": "14505.0",
+            "name": "Old World Style Organic Traditional Pasta Sauce",
             "dept": "dry goods pasta",
             "aisle": "pasta sauce",
             "values": [
-              10.133,
-              0.067
-            ]
-          },
-          {
-            "id": "41912.0",
-            "name": "Old World Style Traditional Pasta Sauce",
-            "dept": "dry goods pasta",
-            "aisle": "pasta sauce",
-            "values": [
-              10.098,
-              0.067
-            ]
-          },
-          {
-            "id": "24571.0",
-            "name": "Tomato and Basil Pasta Sauce",
-            "dept": "dry goods pasta",
-            "aisle": "pasta sauce",
-            "values": [
-              10.017,
-              0.066
-            ]
-          },
-          {
-            "id": "9486.0",
-            "name": "Olive Oil & Garlic Pasta Sauce",
-            "dept": "dry goods pasta",
-            "aisle": "pasta sauce",
-            "values": [
-              9.773,
-              0.063
+              0.085,
+              11
             ]
           },
           {
@@ -3326,8 +3828,68 @@
             "dept": "dry goods pasta",
             "aisle": "pasta sauce",
             "values": [
-              8.728,
-              0.05
+              0.057,
+              10
+            ]
+          },
+          {
+            "id": "9486.0",
+            "name": "Olive Oil & Garlic Pasta Sauce",
+            "dept": "dry goods pasta",
+            "aisle": "pasta sauce",
+            "values": [
+              0.064,
+              8
+            ]
+          },
+          {
+            "id": "41912.0",
+            "name": "Old World Style Traditional Pasta Sauce",
+            "dept": "dry goods pasta",
+            "aisle": "pasta sauce",
+            "values": [
+              0.066,
+              8
+            ]
+          },
+          {
+            "id": "8260.0",
+            "name": "Flavored with Meat Italian Sauce",
+            "dept": "dry goods pasta",
+            "aisle": "pasta sauce",
+            "values": [
+              0.066,
+              7
+            ]
+          },
+          {
+            "id": "2232.0",
+            "name": "Old World Style Meat Flavored Pasta Sauce",
+            "dept": "dry goods pasta",
+            "aisle": "pasta sauce",
+            "values": [
+              0.065,
+              7
+            ]
+          },
+          {
+            "id": "34887.0",
+            "name": "Chunky Tomato Garlic & Onion Pasta Sauce",
+            "dept": "dry goods pasta",
+            "aisle": "pasta sauce",
+            "values": [
+              0.065,
+              6
+            ]
+          },
+          {
+            "id": "42215.0",
+            "name": "Roasted Garlic Herb Italian Sauce",
+            "dept": "dry goods pasta",
+            "aisle": "pasta sauce",
+            "values": [
+              0.059,
+              6
             ]
           }
         ]
@@ -3346,18 +3908,8 @@
             "dept": "dry goods pasta",
             "aisle": "pasta sauce",
             "values": [
-              6.861,
-              0.115
-            ]
-          },
-          {
-            "id": "34887.0",
-            "name": "Chunky Tomato Garlic & Onion Pasta Sauce",
-            "dept": "dry goods pasta",
-            "aisle": "pasta sauce",
-            "values": [
-              6.504,
-              0.106
+              0.112,
+              12
             ]
           },
           {
@@ -3366,8 +3918,8 @@
             "dept": "dry goods pasta",
             "aisle": "pasta sauce",
             "values": [
-              4.577,
-              0.095
+              0.075,
+              12
             ]
           },
           {
@@ -3376,18 +3928,18 @@
             "dept": "dry goods pasta",
             "aisle": "pasta sauce",
             "values": [
-              5.106,
-              0.081
+              0.083,
+              11
             ]
           },
           {
-            "id": "47854.0",
-            "name": "Three Cheese Italian Sauce",
+            "id": "34887.0",
+            "name": "Chunky Tomato Garlic & Onion Pasta Sauce",
             "dept": "dry goods pasta",
             "aisle": "pasta sauce",
             "values": [
-              6.725,
-              0.071
+              0.107,
+              10
             ]
           },
           {
@@ -3396,8 +3948,18 @@
             "dept": "dry goods pasta",
             "aisle": "pasta sauce",
             "values": [
-              4.63,
-              0.06
+              0.075,
+              8
+            ]
+          },
+          {
+            "id": "47854.0",
+            "name": "Three Cheese Italian Sauce",
+            "dept": "dry goods pasta",
+            "aisle": "pasta sauce",
+            "values": [
+              0.11,
+              7
             ]
           },
           {
@@ -3406,18 +3968,8 @@
             "dept": "dry goods pasta",
             "aisle": "pasta sauce",
             "values": [
-              5.729,
-              0.052
-            ]
-          },
-          {
-            "id": "16561.0",
-            "name": "Spicy Red Pepper",
-            "dept": "dry goods pasta",
-            "aisle": "pasta sauce",
-            "values": [
-              4.489,
-              0.032
+              0.094,
+              7
             ]
           },
           {
@@ -3426,8 +3978,18 @@
             "dept": "beverages",
             "aisle": "juice nectars",
             "values": [
-              4.104,
-              0.027
+              0.067,
+              6
+            ]
+          },
+          {
+            "id": "16561.0",
+            "name": "Spicy Red Pepper",
+            "dept": "dry goods pasta",
+            "aisle": "pasta sauce",
+            "values": [
+              0.073,
+              5
             ]
           },
           {
@@ -3436,8 +3998,8 @@
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              3.951,
-              0.025
+              0.064,
+              5
             ]
           }
         ]
@@ -3451,73 +4013,13 @@
         ],
         "comps": [
           {
-            "id": "20929.0",
-            "name": "Salad, 50/50 Mix",
-            "dept": "produce",
-            "aisle": "packaged vegetables fruits",
-            "values": [
-              5.252,
-              0.187
-            ]
-          },
-          {
             "id": "48634.0",
             "name": "Whole Grain Penne Pasta",
             "dept": "dry goods pasta",
             "aisle": "dry pasta",
             "values": [
-              4.167,
-              0.118
-            ]
-          },
-          {
-            "id": "28609.0",
-            "name": "Whole Grain Rotini",
-            "dept": "dry goods pasta",
-            "aisle": "dry pasta",
-            "values": [
-              3.896,
-              0.103
-            ]
-          },
-          {
-            "id": "11798.0",
-            "name": "Premium Selects Brussels Sprouts",
-            "dept": "frozen",
-            "aisle": "frozen produce",
-            "values": [
-              3.611,
-              0.089
-            ]
-          },
-          {
-            "id": "14096.0",
-            "name": "Roasted Garlic",
-            "dept": "dry goods pasta",
-            "aisle": "pasta sauce",
-            "values": [
-              1.995,
-              0.041
-            ]
-          },
-          {
-            "id": "29681.0",
-            "name": "Steamfresh Premium Selects Frozen Gold & White Corn",
-            "dept": "frozen",
-            "aisle": "frozen produce",
-            "values": [
-              2.204,
-              0.033
-            ]
-          },
-          {
-            "id": "2712.0",
-            "name": "Frozen Organic Peach Slices",
-            "dept": "frozen",
-            "aisle": "frozen produce",
-            "values": [
-              2.089,
-              0.03
+              0.307,
+              65
             ]
           },
           {
@@ -3526,8 +4028,28 @@
             "dept": "meat seafood",
             "aisle": "poultry counter",
             "values": [
-              2.024,
-              0.028
+              0.148,
+              41
+            ]
+          },
+          {
+            "id": "11798.0",
+            "name": "Premium Selects Brussels Sprouts",
+            "dept": "frozen",
+            "aisle": "frozen produce",
+            "values": [
+              0.266,
+              37
+            ]
+          },
+          {
+            "id": "20929.0",
+            "name": "Salad, 50/50 Mix",
+            "dept": "produce",
+            "aisle": "packaged vegetables fruits",
+            "values": [
+              0.388,
+              35
             ]
           },
           {
@@ -3536,8 +4058,28 @@
             "dept": "frozen",
             "aisle": "frozen produce",
             "values": [
-              1.773,
-              0.022
+              0.13,
+              27
+            ]
+          },
+          {
+            "id": "28609.0",
+            "name": "Whole Grain Rotini",
+            "dept": "dry goods pasta",
+            "aisle": "dry pasta",
+            "values": [
+              0.287,
+              26
+            ]
+          },
+          {
+            "id": "14096.0",
+            "name": "Roasted Garlic",
+            "dept": "dry goods pasta",
+            "aisle": "pasta sauce",
+            "values": [
+              0.146,
+              24
             ]
           },
           {
@@ -3546,8 +4088,28 @@
             "dept": "household",
             "aisle": "paper goods",
             "values": [
-              1.695,
-              0.02
+              0.124,
+              14
+            ]
+          },
+          {
+            "id": "2712.0",
+            "name": "Frozen Organic Peach Slices",
+            "dept": "frozen",
+            "aisle": "frozen produce",
+            "values": [
+              0.153,
+              11
+            ]
+          },
+          {
+            "id": "29681.0",
+            "name": "Steamfresh Premium Selects Frozen Gold & White Corn",
+            "dept": "frozen",
+            "aisle": "frozen produce",
+            "values": [
+              0.162,
+              11
             ]
           }
         ]
@@ -3575,18 +4137,8 @@
             "dept": "dry goods pasta",
             "aisle": "dry pasta",
             "values": [
-              10.089,
-              0.059
-            ]
-          },
-          {
-            "id": "9321.0",
-            "name": "Clean Day Baby Blossom Laundry Detergent",
-            "dept": "household",
-            "aisle": "laundry",
-            "values": [
-              7.099,
-              0.03
+              0.058,
+              8
             ]
           },
           {
@@ -3595,28 +4147,8 @@
             "dept": "dry goods pasta",
             "aisle": "dry pasta",
             "values": [
-              6.593,
-              0.026
-            ]
-          },
-          {
-            "id": "7018.0",
-            "name": "Pasta Sauce, Vodka Sauce",
-            "dept": "dry goods pasta",
-            "aisle": "pasta sauce",
-            "values": [
-              3.431,
-              0.018
-            ]
-          },
-          {
-            "id": "32760.0",
-            "name": "Shells & White Cheddar",
-            "dept": "dry goods pasta",
-            "aisle": "instant foods",
-            "values": [
-              5.069,
-              0.016
+              0.037,
+              4
             ]
           },
           {
@@ -3625,8 +4157,38 @@
             "dept": "dairy eggs",
             "aisle": "milk",
             "values": [
-              4.015,
-              0.011
+              0.022,
+              3
+            ]
+          },
+          {
+            "id": "9321.0",
+            "name": "Clean Day Baby Blossom Laundry Detergent",
+            "dept": "household",
+            "aisle": "laundry",
+            "values": [
+              0.04,
+              2
+            ]
+          },
+          {
+            "id": "32760.0",
+            "name": "Shells & White Cheddar",
+            "dept": "dry goods pasta",
+            "aisle": "instant foods",
+            "values": [
+              0.028,
+              2
+            ]
+          },
+          {
+            "id": "7018.0",
+            "name": "Pasta Sauce, Vodka Sauce",
+            "dept": "dry goods pasta",
+            "aisle": "pasta sauce",
+            "values": [
+              0.019,
+              2
             ]
           },
           {
@@ -3635,18 +4197,8 @@
             "dept": "beverages",
             "aisle": "juice nectars",
             "values": [
-              3.95,
-              0.01
-            ]
-          },
-          {
-            "id": "26322.0",
-            "name": "Organic Soups Low Fat Cream Of Tomato",
-            "dept": "canned goods",
-            "aisle": "soup broth bouillon",
-            "values": [
-              3.495,
-              0.008
+              0.022,
+              2
             ]
           },
           {
@@ -3655,8 +4207,18 @@
             "dept": "dairy eggs",
             "aisle": "packaged cheese",
             "values": [
-              3.346,
-              0.008
+              0.018,
+              2
+            ]
+          },
+          {
+            "id": "26322.0",
+            "name": "Organic Soups Low Fat Cream Of Tomato",
+            "dept": "canned goods",
+            "aisle": "soup broth bouillon",
+            "values": [
+              0.019,
+              1
             ]
           },
           {
@@ -3665,8 +4227,8 @@
             "dept": "beverages",
             "aisle": "refrigerated",
             "values": [
-              3.343,
-              0.008
+              0.018,
+              1
             ]
           }
         ]
@@ -3674,33 +4236,13 @@
     ],
     "comps": [
       {
-        "id": "32760.0",
-        "name": "Shells & White Cheddar",
+        "id": "9648.0",
+        "name": "Tomato and Basil Bombolina Pasta Sauce",
         "dept": "dry goods pasta",
-        "aisle": "instant foods",
+        "aisle": "pasta sauce",
         "values": [
-          6.7,
-          18
-        ]
-      },
-      {
-        "id": "6555.0",
-        "name": "Parmesan Beef Meatballs",
-        "dept": "meat seafood",
-        "aisle": "meat counter",
-        "values": [
-          6.0,
-          16
-        ]
-      },
-      {
-        "id": "35803.0",
-        "name": "Homestyle Tart Cherry Lemonade Drink",
-        "dept": "beverages",
-        "aisle": "juice nectars",
-        "values": [
-          5.3,
-          14
+          0.014,
+          5.5
         ]
       },
       {
@@ -3709,8 +4251,8 @@
         "dept": "dry goods pasta",
         "aisle": "pasta sauce",
         "values": [
-          4.8,
-          13
+          0.015,
+          2.5
         ]
       },
       {
@@ -3719,18 +4261,8 @@
         "dept": "deli",
         "aisle": "tofu meat alternatives",
         "values": [
-          4.7,
-          12
-        ]
-      },
-      {
-        "id": "47193.0",
-        "name": "Roasted Garlic Alfredo Pasta Sauce",
-        "dept": "dry goods pasta",
-        "aisle": "pasta sauce",
-        "values": [
-          4.7,
-          12
+          0.015,
+          2.3
         ]
       },
       {
@@ -3739,28 +4271,28 @@
         "dept": "dry goods pasta",
         "aisle": "pasta sauce",
         "values": [
-          4.7,
-          12
+          0.014,
+          2.1
         ]
       },
       {
-        "id": "5803.0",
-        "name": "Fresh Tilapia Fillets",
-        "dept": "meat seafood",
-        "aisle": "seafood counter",
+        "id": "32760.0",
+        "name": "Shells & White Cheddar",
+        "dept": "dry goods pasta",
+        "aisle": "instant foods",
         "values": [
-          4.7,
-          12
+          0.021,
+          1.8
         ]
       },
       {
-        "id": "9648.0",
-        "name": "Tomato and Basil Bombolina Pasta Sauce",
+        "id": "47193.0",
+        "name": "Roasted Garlic Alfredo Pasta Sauce",
         "dept": "dry goods pasta",
         "aisle": "pasta sauce",
         "values": [
-          4.5,
-          12
+          0.014,
+          1.8
         ]
       },
       {
@@ -3769,8 +4301,38 @@
         "dept": "dry goods pasta",
         "aisle": "pasta sauce",
         "values": [
-          4.5,
-          12
+          0.014,
+          1.4
+        ]
+      },
+      {
+        "id": "6555.0",
+        "name": "Parmesan Beef Meatballs",
+        "dept": "meat seafood",
+        "aisle": "meat counter",
+        "values": [
+          0.019,
+          1.3
+        ]
+      },
+      {
+        "id": "35803.0",
+        "name": "Homestyle Tart Cherry Lemonade Drink",
+        "dept": "beverages",
+        "aisle": "juice nectars",
+        "values": [
+          0.016,
+          1.1
+        ]
+      },
+      {
+        "id": "5803.0",
+        "name": "Fresh Tilapia Fillets",
+        "dept": "meat seafood",
+        "aisle": "seafood counter",
+        "values": [
+          0.014,
+          1.0
         ]
       }
     ]
@@ -3781,7 +4343,7 @@
     "aisle": "chips pretzels",
     "values": [
       0.754,
-      39
+      7.6
     ],
     "subs": [
       {
@@ -3802,73 +4364,13 @@
         ],
         "comps": [
           {
-            "id": "27037.0",
-            "name": "Kellogg's Pop-Tarts Frosted S'mores Pastries",
-            "dept": "breakfast",
-            "aisle": "breakfast bars pastries",
-            "values": [
-              1.435,
-              0.065
-            ]
-          },
-          {
             "id": "47817.0",
             "name": "Chunky Chocolate Chunk Cookies",
             "dept": "snacks",
             "aisle": "cookies cakes",
             "values": [
-              1.681,
-              0.035
-            ]
-          },
-          {
-            "id": "26254.0",
-            "name": "Corn Snack, Hot Chili Pepper & Lime, Takis",
-            "dept": "snacks",
-            "aisle": "chips pretzels",
-            "values": [
-              1.524,
-              0.029
-            ]
-          },
-          {
-            "id": "7443.0",
-            "name": "Classic Recipe Milk Chocolate Bar",
-            "dept": "snacks",
-            "aisle": "candy chocolate",
-            "values": [
-              1.386,
-              0.024
-            ]
-          },
-          {
-            "id": "46388.0",
-            "name": "Sweet & Salty Nut Cashews Granola",
-            "dept": "snacks",
-            "aisle": "energy granola bars",
-            "values": [
-              1.06,
-              0.018
-            ]
-          },
-          {
-            "id": "20699.0",
-            "name": "Natural Care Baby Wipes",
-            "dept": "babies",
-            "aisle": "diapers wipes",
-            "values": [
-              1.085,
-              0.015
-            ]
-          },
-          {
-            "id": "1835.0",
-            "name": "Caffeine Free Diet",
-            "dept": "beverages",
-            "aisle": "soft drinks",
-            "values": [
-              0.998,
-              0.013
+              0.225,
+              20
             ]
           },
           {
@@ -3877,8 +4379,48 @@
             "dept": "snacks",
             "aisle": "cookies cakes",
             "values": [
-              0.935,
-              0.011
+              0.125,
+              17
+            ]
+          },
+          {
+            "id": "27037.0",
+            "name": "Kellogg's Pop-Tarts Frosted S'mores Pastries",
+            "dept": "breakfast",
+            "aisle": "breakfast bars pastries",
+            "values": [
+              0.192,
+              17
+            ]
+          },
+          {
+            "id": "7443.0",
+            "name": "Classic Recipe Milk Chocolate Bar",
+            "dept": "snacks",
+            "aisle": "candy chocolate",
+            "values": [
+              0.186,
+              15
+            ]
+          },
+          {
+            "id": "46388.0",
+            "name": "Sweet & Salty Nut Cashews Granola",
+            "dept": "snacks",
+            "aisle": "energy granola bars",
+            "values": [
+              0.142,
+              15
+            ]
+          },
+          {
+            "id": "1835.0",
+            "name": "Caffeine Free Diet",
+            "dept": "beverages",
+            "aisle": "soft drinks",
+            "values": [
+              0.133,
+              15
             ]
           },
           {
@@ -3887,8 +4429,8 @@
             "dept": "snacks",
             "aisle": "popcorn jerky",
             "values": [
-              0.91,
-              0.011
+              0.121,
+              15
             ]
           },
           {
@@ -3897,8 +4439,28 @@
             "dept": "dairy eggs",
             "aisle": "other creams cheeses",
             "values": [
-              0.905,
-              0.01
+              0.121,
+              15
+            ]
+          },
+          {
+            "id": "26254.0",
+            "name": "Corn Snack, Hot Chili Pepper & Lime, Takis",
+            "dept": "snacks",
+            "aisle": "chips pretzels",
+            "values": [
+              0.204,
+              13
+            ]
+          },
+          {
+            "id": "20699.0",
+            "name": "Natural Care Baby Wipes",
+            "dept": "babies",
+            "aisle": "diapers wipes",
+            "values": [
+              0.145,
+              13
             ]
           }
         ]
@@ -3917,28 +4479,8 @@
             "dept": "snacks",
             "aisle": "chips pretzels",
             "values": [
-              8.249,
-              0.127
-            ]
-          },
-          {
-            "id": "28914.0",
-            "name": "Carmelized Onion Hummus",
-            "dept": "deli",
-            "aisle": "fresh dips tapenades",
-            "values": [
-              2.857,
-              0.092
-            ]
-          },
-          {
-            "id": "33593.0",
-            "name": "Crunchin' Grahams, Honey Sticks, 123 Sesame Street",
-            "dept": "babies",
-            "aisle": "baby food formula",
-            "values": [
-              5.846,
-              0.065
+              0.164,
+              15
             ]
           },
           {
@@ -3947,58 +4489,8 @@
             "dept": "produce",
             "aisle": "packaged vegetables fruits",
             "values": [
-              5.594,
-              0.059
-            ]
-          },
-          {
-            "id": "34685.0",
-            "name": "Crunchy Double Chocolate",
-            "dept": "snacks",
-            "aisle": "cookies cakes",
-            "values": [
-              4.843,
-              0.045
-            ]
-          },
-          {
-            "id": "19176.0",
-            "name": "Chocolate Chip Mini Cookies",
-            "dept": "snacks",
-            "aisle": "cookies cakes",
-            "values": [
-              2.679,
-              0.021
-            ]
-          },
-          {
-            "id": "20589.0",
-            "name": "Veggie Bologna Deli Slices",
-            "dept": "deli",
-            "aisle": "tofu meat alternatives",
-            "values": [
-              3.074,
-              0.019
-            ]
-          },
-          {
-            "id": "21909.0",
-            "name": "Raw Cheddar Chips",
-            "dept": "snacks",
-            "aisle": "chips pretzels",
-            "values": [
-              2.316,
-              0.011
-            ]
-          },
-          {
-            "id": "11301.0",
-            "name": "Free Range Organic Chicken Broth",
-            "dept": "canned goods",
-            "aisle": "soup broth bouillon",
-            "values": [
-              2.315,
-              0.011
+              0.11,
+              9
             ]
           },
           {
@@ -4007,8 +4499,78 @@
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              2.312,
-              0.011
+              0.045,
+              8
+            ]
+          },
+          {
+            "id": "34685.0",
+            "name": "Crunchy Double Chocolate",
+            "dept": "snacks",
+            "aisle": "cookies cakes",
+            "values": [
+              0.095,
+              7
+            ]
+          },
+          {
+            "id": "33593.0",
+            "name": "Crunchin' Grahams, Honey Sticks, 123 Sesame Street",
+            "dept": "babies",
+            "aisle": "baby food formula",
+            "values": [
+              0.116,
+              7
+            ]
+          },
+          {
+            "id": "28914.0",
+            "name": "Carmelized Onion Hummus",
+            "dept": "deli",
+            "aisle": "fresh dips tapenades",
+            "values": [
+              0.056,
+              6
+            ]
+          },
+          {
+            "id": "20589.0",
+            "name": "Veggie Bologna Deli Slices",
+            "dept": "deli",
+            "aisle": "tofu meat alternatives",
+            "values": [
+              0.06,
+              5
+            ]
+          },
+          {
+            "id": "11301.0",
+            "name": "Free Range Organic Chicken Broth",
+            "dept": "canned goods",
+            "aisle": "soup broth bouillon",
+            "values": [
+              0.045,
+              5
+            ]
+          },
+          {
+            "id": "21909.0",
+            "name": "Raw Cheddar Chips",
+            "dept": "snacks",
+            "aisle": "chips pretzels",
+            "values": [
+              0.045,
+              4
+            ]
+          },
+          {
+            "id": "19176.0",
+            "name": "Chocolate Chip Mini Cookies",
+            "dept": "snacks",
+            "aisle": "cookies cakes",
+            "values": [
+              0.052,
+              3
             ]
           }
         ]
@@ -4022,13 +4584,23 @@
         ],
         "comps": [
           {
+            "id": "33705.0",
+            "name": "New York Cheddar Potato Chips",
+            "dept": "snacks",
+            "aisle": "chips pretzels",
+            "values": [
+              0.029,
+              10
+            ]
+          },
+          {
             "id": "8695.0",
             "name": "Hot! Jalapeno Potato Chips",
             "dept": "snacks",
             "aisle": "chips pretzels",
             "values": [
-              11.462,
-              0.16
+              0.094,
+              9
             ]
           },
           {
@@ -4037,18 +4609,8 @@
             "dept": "snacks",
             "aisle": "chips pretzels",
             "values": [
-              6.372,
-              0.034
-            ]
-          },
-          {
-            "id": "25843.0",
-            "name": "Maple Bacon Potato Chips",
-            "dept": "snacks",
-            "aisle": "chips pretzels",
-            "values": [
-              5.231,
-              0.023
+              0.051,
+              5
             ]
           },
           {
@@ -4057,28 +4619,18 @@
             "dept": "snacks",
             "aisle": "chips pretzels",
             "values": [
-              4.36,
-              0.016
+              0.035,
+              5
             ]
           },
           {
-            "id": "35495.0",
-            "name": "Salsa Fresca",
-            "dept": "deli",
-            "aisle": "fresh dips tapenades",
-            "values": [
-              4.255,
-              0.016
-            ]
-          },
-          {
-            "id": "33705.0",
-            "name": "New York Cheddar Potato Chips",
+            "id": "25843.0",
+            "name": "Maple Bacon Potato Chips",
             "dept": "snacks",
             "aisle": "chips pretzels",
             "values": [
-              3.65,
-              0.012
+              0.042,
+              4
             ]
           },
           {
@@ -4087,18 +4639,18 @@
             "dept": "bakery",
             "aisle": "bread",
             "values": [
-              3.611,
-              0.012
+              0.028,
+              3
             ]
           },
           {
-            "id": "47612.0",
-            "name": "Halloumi Cheese",
-            "dept": "dairy eggs",
-            "aisle": "specialty cheeses",
+            "id": "35495.0",
+            "name": "Salsa Fresca",
+            "dept": "deli",
+            "aisle": "fresh dips tapenades",
             "values": [
-              3.478,
-              0.011
+              0.034,
+              3
             ]
           },
           {
@@ -4107,8 +4659,18 @@
             "dept": "snacks",
             "aisle": "chips pretzels",
             "values": [
-              3.467,
-              0.011
+              0.027,
+              2
+            ]
+          },
+          {
+            "id": "47612.0",
+            "name": "Halloumi Cheese",
+            "dept": "dairy eggs",
+            "aisle": "specialty cheeses",
+            "values": [
+              0.027,
+              2
             ]
           },
           {
@@ -4117,8 +4679,8 @@
             "dept": "beverages",
             "aisle": "coffee",
             "values": [
-              3.274,
-              0.01
+              0.026,
+              2
             ]
           }
         ]
@@ -4135,53 +4697,13 @@
     ],
     "comps": [
       {
-        "id": "19176.0",
-        "name": "Chocolate Chip Mini Cookies",
-        "dept": "snacks",
-        "aisle": "cookies cakes",
-        "values": [
-          15.8,
-          45
-        ]
-      },
-      {
-        "id": "29944.0",
-        "name": "Sriracha Potato Chips",
+        "id": "3634.0",
+        "name": "Krinkle Cut Classic Barbecue Potato Chips",
         "dept": "snacks",
         "aisle": "chips pretzels",
         "values": [
-          13.1,
-          37
-        ]
-      },
-      {
-        "id": "25843.0",
-        "name": "Maple Bacon Potato Chips",
-        "dept": "snacks",
-        "aisle": "chips pretzels",
-        "values": [
-          8.7,
-          23
-        ]
-      },
-      {
-        "id": "34866.0",
-        "name": "Chocolate Milk 1% Milkfat",
-        "dept": "dairy eggs",
-        "aisle": "milk",
-        "values": [
-          7.7,
-          21
-        ]
-      },
-      {
-        "id": "26885.0",
-        "name": "Luau BBQ Potato Chips",
-        "dept": "snacks",
-        "aisle": "chips pretzels",
-        "values": [
-          7.5,
-          20
+          0.021,
+          7.4
         ]
       },
       {
@@ -4190,28 +4712,58 @@
         "dept": "snacks",
         "aisle": "chips pretzels",
         "values": [
-          6.6,
-          17
+          0.022,
+          4.9
         ]
       },
       {
-        "id": "26038.0",
-        "name": "Wholesome Nut NUT-rition Mix",
-        "dept": "snacks",
-        "aisle": "nuts seeds dried fruit",
-        "values": [
-          6.3,
-          17
-        ]
-      },
-      {
-        "id": "3634.0",
-        "name": "Krinkle Cut Classic Barbecue Potato Chips",
+        "id": "29944.0",
+        "name": "Sriracha Potato Chips",
         "dept": "snacks",
         "aisle": "chips pretzels",
         "values": [
-          6.1,
-          16
+          0.046,
+          4.9
+        ]
+      },
+      {
+        "id": "34866.0",
+        "name": "Chocolate Milk 1% Milkfat",
+        "dept": "dairy eggs",
+        "aisle": "milk",
+        "values": [
+          0.026,
+          4.3
+        ]
+      },
+      {
+        "id": "19176.0",
+        "name": "Chocolate Chip Mini Cookies",
+        "dept": "snacks",
+        "aisle": "cookies cakes",
+        "values": [
+          0.055,
+          3.5
+        ]
+      },
+      {
+        "id": "26885.0",
+        "name": "Luau BBQ Potato Chips",
+        "dept": "snacks",
+        "aisle": "chips pretzels",
+        "values": [
+          0.025,
+          2.9
+        ]
+      },
+      {
+        "id": "25843.0",
+        "name": "Maple Bacon Potato Chips",
+        "dept": "snacks",
+        "aisle": "chips pretzels",
+        "values": [
+          0.03,
+          2.8
         ]
       },
       {
@@ -4220,8 +4772,18 @@
         "dept": "snacks",
         "aisle": "chips pretzels",
         "values": [
-          5.9,
-          16
+          0.02,
+          2.0
+        ]
+      },
+      {
+        "id": "26038.0",
+        "name": "Wholesome Nut NUT-rition Mix",
+        "dept": "snacks",
+        "aisle": "nuts seeds dried fruit",
+        "values": [
+          0.021,
+          1.6
         ]
       },
       {
@@ -4230,8 +4792,8 @@
         "dept": "snacks",
         "aisle": "chips pretzels",
         "values": [
-          5.8,
-          15
+          0.019,
+          1.2
         ]
       }
     ]
@@ -4242,7 +4804,7 @@
     "aisle": "soft drinks",
     "values": [
       0.681,
-      82
+      6.8
     ],
     "subs": [
       {
@@ -4254,13 +4816,13 @@
         ],
         "comps": [
           {
-            "id": "40596.0",
-            "name": "Chunky Soup, Sirloin Burger with Country Vegetables",
-            "dept": "canned goods",
-            "aisle": "soup broth bouillon",
+            "id": "48907.0",
+            "name": "Garden Salad Mix",
+            "dept": "produce",
+            "aisle": "packaged vegetables fruits",
             "values": [
-              8.869,
-              0.88
+              0.109,
+              27
             ]
           },
           {
@@ -4269,28 +4831,18 @@
             "dept": "dairy eggs",
             "aisle": "butter",
             "values": [
-              6.921,
-              0.715
+              0.139,
+              14
             ]
           },
           {
-            "id": "26006.0",
-            "name": "Deli Select Ultra Thin Smoked Ham Lunch Meat",
-            "dept": "deli",
-            "aisle": "lunch meat",
+            "id": "40596.0",
+            "name": "Chunky Soup, Sirloin Burger with Country Vegetables",
+            "dept": "canned goods",
+            "aisle": "soup broth bouillon",
             "values": [
-              5.579,
-              0.415
-            ]
-          },
-          {
-            "id": "31692.0",
-            "name": "Homestyle Waffles",
-            "dept": "frozen",
-            "aisle": "frozen breakfast",
-            "values": [
-              6.443,
-              0.079
+              0.178,
+              14
             ]
           },
           {
@@ -4299,8 +4851,18 @@
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              6.294,
-              0.075
+              0.126,
+              13
+            ]
+          },
+          {
+            "id": "26006.0",
+            "name": "Deli Select Ultra Thin Smoked Ham Lunch Meat",
+            "dept": "deli",
+            "aisle": "lunch meat",
+            "values": [
+              0.112,
+              12
             ]
           },
           {
@@ -4309,38 +4871,8 @@
             "dept": "snacks",
             "aisle": "crackers",
             "values": [
-              6.157,
-              0.072
-            ]
-          },
-          {
-            "id": "11091.0",
-            "name": "BBQ Recipe Chicken Pretzel Bread Frozen Sandwiches",
-            "dept": "frozen",
-            "aisle": "frozen meals",
-            "values": [
-              5.514,
-              0.058
-            ]
-          },
-          {
-            "id": "48907.0",
-            "name": "Garden Salad Mix",
-            "dept": "produce",
-            "aisle": "packaged vegetables fruits",
-            "values": [
-              5.452,
-              0.057
-            ]
-          },
-          {
-            "id": "45765.0",
-            "name": "Bun Size Franks made with Pork & Chicken",
-            "dept": "meat seafood",
-            "aisle": "hot dogs bacon sausage",
-            "values": [
-              5.04,
-              0.049
+              0.123,
+              11
             ]
           },
           {
@@ -4349,8 +4881,38 @@
             "dept": "pets",
             "aisle": "cat food care",
             "values": [
-              4.888,
-              0.046
+              0.098,
+              9
+            ]
+          },
+          {
+            "id": "31692.0",
+            "name": "Homestyle Waffles",
+            "dept": "frozen",
+            "aisle": "frozen breakfast",
+            "values": [
+              0.129,
+              9
+            ]
+          },
+          {
+            "id": "11091.0",
+            "name": "BBQ Recipe Chicken Pretzel Bread Frozen Sandwiches",
+            "dept": "frozen",
+            "aisle": "frozen meals",
+            "values": [
+              0.11,
+              8
+            ]
+          },
+          {
+            "id": "45765.0",
+            "name": "Bun Size Franks made with Pork & Chicken",
+            "dept": "meat seafood",
+            "aisle": "hot dogs bacon sausage",
+            "values": [
+              0.101,
+              7
             ]
           }
         ]
@@ -4373,93 +4935,13 @@
         ],
         "comps": [
           {
-            "id": "5110.0",
-            "name": "7 Up Lemon Lime Soda",
-            "dept": "beverages",
-            "aisle": "soft drinks",
-            "values": [
-              23.919,
-              0.973
-            ]
-          },
-          {
-            "id": "21754.0",
-            "name": "Juice Drink Variety Pack",
-            "dept": "beverages",
-            "aisle": "juice nectars",
-            "values": [
-              26.471,
-              0.385
-            ]
-          },
-          {
-            "id": "35173.0",
-            "name": "Organic Wild Blend Rice",
-            "dept": "snacks",
-            "aisle": "energy granola bars",
-            "values": [
-              19.312,
-              0.25
-            ]
-          },
-          {
-            "id": "14771.0",
-            "name": "Non-Dairy French Vanilla Singles Creamer",
-            "dept": "dairy eggs",
-            "aisle": "cream",
-            "values": [
-              32.622,
-              0.159
-            ]
-          },
-          {
-            "id": "32714.0",
-            "name": "Spearmint Gum",
-            "dept": "snacks",
-            "aisle": "mint gum",
-            "values": [
-              27.368,
-              0.114
-            ]
-          },
-          {
             "id": "34148.0",
             "name": "Variety of Anitoxidant Infusions Cans",
             "dept": "beverages",
             "aisle": "energy sports drinks",
             "values": [
-              26.247,
-              0.106
-            ]
-          },
-          {
-            "id": "17469.0",
-            "name": "Lo-Carb Energy Drink",
-            "dept": "beverages",
-            "aisle": "energy sports drinks",
-            "values": [
-              25.482,
-              0.1
-            ]
-          },
-          {
-            "id": "44031.0",
-            "name": "Pop-Tarts Frosted Strawberry/Frosted Brown Sugar Cinnamon Variety Pack Toaster Pastries",
-            "dept": "breakfast",
-            "aisle": "breakfast bars pastries",
-            "values": [
-              23.684,
-              0.087
-            ]
-          },
-          {
-            "id": "23016.0",
-            "name": "Red Licorice",
-            "dept": "snacks",
-            "aisle": "candy chocolate",
-            "values": [
-              22.947,
-              0.082
+              0.038,
+              3
             ]
           },
           {
@@ -4468,8 +4950,88 @@
             "dept": "snacks",
             "aisle": "candy chocolate",
             "values": [
-              22.04,
-              0.076
+              0.031,
+              3
+            ]
+          },
+          {
+            "id": "17469.0",
+            "name": "Lo-Carb Energy Drink",
+            "dept": "beverages",
+            "aisle": "energy sports drinks",
+            "values": [
+              0.037,
+              3
+            ]
+          },
+          {
+            "id": "23016.0",
+            "name": "Red Licorice",
+            "dept": "snacks",
+            "aisle": "candy chocolate",
+            "values": [
+              0.033,
+              3
+            ]
+          },
+          {
+            "id": "14771.0",
+            "name": "Non-Dairy French Vanilla Singles Creamer",
+            "dept": "dairy eggs",
+            "aisle": "cream",
+            "values": [
+              0.047,
+              3
+            ]
+          },
+          {
+            "id": "21754.0",
+            "name": "Juice Drink Variety Pack",
+            "dept": "beverages",
+            "aisle": "juice nectars",
+            "values": [
+              0.038,
+              3
+            ]
+          },
+          {
+            "id": "32714.0",
+            "name": "Spearmint Gum",
+            "dept": "snacks",
+            "aisle": "mint gum",
+            "values": [
+              0.039,
+              3
+            ]
+          },
+          {
+            "id": "44031.0",
+            "name": "Pop-Tarts Frosted Strawberry/Frosted Brown Sugar Cinnamon Variety Pack Toaster Pastries",
+            "dept": "breakfast",
+            "aisle": "breakfast bars pastries",
+            "values": [
+              0.034,
+              3
+            ]
+          },
+          {
+            "id": "5110.0",
+            "name": "7 Up Lemon Lime Soda",
+            "dept": "beverages",
+            "aisle": "soft drinks",
+            "values": [
+              0.034,
+              2
+            ]
+          },
+          {
+            "id": "35173.0",
+            "name": "Organic Wild Blend Rice",
+            "dept": "snacks",
+            "aisle": "energy granola bars",
+            "values": [
+              0.027,
+              2
             ]
           }
         ]
@@ -4483,53 +5045,13 @@
         ],
         "comps": [
           {
-            "id": "34586.0",
-            "name": "Vanilla Coke Zero",
-            "dept": "beverages",
-            "aisle": "soft drinks",
-            "values": [
-              20.747,
-              0.261
-            ]
-          },
-          {
-            "id": "46388.0",
-            "name": "Sweet & Salty Nut Cashews Granola",
-            "dept": "snacks",
-            "aisle": "energy granola bars",
-            "values": [
-              11.837,
-              0.195
-            ]
-          },
-          {
-            "id": "22481.0",
-            "name": "Chocolate Chip Peanut Crunch Bars",
-            "dept": "snacks",
-            "aisle": "energy granola bars",
-            "values": [
-              11.602,
-              0.116
-            ]
-          },
-          {
             "id": "40236.0",
             "name": "Diet Cherry Coke",
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              13.656,
-              0.056
-            ]
-          },
-          {
-            "id": "4687.0",
-            "name": "Arnold Palmer Lite Half & Half Iced Tea Lemonade",
-            "dept": "beverages",
-            "aisle": "tea",
-            "values": [
-              12.881,
-              0.05
+              0.038,
+              7
             ]
           },
           {
@@ -4538,28 +5060,48 @@
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              12.791,
-              0.05
+              0.036,
+              6
             ]
           },
           {
-            "id": "18790.0",
-            "name": "Chocolate Favorites Fun Size Variety Pack",
-            "dept": "snacks",
-            "aisle": "candy chocolate",
-            "values": [
-              11.873,
-              0.043
-            ]
-          },
-          {
-            "id": "47950.0",
-            "name": "Coffee With Milk Sweetened Iced Coffee Medium Roast Latin American Blend",
+            "id": "34586.0",
+            "name": "Vanilla Coke Zero",
             "dept": "beverages",
-            "aisle": "coffee",
+            "aisle": "soft drinks",
             "values": [
-              11.782,
-              0.042
+              0.059,
+              5
+            ]
+          },
+          {
+            "id": "4687.0",
+            "name": "Arnold Palmer Lite Half & Half Iced Tea Lemonade",
+            "dept": "beverages",
+            "aisle": "tea",
+            "values": [
+              0.036,
+              5
+            ]
+          },
+          {
+            "id": "46388.0",
+            "name": "Sweet & Salty Nut Cashews Granola",
+            "dept": "snacks",
+            "aisle": "energy granola bars",
+            "values": [
+              0.033,
+              4
+            ]
+          },
+          {
+            "id": "22481.0",
+            "name": "Chocolate Chip Peanut Crunch Bars",
+            "dept": "snacks",
+            "aisle": "energy granola bars",
+            "values": [
+              0.032,
+              3
             ]
           },
           {
@@ -4568,8 +5110,28 @@
             "dept": "bakery",
             "aisle": "breakfast bakery",
             "values": [
-              11.628,
-              0.041
+              0.032,
+              3
+            ]
+          },
+          {
+            "id": "18790.0",
+            "name": "Chocolate Favorites Fun Size Variety Pack",
+            "dept": "snacks",
+            "aisle": "candy chocolate",
+            "values": [
+              0.033,
+              2
+            ]
+          },
+          {
+            "id": "47950.0",
+            "name": "Coffee With Milk Sweetened Iced Coffee Medium Roast Latin American Blend",
+            "dept": "beverages",
+            "aisle": "coffee",
+            "values": [
+              0.033,
+              2
             ]
           },
           {
@@ -4578,8 +5140,8 @@
             "dept": "snacks",
             "aisle": "chips pretzels",
             "values": [
-              11.621,
-              0.041
+              0.032,
+              2
             ]
           }
         ]
@@ -4593,63 +5155,13 @@
         ],
         "comps": [
           {
-            "id": "37040.0",
-            "name": "Fanta Orange Soda",
-            "dept": "beverages",
-            "aisle": "soft drinks",
-            "values": [
-              6.947,
-              0.406
-            ]
-          },
-          {
-            "id": "5110.0",
-            "name": "7 Up Lemon Lime Soda",
-            "dept": "beverages",
-            "aisle": "soft drinks",
-            "values": [
-              9.51,
-              0.387
-            ]
-          },
-          {
-            "id": "16309.0",
-            "name": "Cheese & Peanut Butter Sandwich Crackers",
-            "dept": "snacks",
-            "aisle": "crackers",
-            "values": [
-              5.882,
-              0.058
-            ]
-          },
-          {
             "id": "41406.0",
             "name": "Orange Soda",
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              6.395,
-              0.052
-            ]
-          },
-          {
-            "id": "16486.0",
-            "name": "Diet Pepsi Slim Cans",
-            "dept": "beverages",
-            "aisle": "soft drinks",
-            "values": [
-              5.928,
-              0.042
-            ]
-          },
-          {
-            "id": "40722.0",
-            "name": "Sparkling Citrus Beverage, with Natural Pulp",
-            "dept": "beverages",
-            "aisle": "soft drinks",
-            "values": [
-              9.726,
-              0.041
+              0.026,
+              10
             ]
           },
           {
@@ -4658,8 +5170,8 @@
             "dept": "beverages",
             "aisle": "soft drinks",
             "values": [
-              6.608,
-              0.02
+              0.027,
+              9
             ]
           },
           {
@@ -4668,18 +5180,48 @@
             "dept": "alcohol",
             "aisle": "spirits",
             "values": [
-              6.47,
-              0.019
+              0.026,
+              4
             ]
           },
           {
-            "id": "2493.0",
-            "name": "Wild Cherry Drink",
+            "id": "37040.0",
+            "name": "Fanta Orange Soda",
             "dept": "beverages",
-            "aisle": "juice nectars",
+            "aisle": "soft drinks",
             "values": [
-              6.195,
-              0.018
+              0.028,
+              3
+            ]
+          },
+          {
+            "id": "16486.0",
+            "name": "Diet Pepsi Slim Cans",
+            "dept": "beverages",
+            "aisle": "soft drinks",
+            "values": [
+              0.024,
+              3
+            ]
+          },
+          {
+            "id": "5110.0",
+            "name": "7 Up Lemon Lime Soda",
+            "dept": "beverages",
+            "aisle": "soft drinks",
+            "values": [
+              0.039,
+              3
+            ]
+          },
+          {
+            "id": "40722.0",
+            "name": "Sparkling Citrus Beverage, with Natural Pulp",
+            "dept": "beverages",
+            "aisle": "soft drinks",
+            "values": [
+              0.04,
+              2
             ]
           },
           {
@@ -4688,8 +5230,28 @@
             "dept": "snacks",
             "aisle": "crackers",
             "values": [
-              5.836,
-              0.016
+              0.023,
+              2
+            ]
+          },
+          {
+            "id": "16309.0",
+            "name": "Cheese & Peanut Butter Sandwich Crackers",
+            "dept": "snacks",
+            "aisle": "crackers",
+            "values": [
+              0.024,
+              2
+            ]
+          },
+          {
+            "id": "2493.0",
+            "name": "Wild Cherry Drink",
+            "dept": "beverages",
+            "aisle": "juice nectars",
+            "values": [
+              0.025,
+              2
             ]
           }
         ]
@@ -4697,33 +5259,13 @@
     ],
     "comps": [
       {
-        "id": "22249.0",
-        "name": "Pepsi",
-        "dept": "beverages",
-        "aisle": "soft drinks",
+        "id": "22166.0",
+        "name": "Miniatures Assortment Party Bag",
+        "dept": "snacks",
+        "aisle": "candy chocolate",
         "values": [
-          15.5,
-          51
-        ]
-      },
-      {
-        "id": "45192.0",
-        "name": "Soft And Strong Double Roll Bath Tissue",
-        "dept": "household",
-        "aisle": "paper goods",
-        "values": [
-          11.1,
-          34
-        ]
-      },
-      {
-        "id": "3499.0",
-        "name": "Peach Citrus Soda",
-        "dept": "beverages",
-        "aisle": "soft drinks",
-        "values": [
-          9.5,
-          28
+          0.059,
+          9.8
         ]
       },
       {
@@ -4732,38 +5274,38 @@
         "dept": "snacks",
         "aisle": "candy chocolate",
         "values": [
-          8.9,
-          26
+          0.069,
+          8.8
         ]
       },
       {
-        "id": "7663.0",
-        "name": "Paper Towels White w/ Thirst Pockets",
+        "id": "3499.0",
+        "name": "Peach Citrus Soda",
+        "dept": "beverages",
+        "aisle": "soft drinks",
+        "values": [
+          0.074,
+          8.6
+        ]
+      },
+      {
+        "id": "22249.0",
+        "name": "Pepsi",
+        "dept": "beverages",
+        "aisle": "soft drinks",
+        "values": [
+          0.122,
+          8.2
+        ]
+      },
+      {
+        "id": "45192.0",
+        "name": "Soft And Strong Double Roll Bath Tissue",
         "dept": "household",
         "aisle": "paper goods",
         "values": [
-          8.2,
-          24
-        ]
-      },
-      {
-        "id": "22166.0",
-        "name": "Miniatures Assortment Party Bag",
-        "dept": "snacks",
-        "aisle": "candy chocolate",
-        "values": [
-          7.6,
-          24
-        ]
-      },
-      {
-        "id": "27238.0",
-        "name": "Light Boston Cream Pie Yogurt",
-        "dept": "dairy eggs",
-        "aisle": "yogurt",
-        "values": [
-          8.1,
-          23
+          0.087,
+          6.0
         ]
       },
       {
@@ -4772,18 +5314,18 @@
         "dept": "snacks",
         "aisle": "fruit vegetable snacks",
         "values": [
-          7.8,
-          22
+          0.06,
+          5.8
         ]
       },
       {
-        "id": "21754.0",
-        "name": "Juice Drink Variety Pack",
-        "dept": "beverages",
-        "aisle": "juice nectars",
+        "id": "27238.0",
+        "name": "Light Boston Cream Pie Yogurt",
+        "dept": "dairy eggs",
+        "aisle": "yogurt",
         "values": [
-          7.5,
-          22
+          0.063,
+          5.6
         ]
       },
       {
@@ -4792,8 +5334,28 @@
         "dept": "beverages",
         "aisle": "soft drinks",
         "values": [
-          7.3,
-          21
+          0.057,
+          5.6
+        ]
+      },
+      {
+        "id": "21754.0",
+        "name": "Juice Drink Variety Pack",
+        "dept": "beverages",
+        "aisle": "juice nectars",
+        "values": [
+          0.058,
+          4.2
+        ]
+      },
+      {
+        "id": "7663.0",
+        "name": "Paper Towels White w/ Thirst Pockets",
+        "dept": "household",
+        "aisle": "paper goods",
+        "values": [
+          0.063,
+          4.2
         ]
       }
     ]
