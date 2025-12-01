@@ -6,17 +6,14 @@ Retailers regularly review their product assortment to determine which products 
 
 The research questions build on one another and leverage different methodological approaches for a comprehensive analysis:
 
-Which products are most likely to absorb sales if a particular product is removed?
-Identifies potential substitutes and informs transferability estimates.
-
-What percentage of sales from a removed product will be transferred to each substituting product?
-Quantifies revenue impact and guides assortment decisions.
-
-Which products are complementary to a particular product and thus may be affected if it is removed?
-Identifies products whose sales are positively correlated, enabling retailers to anticipate effects of delisting on complementary products.
-
-What is the impact of a product on the sales of complementary items?
-Quantifies potential revenue loss or gain from complements when a product is removed, allowing more informed assortment planning.
+Which products are most likely to act as substitutes for a focus product?
+This question aims to identify high-quality substitutes by quantifying similarity in purchase behavior and product characteristics.
+What proportion of a removed product’s sales could be transferred to each substituting product?
+This examines the distribution of demand transferability (DTR), allowing more precise estimates of revenue redistribution following a delisting.
+Which products exhibit strong complementarity with a focus product?
+This investigates directional behavioral linkages between products and identifies complements whose sales are influenced by the focal item.
+How much impact does a focus product have on its complementary products?
+This estimates direct and network-amplified complement impact, enabling more robust category planning.
 
 ## Results
 Interaticve results are available here in the Product Explorer: https://jenleap.github.io/big-data-analytics-project/index.html
@@ -28,7 +25,7 @@ This project uses the Instacart Online Grocery Shopping Dataset, publicly availa
 Full EDA is available here: https://jenleap.github.io/big-data-analytics-project/eda_report_orders.html
 
 ## Repository Structure
-
+```
 ├── exploratory/ # exploratory analysis scripts
 ├── graphs/ # generated charts
 ├── json/ # product results JSON to be used in the Product Explorer
@@ -39,7 +36,7 @@ Full EDA is available here: https://jenleap.github.io/big-data-analytics-project
 ├── README.md 
 ├── eda_report_orders.html # EDA report (rendered)
 └── index.html # interative Product Explorer
-
+```
 ## Environment
 - Python version: 3.10+
 - Install dependencies with: pip install -r requirements.txt
