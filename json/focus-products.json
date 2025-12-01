@@ -23,7 +23,7 @@
             "aisle": "soft drinks",
             "values": [
               0.056,
-              20
+              20.2
             ]
           },
           {
@@ -33,7 +33,7 @@
             "aisle": "energy sports drinks",
             "values": [
               0.048,
-              6
+              6.4
             ]
           },
           {
@@ -43,7 +43,7 @@
             "aisle": "soft drinks",
             "values": [
               0.047,
-              6
+              6.3
             ]
           },
           {
@@ -53,7 +53,7 @@
             "aisle": "soft drinks",
             "values": [
               0.047,
-              6
+              5.6
             ]
           },
           {
@@ -63,7 +63,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.052,
-              5
+              5.1
             ]
           },
           {
@@ -73,7 +73,7 @@
             "aisle": "soft drinks",
             "values": [
               0.044,
-              5
+              4.6
             ]
           },
           {
@@ -83,7 +83,7 @@
             "aisle": "ice cream ice",
             "values": [
               0.043,
-              5
+              4.6
             ]
           },
           {
@@ -93,7 +93,7 @@
             "aisle": "red wines",
             "values": [
               0.049,
-              4
+              4.4
             ]
           },
           {
@@ -103,7 +103,7 @@
             "aisle": "juice nectars",
             "values": [
               0.058,
-              4
+              3.6
             ]
           },
           {
@@ -113,7 +113,7 @@
             "aisle": "cookies cakes",
             "values": [
               0.041,
-              3
+              3.1
             ]
           }
         ]
@@ -133,7 +133,7 @@
             "aisle": "spirits",
             "values": [
               0.137,
-              13
+              12.6
             ]
           },
           {
@@ -143,7 +143,7 @@
             "aisle": "popcorn jerky",
             "values": [
               0.074,
-              9
+              9.1
             ]
           },
           {
@@ -153,7 +153,7 @@
             "aisle": "soft drinks",
             "values": [
               0.074,
-              8
+              7.8
             ]
           },
           {
@@ -163,7 +163,7 @@
             "aisle": "energy granola bars",
             "values": [
               0.07,
-              7
+              7.2
             ]
           },
           {
@@ -173,7 +173,7 @@
             "aisle": "soft drinks",
             "values": [
               0.072,
-              7
+              6.5
             ]
           },
           {
@@ -183,7 +183,7 @@
             "aisle": "cookies cakes",
             "values": [
               0.083,
-              6
+              6.1
             ]
           },
           {
@@ -193,7 +193,7 @@
             "aisle": "energy granola bars",
             "values": [
               0.079,
-              6
+              5.9
             ]
           },
           {
@@ -203,7 +203,7 @@
             "aisle": "ice cream ice",
             "values": [
               0.06,
-              5
+              4.7
             ]
           },
           {
@@ -213,7 +213,7 @@
             "aisle": "soft drinks",
             "values": [
               0.067,
-              4
+              4.5
             ]
           },
           {
@@ -223,7 +223,7 @@
             "aisle": "spirits",
             "values": [
               0.055,
-              4
+              4.4
             ]
           }
         ]
@@ -243,7 +243,7 @@
             "aisle": "soft drinks",
             "values": [
               0.244,
-              16
+              16.2
             ]
           },
           {
@@ -253,7 +253,7 @@
             "aisle": "soft drinks",
             "values": [
               0.132,
-              15
+              15.2
             ]
           },
           {
@@ -263,7 +263,7 @@
             "aisle": "candy chocolate",
             "values": [
               0.158,
-              13
+              13.4
             ]
           },
           {
@@ -273,7 +273,7 @@
             "aisle": "fruit vegetable snacks",
             "values": [
               0.137,
-              13
+              13.1
             ]
           },
           {
@@ -283,7 +283,7 @@
             "aisle": "cookies cakes",
             "values": [
               0.179,
-              13
+              13.1
             ]
           },
           {
@@ -293,7 +293,7 @@
             "aisle": "frozen appetizers sides",
             "values": [
               0.13,
-              9
+              9.1
             ]
           },
           {
@@ -303,7 +303,7 @@
             "aisle": "mint gum",
             "values": [
               0.14,
-              8
+              8.5
             ]
           },
           {
@@ -313,7 +313,7 @@
             "aisle": "juice nectars",
             "values": [
               0.115,
-              8
+              8.2
             ]
           },
           {
@@ -323,7 +323,7 @@
             "aisle": "energy granola bars",
             "values": [
               0.108,
-              8
+              7.7
             ]
           },
           {
@@ -333,7 +333,7 @@
             "aisle": "dish detergents",
             "values": [
               0.114,
-              8
+              7.6
             ]
           }
         ]
@@ -353,7 +353,7 @@
             "aisle": "cat food care",
             "values": [
               0.894,
-              68
+              68.4
             ]
           },
           {
@@ -363,7 +363,7 @@
             "aisle": "soft drinks",
             "values": [
               0.613,
-              62
+              61.9
             ]
           },
           {
@@ -373,7 +373,7 @@
             "aisle": "prepared meals",
             "values": [
               0.825,
-              60
+              59.5
             ]
           },
           {
@@ -383,7 +383,7 @@
             "aisle": "cat food care",
             "values": [
               0.633,
-              49
+              49.4
             ]
           },
           {
@@ -393,7 +393,7 @@
             "aisle": "cat food care",
             "values": [
               0.311,
-              41
+              40.8
             ]
           },
           {
@@ -403,7 +403,7 @@
             "aisle": "cat food care",
             "values": [
               0.393,
-              28
+              27.8
             ]
           },
           {
@@ -413,7 +413,7 @@
             "aisle": "candy chocolate",
             "values": [
               0.39,
-              28
+              27.8
             ]
           },
           {
@@ -423,7 +423,7 @@
             "aisle": "breakfast bars pastries",
             "values": [
               0.306,
-              26
+              26.2
             ]
           },
           {
@@ -433,7 +433,7 @@
             "aisle": "soft drinks",
             "values": [
               0.369,
-              26
+              25.9
             ]
           },
           {
@@ -443,7 +443,7 @@
             "aisle": "bread",
             "values": [
               0.244,
-              18
+              17.8
             ]
           }
         ]
@@ -463,7 +463,7 @@
             "aisle": "soft drinks",
             "values": [
               0.806,
-              69
+              68.6
             ]
           },
           {
@@ -473,7 +473,7 @@
             "aisle": "soft drinks",
             "values": [
               0.216,
-              61
+              60.9
             ]
           },
           {
@@ -483,7 +483,7 @@
             "aisle": "fresh dips tapenades",
             "values": [
               0.293,
-              28
+              28.3
             ]
           },
           {
@@ -493,7 +493,7 @@
             "aisle": "breakfast bars pastries",
             "values": [
               0.319,
-              27
+              27.1
             ]
           },
           {
@@ -503,7 +503,7 @@
             "aisle": "soft drinks",
             "values": [
               0.193,
-              22
+              22.1
             ]
           },
           {
@@ -513,7 +513,7 @@
             "aisle": "doughs gelatins bake mixes",
             "values": [
               0.247,
-              21
+              21.2
             ]
           },
           {
@@ -523,7 +523,7 @@
             "aisle": "bread",
             "values": [
               0.212,
-              21
+              21.0
             ]
           },
           {
@@ -533,7 +533,7 @@
             "aisle": "coffee",
             "values": [
               0.185,
-              21
+              20.8
             ]
           },
           {
@@ -543,7 +543,7 @@
             "aisle": "canned meals beans",
             "values": [
               0.208,
-              17
+              16.8
             ]
           },
           {
@@ -553,7 +553,7 @@
             "aisle": "mint gum",
             "values": [
               0.187,
-              15
+              14.6
             ]
           }
         ]
@@ -686,7 +686,7 @@
             "aisle": "coffee",
             "values": [
               0.045,
-              6
+              5.7
             ]
           },
           {
@@ -696,7 +696,7 @@
             "aisle": "crackers",
             "values": [
               0.058,
-              5
+              5.0
             ]
           },
           {
@@ -706,7 +706,7 @@
             "aisle": "packaged poultry",
             "values": [
               0.052,
-              5
+              4.9
             ]
           },
           {
@@ -716,7 +716,7 @@
             "aisle": "yogurt",
             "values": [
               0.077,
-              5
+              4.9
             ]
           },
           {
@@ -726,7 +726,7 @@
             "aisle": "breakfast bakery",
             "values": [
               0.054,
-              5
+              4.9
             ]
           },
           {
@@ -736,7 +736,7 @@
             "aisle": "bread",
             "values": [
               0.044,
-              5
+              4.6
             ]
           },
           {
@@ -746,7 +746,7 @@
             "aisle": "yogurt",
             "values": [
               0.073,
-              4
+              4.4
             ]
           },
           {
@@ -756,7 +756,7 @@
             "aisle": "frozen breakfast",
             "values": [
               0.061,
-              4
+              3.9
             ]
           },
           {
@@ -766,7 +766,7 @@
             "aisle": "yogurt",
             "values": [
               0.046,
-              4
+              3.7
             ]
           },
           {
@@ -776,7 +776,7 @@
             "aisle": "prepared meals",
             "values": [
               0.048,
-              3
+              3.2
             ]
           }
         ]
@@ -796,7 +796,7 @@
             "aisle": "breakfast bakery",
             "values": [
               0.063,
-              12
+              11.5
             ]
           },
           {
@@ -806,7 +806,7 @@
             "aisle": "other creams cheeses",
             "values": [
               0.107,
-              10
+              10.4
             ]
           },
           {
@@ -816,7 +816,7 @@
             "aisle": "breakfast bakery",
             "values": [
               0.096,
-              10
+              10.3
             ]
           },
           {
@@ -826,7 +826,7 @@
             "aisle": "other creams cheeses",
             "values": [
               0.085,
-              10
+              10.1
             ]
           },
           {
@@ -836,7 +836,7 @@
             "aisle": "breakfast bakery",
             "values": [
               0.067,
-              8
+              7.6
             ]
           },
           {
@@ -846,7 +846,7 @@
             "aisle": "bread",
             "values": [
               0.054,
-              6
+              5.9
             ]
           },
           {
@@ -856,7 +856,7 @@
             "aisle": "cookies cakes",
             "values": [
               0.045,
-              5
+              5.1
             ]
           },
           {
@@ -866,7 +866,7 @@
             "aisle": "other creams cheeses",
             "values": [
               0.052,
-              5
+              5.0
             ]
           },
           {
@@ -876,7 +876,7 @@
             "aisle": "hot dogs bacon sausage",
             "values": [
               0.053,
-              4
+              4.0
             ]
           },
           {
@@ -886,7 +886,7 @@
             "aisle": "packaged seafood",
             "values": [
               0.049,
-              4
+              3.6
             ]
           }
         ]
@@ -906,7 +906,7 @@
             "aisle": "breakfast bakery",
             "values": [
               0.08,
-              15
+              14.8
             ]
           },
           {
@@ -916,7 +916,7 @@
             "aisle": "granola",
             "values": [
               0.106,
-              13
+              13.1
             ]
           },
           {
@@ -926,7 +926,7 @@
             "aisle": "packaged seafood",
             "values": [
               0.101,
-              11
+              11.4
             ]
           },
           {
@@ -936,7 +936,7 @@
             "aisle": "tortillas flat bread",
             "values": [
               0.097,
-              10
+              10.5
             ]
           },
           {
@@ -946,7 +946,7 @@
             "aisle": "fresh pasta",
             "values": [
               0.079,
-              10
+              10.4
             ]
           },
           {
@@ -956,7 +956,7 @@
             "aisle": "tea",
             "values": [
               0.077,
-              9
+              8.7
             ]
           },
           {
@@ -966,7 +966,7 @@
             "aisle": "other creams cheeses",
             "values": [
               0.085,
-              6
+              6.2
             ]
           },
           {
@@ -976,7 +976,7 @@
             "aisle": "fresh vegetables",
             "values": [
               0.086,
-              5
+              5.2
             ]
           },
           {
@@ -986,7 +986,7 @@
             "aisle": "fresh dips tapenades",
             "values": [
               0.08,
-              5
+              5.2
             ]
           },
           {
@@ -996,7 +996,7 @@
             "aisle": "soy lactosefree",
             "values": [
               0.074,
-              5
+              5.2
             ]
           }
         ]
@@ -1016,7 +1016,7 @@
             "aisle": "yogurt",
             "values": [
               0.271,
-              53
+              52.7
             ]
           },
           {
@@ -1026,7 +1026,7 @@
             "aisle": "yogurt",
             "values": [
               0.21,
-              37
+              36.7
             ]
           },
           {
@@ -1036,7 +1036,7 @@
             "aisle": "prepared meals",
             "values": [
               0.277,
-              32
+              32.4
             ]
           },
           {
@@ -1046,7 +1046,7 @@
             "aisle": "refrigerated",
             "values": [
               0.418,
-              27
+              27.4
             ]
           },
           {
@@ -1056,7 +1056,7 @@
             "aisle": "packaged cheese",
             "values": [
               0.269,
-              26
+              26.3
             ]
           },
           {
@@ -1066,7 +1066,7 @@
             "aisle": "breakfast bars pastries",
             "values": [
               0.221,
-              26
+              26.0
             ]
           },
           {
@@ -1076,7 +1076,7 @@
             "aisle": "soy lactosefree",
             "values": [
               0.221,
-              24
+              23.8
             ]
           },
           {
@@ -1086,7 +1086,7 @@
             "aisle": "other creams cheeses",
             "values": [
               0.208,
-              20
+              20.0
             ]
           },
           {
@@ -1096,7 +1096,7 @@
             "aisle": "frozen pizza",
             "values": [
               0.215,
-              19
+              19.5
             ]
           },
           {
@@ -1106,7 +1106,7 @@
             "aisle": "bread",
             "values": [
               0.207,
-              17
+              17.3
             ]
           }
         ]
@@ -1126,7 +1126,7 @@
             "aisle": "packaged cheese",
             "values": [
               0.18,
-              41
+              40.5
             ]
           },
           {
@@ -1136,7 +1136,7 @@
             "aisle": "other creams cheeses",
             "values": [
               0.3,
-              38
+              37.7
             ]
           },
           {
@@ -1146,7 +1146,7 @@
             "aisle": "packaged cheese",
             "values": [
               0.26,
-              34
+              33.8
             ]
           },
           {
@@ -1156,7 +1156,7 @@
             "aisle": "packaged cheese",
             "values": [
               0.176,
-              28
+              28.3
             ]
           },
           {
@@ -1166,7 +1166,7 @@
             "aisle": "other creams cheeses",
             "values": [
               0.232,
-              28
+              28.0
             ]
           },
           {
@@ -1176,7 +1176,7 @@
             "aisle": "white wines",
             "values": [
               0.229,
-              14
+              14.4
             ]
           },
           {
@@ -1186,7 +1186,7 @@
             "aisle": "tea",
             "values": [
               0.18,
-              13
+              13.2
             ]
           },
           {
@@ -1196,7 +1196,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.166,
-              13
+              13.1
             ]
           },
           {
@@ -1206,7 +1206,7 @@
             "aisle": "energy granola bars",
             "values": [
               0.168,
-              12
+              12.4
             ]
           },
           {
@@ -1216,7 +1216,7 @@
             "aisle": "cat food care",
             "values": [
               0.166,
-              12
+              12.1
             ]
           }
         ]
@@ -1349,7 +1349,7 @@
             "aisle": "breakfast bars pastries",
             "values": [
               0.51,
-              43
+              43.3
             ]
           },
           {
@@ -1359,7 +1359,7 @@
             "aisle": "ice cream ice",
             "values": [
               0.261,
-              29
+              29.4
             ]
           },
           {
@@ -1369,7 +1369,7 @@
             "aisle": "frozen pizza",
             "values": [
               0.416,
-              28
+              27.8
             ]
           },
           {
@@ -1379,7 +1379,7 @@
             "aisle": "fruit vegetable snacks",
             "values": [
               0.357,
-              27
+              27.4
             ]
           },
           {
@@ -1389,7 +1389,7 @@
             "aisle": "prepared soups salads",
             "values": [
               0.245,
-              27
+              26.6
             ]
           },
           {
@@ -1399,7 +1399,7 @@
             "aisle": "frozen appetizers sides",
             "values": [
               0.188,
-              24
+              23.5
             ]
           },
           {
@@ -1409,7 +1409,7 @@
             "aisle": "prepared meals",
             "values": [
               0.192,
-              23
+              22.6
             ]
           },
           {
@@ -1419,7 +1419,7 @@
             "aisle": "butter",
             "values": [
               0.266,
-              19
+              18.7
             ]
           },
           {
@@ -1429,7 +1429,7 @@
             "aisle": "oral hygiene",
             "values": [
               0.254,
-              16
+              16.0
             ]
           },
           {
@@ -1439,7 +1439,7 @@
             "aisle": "instant foods",
             "values": [
               0.196,
-              13
+              13.1
             ]
           }
         ]
@@ -1468,7 +1468,7 @@
             "aisle": "frozen meals",
             "values": [
               0.375,
-              51
+              50.8
             ]
           },
           {
@@ -1478,7 +1478,7 @@
             "aisle": "crackers",
             "values": [
               0.504,
-              49
+              49.5
             ]
           },
           {
@@ -1488,7 +1488,7 @@
             "aisle": "canned jarred vegetables",
             "values": [
               0.333,
-              41
+              41.3
             ]
           },
           {
@@ -1498,7 +1498,7 @@
             "aisle": "frozen appetizers sides",
             "values": [
               0.253,
-              35
+              34.7
             ]
           },
           {
@@ -1508,7 +1508,7 @@
             "aisle": "crackers",
             "values": [
               0.264,
-              29
+              29.0
             ]
           },
           {
@@ -1518,7 +1518,7 @@
             "aisle": "soy lactosefree",
             "values": [
               0.272,
-              26
+              26.1
             ]
           },
           {
@@ -1528,7 +1528,7 @@
             "aisle": "refrigerated",
             "values": [
               0.293,
-              20
+              20.4
             ]
           },
           {
@@ -1538,7 +1538,7 @@
             "aisle": "frozen appetizers sides",
             "values": [
               0.288,
-              20
+              20.4
             ]
           },
           {
@@ -1548,7 +1548,7 @@
             "aisle": "frozen appetizers sides",
             "values": [
               0.26,
-              18
+              18.0
             ]
           },
           {
@@ -1558,7 +1558,7 @@
             "aisle": "frozen meals",
             "values": [
               0.273,
-              17
+              17.4
             ]
           }
         ]
@@ -1578,7 +1578,7 @@
             "aisle": "frozen meals",
             "values": [
               0.02,
-              11
+              10.9
             ]
           },
           {
@@ -1588,7 +1588,7 @@
             "aisle": "yogurt",
             "values": [
               0.042,
-              3
+              3.1
             ]
           },
           {
@@ -1598,7 +1598,7 @@
             "aisle": "energy sports drinks",
             "values": [
               0.021,
-              3
+              2.9
             ]
           },
           {
@@ -1608,7 +1608,7 @@
             "aisle": "frozen pizza",
             "values": [
               0.02,
-              2
+              2.4
             ]
           },
           {
@@ -1618,7 +1618,7 @@
             "aisle": "frozen meals",
             "values": [
               0.021,
-              2
+              2.2
             ]
           },
           {
@@ -1628,7 +1628,7 @@
             "aisle": "energy sports drinks",
             "values": [
               0.027,
-              2
+              2.0
             ]
           },
           {
@@ -1638,7 +1638,7 @@
             "aisle": "refrigerated",
             "values": [
               0.026,
-              2
+              1.9
             ]
           },
           {
@@ -1648,7 +1648,7 @@
             "aisle": "baby food formula",
             "values": [
               0.024,
-              2
+              1.8
             ]
           },
           {
@@ -1658,7 +1658,7 @@
             "aisle": "frozen meals",
             "values": [
               0.021,
-              2
+              1.7
             ]
           },
           {
@@ -1668,7 +1668,7 @@
             "aisle": "frozen pizza",
             "values": [
               0.025,
-              2
+              1.7
             ]
           }
         ]
@@ -1688,7 +1688,7 @@
             "aisle": "frozen pizza",
             "values": [
               0.039,
-              18
+              18.1
             ]
           },
           {
@@ -1698,7 +1698,7 @@
             "aisle": "instant foods",
             "values": [
               0.04,
-              7
+              7.0
             ]
           },
           {
@@ -1708,7 +1708,7 @@
             "aisle": "frozen pizza",
             "values": [
               0.035,
-              7
+              6.6
             ]
           },
           {
@@ -1718,7 +1718,7 @@
             "aisle": "frozen pizza",
             "values": [
               0.055,
-              6
+              6.3
             ]
           },
           {
@@ -1728,7 +1728,7 @@
             "aisle": "frozen meals",
             "values": [
               0.036,
-              6
+              6.2
             ]
           },
           {
@@ -1738,7 +1738,7 @@
             "aisle": "frozen pizza",
             "values": [
               0.06,
-              4
+              4.4
             ]
           },
           {
@@ -1748,7 +1748,7 @@
             "aisle": "cereal",
             "values": [
               0.039,
-              3
+              3.2
             ]
           },
           {
@@ -1758,7 +1758,7 @@
             "aisle": "frozen meals",
             "values": [
               0.036,
-              3
+              3.2
             ]
           },
           {
@@ -1768,7 +1768,7 @@
             "aisle": "frozen produce",
             "values": [
               0.037,
-              3
+              2.8
             ]
           },
           {
@@ -1778,7 +1778,7 @@
             "aisle": "bread",
             "values": [
               0.042,
-              3
+              2.7
             ]
           }
         ]
@@ -1911,7 +1911,7 @@
             "aisle": "fruit vegetable snacks",
             "values": [
               0.156,
-              24
+              23.8
             ]
           },
           {
@@ -1921,7 +1921,7 @@
             "aisle": "eggs",
             "values": [
               0.13,
-              24
+              23.6
             ]
           },
           {
@@ -1931,7 +1931,7 @@
             "aisle": "fresh fruits",
             "values": [
               0.336,
-              21
+              21.4
             ]
           },
           {
@@ -1941,7 +1941,7 @@
             "aisle": "fresh vegetables",
             "values": [
               0.197,
-              17
+              17.2
             ]
           },
           {
@@ -1951,7 +1951,7 @@
             "aisle": "eggs",
             "values": [
               0.173,
-              16
+              15.9
             ]
           },
           {
@@ -1961,7 +1961,7 @@
             "aisle": "packaged vegetables fruits",
             "values": [
               0.143,
-              15
+              15.1
             ]
           },
           {
@@ -1971,7 +1971,7 @@
             "aisle": "eggs",
             "values": [
               0.088,
-              15
+              14.8
             ]
           },
           {
@@ -1981,7 +1981,7 @@
             "aisle": "fresh fruits",
             "values": [
               0.097,
-              11
+              10.9
             ]
           },
           {
@@ -1991,7 +1991,7 @@
             "aisle": "packaged vegetables fruits",
             "values": [
               0.093,
-              9
+              9.3
             ]
           },
           {
@@ -2001,7 +2001,7 @@
             "aisle": "frozen produce",
             "values": [
               0.105,
-              8
+              8.4
             ]
           }
         ]
@@ -2021,7 +2021,7 @@
             "aisle": "fresh fruits",
             "values": [
               0.021,
-              6
+              6.3
             ]
           },
           {
@@ -2031,7 +2031,7 @@
             "aisle": "fresh fruits",
             "values": [
               0.069,
-              5
+              5.0
             ]
           },
           {
@@ -2041,7 +2041,7 @@
             "aisle": "fresh fruits",
             "values": [
               0.019,
-              3
+              2.7
             ]
           },
           {
@@ -2051,7 +2051,7 @@
             "aisle": "fresh fruits",
             "values": [
               0.021,
-              2
+              2.5
             ]
           },
           {
@@ -2061,7 +2061,7 @@
             "aisle": "missing",
             "values": [
               0.021,
-              2
+              2.4
             ]
           },
           {
@@ -2071,7 +2071,7 @@
             "aisle": "packaged vegetables fruits",
             "values": [
               0.02,
-              2
+              2.3
             ]
           },
           {
@@ -2081,7 +2081,7 @@
             "aisle": "missing",
             "values": [
               0.028,
-              2
+              2.3
             ]
           },
           {
@@ -2091,7 +2091,7 @@
             "aisle": "fresh vegetables",
             "values": [
               0.019,
-              2
+              1.8
             ]
           },
           {
@@ -2101,7 +2101,7 @@
             "aisle": "juice nectars",
             "values": [
               0.022,
-              2
+              1.6
             ]
           },
           {
@@ -2111,7 +2111,7 @@
             "aisle": "fresh fruits",
             "values": [
               0.021,
-              2
+              1.6
             ]
           }
         ]
@@ -2131,7 +2131,7 @@
             "aisle": "fresh fruits",
             "values": [
               0.112,
-              33
+              32.9
             ]
           },
           {
@@ -2141,7 +2141,7 @@
             "aisle": "eggs",
             "values": [
               0.126,
-              18
+              17.6
             ]
           },
           {
@@ -2151,7 +2151,7 @@
             "aisle": "yogurt",
             "values": [
               0.09,
-              17
+              17.4
             ]
           },
           {
@@ -2161,7 +2161,7 @@
             "aisle": "fresh fruits",
             "values": [
               0.151,
-              16
+              15.5
             ]
           },
           {
@@ -2171,7 +2171,7 @@
             "aisle": "prepared soups salads",
             "values": [
               0.091,
-              15
+              15.3
             ]
           },
           {
@@ -2181,7 +2181,7 @@
             "aisle": "soft drinks",
             "values": [
               0.046,
-              13
+              12.9
             ]
           },
           {
@@ -2191,7 +2191,7 @@
             "aisle": "fresh fruits",
             "values": [
               0.175,
-              11
+              11.2
             ]
           },
           {
@@ -2201,7 +2201,7 @@
             "aisle": "fresh fruits",
             "values": [
               0.153,
-              11
+              11.1
             ]
           },
           {
@@ -2211,7 +2211,7 @@
             "aisle": "canned fruit applesauce",
             "values": [
               0.088,
-              11
+              10.9
             ]
           },
           {
@@ -2221,7 +2221,7 @@
             "aisle": "yogurt",
             "values": [
               0.057,
-              11
+              10.8
             ]
           }
         ]
@@ -2241,7 +2241,7 @@
             "aisle": "juice nectars",
             "values": [
               0.003,
-              0
+              0.3
             ]
           },
           {
@@ -2251,7 +2251,7 @@
             "aisle": "water seltzer sparkling water",
             "values": [
               0.003,
-              0
+              0.3
             ]
           },
           {
@@ -2261,7 +2261,7 @@
             "aisle": "breakfast bakery",
             "values": [
               0.003,
-              0
+              0.3
             ]
           },
           {
@@ -2271,7 +2271,7 @@
             "aisle": "fruit vegetable snacks",
             "values": [
               0.004,
-              0
+              0.3
             ]
           },
           {
@@ -2281,7 +2281,7 @@
             "aisle": "missing",
             "values": [
               0.003,
-              0
+              0.3
             ]
           },
           {
@@ -2291,7 +2291,7 @@
             "aisle": "granola",
             "values": [
               0.004,
-              0
+              0.3
             ]
           },
           {
@@ -2301,7 +2301,7 @@
             "aisle": "nuts seeds dried fruit",
             "values": [
               0.003,
-              0
+              0.3
             ]
           },
           {
@@ -2311,7 +2311,7 @@
             "aisle": "bread",
             "values": [
               0.003,
-              0
+              0.3
             ]
           },
           {
@@ -2321,7 +2321,7 @@
             "aisle": "missing",
             "values": [
               0.003,
-              0
+              0.3
             ]
           },
           {
@@ -2331,7 +2331,7 @@
             "aisle": "canned fruit applesauce",
             "values": [
               0.003,
-              0
+              0.3
             ]
           }
         ]
@@ -2351,7 +2351,7 @@
             "aisle": "other",
             "values": [
               0.004,
-              0
+              0.4
             ]
           },
           {
@@ -2361,7 +2361,7 @@
             "aisle": "juice nectars",
             "values": [
               0.004,
-              0
+              0.4
             ]
           },
           {
@@ -2371,7 +2371,7 @@
             "aisle": "packaged vegetables fruits",
             "values": [
               0.004,
-              0
+              0.4
             ]
           },
           {
@@ -2381,7 +2381,7 @@
             "aisle": "lunch meat",
             "values": [
               0.004,
-              0
+              0.4
             ]
           },
           {
@@ -2391,7 +2391,7 @@
             "aisle": "nuts seeds dried fruit",
             "values": [
               0.004,
-              0
+              0.4
             ]
           },
           {
@@ -2401,7 +2401,7 @@
             "aisle": "fresh fruits",
             "values": [
               0.004,
-              0
+              0.3
             ]
           },
           {
@@ -2411,7 +2411,7 @@
             "aisle": "bread",
             "values": [
               0.004,
-              0
+              0.3
             ]
           },
           {
@@ -2421,7 +2421,7 @@
             "aisle": "fresh vegetables",
             "values": [
               0.004,
-              0
+              0.3
             ]
           },
           {
@@ -2431,7 +2431,7 @@
             "aisle": "baby food formula",
             "values": [
               0.004,
-              0
+              0.3
             ]
           },
           {
@@ -2441,7 +2441,7 @@
             "aisle": "canned fruit applesauce",
             "values": [
               0.004,
-              0
+              0.3
             ]
           }
         ]
@@ -2574,7 +2574,7 @@
             "aisle": "yogurt",
             "values": [
               0.035,
-              8
+              7.9
             ]
           },
           {
@@ -2584,7 +2584,7 @@
             "aisle": "butter",
             "values": [
               0.029,
-              6
+              5.9
             ]
           },
           {
@@ -2594,7 +2594,7 @@
             "aisle": "cream",
             "values": [
               0.029,
-              6
+              5.6
             ]
           },
           {
@@ -2604,7 +2604,7 @@
             "aisle": "yogurt",
             "values": [
               0.028,
-              4
+              3.7
             ]
           },
           {
@@ -2614,7 +2614,7 @@
             "aisle": "prepared meals",
             "values": [
               0.029,
-              4
+              3.5
             ]
           },
           {
@@ -2624,7 +2624,7 @@
             "aisle": "yogurt",
             "values": [
               0.045,
-              3
+              3.3
             ]
           },
           {
@@ -2634,7 +2634,7 @@
             "aisle": "refrigerated",
             "values": [
               0.041,
-              3
+              3.2
             ]
           },
           {
@@ -2644,7 +2644,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.041,
-              3
+              3.0
             ]
           },
           {
@@ -2654,7 +2654,7 @@
             "aisle": "cookies cakes",
             "values": [
               0.034,
-              2
+              2.4
             ]
           },
           {
@@ -2664,7 +2664,7 @@
             "aisle": "candy chocolate",
             "values": [
               0.031,
-              2
+              2.3
             ]
           }
         ]
@@ -2684,7 +2684,7 @@
             "aisle": "yogurt",
             "values": [
               0.018,
-              3
+              3.1
             ]
           },
           {
@@ -2694,7 +2694,7 @@
             "aisle": "yogurt",
             "values": [
               0.021,
-              3
+              2.6
             ]
           },
           {
@@ -2704,7 +2704,7 @@
             "aisle": "yogurt",
             "values": [
               0.022,
-              2
+              1.8
             ]
           },
           {
@@ -2714,7 +2714,7 @@
             "aisle": "cookies cakes",
             "values": [
               0.027,
-              2
+              1.8
             ]
           },
           {
@@ -2724,7 +2724,7 @@
             "aisle": "tea",
             "values": [
               0.019,
-              2
+              1.7
             ]
           },
           {
@@ -2734,7 +2734,7 @@
             "aisle": "other creams cheeses",
             "values": [
               0.016,
-              2
+              1.7
             ]
           },
           {
@@ -2744,7 +2744,7 @@
             "aisle": "fruit vegetable snacks",
             "values": [
               0.016,
-              2
+              1.5
             ]
           },
           {
@@ -2754,7 +2754,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.018,
-              1
+              1.3
             ]
           },
           {
@@ -2764,7 +2764,7 @@
             "aisle": "crackers",
             "values": [
               0.017,
-              1
+              1.3
             ]
           },
           {
@@ -2774,7 +2774,7 @@
             "aisle": "granola",
             "values": [
               0.017,
-              1
+              1.1
             ]
           }
         ]
@@ -2794,7 +2794,7 @@
             "aisle": "energy sports drinks",
             "values": [
               0.021,
-              3
+              2.8
             ]
           },
           {
@@ -2804,7 +2804,7 @@
             "aisle": "tea",
             "values": [
               0.02,
-              2
+              2.4
             ]
           },
           {
@@ -2814,7 +2814,7 @@
             "aisle": "juice nectars",
             "values": [
               0.015,
-              2
+              2.3
             ]
           },
           {
@@ -2824,7 +2824,7 @@
             "aisle": "milk",
             "values": [
               0.017,
-              2
+              2.0
             ]
           },
           {
@@ -2834,7 +2834,7 @@
             "aisle": "milk",
             "values": [
               0.014,
-              2
+              1.7
             ]
           },
           {
@@ -2844,7 +2844,7 @@
             "aisle": "bread",
             "values": [
               0.021,
-              1
+              1.4
             ]
           },
           {
@@ -2854,7 +2854,7 @@
             "aisle": "tea",
             "values": [
               0.014,
-              1
+              1.2
             ]
           },
           {
@@ -2864,7 +2864,7 @@
             "aisle": "bread",
             "values": [
               0.013,
-              1
+              1.1
             ]
           },
           {
@@ -2874,7 +2874,7 @@
             "aisle": "eggs",
             "values": [
               0.016,
-              1
+              1.0
             ]
           },
           {
@@ -2884,7 +2884,7 @@
             "aisle": "energy granola bars",
             "values": [
               0.014,
-              1
+              0.9
             ]
           }
         ]
@@ -2904,7 +2904,7 @@
             "aisle": "fresh fruits",
             "values": [
               0.078,
-              59
+              59.4
             ]
           },
           {
@@ -2914,7 +2914,7 @@
             "aisle": "fruit vegetable snacks",
             "values": [
               0.087,
-              35
+              35.3
             ]
           },
           {
@@ -2924,7 +2924,7 @@
             "aisle": "packaged produce",
             "values": [
               0.094,
-              20
+              20.3
             ]
           },
           {
@@ -2934,7 +2934,7 @@
             "aisle": "bakery desserts",
             "values": [
               0.123,
-              17
+              17.2
             ]
           },
           {
@@ -2944,7 +2944,7 @@
             "aisle": "fresh vegetables",
             "values": [
               0.184,
-              11
+              11.4
             ]
           },
           {
@@ -2954,7 +2954,7 @@
             "aisle": "cookies cakes",
             "values": [
               0.092,
-              11
+              11.1
             ]
           },
           {
@@ -2964,7 +2964,7 @@
             "aisle": "canned meat seafood",
             "values": [
               0.083,
-              9
+              9.2
             ]
           },
           {
@@ -2974,7 +2974,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.084,
-              9
+              8.5
             ]
           },
           {
@@ -2984,7 +2984,7 @@
             "aisle": "specialty cheeses",
             "values": [
               0.084,
-              5
+              5.2
             ]
           },
           {
@@ -2994,7 +2994,7 @@
             "aisle": "oils vinegars",
             "values": [
               0.07,
-              5
+              4.6
             ]
           }
         ]
@@ -3014,7 +3014,7 @@
             "aisle": "packaged vegetables fruits",
             "values": [
               0.033,
-              6
+              6.1
             ]
           },
           {
@@ -3024,7 +3024,7 @@
             "aisle": "cookies cakes",
             "values": [
               0.053,
-              5
+              5.4
             ]
           },
           {
@@ -3034,7 +3034,7 @@
             "aisle": "yogurt",
             "values": [
               0.029,
-              4
+              4.4
             ]
           },
           {
@@ -3044,7 +3044,7 @@
             "aisle": "soy lactosefree",
             "values": [
               0.035,
-              4
+              3.6
             ]
           },
           {
@@ -3054,7 +3054,7 @@
             "aisle": "yogurt",
             "values": [
               0.026,
-              4
+              3.6
             ]
           },
           {
@@ -3064,7 +3064,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.031,
-              3
+              3.4
             ]
           },
           {
@@ -3074,7 +3074,7 @@
             "aisle": "bread",
             "values": [
               0.046,
-              3
+              3.0
             ]
           },
           {
@@ -3084,7 +3084,7 @@
             "aisle": "yogurt",
             "values": [
               0.038,
-              3
+              2.9
             ]
           },
           {
@@ -3094,7 +3094,7 @@
             "aisle": "hot cereal pancake mixes",
             "values": [
               0.028,
-              3
+              2.7
             ]
           },
           {
@@ -3104,7 +3104,7 @@
             "aisle": "butter",
             "values": [
               0.031,
-              2
+              2.4
             ]
           }
         ]
@@ -3237,7 +3237,7 @@
             "aisle": "butter",
             "values": [
               1.0,
-              100
+              100.0
             ]
           },
           {
@@ -3247,7 +3247,7 @@
             "aisle": "canned fruit applesauce",
             "values": [
               0.342,
-              76
+              76.3
             ]
           },
           {
@@ -3257,7 +3257,7 @@
             "aisle": "lunch meat",
             "values": [
               0.706,
-              73
+              72.9
             ]
           },
           {
@@ -3267,7 +3267,7 @@
             "aisle": "cat food care",
             "values": [
               0.632,
-              73
+              72.8
             ]
           },
           {
@@ -3277,7 +3277,7 @@
             "aisle": "soup broth bouillon",
             "values": [
               0.915,
-              71
+              70.7
             ]
           },
           {
@@ -3287,7 +3287,7 @@
             "aisle": "cat food care",
             "values": [
               0.577,
-              69
+              68.7
             ]
           },
           {
@@ -3297,7 +3297,7 @@
             "aisle": "cat food care",
             "values": [
               0.415,
-              54
+              53.9
             ]
           },
           {
@@ -3307,7 +3307,7 @@
             "aisle": "canned meat seafood",
             "values": [
               0.559,
-              50
+              49.7
             ]
           },
           {
@@ -3317,7 +3317,7 @@
             "aisle": "cat food care",
             "values": [
               0.383,
-              33
+              32.6
             ]
           },
           {
@@ -3327,7 +3327,7 @@
             "aisle": "coffee",
             "values": [
               0.309,
-              23
+              23.3
             ]
           }
         ]
@@ -3347,7 +3347,7 @@
             "aisle": "energy granola bars",
             "values": [
               0.124,
-              27
+              27.0
             ]
           },
           {
@@ -3357,7 +3357,7 @@
             "aisle": "energy granola bars",
             "values": [
               0.148,
-              26
+              26.4
             ]
           },
           {
@@ -3367,7 +3367,7 @@
             "aisle": "frozen breakfast",
             "values": [
               0.066,
-              24
+              24.3
             ]
           },
           {
@@ -3377,7 +3377,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.116,
-              15
+              14.9
             ]
           },
           {
@@ -3387,7 +3387,7 @@
             "aisle": "spreads",
             "values": [
               0.107,
-              9
+              8.9
             ]
           },
           {
@@ -3397,7 +3397,7 @@
             "aisle": "yogurt",
             "values": [
               0.074,
-              8
+              8.1
             ]
           },
           {
@@ -3407,7 +3407,7 @@
             "aisle": "baking ingredients",
             "values": [
               0.111,
-              7
+              7.5
             ]
           },
           {
@@ -3417,7 +3417,7 @@
             "aisle": "popcorn jerky",
             "values": [
               0.085,
-              5
+              5.2
             ]
           },
           {
@@ -3427,7 +3427,7 @@
             "aisle": "cat food care",
             "values": [
               0.072,
-              5
+              5.2
             ]
           },
           {
@@ -3437,7 +3437,7 @@
             "aisle": "nuts seeds dried fruit",
             "values": [
               0.07,
-              4
+              4.4
             ]
           }
         ]
@@ -3457,7 +3457,7 @@
             "aisle": "frozen breakfast",
             "values": [
               0.077,
-              25
+              25.0
             ]
           },
           {
@@ -3467,7 +3467,7 @@
             "aisle": "honeys syrups nectars",
             "values": [
               0.089,
-              9
+              8.8
             ]
           },
           {
@@ -3477,7 +3477,7 @@
             "aisle": "yogurt",
             "values": [
               0.091,
-              8
+              7.6
             ]
           },
           {
@@ -3487,7 +3487,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.076,
-              7
+              7.1
             ]
           },
           {
@@ -3497,7 +3497,7 @@
             "aisle": "yogurt",
             "values": [
               0.102,
-              6
+              6.4
             ]
           },
           {
@@ -3507,7 +3507,7 @@
             "aisle": "instant foods",
             "values": [
               0.097,
-              6
+              6.0
             ]
           },
           {
@@ -3517,7 +3517,7 @@
             "aisle": "soup broth bouillon",
             "values": [
               0.084,
-              6
+              6.0
             ]
           },
           {
@@ -3527,7 +3527,7 @@
             "aisle": "crackers",
             "values": [
               0.078,
-              5
+              5.2
             ]
           },
           {
@@ -3537,7 +3537,7 @@
             "aisle": "juice nectars",
             "values": [
               0.084,
-              5
+              5.2
             ]
           },
           {
@@ -3547,7 +3547,7 @@
             "aisle": "frozen meals",
             "values": [
               0.074,
-              5
+              5.2
             ]
           }
         ]
@@ -3567,7 +3567,7 @@
             "aisle": "frozen breakfast",
             "values": [
               0.244,
-              17
+              16.6
             ]
           },
           {
@@ -3577,7 +3577,7 @@
             "aisle": "instant foods",
             "values": [
               0.162,
-              16
+              16.2
             ]
           },
           {
@@ -3587,7 +3587,7 @@
             "aisle": "food storage",
             "values": [
               0.163,
-              12
+              12.2
             ]
           },
           {
@@ -3597,7 +3597,7 @@
             "aisle": "packaged vegetables fruits",
             "values": [
               0.123,
-              12
+              12.0
             ]
           },
           {
@@ -3607,7 +3607,7 @@
             "aisle": "refrigerated",
             "values": [
               0.103,
-              12
+              12.0
             ]
           },
           {
@@ -3617,7 +3617,7 @@
             "aisle": "honeys syrups nectars",
             "values": [
               0.153,
-              11
+              11.3
             ]
           },
           {
@@ -3627,7 +3627,7 @@
             "aisle": "honeys syrups nectars",
             "values": [
               0.105,
-              10
+              10.4
             ]
           },
           {
@@ -3637,7 +3637,7 @@
             "aisle": "prepared meals",
             "values": [
               0.146,
-              10
+              10.1
             ]
           },
           {
@@ -3647,7 +3647,7 @@
             "aisle": "cookies cakes",
             "values": [
               0.101,
-              10
+              10.0
             ]
           },
           {
@@ -3657,7 +3657,7 @@
             "aisle": "nuts seeds dried fruit",
             "values": [
               0.146,
-              9
+              9.1
             ]
           }
         ]
@@ -3799,7 +3799,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.066,
-              14
+              14.0
             ]
           },
           {
@@ -3809,7 +3809,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.067,
-              12
+              11.8
             ]
           },
           {
@@ -3819,7 +3819,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.085,
-              11
+              11.5
             ]
           },
           {
@@ -3829,7 +3829,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.057,
-              10
+              9.8
             ]
           },
           {
@@ -3839,7 +3839,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.064,
-              8
+              8.4
             ]
           },
           {
@@ -3849,7 +3849,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.066,
-              8
+              7.5
             ]
           },
           {
@@ -3859,7 +3859,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.066,
-              7
+              7.4
             ]
           },
           {
@@ -3869,7 +3869,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.065,
-              7
+              7.3
             ]
           },
           {
@@ -3879,7 +3879,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.065,
-              6
+              6.2
             ]
           },
           {
@@ -3889,7 +3889,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.059,
-              6
+              6.1
             ]
           }
         ]
@@ -3909,7 +3909,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.112,
-              12
+              12.4
             ]
           },
           {
@@ -3919,7 +3919,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.075,
-              12
+              12.3
             ]
           },
           {
@@ -3929,7 +3929,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.083,
-              11
+              11.2
             ]
           },
           {
@@ -3939,7 +3939,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.107,
-              10
+              10.0
             ]
           },
           {
@@ -3949,7 +3949,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.075,
-              8
+              7.7
             ]
           },
           {
@@ -3959,7 +3959,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.11,
-              7
+              7.0
             ]
           },
           {
@@ -3969,7 +3969,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.094,
-              7
+              6.7
             ]
           },
           {
@@ -3979,7 +3979,7 @@
             "aisle": "juice nectars",
             "values": [
               0.067,
-              6
+              5.7
             ]
           },
           {
@@ -3989,7 +3989,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.073,
-              5
+              5.4
             ]
           },
           {
@@ -3999,7 +3999,7 @@
             "aisle": "soft drinks",
             "values": [
               0.064,
-              5
+              4.8
             ]
           }
         ]
@@ -4019,7 +4019,7 @@
             "aisle": "dry pasta",
             "values": [
               0.307,
-              65
+              64.7
             ]
           },
           {
@@ -4029,7 +4029,7 @@
             "aisle": "poultry counter",
             "values": [
               0.148,
-              41
+              41.2
             ]
           },
           {
@@ -4039,7 +4039,7 @@
             "aisle": "frozen produce",
             "values": [
               0.266,
-              37
+              37.0
             ]
           },
           {
@@ -4049,7 +4049,7 @@
             "aisle": "packaged vegetables fruits",
             "values": [
               0.388,
-              35
+              35.3
             ]
           },
           {
@@ -4059,7 +4059,7 @@
             "aisle": "frozen produce",
             "values": [
               0.13,
-              27
+              27.4
             ]
           },
           {
@@ -4069,7 +4069,7 @@
             "aisle": "dry pasta",
             "values": [
               0.287,
-              26
+              25.7
             ]
           },
           {
@@ -4079,7 +4079,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.146,
-              24
+              23.9
             ]
           },
           {
@@ -4089,7 +4089,7 @@
             "aisle": "paper goods",
             "values": [
               0.124,
-              14
+              13.7
             ]
           },
           {
@@ -4099,7 +4099,7 @@
             "aisle": "frozen produce",
             "values": [
               0.153,
-              11
+              11.1
             ]
           },
           {
@@ -4109,7 +4109,7 @@
             "aisle": "frozen produce",
             "values": [
               0.162,
-              11
+              11.0
             ]
           }
         ]
@@ -4138,7 +4138,7 @@
             "aisle": "dry pasta",
             "values": [
               0.058,
-              8
+              8.4
             ]
           },
           {
@@ -4148,7 +4148,7 @@
             "aisle": "dry pasta",
             "values": [
               0.037,
-              4
+              3.8
             ]
           },
           {
@@ -4158,7 +4158,7 @@
             "aisle": "milk",
             "values": [
               0.022,
-              3
+              3.5
             ]
           },
           {
@@ -4168,7 +4168,7 @@
             "aisle": "laundry",
             "values": [
               0.04,
-              2
+              2.4
             ]
           },
           {
@@ -4178,7 +4178,7 @@
             "aisle": "instant foods",
             "values": [
               0.028,
-              2
+              2.3
             ]
           },
           {
@@ -4188,7 +4188,7 @@
             "aisle": "pasta sauce",
             "values": [
               0.019,
-              2
+              2.1
             ]
           },
           {
@@ -4198,7 +4198,7 @@
             "aisle": "juice nectars",
             "values": [
               0.022,
-              2
+              2.0
             ]
           },
           {
@@ -4208,7 +4208,7 @@
             "aisle": "packaged cheese",
             "values": [
               0.018,
-              2
+              1.8
             ]
           },
           {
@@ -4218,7 +4218,7 @@
             "aisle": "soup broth bouillon",
             "values": [
               0.019,
-              1
+              1.4
             ]
           },
           {
@@ -4228,7 +4228,7 @@
             "aisle": "refrigerated",
             "values": [
               0.018,
-              1
+              1.3
             ]
           }
         ]
@@ -4370,7 +4370,7 @@
             "aisle": "cookies cakes",
             "values": [
               0.225,
-              20
+              20.5
             ]
           },
           {
@@ -4380,7 +4380,7 @@
             "aisle": "cookies cakes",
             "values": [
               0.125,
-              17
+              17.4
             ]
           },
           {
@@ -4390,7 +4390,7 @@
             "aisle": "breakfast bars pastries",
             "values": [
               0.192,
-              17
+              16.6
             ]
           },
           {
@@ -4400,7 +4400,7 @@
             "aisle": "candy chocolate",
             "values": [
               0.186,
-              15
+              15.2
             ]
           },
           {
@@ -4410,7 +4410,7 @@
             "aisle": "energy granola bars",
             "values": [
               0.142,
-              15
+              15.2
             ]
           },
           {
@@ -4420,7 +4420,7 @@
             "aisle": "soft drinks",
             "values": [
               0.133,
-              15
+              15.0
             ]
           },
           {
@@ -4430,7 +4430,7 @@
             "aisle": "popcorn jerky",
             "values": [
               0.121,
-              15
+              14.9
             ]
           },
           {
@@ -4440,7 +4440,7 @@
             "aisle": "other creams cheeses",
             "values": [
               0.121,
-              15
+              14.9
             ]
           },
           {
@@ -4450,7 +4450,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.204,
-              13
+              12.7
             ]
           },
           {
@@ -4460,7 +4460,7 @@
             "aisle": "diapers wipes",
             "values": [
               0.145,
-              13
+              12.5
             ]
           }
         ]
@@ -4480,7 +4480,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.164,
-              15
+              15.3
             ]
           },
           {
@@ -4490,7 +4490,7 @@
             "aisle": "packaged vegetables fruits",
             "values": [
               0.11,
-              9
+              8.8
             ]
           },
           {
@@ -4500,7 +4500,7 @@
             "aisle": "soft drinks",
             "values": [
               0.045,
-              8
+              8.3
             ]
           },
           {
@@ -4510,7 +4510,7 @@
             "aisle": "cookies cakes",
             "values": [
               0.095,
-              7
+              7.3
             ]
           },
           {
@@ -4520,7 +4520,7 @@
             "aisle": "baby food formula",
             "values": [
               0.116,
-              7
+              7.0
             ]
           },
           {
@@ -4530,7 +4530,7 @@
             "aisle": "fresh dips tapenades",
             "values": [
               0.056,
-              6
+              5.5
             ]
           },
           {
@@ -4540,7 +4540,7 @@
             "aisle": "tofu meat alternatives",
             "values": [
               0.06,
-              5
+              5.4
             ]
           },
           {
@@ -4550,7 +4550,7 @@
             "aisle": "soup broth bouillon",
             "values": [
               0.045,
-              5
+              5.4
             ]
           },
           {
@@ -4560,7 +4560,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.045,
-              4
+              4.0
             ]
           },
           {
@@ -4570,7 +4570,7 @@
             "aisle": "cookies cakes",
             "values": [
               0.052,
-              3
+              3.3
             ]
           }
         ]
@@ -4590,7 +4590,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.029,
-              10
+              10.1
             ]
           },
           {
@@ -4600,7 +4600,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.094,
-              9
+              9.0
             ]
           },
           {
@@ -4610,7 +4610,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.051,
-              5
+              5.5
             ]
           },
           {
@@ -4620,7 +4620,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.035,
-              5
+              4.6
             ]
           },
           {
@@ -4630,7 +4630,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.042,
-              4
+              3.9
             ]
           },
           {
@@ -4640,7 +4640,7 @@
             "aisle": "bread",
             "values": [
               0.028,
-              3
+              3.4
             ]
           },
           {
@@ -4650,7 +4650,7 @@
             "aisle": "fresh dips tapenades",
             "values": [
               0.034,
-              3
+              3.0
             ]
           },
           {
@@ -4660,7 +4660,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.027,
-              2
+              1.9
             ]
           },
           {
@@ -4670,7 +4670,7 @@
             "aisle": "specialty cheeses",
             "values": [
               0.027,
-              2
+              1.8
             ]
           },
           {
@@ -4680,7 +4680,7 @@
             "aisle": "coffee",
             "values": [
               0.026,
-              2
+              1.6
             ]
           }
         ]
@@ -4822,7 +4822,7 @@
             "aisle": "packaged vegetables fruits",
             "values": [
               0.109,
-              27
+              27.2
             ]
           },
           {
@@ -4832,7 +4832,7 @@
             "aisle": "butter",
             "values": [
               0.139,
-              14
+              14.0
             ]
           },
           {
@@ -4842,7 +4842,7 @@
             "aisle": "soup broth bouillon",
             "values": [
               0.178,
-              14
+              13.9
             ]
           },
           {
@@ -4852,7 +4852,7 @@
             "aisle": "soft drinks",
             "values": [
               0.126,
-              13
+              13.5
             ]
           },
           {
@@ -4862,7 +4862,7 @@
             "aisle": "lunch meat",
             "values": [
               0.112,
-              12
+              11.7
             ]
           },
           {
@@ -4872,7 +4872,7 @@
             "aisle": "crackers",
             "values": [
               0.123,
-              11
+              10.8
             ]
           },
           {
@@ -4882,7 +4882,7 @@
             "aisle": "cat food care",
             "values": [
               0.098,
-              9
+              8.9
             ]
           },
           {
@@ -4892,7 +4892,7 @@
             "aisle": "frozen breakfast",
             "values": [
               0.129,
-              9
+              8.6
             ]
           },
           {
@@ -4902,7 +4902,7 @@
             "aisle": "frozen meals",
             "values": [
               0.11,
-              8
+              8.2
             ]
           },
           {
@@ -4912,7 +4912,7 @@
             "aisle": "hot dogs bacon sausage",
             "values": [
               0.101,
-              7
+              7.1
             ]
           }
         ]
@@ -4941,7 +4941,7 @@
             "aisle": "energy sports drinks",
             "values": [
               0.038,
-              3
+              3.2
             ]
           },
           {
@@ -4951,7 +4951,7 @@
             "aisle": "candy chocolate",
             "values": [
               0.031,
-              3
+              3.2
             ]
           },
           {
@@ -4961,7 +4961,7 @@
             "aisle": "energy sports drinks",
             "values": [
               0.037,
-              3
+              3.2
             ]
           },
           {
@@ -4971,7 +4971,7 @@
             "aisle": "candy chocolate",
             "values": [
               0.033,
-              3
+              2.9
             ]
           },
           {
@@ -4981,7 +4981,7 @@
             "aisle": "cream",
             "values": [
               0.047,
-              3
+              2.9
             ]
           },
           {
@@ -4991,7 +4991,7 @@
             "aisle": "juice nectars",
             "values": [
               0.038,
-              3
+              2.8
             ]
           },
           {
@@ -5001,7 +5001,7 @@
             "aisle": "mint gum",
             "values": [
               0.039,
-              3
+              2.8
             ]
           },
           {
@@ -5011,7 +5011,7 @@
             "aisle": "breakfast bars pastries",
             "values": [
               0.034,
-              3
+              2.7
             ]
           },
           {
@@ -5021,7 +5021,7 @@
             "aisle": "soft drinks",
             "values": [
               0.034,
-              2
+              2.5
             ]
           },
           {
@@ -5031,7 +5031,7 @@
             "aisle": "energy granola bars",
             "values": [
               0.027,
-              2
+              2.0
             ]
           }
         ]
@@ -5051,7 +5051,7 @@
             "aisle": "soft drinks",
             "values": [
               0.038,
-              7
+              6.5
             ]
           },
           {
@@ -5061,7 +5061,7 @@
             "aisle": "soft drinks",
             "values": [
               0.036,
-              6
+              6.4
             ]
           },
           {
@@ -5071,7 +5071,7 @@
             "aisle": "soft drinks",
             "values": [
               0.059,
-              5
+              5.4
             ]
           },
           {
@@ -5081,7 +5081,7 @@
             "aisle": "tea",
             "values": [
               0.036,
-              5
+              4.9
             ]
           },
           {
@@ -5091,7 +5091,7 @@
             "aisle": "energy granola bars",
             "values": [
               0.033,
-              4
+              3.7
             ]
           },
           {
@@ -5101,7 +5101,7 @@
             "aisle": "energy granola bars",
             "values": [
               0.032,
-              3
+              3.4
             ]
           },
           {
@@ -5111,7 +5111,7 @@
             "aisle": "breakfast bakery",
             "values": [
               0.032,
-              3
+              2.9
             ]
           },
           {
@@ -5121,7 +5121,7 @@
             "aisle": "candy chocolate",
             "values": [
               0.033,
-              2
+              2.4
             ]
           },
           {
@@ -5131,7 +5131,7 @@
             "aisle": "coffee",
             "values": [
               0.033,
-              2
+              2.0
             ]
           },
           {
@@ -5141,7 +5141,7 @@
             "aisle": "chips pretzels",
             "values": [
               0.032,
-              2
+              2.0
             ]
           }
         ]
@@ -5161,7 +5161,7 @@
             "aisle": "soft drinks",
             "values": [
               0.026,
-              10
+              9.6
             ]
           },
           {
@@ -5171,7 +5171,7 @@
             "aisle": "soft drinks",
             "values": [
               0.027,
-              9
+              8.6
             ]
           },
           {
@@ -5181,7 +5181,7 @@
             "aisle": "spirits",
             "values": [
               0.026,
-              4
+              4.4
             ]
           },
           {
@@ -5191,7 +5191,7 @@
             "aisle": "soft drinks",
             "values": [
               0.028,
-              3
+              3.0
             ]
           },
           {
@@ -5201,7 +5201,7 @@
             "aisle": "soft drinks",
             "values": [
               0.024,
-              3
+              2.9
             ]
           },
           {
@@ -5211,7 +5211,7 @@
             "aisle": "soft drinks",
             "values": [
               0.039,
-              3
+              2.8
             ]
           },
           {
@@ -5221,7 +5221,7 @@
             "aisle": "soft drinks",
             "values": [
               0.04,
-              2
+              2.5
             ]
           },
           {
@@ -5231,7 +5231,7 @@
             "aisle": "crackers",
             "values": [
               0.023,
-              2
+              1.7
             ]
           },
           {
@@ -5241,7 +5241,7 @@
             "aisle": "crackers",
             "values": [
               0.024,
-              2
+              1.6
             ]
           },
           {
@@ -5251,7 +5251,7 @@
             "aisle": "juice nectars",
             "values": [
               0.025,
-              2
+              1.6
             ]
           }
         ]

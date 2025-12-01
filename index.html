@@ -433,7 +433,7 @@
                 name: c.name,
                 dept: c.dept,
                 aisle: c.aisle,
-                score: `${c.values?.[0]}%` ?? "",
+                score: `${c.values?.[0]}` ?? "",
                 extra1: c.values?.[1] ?? ""
             }));
 
@@ -441,7 +441,7 @@
                 { key: "name", label: "Name" },
                 { key: "dept", label: "Department" },
                 { key: "aisle", label: "Aisle" },
-                { key: "score", label: "Impact %" },
+                { key: "score", label: "Complement Score" },
                 { key: "extra1", label: "Impact Index" }
             ];
 
@@ -475,7 +475,7 @@
                 name: c.name,
                 dept: c.dept,
                 aisle: c.aisle,
-                score: `${c.values?.[0]}%` ?? "",
+                score: `${c.values?.[0]}` ?? "",
                 extra1: c.values?.[1] ?? ""
             }));
 
@@ -483,7 +483,7 @@
                 { key: "name", label: "Name" },
                 { key: "dept", label: "Department" },
                 { key: "aisle", label: "Aisle" },
-                { key: "score", label: "Impact %" },
+                { key: "score", label: "Complement Score" },
                 { key: "extra1", label: "Impact Index" }
             ];
 
