@@ -276,6 +276,12 @@ def compute_total_impact(
         mean_pair_impact = (impact_col, 'mean'),
     ).reset_index()
 
+    maxv = agg['total_impact'].max()
+    if maxv > 0:
+        agg['total_impact_norm'] = agg['total_impact'] / maxv
+    else:
+        agg['total_impact_norm'] = 0.0
+
     return agg
 
 def simulate_removal_exact(pids, orders_df, focus_products, top_n=10, limit=5):

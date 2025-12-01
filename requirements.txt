@@ -1,0 +1,29 @@
+# Data handling
+pandas
+numpy
+
+# Math & statistics
+scipy
+
+# Machine learning
+sklearn
+
+# Graphs / networks
+networkx
+
+# Visualization
+matplotlib
+seaborn
+
+# Utilities
+tqdm
+time
+json
+difflib
+random
+itertools
+sentence_transformers
+
+# Jupyter notebooks
+jupyter
+notebook
